@@ -1,0 +1,159 @@
+/* global css */
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+
+/* custom options */
+
+.Montserrat {
+  font-family: Montserrat;
+}
+
+.headerTextColor a {
+  text-decoration: none;
+}
+
+
+/* header */
+
+.header-whole-container {
+  width: 100%;
+  height: 50px;
+}
+
+.menucenter-socialmedia-container {
+  width: 20%;
+  height: 100%;
+  float: left;
+}
+
+.menucenter-menu-container {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.menucenter-menu-container ul {
+  text-align: center;
+  padding-top: 12px;
+  text-align: center;
+}
+
+.menucenter-menu-container a {
+  text-decoration: none;
+}
+
+.menucenter-menu-container li {
+  display: inline;
+  letter-spacing: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+
+.menucenter-search-container {
+  width: 20%;
+  height: 100%;
+  float: right;
+}
+
+.screen-reader-text {
+display: none;
+}
+
+
+.header-whole-container li {
+  display: inline;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+}
+
+.menucenter-socialmedia-container ul {
+  padding-top: 14px;
+  padding-left: 20px;
+
+}
+
+.menucenter-search-container i {
+  padding-top: 15px;
+  float: right;
+  padding-right: 30px;
+}
+
+.menuright-socialmedia-search-container {
+  width: 40%;
+  float: left;
+  height: 100%
+}
+
+.menuright-socialmedia-search-container ul {
+  padding-top: 14px;
+  padding-left: 20px;
+}
+
+.menuright-menu-container {
+  float: right;
+  width: 60%;
+  height: 100%;
+  text-align: right;
+}
+
+.menuright-menu-container ul {
+  padding-top: 14px;
+  padding-right: 50px;
+}
+
+.menuright-menu-container li {
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+.menuright-menu-container a {
+  text-decoration: none;
+}
+
+.menuleft-menu-container {
+  width: 60%;
+  float: left;
+  height: 100%;
+}
+
+.menuleft-socialmedia-container {
+  width: 40%;
+  float: right;
+  height: 100%;
+}
+
+.menuleft-menu-container li {
+  text-transform: uppercase;
+  padding-left: 20px;
+  padding-right: 20px;
+  letter-spacing: 7px;
+}
+
+.menuleft-menu-container ul {
+  padding-left: 30px;
+  padding-top: 14px;
+
+}
+
+.menuleft-socialmedia-container li {
+  padding-left: 5px;
+  padding-right: 5px;
+
+}
+
+.menuleft-socialmedia-container ul {
+  text-align: right;
+  padding-top: 14px;
+  padding-right: 30px;
+}
