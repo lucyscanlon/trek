@@ -20,39 +20,80 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Reenie+Beanie&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/978397fef6.js"></script>
 
-  <!-- adding the styles for the custom options on customizer -->
-  <style>
-    .header-whole-container {
-      background-color: <?php echo get_theme_mod('header_background_color'); ?>;
-    }
-
-    .headerTextColor {
-      color: <?php echo get_theme_mod('header_text_color'); ?>;
-    }
-
-    .headerTextColor a {
-      color: <?php echo get_theme_mod('header_text_color'); ?>;
-    }
-
-    .headerTextColor i {
-      color: <?php echo get_theme_mod('header_text_color'); ?>;
-    }
-
-  </style>
-
   <?php wp_head(); ?>
 </head>
 <body>
   <header>
-    <div class="header-whole-container">
+    <div class="header-whole-container headerbackgroundcolor">
       <!-- get the header template for first option-->
       <?php if(( get_theme_mod('header_layout_radio_button') ) == 'menucenter') { ?>
         <div class="menucenter-socialmedia-container">
           <ul class="headerTextColor">
-            <li><i class="fab fa-twitter"></i></li>
-            <li>
-              <i class="fab fa-instagram"></i>
-            </li>
+            <?php if (( get_theme_mod('toggle_switch_twitter') ) == 1){
+                ?><li><a href="<?php echo get_theme_mod('twitter_link')?>" target="blank"><i class="fab fa-twitter"></i></a></li>
+
+                <?php
+              } ?>
+            <?php if (( get_theme_mod('toggle_switch_facebook') ) == 1){
+                ?><li><a href="<?php echo get_theme_mod('facebook_link')?>" target="blank"><i class="fab fa-facebook"></i></a></li>
+
+                <?php
+              } ?>
+            <?php if (( get_theme_mod('toggle_switch_instagram') ) == 1){
+                ?><li><a href="<?php echo get_theme_mod('instagram_link')?>" target="blank"><i class="fab fa-instagram"></i></a></li>
+
+                <?php
+              } ?>
+            <?php if (( get_theme_mod('toggle_switch_pinterest') ) == 1){
+                ?><li><a href="<?php echo get_theme_mod('pinterest_link')?>" target="blank"><i class="fab fa-pinterest"></i></a></li>
+
+                <?php
+              } ?>
+            <?php if (( get_theme_mod('toggle_switch_googleplus') ) == 1){
+                ?><li><a href="<?php echo get_theme_mod('googleplus_link')?>" target="blank"><i class="fab fa-google-plus"></i></a></li>
+
+                <?php
+              } ?>
+            <?php if (( get_theme_mod('toggle_switch_youtube') ) == 1){
+                ?><li><a href="<?php echo get_theme_mod('youtube_link')?>" target="blank"><i class="fab fa-youtube"></i></a></li>
+
+                <?php
+              } ?>
+            <?php if (( get_theme_mod('toggle_switch_linkedin') ) == 1){
+                ?><li><a href="<?php echo get_theme_mod('linkedin_link')?>" target="blank"><i class="fab fa-linkedin"></i></a></li>
+
+                <?php
+              } ?>
+            <?php if (( get_theme_mod('toggle_switch_snapchat') ) == 1){
+                ?><li><a href="<?php echo get_theme_mod('snapchat_link')?>" target="blank"><i class="fab fa-snapchat-ghost"></i></a></li>
+
+                <?php
+              } ?>
+            <?php if (( get_theme_mod('toggle_switch_goodreads') ) == 1){
+                ?><li><a href="<?php echo get_theme_mod('goodreads_link')?>" target="blank"><i class="fab fa-goodreads"></i></a></li>
+
+                <?php
+              } ?>
+            <?php if (( get_theme_mod('toggle_switch_shop') ) == 1){
+                ?><li><a href="<?php echo get_theme_mod('shop_link')?>" target="blank"><i class="fas fa-shopping-cart"></i></a></li>
+
+                <?php
+              } ?>
+            <?php if (( get_theme_mod('toggle_switch_email') ) == 1){
+                ?><li><a href="<?php echo get_theme_mod('email_link')?>" target="blank"><i class="far fa-envelope-open"></i></a></li>
+
+                <?php
+              } ?>
+            <?php if (( get_theme_mod('toggle_switch_vimeo') ) == 1){
+                ?><li><a href="<?php echo get_theme_mod('vimeo_link')?>" target="blank"><i class="fab fa-vimeo-v"></i></a></li>
+
+                <?php
+              } ?>
+            <?php if (( get_theme_mod('toggle_switch_tumblr') ) == 1){
+                ?><li><a href="<?php echo get_theme_mod('tumblr_link')?>" target="blank"><i class="fab fa-tumblr"></i></a></li>
+
+                <?php
+              } ?>
 
           </ul>
         </div>
@@ -76,15 +117,71 @@
       <?php } else if (( get_theme_mod('header_layout_radio_button') ) == 'menuright') { ?>
         <div class="menuright-socialmedia-search-container">
           <ul class="headerTextColor">
+            <?php if (( get_theme_mod('toggle_switch_twitter') ) == 1){
+                ?><li><a href="<?php echo get_theme_mod('twitter_link')?>" target="blank"><i class="fab fa-twitter"></i></a></li>
 
-            <li><i class="fab fa-twitter"></i></li>
-            <li>
-              <i class="fab fa-instagram"></i>
-            </li>
-            <li>
-              <i class="fas fa-search"></i>
-            </li>
+                <?php
+              } ?>
+            <?php if (( get_theme_mod('toggle_switch_facebook') ) == 1){
+                ?><li><a href="<?php echo get_theme_mod('facebook_link')?>" target="blank"><i class="fab fa-facebook"></i></a></li>
 
+                <?php
+              } ?>
+            <?php if (( get_theme_mod('toggle_switch_instagram') ) == 1){
+                ?><li><a href="<?php echo get_theme_mod('instagram_link')?>" target="blank"><i class="fab fa-instagram"></i></a></li>
+
+                <?php
+              } ?>
+            <?php if (( get_theme_mod('toggle_switch_pinterest') ) == 1){
+                ?><li><a href="<?php echo get_theme_mod('pinterest_link')?>" target="blank"><i class="fab fa-pinterest"></i></a></li>
+
+                <?php
+              } ?>
+            <?php if (( get_theme_mod('toggle_switch_googleplus') ) == 1){
+                ?><li><a href="<?php echo get_theme_mod('googleplus_link')?>" target="blank"><i class="fab fa-google-plus"></i></a></li>
+
+                <?php
+              } ?>
+            <?php if (( get_theme_mod('toggle_switch_youtube') ) == 1){
+                ?><li><a href="<?php echo get_theme_mod('youtube_link')?>" target="blank"><i class="fab fa-youtube"></i></a></li>
+
+                <?php
+              } ?>
+            <?php if (( get_theme_mod('toggle_switch_linkedin') ) == 1){
+                ?><li><a href="<?php echo get_theme_mod('linkedin_link')?>" target="blank"><i class="fab fa-linkedin"></i></a></li>
+
+                <?php
+              } ?>
+            <?php if (( get_theme_mod('toggle_switch_snapchat') ) == 1){
+                ?><li><a href="<?php echo get_theme_mod('snapchat_link')?>" target="blank"><i class="fab fa-snapchat-ghost"></i></a></li>
+
+                <?php
+              } ?>
+            <?php if (( get_theme_mod('toggle_switch_goodreads') ) == 1){
+                ?><li><a href="<?php echo get_theme_mod('goodreads_link')?>" target="blank"><i class="fab fa-goodreads"></i></a></li>
+
+                <?php
+              } ?>
+            <?php if (( get_theme_mod('toggle_switch_shop') ) == 1){
+                ?><li><a href="<?php echo get_theme_mod('shop_link')?>" target="blank"><i class="fas fa-shopping-cart"></i></a></li>
+
+                <?php
+              } ?>
+            <?php if (( get_theme_mod('toggle_switch_email') ) == 1){
+                ?><li><a href="<?php echo get_theme_mod('email_link')?>" target="blank"><i class="far fa-envelope-open"></i></a></li>
+
+                <?php
+              } ?>
+            <?php if (( get_theme_mod('toggle_switch_vimeo') ) == 1){
+                ?><li><a href="<?php echo get_theme_mod('vimeo_link')?>" target="blank"><i class="fab fa-vimeo-v"></i></a></li>
+
+                <?php
+              } ?>
+            <?php if (( get_theme_mod('toggle_switch_tumblr') ) == 1){
+                ?><li><a href="<?php echo get_theme_mod('tumblr_link')?>" target="blank"><i class="fab fa-tumblr"></i></a></li>
+
+                <?php
+              } ?>
 
           </ul>
         </div>
@@ -116,14 +213,73 @@
 
         </div>
         <div class="menuleft-socialmedia-container headerTextColor">
-          <ul>
-            <li>
-              <i class="fas fa-search"></i>
-            </li>
-            <li><i class="fab fa-twitter"></i></li>
-            <li>
-              <i class="fab fa-instagram"></i>
-            </li>
+          <ul class="headerTextColor">
+            <?php if (( get_theme_mod('toggle_switch_twitter') ) == 1){
+                ?><li><a href="<?php echo get_theme_mod('twitter_link')?>" target="blank"><i class="fab fa-twitter"></i></a></li>
+
+                <?php
+              } ?>
+            <?php if (( get_theme_mod('toggle_switch_facebook') ) == 1){
+                ?><li><a href="<?php echo get_theme_mod('facebook_link')?>" target="blank"><i class="fab fa-facebook"></i></a></li>
+
+                <?php
+              } ?>
+            <?php if (( get_theme_mod('toggle_switch_instagram') ) == 1){
+                ?><li><a href="<?php echo get_theme_mod('instagram_link')?>" target="blank"><i class="fab fa-instagram"></i></a></li>
+
+                <?php
+              } ?>
+            <?php if (( get_theme_mod('toggle_switch_pinterest') ) == 1){
+                ?><li><a href="<?php echo get_theme_mod('pinterest_link')?>" target="blank"><i class="fab fa-pinterest"></i></a></li>
+
+                <?php
+              } ?>
+            <?php if (( get_theme_mod('toggle_switch_googleplus') ) == 1){
+                ?><li><a href="<?php echo get_theme_mod('googleplus_link')?>" target="blank"><i class="fab fa-google-plus"></i></a></li>
+
+                <?php
+              } ?>
+            <?php if (( get_theme_mod('toggle_switch_youtube') ) == 1){
+                ?><li><a href="<?php echo get_theme_mod('youtube_link')?>" target="blank"><i class="fab fa-youtube"></i></a></li>
+
+                <?php
+              } ?>
+            <?php if (( get_theme_mod('toggle_switch_linkedin') ) == 1){
+                ?><li><a href="<?php echo get_theme_mod('linkedin_link')?>" target="blank"><i class="fab fa-linkedin"></i></a></li>
+
+                <?php
+              } ?>
+            <?php if (( get_theme_mod('toggle_switch_snapchat') ) == 1){
+                ?><li><a href="<?php echo get_theme_mod('snapchat_link')?>" target="blank"><i class="fab fa-snapchat-ghost"></i></a></li>
+
+                <?php
+              } ?>
+            <?php if (( get_theme_mod('toggle_switch_goodreads') ) == 1){
+                ?><li><a href="<?php echo get_theme_mod('goodreads_link')?>" target="blank"><i class="fab fa-goodreads"></i></a></li>
+
+                <?php
+              } ?>
+            <?php if (( get_theme_mod('toggle_switch_shop') ) == 1){
+                ?><li><a href="<?php echo get_theme_mod('shop_link')?>" target="blank"><i class="fas fa-shopping-cart"></i></a></li>
+
+                <?php
+              } ?>
+            <?php if (( get_theme_mod('toggle_switch_email') ) == 1){
+                ?><li><a href="<?php echo get_theme_mod('email_link')?>" target="blank"><i class="far fa-envelope-open"></i></a></li>
+
+                <?php
+              } ?>
+            <?php if (( get_theme_mod('toggle_switch_vimeo') ) == 1){
+                ?><li><a href="<?php echo get_theme_mod('vimeo_link')?>" target="blank"><i class="fab fa-vimeo-v"></i></a></li>
+
+                <?php
+              } ?>
+            <?php if (( get_theme_mod('toggle_switch_tumblr') ) == 1){
+                ?><li><a href="<?php echo get_theme_mod('tumblr_link')?>" target="blank"><i class="fab fa-tumblr"></i></a></li>
+
+                <?php
+              } ?>
+
           </ul>
         </div>
     <?php  }?>
