@@ -53,6 +53,13 @@
 .gridpostlayout-title-container a:hover {
   color: <?php echo get_theme_mod('blog_page_link_hover_color'); ?>
 }
+   .gridpostlayout-featuredimage-container {
+    order: 2;
+  }
+
+  .gridpostlayout-information-container {
+    order: 1;
+  }
 
 
 </style>

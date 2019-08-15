@@ -852,21 +852,25 @@ function trek_lucyisobel_custom_settings($wp_customize){
     		$wp_customize->add_control( new Skyrocket_Image_Radio_Button_Custom_Control( $wp_customize, 'post_preview_layout_radio_button',
     			array(
     				'label' => __( 'Post Preview Layout', 'Trek' ),
-    				'description' => esc_html__( 'Choose which side your sidebar is on', 'Trek' ),
+    				'description' => esc_html__( 'Choose the layout of your post previews', 'Trek' ),
     				'section' => 'blog_section',
             'settings' => 'post_preview_layout_radio_button',
     				'choices' => array(
     					'widepostlayout' => array(
-    						'image' => trailingslashit( get_template_directory_uri() ) . 'img/Groupsidebarright.png',
-    						'name' => __( 'Wide Layout', 'Trek' )
+    						'image' => trailingslashit( get_template_directory_uri() ) . 'img/wholeimagelayout.png',
+    						'name' => __( 'Whole Image Layout', 'Trek' )
     					),
     					'gridrightpostlayout' => array(
-    						'image' => trailingslashit( get_template_directory_uri() ) . 'img/Groupsidebarleft.png',
-    						'name' => __( 'List Right Aligned Layout', 'Trek' )
+    						'image' => trailingslashit( get_template_directory_uri() ) . 'img/listoptiontwo.png',
+    						'name' => __( 'List Option One', 'Trek' )
     					),
               'gridleftpostlayout' => array(
-    						'image' => trailingslashit( get_template_directory_uri() ) . 'img/Groupsidebarleft.png',
-    						'name' => __( 'List Left Aligned Layout', 'Trek' )
+    						'image' => trailingslashit( get_template_directory_uri() ) . 'img/listoptionone.png',
+    						'name' => __( 'List Option Two', 'Trek' )
+    					),
+              'imagepostlayout' => array(
+    						'image' => trailingslashit( get_template_directory_uri() ) . 'img/imageasbackground.png',
+    						'name' => __( 'Image as background', 'Trek' )
     					),
     				)
     			)
@@ -894,6 +898,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
       $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'blog_page_link_color', array(
         'label' => __('Blog Post Link Color', 'Trek'),
+        'description' => __('Does not apply to 4th layout option', 'Trek'),
         'section' => 'blog_section',
         'settings' => 'blog_page_link_color'
       )));
@@ -926,6 +931,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
       $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'toggle_blog_categories', array(
         'label' => __('Display Categories', 'Trek'),
+        'description' => __('Does not display automatically on 4th layout option', 'Trek'),
         'section' => 'blog_section',
         'settings'=> 'toggle_blog_categories'
       )));
