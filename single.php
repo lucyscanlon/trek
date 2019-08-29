@@ -78,7 +78,7 @@
 
 </style>
 <section class="featured-post-container">
-
+  <?php require get_template_directory() . '/inc/template-parts/index/blogbanner.php'; ?>
 </section>
 <div class="secondary-categories-whole-container Montserrat">
   <?php wp_nav_menu( array(

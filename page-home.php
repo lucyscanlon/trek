@@ -24,7 +24,7 @@
 background-position: center center;
 background-size: cover; ">
 
-  <div class="homepage-title-container ReenieBeanie" style="padding-top: <?php echo get_theme_mod('homepage_title_height'); ?>vh; color: <?php echo get_theme_mod('homepage_title_color'); ?>; text-shadow: <?php echo get_theme_mod('homepage_title_shadow_color' ); ?> 4px 4px;">
+  <div class="homepage-title-container ReenieBeanie" style="padding-top: <?php echo get_theme_mod('homepage_title_height'); ?>vh; color: <?php echo get_theme_mod('homepage_title_color'); ?>; text-shadow: <?php echo get_theme_mod('homepage_title_shadow_color' ); ?> 6px 6px;">
     <h1><?php print get_bloginfo('name'); ?></h1>
   </div>
   <?php if (( get_theme_mod('toggle_switch_description') ) == 1) { ?>
