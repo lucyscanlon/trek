@@ -183,7 +183,7 @@
   <!--  SIDEBAR  -->
   <div class="blog-sidebar-width-container">
     <div class="blog-sidebar-container">
-
+      <?php get_sidebar(); ?>
     </div>
 
   </div>

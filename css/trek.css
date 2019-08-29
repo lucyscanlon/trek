@@ -310,38 +310,34 @@ display: none;
 .blog-content-top-padding {
   width: 100%;
   height: 50px;
-  background-color: pink;
+
 
 }
 
 .blog-content-width-container {
-  width: 65%;
-  background-color: pink;
+  width: 70%;
   order: 2;
 
 }
 
 .blog-sidebar-width-container {
-  width: 35%;
-  background-color: pink;
+  width: 30%;
   order: 1;
 }
 
 .blog-column-container {
   width: 87%;
-  max-width: 1300px;
-  margin-left: 50px;
-  margin-right: 50px;
+  max-width: 1500px;
+  margin-left: 25px;
+  margin-right: 25px;
   overflow: auto;
 }
 
 .blog-sidebar-container {
   width: 75%;
-  margin-left: 50px;
-  margin-right: 50px;
-  max-width: 500px;
-  height: 50px;
-  background-color: white;
+  margin-left: 25px;
+  margin-right: 25px;
+  max-width: 400px;
 }
 
 .widepostlayout-wholepost-container {
@@ -601,4 +597,82 @@ display: none;
   letter-spacing: 7px;
   font-size: 13px;
   padding-bottom: 200px;
+}
+
+
+
+
+/*  sidebar   */
+
+
+.trek-widget {
+  width: 100%;
+  background-color: white;
+  margin-bottom: 25px;
+}
+
+.trek-widget-title {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 15px;
+  padding-bottom: 40px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+.trek-widget-width-container {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 40px;
+  padding-top: 40px;
+
+}
+
+.trek-widget-width-container li {
+  letter-spacing: 3px;
+  padding-bottom: 15px;
+  font-size: 12px;
+  list-style-type: none;
+}
+
+.trek-widget li #text {
+  color: red;
+}
+
+.trek-widget-width-container p {
+  font-size: 12px;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+
+}
+
+.trek-widget-width-container img {
+  margin-top: 20px;
+}
+
+.trek-widget-width-container #s {
+  width: 70%;
+  height: 30px;
+  font-family: Montserrat;
+  letter-spacing: 1px;
+}
+
+.trek-widget-width-container #searchsubmit {
+  width: 27%;
+  float: right;
+  height: 33px;
+  font-family: Montserrat;
+}
+
+.trek-widget .tagcloud a {
+  border-radius: 4px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  letter-spacing: 2px;
+
 }

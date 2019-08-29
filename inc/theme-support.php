@@ -57,4 +57,24 @@ function alternating_post_class ( $classes ) {
 add_filter ('post_class', 'alternating_post_class');
 global $current_class;
 $current_class = 'odd';
-?>
+
+
+
+
+//sidebar functions
+function trek_sidebar_init() {
+  register_sidebar(
+    array(
+      'name' => esc_html__( 'Trek Sidebar', 'trek '),
+      'id' => 'trek-sidebar',
+      'description' => 'Dynamic Sidebar',
+      'before_widget' => '<section id="%1$s" class="trek-widget Montserrat %2$s"> <div class="trek-widget-width-container">',
+      'after_widget' => '</div></section>',
+      'before_title' => '<h2 class="trek-widget-title Montserrat">',
+      'after_title' => '</h2>'
+
+    )
+  );
+}
+
+add_action('widgets_init', 'trek_sidebar_init');

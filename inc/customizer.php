@@ -977,6 +977,64 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
 
+      //single posts section
+      //creating the single post settings section
+      $wp_customize->add_section('singlepost_section', array(
+        'title' => __('Post Settings', 'Trek'),
+        'panel' => 'theme_settings',
+        'priority' => 22,
+      ));
+
+      //single posts notice
+      $wp_customize->add_setting('singlespost_title_section');
+
+
+      $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'singlespost_title_section', array(
+        'label' => __('Single Post Settings', 'Trek'),
+        'description' => __('Edit the layout of your posts'),
+        'section' => 'singlepost_section',
+        'settings' => 'singlespost_title_section'
+      )));
+
+
+
+      //creating single post layout options
+      $wp_customize->add_setting( 'singlepost_layout_radio_button',
+          array(
+            'default' => 'singlepost_optionone',
+            'transport' => 'refresh',
+            'sanitize_callback' => 'skyrocket_radio_sanitization'
+          )
+        );
+        $wp_customize->add_control( new Skyrocket_Image_Radio_Button_Custom_Control( $wp_customize, 'singlepost_layout_radio_button',
+          array(
+            'label' => __( 'Single Post Layout', 'Trek' ),
+            'description' => esc_html__( 'Choose the layout of your posts', 'Trek' ),
+            'section' => 'singlepost_section',
+            'settings' => 'singlepost_layout_radio_button',
+            'choices' => array(
+              'singlepost_optionone' => array(
+                'image' => trailingslashit( get_template_directory_uri() ) . 'img/wholeimagelayout.png',
+                'name' => __( 'Option One', 'Trek' )
+              ),
+              'singlepost_optiontwo' => array(
+                'image' => trailingslashit( get_template_directory_uri() ) . 'img/listoptiontwo.png',
+                'name' => __( 'List Option One', 'Trek' )
+              ),
+              'singlepost_optionthree' => array(
+                'image' => trailingslashit( get_template_directory_uri() ) . 'img/listoptionone.png',
+                'name' => __( 'List Option Two', 'Trek' )
+              ),
+              'singlepost_optionfour' => array(
+                'image' => trailingslashit( get_template_directory_uri() ) . 'img/imageasbackground.png',
+                'name' => __( 'Image as background', 'Trek' )
+              ),
+            )
+          )
+        ) );
+
+
+
 
 
 
