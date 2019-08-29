@@ -788,6 +788,50 @@ function trek_lucyisobel_custom_settings($wp_customize){
       'priority' => 21,
     ));
 
+    //blog banner notice
+    $wp_customize->add_setting('blog_banner_section');
+
+
+    $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'blog_banner_section', array(
+      'label' => __('Blog Banner Section', 'Trek'),
+      'description' => __('Here you can either display your blog name with the background image from your homepage, or choose a post to feature here'),
+      'section' => 'blog_section',
+      'settings' => 'blog_banner_section'
+    )));
+
+
+
+    //toggle featured post feature on or off
+    $wp_customize->add_setting('toggle_blogbanner_featuredpost', array(
+      'default' => 1,
+      'transport' => 'refresh',
+
+    ));
+
+    $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'toggle_blogbanner_featuredpost', array(
+      'label' => __('Enable featured post display', 'Trek'),
+      'description' => __('Please see below for instructions to activate', 'Trek'),
+      'section' => 'blog_section',
+      'settings'=> 'toggle_blogbanner_featuredpost'
+    )));
+
+    $wp_customize->add_setting('featuredpost_category', array(
+
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'featuredpost_category', array(
+      'section' => 'blog_section',
+      'label' => 'Chosen featured category name',
+      'description' => 'Please create a new category and assign your chosen post to feature into that category. Then paste the name of this category here. Please only assign one post to this category at a time. ',
+      'settings' => 'featuredpost_category',
+      'input_attrs' => array(
+        'placeholder' => __('Category name'),
+      )
+
+    )));
+
+
+
     //homepage notice
     $wp_customize->add_setting('blog_title_section');
 
@@ -1014,24 +1058,88 @@ function trek_lucyisobel_custom_settings($wp_customize){
             'settings' => 'singlepost_layout_radio_button',
             'choices' => array(
               'singlepost_optionone' => array(
-                'image' => trailingslashit( get_template_directory_uri() ) . 'img/wholeimagelayout.png',
+                'image' => trailingslashit( get_template_directory_uri() ) . 'img/singlepostoptionone.png',
                 'name' => __( 'Option One', 'Trek' )
               ),
               'singlepost_optiontwo' => array(
-                'image' => trailingslashit( get_template_directory_uri() ) . 'img/listoptiontwo.png',
+                'image' => trailingslashit( get_template_directory_uri() ) . 'img/singlepostoptiontwo.png',
                 'name' => __( 'List Option One', 'Trek' )
               ),
               'singlepost_optionthree' => array(
-                'image' => trailingslashit( get_template_directory_uri() ) . 'img/listoptionone.png',
+                'image' => trailingslashit( get_template_directory_uri() ) . 'img/singlepostoptionthree.png',
                 'name' => __( 'List Option Two', 'Trek' )
-              ),
-              'singlepost_optionfour' => array(
-                'image' => trailingslashit( get_template_directory_uri() ) . 'img/imageasbackground.png',
-                'name' => __( 'Image as background', 'Trek' )
               ),
             )
           )
         ) );
+
+
+
+        //single posts display info notice
+        $wp_customize->add_setting('singlespost_display_section');
+
+
+        $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'singlespost_display_section', array(
+          'label' => __('Single Post Info Display Settings', 'Trek'),
+          'description' => __('Choose what information to display on your individual posts'),
+          'section' => 'singlepost_section',
+          'settings' => 'singlespost_display_section'
+        )));
+
+
+
+        //toggle categories on or off
+        $wp_customize->add_setting('toggle_singlepost_categories', array(
+          'default' => 1,
+          'transport' => 'refresh',
+
+        ));
+
+        $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'toggle_singlepost_categories', array(
+          'label' => __('Display Categories', 'Trek'),
+          'section' => 'singlepost_section',
+          'settings'=> 'toggle_singlepost_categories'
+        )));
+
+        //toggle date on or off
+        $wp_customize->add_setting('toggle_singlepost_date', array(
+          'default' => 1,
+          'transport' => 'refresh',
+
+        ));
+
+        $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'toggle_singlepost_date', array(
+          'label' => __('Display Post Date', 'Trek'),
+          'section' => 'singlepost_section',
+          'settings'=> 'toggle_singlepost_date'
+        )));
+
+        //toggle author on or off
+        $wp_customize->add_setting('toggle_singlepost_author', array(
+          'default' => 1,
+          'transport' => 'refresh',
+
+        ));
+
+        $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'toggle_singlepost_author', array(
+          'label' => __('Display Post Author', 'Trek'),
+          'section' => 'singlepost_section',
+          'settings'=> 'toggle_singlepost_author'
+        )));
+
+        //toggle comments on or off
+        $wp_customize->add_setting('toggle_singlepost_comments', array(
+          'default' => 1,
+          'transport' => 'refresh',
+
+        ));
+
+        $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'toggle_singlepost_comments', array(
+          'label' => __('Display Post Comments Info', 'Trek'),
+          'section' => 'singlepost_section',
+          'settings'=> 'toggle_singlepost_comments'
+        )));
+
 
 
 
