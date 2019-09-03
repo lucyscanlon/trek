@@ -103,7 +103,7 @@ if ( !function_exists( 'wpex_pagination' ) ) {
 
 }
 
-
+// single post naviagtion bar
 function trek_post_navigation(){
 
   $nav = '<div class="single-post-navigation Montserrat">';
