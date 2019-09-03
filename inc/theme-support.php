@@ -45,18 +45,6 @@ function trek_comments() {
 }
 
 
-// Add 'odd' and 'even' post classes on posts on index page
-function alternating_post_class ( $classes ) {
- global $current_class;
- if( is_home() ):
- $classes[] = $current_class;
- $current_class = ($current_class == 'odd') ? 'even' : 'odd';
- endif;
- return $classes;
-}
-add_filter ('post_class', 'alternating_post_class');
-global $current_class;
-$current_class = 'odd';
 
 
 
@@ -78,3 +66,55 @@ function trek_sidebar_init() {
 }
 
 add_action('widgets_init', 'trek_sidebar_init');
+
+
+//pagination
+// Numbered Pagination
+if ( !function_exists( 'wpex_pagination' ) ) {
+
+	function wpex_pagination() {
+
+		$prev_arrow = is_rtl() ? '→' : '←';
+		$next_arrow = is_rtl() ? '←' : '→';
+
+		global $wp_query;
+		$total = $wp_query->max_num_pages;
+		$big = 999999999; // need an unlikely integer
+		if( $total > 1 )  {
+			 if( !$current_page = get_query_var('paged') )
+				 $current_page = 1;
+			 if( get_option('permalink_structure') ) {
+				 $format = 'page/%#%/';
+			 } else {
+				 $format = '&paged=%#%';
+			 }
+			echo paginate_links(array(
+				'base'			=> str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+				'format'		=> $format,
+				'current'		=> max( 1, get_query_var('paged') ),
+				'total' 		=> $total,
+				'mid_size'		=> 3,
+				'type' 			=> 'list',
+				'prev_text'		=> $prev_arrow,
+				'next_text'		=> $next_arrow,
+			 ) );
+		}
+	}
+
+}
+
+
+function trek_post_navigation(){
+
+  $nav = '<div class="single-post-navigation Montserrat">';
+
+  $prev = get_previous_post_link( '<div class="single-link-nav">%link →</div>', '%title');
+  $nav .= '<div class="text-right singlepostnav-right-container" style="width: 50%; float: right;">' . $prev . '</div>';
+
+  $next = get_next_post_link('<div class="post-link-nav">← %link</div>', '%title');
+  $nav .= '<div class="text-right singlepostnav-left-container" style="width: 50%; float: left;">' . $next . '</div>';
+
+  $nav .= '</div>';
+
+  return $nav;
+}

@@ -73,7 +73,13 @@
       }
 
 
-
+      .page-numbers a:hover,
+      .page-numbers.current,
+      .page-numbers.current:hover {
+        color: <?php echo get_theme_mod('header_text_color'); ?>;
+        background-color: <?php echo get_theme_mod('header_background_color'); ?>;
+        text-decoration: none;
+      }
 
 
   </style>
@@ -171,11 +177,22 @@
             <!--  POST LOOP ENDS HERE  -->
           <?php  endwhile;
         endif; ?>
+
+
       </div>
 
     <?php } ?>
 
+
+    <div class="pagination-whole-container Montserrat">
+      <?php wpex_pagination(); ?>
     </div>
+
+
+    </div>
+
+
+
   </div>
 
 

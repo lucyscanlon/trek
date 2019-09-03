@@ -1,5 +1,6 @@
 <?php
 
+
 function trek_lucyisobel_scripts(){
 
   wp_enqueue_style('trek', get_template_directory_uri() . '/css/trek.css', array(), '1.0.0', 'all');

@@ -76,6 +76,36 @@
     }
 
 
+
+    .singlepostnav-right-container {
+      color: <?php echo get_theme_mod('header_text_color'); ?>;
+      background-color: <?php echo get_theme_mod('header_background_color'); ?>;
+    }
+
+    .singlepostnav-left-container  {
+      color: <?php echo get_theme_mod('header_text_color'); ?>;
+      background-color: <?php echo get_theme_mod('header_background_color'); ?>;
+    }
+
+    .singlepostnav-right-container a {
+      color: <?php echo get_theme_mod('header_text_color'); ?>;
+    }
+
+    .singlepostnav-left-container a {
+      color: <?php echo get_theme_mod('header_text_color'); ?>;
+    }
+
+    .singlepostnav-right-container a:hover {
+      color: <?php echo get_theme_mod('header_text_hover_color'); ?>;
+    }
+
+    .singlepostnav-left-container a:hover {
+      color: <?php echo get_theme_mod('header_text_hover_color'); ?>;
+    }
+
+
+
+
 </style>
 <section class="featured-post-container">
   <?php require get_template_directory() . '/inc/template-parts/index/blogbanner.php'; ?>
@@ -95,6 +125,7 @@
 
       <?php if( have_posts() ):
         while( have_posts() ): the_post(); ?>
+         <?php trek_save_post_views( get_the_ID() ); ?>
         <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 
         <?php if(( get_theme_mod('singlepost_layout_radio_button') ) == 'singlepost_optionone') { ?>
@@ -116,8 +147,10 @@
       <?php  endwhile; ?>
     <?php endif; ?>
 
+    <?php echo trek_post_navigation() ?>
 
     </div>
+
   </div>
 
 
