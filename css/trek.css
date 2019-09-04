@@ -673,11 +673,12 @@ display: none;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  font-size: 15px;
-  padding-bottom: 40px;
+  font-size: 14px;
+  padding-bottom: 30px;
   padding-top: 30px;
-  letter-spacing: 6px;
+  letter-spacing: 3px;
   text-transform: uppercase;
+  line-height: 1.6em;
 }
 
 .trek-widget-width-container {
@@ -751,6 +752,84 @@ display: none;
   padding-bottom: 3px;
   letter-spacing: 2px;
 
+}
+
+.archive-dropdown {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.widget_archive select {
+  margin-left: 10%;
+  margin-bottom: 30px;
+
+
+}
+
+.trek-widget table {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+
+}
+
+.trek-widget table caption {
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 3px;
+  padding-bottom: 20px;
+}
+
+.trek-widget td {
+  text-align: center;
+  font-size: 12px;
+  padding-top: 15px;
+}
+
+.trek-widget thead th {
+  font-size: 13px;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+
+.trek-widget #prev  {
+  padding-top: 10px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.trek-widget #next {
+  padding-top: 10px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.trek-widget img {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.trek-widget .gallery {
+  padding-bottom: 30px;
+}
+
+ .widget_media_image .trek-widget-width-container {
+  padding-bottom: 30px;
+}
+
+.widget_recent_entries .post-date  {
+  display: block;
+}
+
+.widget_recent_entries a {
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 2em;
 }
 
 
@@ -945,6 +1024,7 @@ display: none;
 ul.page-numbers {
     list-style: none;
     margin: 0;
+
 }
 
 .page-numbers:after {
@@ -1223,11 +1303,59 @@ ul.page-numbers li {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 40px;
+  padding-top: 30px;
   padding-bottom: 40px;
   line-height: 1.3em;
 }
 
 .capitalise {
   text-transform: uppercase;
+}
+
+
+
+
+
+
+/*  link to page widget  */
+
+.trek-linktopage-backgroundimage-container {
+  width:100%;
+  height: 150px;
+}
+
+.trek-linktopage-title-container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 3px;
+  padding-top: 20px;
+}
+
+.trek-linktopage-description-container {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 11px;
+  padding-top: 20px;
+}
+
+
+.trek-linktopage-readmore-container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
+
+.trek-linktopage-readmore-container a {
+  letter-spacing: 7px;
+  font-size: 11px;
 }

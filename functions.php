@@ -25,3 +25,4 @@ require get_template_directory() . '/inc/widgets/aboutme-widget.php';
 require get_template_directory() . '/inc/widgets/currentlocation-widget.php';
 require get_template_directory() . '/inc/widgets/socialmedia-widget.php';
 require get_template_directory() . '/inc/widgets/popularposts-widget.php';
+require get_template_directory() . '/inc/widgets/linktopage-widget.php';
