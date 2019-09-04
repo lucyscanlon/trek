@@ -1199,3 +1199,35 @@ ul.page-numbers li {
   font-size: 17px;
 
 }
+
+
+
+/*  popular posts widget   */
+
+
+.trek-popularposts-whole-container {
+  width: 100%;
+}
+.trek-popularposts-title-container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding-top: 30px;
+}
+
+.trek-popularpost-list-container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  line-height: 1.3em;
+}
+
+.capitalise {
+  text-transform: uppercase;
+}

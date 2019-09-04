@@ -42,7 +42,7 @@ class trek_aboutme_widget extends WP_Widget {
     <p>
       <label for="<?php echo esc_attr( $this->get_field_id( 'profilePicture' ) ); ?>"><?php esc_html_e( 'Profile Picture:', 'trek' ); ?></label>
       <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'profilePicture' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'profilePicture' ) ); ?>" type="text" value="<?php echo esc_url( $profilePicture ); ?>"/>
-      <button class="upload_image_button button button-primary" style="margin-top: 10px;">Upload a Profile Image</button>
+      <button class="upload_image_button button button-primary">Upload a Profile Image</button>
     </p>
     <p>
              <label for="<?php echo esc_attr( $this->get_field_id( 'name' ) ); ?>"><?php esc_html_e( 'Name:', 'trek' ); ?></label>
