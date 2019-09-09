@@ -424,7 +424,7 @@ display: none;
 .widepostlayout-categories-container li {
   display: inline;
   letter-spacing: 10px;
-  font-size: 11px;
+  font-size: 10px;
   padding-left: 13px;
   padding-right: 13px;
 
@@ -436,8 +436,9 @@ display: none;
   margin-right: auto;
   text-align: center;
   font-size: 35px;
-  padding-top: 15px;
+  padding-top: 35px;
   letter-spacing: 5px;
+  padding-bottom: 10px;
 }
 
 .widepostlayout-meta-container {
@@ -447,7 +448,7 @@ display: none;
   text-align: center;
   letter-spacing: 4px;
   font-size: 10px;
-  padding-top: 10px;
+  padding-top: 20px;
   text-transform: uppercase;
 }
 
@@ -478,8 +479,8 @@ display: none;
   text-transform: uppercase;
   letter-spacing: 10px;
   font-size: 10px;
-  padding-top: 10px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 50px;
 }
 
 
@@ -519,7 +520,6 @@ display: none;
 
 
 .gridpostlayout-info-categories-readmore-container {
-  width: 90%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 30px;
@@ -537,7 +537,7 @@ display: none;
 .gridpostlayout-info-categories-container li {
   display: inline;
   text-transform: uppercase;
-  font-size: 11px;
+  font-size: 10px;
   letter-spacing: 7px;
   padding-right: 14px;
 
@@ -555,21 +555,21 @@ display: none;
 }
 
 .gridpostlayout-title-container {
-  width: 90%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   text-align: left;
   font-size: 60px;
-  padding-top: 10px;
-  padding-bottom: 20px;
+  padding-top: 35px;
+  padding-bottom: 30px;
   overflow: auto;
 }
 
 .gridpostlayout-meta-container {
-  width: 90%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .gridpostlayout-meta-container li {
@@ -581,7 +581,7 @@ display: none;
 }
 
 .gridpostlayout-excerpt-container {
-  width: 90%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   font-size: 13px;
@@ -591,7 +591,7 @@ display: none;
 }
 
 .gridpostlayout-readmore-container {
-  width: 90%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   text-transform: uppercase;
@@ -855,13 +855,14 @@ display: none;
 }
 
 .singlepost1-title-container {
-  width: 75%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  font-size: 40px;
+  font-size: 35px;
   padding-top: 40px;
   padding-bottom: 20px;
+  letter-spacing: 5px;
 
 }
 

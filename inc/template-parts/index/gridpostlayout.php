@@ -58,17 +58,18 @@
 </style>
 
 <div class="gridpostlayout-post-container">
+  <?php if ( has_post_thumbnail( get_the_ID() ) ) {?>
   <div class="gridpostlayout-featuredimage-container" style="background: url('<?php echo $backgroundImg[0]; ?>'); background-size: cover; background-position: center center;">
 
   </div>
-  <div class="gridpostlayout-information-container">
-      <div class="gridpostlayout-info-categories-readmore-container">
+  <?php }  ?>
+  <div class="gridpostlayout-information-container" style="<?php if ( has_post_thumbnail( get_the_ID() ) ) { ?> width: 60%; <?php } else { ?> width: 100%; <?php } ?>">
+      <div class="gridpostlayout-info-categories-readmore-container" style="<?php if ( has_post_thumbnail( get_the_ID() ) ) { ?> width: 90%; <?php } else { ?> width: 94%; <?php } ?>">
         <?php if (( get_theme_mod('toggle_blog_categories') ) == 1) { ?>
         <div class="gridpostlayout-info-categories-container Montserrat">
           <p><?php the_category(); ?></p>
         </div>
       <?php } ?>
-      </div>
       <div class="gridpostlayout-title-container ReenieBeanie">
         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
       </div>
@@ -100,6 +101,7 @@
       </div>
       <div class="gridpostlayout-readmore-container Montserrat">
         <a href="<?php the_permalink(); ?>"><h3>Read More</h3></a>
+      </div>
       </div>
   </div>
 

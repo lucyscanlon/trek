@@ -47,7 +47,7 @@
 
 </style>
 
-<div class="imagepostlayout-post-container" style="background:radial-gradient(circle, rgba(0,0,0,0.4 ) 20%, rgba(0,0,0,0) 92%), url('<?php echo $backgroundImg[0]; ?>'); background-size: cover; background-position: center center;">
+<div class="imagepostlayout-post-container" style="<?php if ( has_post_thumbnail( get_the_ID() ) ) {?> background:radial-gradient(circle, rgba(0,0,0,0.4 ) 20%, rgba(0,0,0,0) 92%), url('<?php echo $backgroundImg[0]; ?>'); background-size: cover; background-position: center center; <?php } else {?> background-color: <?php get_theme_mod('header_background_color'); ?>; <?php } ?>">
   <div class="imagepostlayout-title-container ReenieBeanie">
     <a href="<?php the_permalink(); ?>"><h1><?php the_title(); ?></h1></a>
   </div>
