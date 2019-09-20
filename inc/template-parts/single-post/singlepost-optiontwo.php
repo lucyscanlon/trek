@@ -60,9 +60,11 @@
 
   </ul></p>
   </div>
+  <?php if ( has_post_thumbnail( get_the_ID()  ) ) { ?>
   <div class="singlepost2-featuredimage-container" style="background: url('<?php echo $backgroundImg[0]; ?>'); background-size: cover; background-position: center center;">
 
   </div>
+<?php } ?>
   <div class="singlepost-content-container Montserrat">
     <?php echo the_content(); ?>
   </div>

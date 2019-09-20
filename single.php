@@ -78,29 +78,46 @@
 
 
     .singlepostnav-right-container {
-      color: <?php echo get_theme_mod('header_text_color'); ?>;
-      background-color: <?php echo get_theme_mod('header_background_color'); ?>;
+      color: <?php echo get_theme_mod('single_navigation_text_color'); ?>;
+      background-color: <?php echo get_theme_mod('single_navigation_background_color'); ?>;
     }
 
     .singlepostnav-left-container  {
-      color: <?php echo get_theme_mod('header_text_color'); ?>;
-      background-color: <?php echo get_theme_mod('header_background_color'); ?>;
+      color: <?php echo get_theme_mod('single_navigation_text_color'); ?>;
+      background-color: <?php echo get_theme_mod('single_navigation_background_color'); ?>;
     }
 
     .singlepostnav-right-container a {
-      color: <?php echo get_theme_mod('header_text_color'); ?>;
+      color: <?php echo get_theme_mod('single_navigation_text_color'); ?>;
     }
 
     .singlepostnav-left-container a {
-      color: <?php echo get_theme_mod('header_text_color'); ?>;
+      color: <?php echo get_theme_mod('single_navigation_text_color'); ?>;
     }
 
     .singlepostnav-right-container a:hover {
-      color: <?php echo get_theme_mod('header_text_hover_color'); ?>;
+      color: <?php echo get_theme_mod('single_navigation_text_hover_color'); ?>;
     }
 
     .singlepostnav-left-container a:hover {
-      color: <?php echo get_theme_mod('header_text_hover_color'); ?>;
+      color: <?php echo get_theme_mod('single_navigation_text_hover_color'); ?>;
+    }
+
+    .singlepost3-whole-container a {
+      color: <?php echo get_theme_mod('header_text_hover_color');?>;
+    }
+
+    .singlepost2-whole-container a {
+      color: <?php echo get_theme_mod('header_text_hover_color');?>;
+    }
+
+    .singlepost1-whole-container a {
+      color: <?php echo get_theme_mod('header_text_hover_color');?>;
+    }
+
+    .wp-block-tag-cloud a {
+      background-color: <?php echo get_theme_mod('header_background_color'); ?>;
+
     }
 
 

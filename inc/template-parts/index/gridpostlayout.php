@@ -100,7 +100,7 @@
         </p>
       </div>
       <div class="gridpostlayout-readmore-container Montserrat">
-        <a href="<?php the_permalink(); ?>"><h3>Read More</h3></a>
+        <a href="<?php the_permalink(); ?>"><p>Read More</p></a>
       </div>
       </div>
   </div>

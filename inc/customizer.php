@@ -1019,6 +1019,77 @@ function trek_lucyisobel_custom_settings($wp_customize){
         'settings'=> 'toggle_blog_comments'
       )));
 
+      //no featured image section notice
+      $wp_customize->add_setting('blog_no_featured_image_notice');
+
+
+      $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'blog_no_featured_image_notice', array(
+        'label' => __('No Featured Image Settings', 'Trek'),
+        'description' => __('Change the appearance of your posts if they do not have a featured image', 'trek'),
+        'section' => 'blog_section',
+        'settings' => 'blog_no_featured_image_notice'
+      )));
+
+
+
+      //creating the control for the background color of the 3rd post display option if there is no featured image
+        $wp_customize->add_setting('no_featured_image_color_control', array(
+          'default' => get_theme_mod('header_background_color'),
+          'transport' => 'refresh',
+
+        ));
+
+        $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'no_featured_image_color_control', array(
+          'label' => __('Background Color of featured image box', 'Trek'),
+          'description' => __('This only applies if the 4th display option is chosen in the blog settings or 3rd display option is chosen in the post settings, and if no featured image is assigned to the post. The default color is your header background color, however you can change this individual setting here without affecting the header.', 'Trek'),
+          'section' => 'blog_section',
+          'settings' => 'no_featured_image_color_control'
+        )));
+
+
+        // navigation colors
+        $wp_customize->add_setting('navigation_color_control');
+
+
+        $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'navigation_color_control', array(
+          'label' => __('Blog Navigation Colors', 'Trek'),
+          'description' => __('Change the appearance of the navigation on your blog page. The defaults of these settings correspond with the heading color settings, however you can change these settings individually here.', 'Trek'),
+          'section' => 'blog_section',
+          'settings' => 'navigation_color_control'
+        )));
+
+
+        //background-color of navigation
+        $wp_customize->add_setting('navigation_background_color', array(
+          'default' => get_theme_mod('header_background_color'),
+          'transport' => 'refresh',
+
+        ));
+
+        $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'navigation_background_color', array(
+          'label' => __('Background Color of Navigation', 'Trek'),
+          'description' => __('This changes the background color of the active page button', 'Trek'),
+          'section' => 'blog_section',
+          'settings' => 'navigation_background_color'
+        )));
+
+
+        //color of navigation
+        $wp_customize->add_setting('navigation_text_color', array(
+          'default' => get_theme_mod('header_text_color'),
+          'transport' => 'refresh',
+
+        ));
+
+        $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'navigation_text_color', array(
+          'label' => __('Text Color of Navigation', 'Trek'),
+          'description' => __('This changes the text color of the active page button', 'Trek'),
+          'section' => 'blog_section',
+          'settings' => 'navigation_text_color'
+        )));
+
+
+
 
 
       //single posts section
@@ -1141,6 +1212,65 @@ function trek_lucyisobel_custom_settings($wp_customize){
         )));
 
 
+        //single post navigation color control notice
+        $wp_customize->add_setting('singlepost_navigation_notice');
+
+
+        $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'singlepost_navigation_notice', array(
+          'label' => __('Single Post Navigation Color Controls', 'Trek'),
+          'description' => __('The defaults color settings for your navigation correspond to the colors of your header. However you can change these individually here.', 'trek'),
+          'section' => 'singlepost_section',
+          'settings' => 'singlepost_navigation_notice'
+        )));
+
+
+        //background-color of single navigation
+        $wp_customize->add_setting('single_navigation_background_color', array(
+          'default' => get_theme_mod('header_background_color'),
+          'transport' => 'refresh',
+
+        ));
+
+        $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'single_navigation_background_color', array(
+          'label' => __('Background Color of Navigation', 'Trek'),
+          'description' => __('This changes the background color of the navigation bar', 'Trek'),
+          'section' => 'singlepost_section',
+          'settings' => 'single_navigation_background_color'
+        )));
+
+
+        //color of single navigation
+        $wp_customize->add_setting('single_navigation_text_color', array(
+          'default' => get_theme_mod('header_text_color'),
+          'transport' => 'refresh',
+
+        ));
+
+        $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'single_navigation_text_color', array(
+          'label' => __('Text Color of Navigation', 'Trek'),
+          'description' => __('This changes the text color of the link', 'Trek'),
+          'section' => 'singlepost_section',
+          'settings' => 'single_navigation_text_color'
+        )));
+
+
+        //color of single navigation
+        $wp_customize->add_setting('single_navigation_text_hover_color', array(
+          'default' => get_theme_mod('header_text_hover_color'),
+          'transport' => 'refresh',
+
+        ));
+
+        $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'single_navigation_text_hover_color', array(
+          'label' => __('Text Hover Color of Navigation', 'Trek'),
+          'description' => __('This changes the text hover color of the link', 'Trek'),
+          'section' => 'singlepost_section',
+          'settings' => 'single_navigation_text_hover_color'
+        )));
+
+
+
+
 
 
 
@@ -1162,7 +1292,7 @@ $homepage_background_image = get_theme_mod( 'homepage_background_image' );
 add_action('customize_register', 'trek_lucyisobel_custom_settings');
 
 
-//adding the styles in the head of the website
+//adding the styles from the customiser for the header in the head of the website
 function trek_customizer_css(){ ?>
   <style type="text/css">
 

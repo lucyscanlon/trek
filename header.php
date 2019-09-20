@@ -18,6 +18,7 @@
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Reenie+Beanie&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500i,700,700i&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/978397fef6.js"></script>
 
   <?php wp_head(); ?>

@@ -612,7 +612,7 @@ display: none;
 
 .imagepostlayout-post-container {
   width: 100%;
-  margin-bottom: 50px;
+
 }
 
 
@@ -626,10 +626,12 @@ display: none;
   color: white;
   text-shadow: black 3px 3px;
   padding-top: 180px;
+  padding-bottom: 20px;
 }
 
 .imagepostlayout-meta-container {
   text-align: center;
+  padding-bottom: 180px;
 }
 
 .imagepostlayout-meta-container li {
@@ -637,9 +639,10 @@ display: none;
   text-transform: uppercase;
   letter-spacing: 5px;
   color: white;
-  font-size: 12px;
+  font-size: 10px;
   padding-left: 7px;
   padding-right: 7px;
+
 
 }
 
@@ -652,8 +655,53 @@ display: none;
   color: white;
   text-transform: uppercase;
   letter-spacing: 7px;
-  font-size: 13px;
+  font-size: 10px;
   padding-bottom: 200px;
+}
+
+.imagepost-excerpt-whole-container {
+  background-color: white;
+  margin-bottom: 50px;
+}
+
+.imagepost-excerpt-container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.imagepost-readmore-container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  font-size: 10px;
+  padding-bottom: 60px;
+}
+
+.imagepost-category-container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  font-size: 11px;
+  padding-top: 20px;
+}
+
+.imagepost-category-container li {
+  display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
+
 }
 
 
@@ -735,6 +783,8 @@ display: none;
   font-family: Montserrat;
   margin-top: 20px;
   margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .trek-widget .tagcloud {
@@ -912,7 +962,8 @@ display: none;
 }
 
 .singlepost-content-container p {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
+  padding-top: 10px;
   font-size: 14px;
 }
 
@@ -993,6 +1044,7 @@ display: none;
   text-shadow: 6px 6px black;
   font-size: 45px;
   padding-top: 200px;
+  padding-bottom: 20px;
 }
 
 .singlepost3white {
@@ -1359,4 +1411,371 @@ ul.page-numbers li {
 .trek-linktopage-readmore-container a {
   letter-spacing: 7px;
   font-size: 11px;
+}
+
+
+
+
+
+
+
+/* gutenberg styling */
+
+
+/* images */
+
+
+
+.wp-block-image .aligncenter {
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.wp-block-image .alignleft {
+    margin-right: 2em;
+}
+
+.wp-block-image .alignright {
+    margin-left: 2em;
+}
+
+.wp-block-gallery {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+
+/* cover images */
+
+
+
+.wp-block-cover__inner-container .has-large-font-size {
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: 4px;
+}
+
+.wp-block-cover {
+  margin: 30px 0;
+}
+
+
+
+/* headings */
+
+
+
+.singlepost-content-container h2 {
+  margin: 20px 0;
+
+}
+
+.singlepost-content-container h3 {
+  margin: 12px 0;
+}
+
+.singlepost-content-container h4 {
+  margin: 12px 0;
+}
+
+
+.singlepost-content-container ul {
+  margin-left: 20px;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.singlepost-content-container ol {
+  margin-left: 20px;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+/*   quote   */
+
+
+
+.singlepost-content-container .wp-block-quote {
+  width: 85%;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.singlepost-content-container .wp-block-quote p {
+  font-size: 22px;
+  font-style: italic;
+  letter-spacing: 3px;
+}
+
+.singlepost-content-container .wp-block-quote cite {
+  color: grey;
+  font-size: 13px;
+
+}
+
+
+
+/* audio and video embed */
+
+
+
+.wp-block-embed__wrapper iframe {
+  width: 100%;
+  margin: 20px auto;
+  min-height: 450px;
+}
+
+
+/*   file upload  */
+
+
+
+.wp-block-file {
+  margin: 10px 0;
+}
+
+
+
+
+/* code */
+
+
+
+.wp-block-code {
+  width: 95%;
+  background-color: #F1F3F4;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+
+
+
+
+
+/* pullquote */
+
+
+
+.singlepost-content-container .wp-block-quote {
+  width: 85%;
+  margin: 30px auto;
+  text-align: center;
+
+}
+
+.singlepost-content-container .wp-block-pullquote p {
+  font-size: 22px;
+  font-style: italic;
+  letter-spacing: 3px;
+}
+
+.singlepost-content-container .wp-block-pullquote cite {
+  color: grey;
+  font-size: 13px;
+
+}
+
+
+
+/* table */
+
+
+
+.wp-block-table {
+    display: table;
+    width: 90%;
+    margin: 30px auto;
+
+}
+
+.wp-block-table th {
+    text-align:         left;
+    padding:            5px 5px;
+
+}
+
+.wp-block-table td {
+    margin:             0;
+    padding:            5px 5px;
+
+}
+
+.is-style-regular td {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+
+
+/* preformatted */
+
+
+
+.wp-block-preformatted {
+  width: 95%;
+  margin: 30px auto;
+  padding: 20px 20px;
+  background-color: #F1F3F4;
+
+}
+
+
+
+
+
+/* verse   */
+
+
+
+.wp-block-verse {
+  margin: 20px auto;
+  background-color: #F1F3F4;
+  padding: 20px;
+  width: 95%;
+  text-align: left;
+  border-left: solid 2.5px darkgrey;
+}
+
+
+
+
+/*  button  */
+
+
+
+.wp-block-button__link {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 4px;
+  padding: 10px 30px;
+  transition-duration: 1s;
+  margin: 20px 0;
+}
+
+.wp-block-button__link:hover {
+  letter-spacing: 5px;
+  transition-duration: 1s;
+}
+
+
+
+/* media with text */
+
+
+.wp-block-media-text p {
+  font-size: 30px;
+  line-height: 1.3em;
+}
+
+.wp-block-media-text {
+  margin: 30px auto;
+}
+
+
+
+/*   Seperator   */
+
+
+
+.wp-block-separator {
+  width: 75%;
+  margin: 50px auto;
+
+}
+
+hr {
+  height: 6px;
+	background: url(http://ibrahimjabbari.com/images/hr-11.png) repeat-x 0 0;
+    border: 0;
+}
+
+
+
+/* calender */
+
+
+.wp-block-calendar {
+  margin: 20px auto;
+  width: 90%;
+
+}
+
+
+
+/* comments widget */
+
+
+
+.wp-block-latest-comments {
+  margin: 20px auto;
+}
+
+
+
+/* search */
+
+
+.wp-block-search {
+  margin: 50px auto;
+}
+
+.wp-block-search__input {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  padding-left: 10px;
+  border: solid lightgrey 1.5px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+}
+
+.wp-block-search__button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border: solid lightgrey 1.5px;
+  border-radius: 5px;
+  letter-spacing: 2px;
+
+
+}
+
+.wp-block-search__label {
+  width: 80%;
+  margin:  0 auto;
+  padding-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 14px;
+}
+
+
+
+/* tag cloud block */
+
+
+
+.wp-block-tag-cloud {
+  width: 70%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.wp-block-tag-cloud a {
+  padding: 8px 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 10px;
 }

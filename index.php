@@ -76,8 +76,8 @@
       .page-numbers a:hover,
       .page-numbers.current,
       .page-numbers.current:hover {
-        color: <?php echo get_theme_mod('header_text_color'); ?>;
-        background-color: <?php echo get_theme_mod('header_background_color'); ?>;
+        color: <?php echo get_theme_mod('navigation_text_color'); ?>;
+        background-color: <?php echo get_theme_mod('navigation_background_color'); ?>;
         text-decoration: none;
       }
 

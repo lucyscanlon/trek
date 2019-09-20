@@ -108,10 +108,10 @@ function trek_post_navigation(){
 
   $nav = '<div class="single-post-navigation Montserrat">';
 
-  $prev = get_previous_post_link( '<div class="single-link-nav">%link →</div>', '%title');
+  $prev = get_previous_post_link( '<div class="single-link-nav">%link →</div>', '<i>(Previous)</i> %title');
   $nav .= '<div class="text-right singlepostnav-right-container" style="width: 50%; float: right;">' . $prev . '</div>';
 
-  $next = get_next_post_link('<div class="post-link-nav">← %link</div>', '%title');
+  $next = get_next_post_link('<div class="post-link-nav">← %link</div>', '<i>(Newer)</i> %title');
   $nav .= '<div class="text-right singlepostnav-left-container" style="width: 50%; float: left;">' . $next . '</div>';
 
   $nav .= '</div>';
