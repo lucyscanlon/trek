@@ -120,6 +120,19 @@
 
     }
 
+    .singlepost-author-title-container a {
+      color: <?php echo get_theme_mod('blog_page_link_color'); ?>
+    }
+
+    .singlepost-author-title-container a:hover {
+      color: <?php echo get_theme_mod('blog_page_link_hover_color'); ?>
+    }
+
+    .singlepost-author-website-container a:hover {
+      color: <?php echo get_theme_mod('blog_page_link_hover_color'); ?>
+
+    }
+
 
 
 
@@ -164,7 +177,11 @@
       <?php  endwhile; ?>
     <?php endif; ?>
 
+    <?php // gets the template for the single post navigation bar - located in theme-support.php ?>
     <?php echo trek_post_navigation() ?>
+
+    <?php // gets the template for the author box ?>
+    <?php require get_template_directory() . '/inc/template-parts/single-post/authorbox.php'; ?>
 
     </div>
 
@@ -177,8 +194,7 @@
     <div class="blog-sidebar-container">
       <?php get_sidebar(); ?>
     </div>
-
+    </div>
   </div>
-</div>
 
 <?php get_footer(); ?>

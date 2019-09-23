@@ -958,7 +958,7 @@ display: none;
   letter-spacing: 1px;
   line-height: 1.5em;
   padding-top: 30px;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
 }
 
 .singlepost-content-container p {
@@ -1027,7 +1027,7 @@ display: none;
 .singlepost3-whole-container {
   width: 100%;
   background-color: white;
-  margin-bottom: 100px;
+  margin-bottom: 25px;
 }
 
 .singlepost3-featuredimage-container {
@@ -1141,6 +1141,7 @@ ul.page-numbers li {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  margin-bottom: 25px;
 }
 
 .singlepostnav-right-container {
@@ -1173,6 +1174,113 @@ ul.page-numbers li {
   padding-left: 20px;
 }
 
+
+/* single post tags and likes section   */
+
+.singlepost-tags-like-whole-container {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.singlepost-tags-container {
+  width: 50%;
+  height: 50px;
+  display: inline;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 9px;
+  padding-left: 40px;
+
+}
+
+.singlepost-tags-container a {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.singlepost-like-container {
+  width: 50%;
+  background-color: purple;
+  display: inline;
+}
+
+
+
+/*  author box and buy theme section  */
+
+.trek-singlepost-author-theme-whole-container {
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+}
+
+.singlepost-author-whole-container {
+  width: 100%;
+  float: left;
+  background-color: white;
+  display: inline;
+}
+
+
+
+.singlepost-avatar-container {
+  width: 140px;
+  height: 150px;
+  float: left;
+}
+
+.singlepost-info-container {
+  width: calc(100% - 140px);
+  float: right;
+}
+
+.singlepost-author-avatar-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  overflow: hidden;
+  margin: 23px auto;
+}
+
+.singlepost-author-title-container {
+  width: 94%;
+  float: left;
+  margin-top: 25px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  margin-bottom: 5px;
+
+}
+
+.singlepost-author-description-container {
+  font-size: 11px;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+  width: 94%;
+  padding-bottom: 15px;
+
+}
+
+.singlepost-author-website-container {
+  padding-bottom: 25px;
+  color: rgba( 0,0,0,0.7);
+  font-size: 12px;
+  width: 90%;
+
+
+}
+
+.singlepost-author-website-container a {
+  color: rgba( 0,0,0,0.7);
+  letter-spacing: 1px;
+}
 
 
 

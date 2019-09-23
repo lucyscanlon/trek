@@ -1269,6 +1269,33 @@ function trek_lucyisobel_custom_settings($wp_customize){
         )));
 
 
+        //single post author box notice
+        $wp_customize->add_setting('singlepost_authorbox_notice');
+
+
+        $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'singlepost_authorbox_notice', array(
+          'label' => __('Single Post Author Box Controls', 'Trek'),
+          'description' => __('An author box lives at the bottom of your posts and tells the reader some information about the author. This information can be edited in the users section in the dashboard.', 'trek'),
+          'section' => 'singlepost_section',
+          'settings' => 'singlepost_authorbox_notice'
+        )));
+
+
+        //single post author box toggle
+        $wp_customize->add_setting('toggle_singlepost_authorbox', array(
+          'default' => 1,
+          'transport' => 'refresh',
+
+        ));
+
+        $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'toggle_singlepost_authorbox', array(
+          'label' => __('Display Author Box', 'Trek'),
+          'description' => __('If your blog has only one user, this might not be necessary.', 'trek'),
+          'section' => 'singlepost_section',
+          'settings'=> 'toggle_singlepost_authorbox'
+        )));
+
+
 
 
 

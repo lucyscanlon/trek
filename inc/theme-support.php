@@ -118,3 +118,11 @@ function trek_post_navigation(){
 
   return $nav;
 }
+
+
+
+/* fetching single post tags and adding a hastag infront  */
+
+function trek_get_tags() {
+  return get_the_tag_list('<div class="tags-list">#', ' #', '</div>');
+}
