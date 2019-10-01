@@ -1,9 +1,16 @@
+<?php
+  $noAvatar = get_template_directory_uri() . '/img/noavatar.svg';
+?>
 <div class="trek-singlepost-author-theme-whole-container">
   <div class="singlepost-author-whole-container">
     <div class="singlepost-avatar-container">
       <div class="singlepost-author-avatar-circle">
         <span alt="Photo of <?php the_author_meta( 'display_name' ); ?>">
-          <?php if(function_exists( 'get_avatar' ) ) { echo get_avatar( get_the_author_meta( 'email'), '100' ); } ?>
+          <?php if( get_avatar( get_current_user_id() ) ) {
+            echo get_avatar( get_the_author_meta( 'email'), '100' );
+          } else {
+          echo '<img alt="no-image" src="'.$noAvatar.'" class="avatar avatar-64 photo" height="100" width="100">';
+          }?>
         </span>
       </div>
     </div>

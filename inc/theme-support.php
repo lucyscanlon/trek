@@ -24,6 +24,7 @@ add_action( 'after_setup_theme', function(){
 }, 11 );
 
 
+/*  function for retrieveing comment info   */
 function trek_comments() {
   $comments_num = get_comments_number();
   $comments;
@@ -33,7 +34,7 @@ function trek_comments() {
     } else if ( $comments_num > 1) {
       $comments = $comments_num . __(' Comments', 'trek');
     } else {
-      $comments = __('1 Comment', 'Trek');
+      $comments = __('1 Comment', 'trek');
     }
     $comments = '<a href="'. get_comments_link() . '"><span></span>' . $comments . '</a>';
   } else {
@@ -125,4 +126,23 @@ function trek_post_navigation(){
 
 function trek_get_tags() {
   return get_the_tag_list('<div class="tags-list">#', ' #', '</div>');
+}
+
+
+
+
+/* adding html features  */
+add_theme_support( 'html5', array( 'comment-list', 'commentform') );
+
+
+
+//collecting the template for the comment section naviagtion
+function trek_get_post_navigation() {
+
+  if( get_comment_pages_count() > 1 && get_option('page_comments') ):
+
+    require get_template_directory() . '/inc/template-parts/single-post/comments-navigation.php';
+
+
+  endif;
 }

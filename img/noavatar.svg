@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="100" width="100">
+  <defs>
+    <ellipse id="ellipse-1" opacity="1" rx="50" ry="50" cx="50" cy="50"/>
+    <rect id="rect-2" opacity="1" x="40.03554678901946" y="17.012272317913677" width="20.043147677698585" height="57.79996401515325"/>
+    <rect id="rect-3" opacity="1" x="44.044176324559544" y="25.100399722625006" width="5.010786919424641" height="41.45165294914557"/>
+    <path id="path-4" opacity="1" fill-rule="evenodd" d="M40.03554678901946,11.902113062024542 C40.03554678901946,9.140689312870574 42.27412303986549,6.90211306202454 45.03554678901946,6.90211306202454 L55.07869446671805,6.902113062024541 C57.84011821587201,6.902113062024539 60.07869446671805,9.140689312870574 60.07869446671805,11.902113062024542 L60.07869446671805,14.990240466735862 L40.03554678901946,14.990240466735862 L40.03554678901946,11.902113062024542Z"/>
+    <rect id="rect-5" opacity="1" x="40.03554678901946" y="14.990240466735862" width="20.043147677698585" height="2.022031851177834"/>
+    <path id="path-6" opacity="1" fill-rule="evenodd" d="M40.03554678901946,74.64018007648195 L50.057120627868755,92.83846673708243 L60.07869446671805,74.64018007648195 L40.03554678901946,74.64018007648195Z"/>
+    <path id="path-7" opacity="1" fill-rule="evenodd" d="M44.044176324559544,74.64018007648195 L55.568986239236224,74.64018007648195 L50.05712062786912,87.27787914634342 L44.044176324559544,74.64018007648195Z"/>
+    <rect id="rect-8" opacity="1" x="48.05280586009877" y="83.73932340678216" width="4.008629535539715" height="4.044063702355672"/>
+  </defs>
+  <g opacity="1">
+    <g opacity="1">
+      <use xlink:href="#ellipse-1" fill="rgb(91,90,90)" fill-opacity="1"/>
+    </g>
+    <g transform="translate(50.057120627868755, 49.870289899553484) rotate(44.00001573282335) translate(-50.057120627868755, -49.870289899553484)" opacity="1">
+      <g opacity="1">
+        <use xlink:href="#rect-2" fill="rgb(255,255,255)" fill-opacity="1"/>
+      </g>
+      <g opacity="1">
+        <use xlink:href="#rect-3" fill="rgb(91,90,90)" fill-opacity="1"/>
+      </g>
+      <g opacity="1">
+        <use xlink:href="#path-4" fill="rgb(255,255,255)" fill-opacity="1"/>
+      </g>
+      <g opacity="1">
+        <use xlink:href="#rect-5" fill="rgb(91,90,90)" fill-opacity="1"/>
+      </g>
+      <g opacity="1">
+        <use xlink:href="#path-6" fill="rgb(255,255,255)" fill-opacity="1"/>
+      </g>
+      <g opacity="1">
+        <use xlink:href="#path-7" fill="rgb(91,90,90)" fill-opacity="1"/>
+      </g>
+      <g opacity="1">
+        <use xlink:href="#rect-8" fill="rgb(255,255,255)" fill-opacity="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

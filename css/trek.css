@@ -1217,6 +1217,7 @@ ul.page-numbers li {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  margin-bottom: 25px;
 
 }
 
@@ -1886,4 +1887,267 @@ hr {
   text-transform: uppercase;
   letter-spacing: 1px;
   border-radius: 10px;
+}
+
+
+
+
+
+/*   comments section   */
+
+.comments-whole-container {
+  width: 100%;
+  background-color: white;
+}
+
+.comments-title-wrap {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.comments-title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 16px;
+  letter-spacing: 5px;
+}
+
+.comment-reply-title {
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 5px;
+  font-weight: 300;
+}
+
+.comment-form #comment {
+  width: 100%;
+  font-size: 14px;
+  font-family: Montserrat;
+  padding: 10px;
+  outline: none;
+  border: solid 1px #B2B2B2 !important;
+  margin-top: 10px;
+  -webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+
+}
+
+.comment-form input {
+  display: block;
+}
+
+.comment-form label {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+.comment-respond {
+  width: 85%;
+  margin: 0px auto;
+}
+
+.comment-notes {
+  text-align: center;
+  letter-spacing: 5px;
+  font-size: 10px;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.author-group input {
+  width: 100%;
+  height: 40px;
+  border: solid 1px #B2B2B2 !important;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+margin-top: 10px;
+font-size: 14px;
+font-family: Montserrat;
+}
+
+.form-group input {
+  width: 100%;
+  height: 40px;
+  border: solid 1px #B2B2B2 !important;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+margin-top: 10px;
+font-size: 14px;
+font-family: Montserrat;
+}
+
+.comment-form-cookies-consent input {
+  display: inline;
+  margin-right: 10px;
+  height: 15px;
+  width: 15px;
+}
+
+.comment-form-cookies-consent label {
+  display: inline;
+}
+
+.comment-form-cookies-consent {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.form-submit {
+  width: 200px;
+  margin: 0px auto;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+.form-submit input {
+  font-family: Montserrat;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: center;
+  padding: 10px 20px 10px 20px;
+  transition-duration: 1s;
+  border: none;
+}
+
+.logged-in-as {
+  font-size: 10px;
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+
+.comment article {
+  position: relative;
+  left: 120px;
+}
+
+.comment {
+  margin-bottom: 40px;
+
+}
+
+.comments li {
+  list-style-type: none;
+}
+
+.comments {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* .comment-author img {
+  border-radius: 25px;
+  margin-left: 50px;
+} */
+
+.comment-author {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 12px;
+  padding-bottom: 3px;
+}
+
+.comment-metadata  {
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: 3px;
+  color: rgba(0,0,0,0.5);
+}
+
+.comment-metadata a {
+  color: rgba(0,0,0,.5);
+}
+
+.comment-content {
+  font-size: 14px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  letter-spacing: 1px;
+  line-height: 1.3em;
+  width: calc(100% - 240px);
+}
+
+.comments .reply {
+  width: 80px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 10px;
+  text-align: center;
+
+}
+
+.comments .parent article {
+  margin-bottom: 30px;
+
+}
+
+.comments .children .depth-2 article  {
+  position: relative;
+  left: 180px;
+  width: 100%;
+
+}
+
+.comments .children .depth-2 article .comment-content {
+  width: 75%;
+}
+
+
+.comment-reply-title small {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.comments img {
+  border-radius: 50px;
+  position: absolute;
+  left: -60px;
+  top: -5px;
+}
+
+.nav-whole-container {
+  width: 100%;
+  margin-top: 40px;
+  padding-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 11px;
+}
+
+.nav-previous-left {
+  width: 50%;
+  float: left;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.nav-next-right {
+  width: 50%;
+  float: right;
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.nav-left-container {
+  padding-left: 40px;
+}
+
+.nav-right-container {
+  padding-right: 40px;
 }

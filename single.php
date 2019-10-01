@@ -133,6 +133,66 @@
 
     }
 
+    .logged-in-as a {
+      color: <?php echo get_theme_mod('blog_page_link_color'); ?>
+    }
+
+    .logged-in-as a:hover {
+      color: <?php echo get_theme_mod('blog_page_link_hover_color'); ?>
+    }
+
+    .comments .reply {
+      background-color: <?php echo get_theme_mod('header_background_color'); ?>;
+    }
+
+    .comments .reply a {
+      color: white;
+      transition-duration: 1s;
+
+    }
+
+    .comments .reply a:hover {
+      color: <?php echo get_theme_mod('blog_page_link_hover_color'); ?>;
+      transition-duration: 1s;
+    }
+
+    .comment-reply-title a {
+      color: <?php echo get_theme_mod('blog_page_link_color'); ?>
+    }
+
+    .comment-reply-title a:hover {
+      color: <?php echo get_theme_mod('blog_page_link_hover_color'); ?>
+    }
+
+    .comment-author a {
+      color: <?php echo get_theme_mod('blog_page_link_color'); ?>
+    }
+
+    .comment-author a:hover {
+      color: <?php echo get_theme_mod('blog_page_link_hover_color'); ?>
+    }
+
+    .nav-right-container a {
+      color: <?php echo get_theme_mod('blog_page_link_color'); ?>
+    }
+
+    .nav-right-container a:hover {
+      color: <?php echo get_theme_mod('blog_page_link_hover_color'); ?>
+    }
+
+    .nav-left-container a {
+      color: <?php echo get_theme_mod('blog_page_link_color'); ?>
+    }
+
+    .nav-left-container a:hover {
+      color: <?php echo get_theme_mod('blog_page_link_hover_color'); ?>
+    }
+
+
+
+
+
+
 
 
 
@@ -180,8 +240,14 @@
     <?php // gets the template for the single post navigation bar - located in theme-support.php ?>
     <?php echo trek_post_navigation() ?>
 
+    <?php if(( get_theme_mod('toggle_singlepost_authorbox') ) == 1 ) { ?>
     <?php // gets the template for the author box ?>
-    <?php require get_template_directory() . '/inc/template-parts/single-post/authorbox.php'; ?>
+      <?php require get_template_directory() . '/inc/template-parts/single-post/authorbox.php'; ?>
+    <?php }  ?>
+
+    <?php if ( comments_open() ):
+        comments_template();
+      endif; ?>
 
     </div>
 
