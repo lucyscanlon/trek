@@ -211,7 +211,7 @@ display: none;
 }
 
 .homepage-title-container h1 {
-  width: 50%;
+  width: 65%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -247,6 +247,32 @@ display: none;
   letter-spacing: 5px;
   font-size: 13px;
 }
+
+.homepage-video-whole-container {
+  width: 100%;
+  height: 96vh!important;
+  background-color: black;
+  overflow: hidden;
+  position: absolute;
+  z-index: -11;
+}
+
+.homepage-video-whole-container video {
+  background-size: 100% 100%;
+    top: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.homepage-video-footer {
+  position: absolute;
+  bottom: -40px;
+  width: 100%;
+}
+
 
 
 

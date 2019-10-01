@@ -587,6 +587,45 @@ function trek_lucyisobel_custom_settings($wp_customize){
       )));
 
 
+      //toggle video // image background
+      $wp_customize->add_setting('homepage_video_toggle', array(
+        'default' => 1,
+        'transport' => 'refresh',
+
+      ));
+
+      $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'homepage_video_toggle', array(
+        'label' => __('Toggle Video Background', 'Trek'),
+        'section' => 'homepage_section',
+        'settings'=> 'homepage_video_toggle'
+      )));
+
+
+
+      //upload a video for the background
+      $wp_customize->add_setting('video_upload', array(
+        'default' => '',
+        'transport' => 'refresh',
+        'sanitize_callback' => 'absint',
+             'type' => 'theme_mod',
+      ));
+
+      $wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'video_upload', array(
+        'label' => __('Video Upload', 'trek'),
+        'description' => __('This will be your homepage background', 'trek'),
+        'section' => 'homepage_section',
+        'settings' => 'video_upload',
+        'mime_type' => 'video',
+
+      )));
+
+      function background_video() {
+		    $id = get_theme_mod('video_upload');
+
+			echo wp_get_attachment_url($id);
+		}
+
+
       //homepage title settings notice
       $wp_customize->add_setting('homepage_title_title_section');
 
