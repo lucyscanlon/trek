@@ -2295,7 +2295,7 @@ font-family: Montserrat;
 .page-split-title-container {
   width: 80%;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 70px;
   font-size: 30px;
   padding-bottom: 25px;
 }
@@ -2334,4 +2334,36 @@ font-family: Montserrat;
   width: 80%;
   margin: 0px auto;
   margin-bottom: 50px;
+}
+
+
+.page-meta-container {
+  width: 80%;
+  margin: 0px auto;
+  text-align: center;
+  letter-spacing: 6px;
+  color: rgba(0,0,0,0.5);
+  font-size: 9px;
+  text-transform: uppercase;
+}
+
+.blog-content-width-container-nosidebar {
+  width: 80%;
+  margin: 0px auto;
+  max-width: 1500px;
+}
+
+.blog-column-container-nosidebar {
+  margin: 0px auto;
+}
+
+.blog-content-whole-container-nosidebar {
+  width: 100%;
+  overflow: auto;
+  display: flex;
+
+}
+
+.page-nosidebar-comments {
+  margin-bottom: 100px;
 }

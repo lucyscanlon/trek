@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: No Sidebar
+
+*/
+?>
 <?php get_header(); ?>
 <style>
 
@@ -72,6 +78,10 @@
     }
 
     .blog-sidebar-width-container {
+      background-color: <?php echo get_theme_mod('blog_page_background_color'); ?>;
+    }
+
+    .blog-content-whole-container-nosidebar {
       background-color: <?php echo get_theme_mod('blog_page_background_color'); ?>;
     }
 
@@ -201,9 +211,9 @@
 <div class="blog-content-top-padding">
 
 </div>
-<div class="blog-content-whole-container">
-  <div class="blog-content-width-container">
-    <div class="blog-column-container">
+<div class="blog-content-whole-container-nosidebar">
+  <div class="blog-content-width-container-nosidebar">
+    <div class="blog-column-container-nosidebar">
 
       <?php if( have_posts() ):
         while( have_posts() ): the_post(); ?>
@@ -229,22 +239,18 @@
       <?php  endwhile; ?>
     <?php endif; ?>
 
+    <div class="page-nosidebar-comments">
+
     <?php if ( comments_open() ):
         comments_template();
       endif; ?>
 
     </div>
 
-  </div>
-
-
-
-  <!--  SIDEBAR  -->
-  <div class="blog-sidebar-width-container">
-    <div class="blog-sidebar-container">
-      <?php get_sidebar(); ?>
     </div>
-    </div>
+
   </div>
+</div>
+</div>
 
 <?php get_footer(); ?>
