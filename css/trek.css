@@ -250,7 +250,7 @@ display: none;
 
 .homepage-video-whole-container {
   width: 100%;
-  height: 96vh!important;
+  height: 95vh!important;
   background-color: black;
   overflow: hidden;
   position: absolute;
@@ -265,11 +265,12 @@ display: none;
     width: auto;
     height: auto;
     box-sizing: border-box;
+    filter: brightness(80%);
 }
 
 .homepage-video-footer {
-  position: absolute;
-  bottom: -40px;
+  position: fixed;
+  bottom: 0px;
   width: 100%;
 }
 
@@ -991,6 +992,8 @@ display: none;
   padding-bottom: 20px;
   padding-top: 10px;
   font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 1.5em;
 }
 
 
@@ -1630,6 +1633,34 @@ ul.page-numbers li {
   margin-bottom: 20px;
 }
 
+.page h2 {
+  margin: 20px 0;
+
+}
+
+.page h3 {
+  margin: 12px 0;
+}
+
+.page h4 {
+  margin: 12px 0;
+}
+
+
+.page ul {
+  margin-left: 20px;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.page ol {
+  margin-left: 20px;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
 
 
 
@@ -1655,6 +1686,24 @@ ul.page-numbers li {
 }
 
 .singlepost-content-container .wp-block-quote cite {
+  color: grey;
+  font-size: 13px;
+
+}
+
+.page .wp-block-quote {
+  width: 85%;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.page .wp-block-quote p {
+  font-size: 22px;
+  font-style: italic;
+  letter-spacing: 3px;
+}
+
+.page .wp-block-quote cite {
   color: grey;
   font-size: 13px;
 
@@ -1718,6 +1767,25 @@ ul.page-numbers li {
 }
 
 .singlepost-content-container .wp-block-pullquote cite {
+  color: grey;
+  font-size: 13px;
+
+}
+
+.page .wp-block-quote {
+  width: 85%;
+  margin: 30px auto;
+  text-align: center;
+
+}
+
+.page .wp-block-pullquote p {
+  font-size: 22px;
+  font-style: italic;
+  letter-spacing: 3px;
+}
+
+.page .wp-block-pullquote cite {
   color: grey;
   font-size: 13px;
 
@@ -2176,4 +2244,94 @@ font-family: Montserrat;
 
 .nav-right-container {
   padding-right: 40px;
+}
+
+
+
+
+
+
+/*  page templates   */
+
+.page-split-width-container {
+  width: 100%;
+  margin: 0px auto;
+  max-width: 2000px;
+  overflow: auto;
+}
+
+.page-background-color-container {
+  width: 100%;
+  overflow: auto;
+}
+
+.page-top-padding {
+  height: 50px;
+  width: 100%;
+}
+
+.page-fullwidth-whole-container {
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.page-fullwidth-featuredimage-container {
+  display: inline;
+  overflow: auto;
+  width: 50%;
+}
+
+.page-fullwidth-content-container {
+  display: inline;
+  background-color: white;
+  overflow: auto;
+  min-height: 100px;
+  width: 50%;
+}
+
+.page-split-title-container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+  font-size: 30px;
+  padding-bottom: 25px;
+}
+
+.page-split-meta-container {
+  width: 80%;
+  margin: 0px auto;
+  letter-spacing: 6px;
+  color: rgba(0,0,0,0.5);
+  font-size: 9px;
+  text-transform: uppercase;
+}
+
+.page-split-content-container {
+  width: 80%;
+  margin: 0px auto;
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+
+.page-split-content-container p {
+  padding-bottom: 20px;
+  padding-top: 10px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+}
+
+.page-split-tags-container {
+  width: 100%;
+  height: 50px;
+
+}
+
+.page-split-comment-container {
+  width: 80%;
+  margin: 0px auto;
+  margin-bottom: 50px;
 }

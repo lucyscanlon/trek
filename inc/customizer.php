@@ -589,13 +589,14 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
       //toggle video // image background
       $wp_customize->add_setting('homepage_video_toggle', array(
-        'default' => 1,
+        'default' => 0,
         'transport' => 'refresh',
 
       ));
 
       $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'homepage_video_toggle', array(
         'label' => __('Toggle Video Background', 'Trek'),
+        'description' => __('To set a video as your homepage background instead turn this setting on and upload your video below.', 'trek'),
         'section' => 'homepage_section',
         'settings'=> 'homepage_video_toggle'
       )));
@@ -612,7 +613,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
       $wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'video_upload', array(
         'label' => __('Video Upload', 'trek'),
-        'description' => __('This will be your homepage background', 'trek'),
+        'description' => __('This will be your homepage background. The limit for this video uploasd is 8MB', 'trek'),
         'section' => 'homepage_section',
         'settings' => 'video_upload',
         'mime_type' => 'video',
