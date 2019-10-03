@@ -255,16 +255,11 @@ display: none;
   overflow: hidden;
   position: absolute;
   z-index: -11;
+
 }
 
-.homepage-video-whole-container video {
-  background-size: 100% 100%;
-    top: 0px;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    box-sizing: border-box;
+.homepage-video-whole-container iframe {
+  position:absolute;
     filter: brightness(80%);
 }
 
@@ -272,6 +267,10 @@ display: none;
   position: fixed;
   bottom: 0px;
   width: 100%;
+}
+
+.vid {
+  transform: scale(1.7);
 }
 
 

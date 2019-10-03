@@ -47,9 +47,8 @@ background-size: cover; ">
   <?php get_header(); ?>
   <?php $homepage_background_video = wp_get_attachment_url( get_theme_mod( 'video_upload' )); ?>
   <div class="homepage-video-whole-container">
-   <video preload="auto" autoplay="autoplay" muted="muted" loop="loop" width="100%" height="100%">
-	     <source src="<?php echo $homepage_background_video ?>" type="video/mp4">
-    </video>
+   <iframe class="vid" width="100%" height="100%" src="<?php echo get_theme_mod('video_background_link'); ?>?autoplay=1&mute=1&loop=1&playlist=<?php echo get_theme_mod('video_playlist_link'); ?>&background=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
     </div>
     <div class="homepage-video-zindex-container">
     <div class="homepage-title-container ReenieBeanie" style="padding-top: <?php echo get_theme_mod('homepage_title_height'); ?>vh; color: <?php echo get_theme_mod('homepage_title_color'); ?>; text-shadow: <?php echo get_theme_mod('homepage_title_shadow_color' ); ?> 6px 6px;">
