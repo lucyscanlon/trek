@@ -598,7 +598,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
       $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'homepage_video_toggle', array(
         'label' => __('Use Video as Background', 'Trek'),
-        'description' => __("This setting uses a YouTube or Vimeo embed as your background, therefore your chosen video must be uploaded to either site first. Embedding the video from another site leaves more storage for your blog's content as well displays the video at the best quality possible!" , 'trek'),
+        'description' => __("This will play a muted loop of a video of your choice. This setting uses a YouTube or Vimeo embed as your background, therefore your chosen video must be uploaded to either site first. Embedding the video from another site leaves more storage for your blog's content as well displays the video at the best quality possible!" , 'trek'),
         'section' => 'homepage_section',
         'settings'=> 'homepage_video_toggle'
       )));
@@ -1205,8 +1205,8 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
         $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'singlespost_display_section', array(
-          'label' => __('Single Post Info Display Settings', 'Trek'),
-          'description' => __('Choose what information to display on your individual posts'),
+          'label' => __('Single Post Header Display Settings', 'Trek'),
+          'description' => __('Choose what information to display on your individual posts header'),
           'section' => 'singlepost_section',
           'settings' => 'singlespost_display_section'
         )));
@@ -1264,6 +1264,48 @@ function trek_lucyisobel_custom_settings($wp_customize){
           'section' => 'singlepost_section',
           'settings'=> 'toggle_singlepost_comments'
         )));
+
+
+        $wp_customize->add_setting('singlespost_footerdisplay_section');
+
+
+        $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'singlespost_footerdisplay_section', array(
+          'label' => __('Single Post Footer Display Settings', 'Trek'),
+          'description' => __('Choose what information to display on your individual posts footer'),
+          'section' => 'singlepost_section',
+          'settings' => 'singlespost_footerdisplay_section'
+        )));
+
+
+
+        //toggle tags on or off
+        $wp_customize->add_setting('toggle_singlepost_tags', array(
+          'default' => 1,
+          'transport' => 'refresh',
+
+        ));
+
+        $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'toggle_singlepost_tags', array(
+          'label' => __('Display Post Tags', 'Trek'),
+          'section' => 'singlepost_section',
+          'settings'=> 'toggle_singlepost_tags'
+        )));
+
+
+        //toggle views on or off
+        $wp_customize->add_setting('toggle_singlepost_views', array(
+          'default' => 1,
+          'transport' => 'refresh',
+
+        ));
+
+        $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'toggle_singlepost_views', array(
+          'label' => __('Display Post View Count', 'Trek'),
+          'section' => 'singlepost_section',
+          'settings'=> 'toggle_singlepost_views'
+        )));
+
+
 
 
         //single post navigation color control notice

@@ -34,6 +34,7 @@ function trek_save_post_views( $postID ) {
 
   update_post_meta( $postID, $metaKey, $count );
 
+
 }
 
 remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);

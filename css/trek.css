@@ -1203,9 +1203,9 @@ ul.page-numbers li {
 }
 
 
-/* single post tags and likes section   */
+/* single post tags and views section   */
 
-.singlepost-tags-like-whole-container {
+.singlepost-tags-views-whole-container {
   width: 100%;
   background-color: white;
   display: flex;
@@ -1220,7 +1220,7 @@ ul.page-numbers li {
   text-transform: uppercase;
   letter-spacing: 4px;
   font-size: 9px;
-  padding-left: 40px;
+
 
 }
 
@@ -1229,12 +1229,22 @@ ul.page-numbers li {
   padding-right: 5px;
 }
 
-.singlepost-like-container {
+.singlepost-views-container {
   width: 50%;
-  background-color: purple;
   display: inline;
+  text-align: right;
 }
 
+.singlepost-tags-wrap {
+  padding-left: 40px;
+}
+
+.singlepost-views-wrap {
+  padding-right: 40px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 11px;
+}
 
 
 /*  author box and buy theme section  */
@@ -1986,6 +1996,8 @@ hr {
 
 
 
+
+
 /*   comments section   */
 
 .comments-whole-container {
@@ -2138,11 +2150,6 @@ font-family: Montserrat;
   margin-top: 30px;
   margin-bottom: 30px;
 }
-
-/* .comment-author img {
-  border-radius: 25px;
-  margin-left: 50px;
-} */
 
 .comment-author {
   text-transform: uppercase;

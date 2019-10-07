@@ -68,12 +68,20 @@
   <div class="singlepost-content-container Montserrat">
     <?php echo the_content(); ?>
   </div>
-  <div class="singlepost-tags-like-whole-container Montserrat">
+  <div class="singlepost-tags-views-whole-container Montserrat">
     <div class="singlepost-tags-container">
-      <?php echo trek_get_tags(); ?>
+      <div class="singlepost-tags-wrap">
+        <?php if (( get_theme_mod('toggle_singlepost_tags') ) == 1) { ?>
+          <?php echo trek_get_tags(); ?>
+        <?php } ?>
+      </div>
     </div>
-    <div class="singlepost-like-container">
-
+    <div class="singlepost-views-container Montserrat">
+      <div class="singlepost-views-wrap">
+        <?php if (( get_theme_mod('toggle_singlepost_views') ) == 1) { ?>
+          <i class="fa fa-eye" aria-hidden="true"></i><?php echo get_post_meta( get_the_ID(), 'trek_post_views', true ); ?>
+        <?php } ?>
+    </div>
     </div>
   </div>
 </div>
