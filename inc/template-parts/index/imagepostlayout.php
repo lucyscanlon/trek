@@ -93,9 +93,11 @@
 
 </div>
 <div class="imagepost-excerpt-whole-container">
-  <div class="imagepost-category-container Montserrat">
-    <p><?php the_category(); ?></p>
-  </div>
+  <?php if (( get_theme_mod('toggle_blog_categories') ) == 1) { ?>
+    <div class="imagepost-category-container Montserrat">
+      <p><?php the_category(); ?></p>
+    </div>
+  <?php } ?>
   <div class="imagepost-excerpt-container Montserrat">
     <p>
       <?php the_excerpt(); ?>

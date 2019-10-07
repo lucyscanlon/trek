@@ -672,23 +672,10 @@ function trek_lucyisobel_custom_settings($wp_customize){
     )));
 
 
-    //toggle description on and off
-    $wp_customize->add_setting('toggle_switch_description', array(
-      'default' => 1,
-      'transport' => 'refresh',
-
-    ));
-
-    $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'toggle_switch_description', array(
-      'label' => __('Display Description', 'Trek'),
-      'section' => 'homepage_section',
-      'settings'=> 'toggle_switch_description'
-    )));
-
 
     //homepage title color controls
     $wp_customize->add_setting('homepage_title_color', array(
-      'default' => '#000000',
+      'default' => '#FFFFFF',
       'transport' => 'refresh',
 
     ));
@@ -702,7 +689,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
     //homepage title text shadow color controls
     $wp_customize->add_setting('homepage_title_shadow_color', array(
-      'default' => '#FFFFFF',
+      'default' => '#000000',
       'transport' => 'refresh',
 
     ));
@@ -711,6 +698,77 @@ function trek_lucyisobel_custom_settings($wp_customize){
       'label' => __('Title Shadow Color', 'Trek'),
       'section' => 'homepage_section',
       'settings' => 'homepage_title_shadow_color'
+    )));
+
+
+    //homepage title hover color controls
+    $wp_customize->add_setting('homepage_title_link_color', array(
+      'default' => '#e4bce4',
+      'transport' => 'refresh',
+
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'homepage_title_link_color', array(
+      'label' => __('Title Hover Color', 'Trek'),
+      'section' => 'homepage_section',
+      'settings' => 'homepage_title_link_color'
+    )));
+
+
+    //toggle title letter spacing on and off
+    $wp_customize->add_setting('homepage_title_letterspacing_toggle', array(
+      'default' => 1,
+      'transport' => 'refresh',
+
+    ));
+
+    $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'homepage_title_letterspacing_toggle', array(
+      'label' => __('Increase Letter Spacing', 'Trek'),
+      'description' => __('This setting increases the letter spacing when the mouse hovers over the title', 'trek'),
+      'section' => 'homepage_section',
+      'settings'=> 'homepage_title_letterspacing_toggle'
+    )));
+
+    //rblog link
+    $wp_customize->add_setting('homepage_blog_link', array(
+
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'homepage_blog_link', array(
+      'label' => 'Link to your blog',
+      'description' => 'Make sure your readers can access your blog',
+      'section' => 'homepage_section',
+      'settings' => 'homepage_blog_link',
+      'input_attrs' => array(
+        'placeholder' => __('Paste the link to your blog here'),
+      )
+
+    )));
+
+
+
+    //homepage description settings notice
+    $wp_customize->add_setting('homepage_description_title_section');
+
+
+    $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'homepage_description_title_section', array(
+      'label' => __('Homepage Description Settings', 'Trek'),
+      'description' => __('Edit your homepage description appearance'),
+      'section' => 'homepage_section',
+      'settings' => 'homepage_description_title_section'
+    )));
+
+    //toggle description on and off
+    $wp_customize->add_setting('toggle_switch_description', array(
+      'default' => 1,
+      'transport' => 'refresh',
+
+    ));
+
+    $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'toggle_switch_description', array(
+      'label' => __('Display Description', 'Trek'),
+      'section' => 'homepage_section',
+      'settings'=> 'toggle_switch_description'
     )));
 
 
@@ -755,6 +813,21 @@ function trek_lucyisobel_custom_settings($wp_customize){
     )));
 
 
+    //toggle read more button on off
+    $wp_customize->add_setting('homepage_readmore_toggle', array(
+      'default' => 1,
+      'transport' => 'refresh',
+
+    ));
+
+    $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'homepage_readmore_toggle', array(
+      'label' => __('Show Button', 'Trek'),
+      'description' => __('Turn this setting on to have a button appear. This can link to anywhere, but its reccomended to link to your blog. Turn this off to hide the button. (Your blog title also acts as a link to your blog, therefore this can be an optional addition).', 'trek'),
+      'section' => 'homepage_section',
+      'settings'=> 'homepage_readmore_toggle'
+    )));
+
+
 
     //homepage readmore button color
     $wp_customize->add_setting('homepage_readmore_color', array(
@@ -787,7 +860,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
     //homepage readmore button text hover color
     $wp_customize->add_setting('homepage_readmore_text_hover_color', array(
-      'default' => '#FFFFFF',
+      'default' => '#e4bce4',
       'transport' => 'refresh',
 
     ));
@@ -796,23 +869,6 @@ function trek_lucyisobel_custom_settings($wp_customize){
       'label' => __('Read More Button Text Hover Color', 'Trek'),
       'section' => 'homepage_section',
       'settings' => 'homepage_readmore_text_hover_color'
-    )));
-
-
-    //read more button link
-    $wp_customize->add_setting('homepage_readmore_link', array(
-
-    ));
-
-    $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'homepage_readmore_link', array(
-      'label' => 'Link to your blog',
-      'description' => 'Make sure your readers can access your blog',
-      'section' => 'homepage_section',
-      'settings' => 'homepage_readmore_link',
-      'input_attrs' => array(
-        'placeholder' => __('Paste the link to your blog here'),
-      )
-
     )));
 
 
@@ -1029,7 +1085,6 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
       $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'toggle_blog_categories', array(
         'label' => __('Display Categories', 'Trek'),
-        'description' => __('Does not display automatically on 4th layout option', 'Trek'),
         'section' => 'blog_section',
         'settings'=> 'toggle_blog_categories'
       )));
