@@ -246,7 +246,7 @@
     <?php }  ?>
 
     <?php if ( comments_open() ):
-        //comments_template();
+        comments_template();
       endif; ?>
 
     </div>

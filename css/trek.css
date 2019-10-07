@@ -2003,6 +2003,7 @@ hr {
 .comments-whole-container {
   width: 100%;
   background-color: white;
+  overflow: hidden;
 }
 
 .comments-title-wrap {

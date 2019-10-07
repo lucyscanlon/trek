@@ -44,7 +44,7 @@ if( post_password_required() ){
 
   //shows how many comments there are
     if ( comments_open() ) :
-      echo '<div class="comments-title-wrap">';
+      echo '<div class="comments-title-wrap" id="comments">';
       echo '<h2 class="comments-title">';
       comments_number( __('No Comments', 'trek'), __('1 Comment', 'trek'), '% ' . __('Comments', 'trek') );
       echo '</h2>';
