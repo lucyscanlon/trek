@@ -1,0 +1,327 @@
+/* editor style */
+
+/* heading and paragraphs */
+
+.editor-post-title__input {
+  text-align: center;
+  font-family: "Reenie Beanie" !important;
+  font-size: 65px !important;
+
+}
+
+.block-editor-rich-text p {
+  font-family: Montserrat !important;
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  margin-top: 20px!important;
+  margin-bottom: 20px!important;
+}
+
+.block-editor-rich-text h1 {
+  font-family: Montserrat !important;margin-top: 20px!important;
+  margin-bottom: 20px!important;
+}
+
+.block-editor-rich-text h2 {
+  font-family: Montserrat !important;
+  margin-top: 20px!important;
+  margin-bottom: 20px!important;
+}
+
+.block-editor-rich-text h3 {
+  font-family: Montserrat !important;
+  margin-top: 20px!important;
+  margin-bottom: 20px!important;
+}
+
+.block-editor-rich-text h4 {
+  font-family: Montserrat !important;
+  margin-top: 10px!important;
+  margin-bottom: 10px!important;
+}
+
+.block-editor-rich-text h5 {
+  font-family: Montserrat !important;
+  margin-top: 10px!important;
+  margin-bottom: 10px!important;
+}
+
+.block-editor-rich-text a {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+/* captions */
+
+.block-editor-rich-text figcaption {
+  font-family: Montserrat !important;
+  letter-spacing: 1px;
+
+}
+
+
+/*  text image overlay   */
+
+.wp-block-cover p  {
+  font-weight: 900;
+  letter-spacing: 4px;
+  font-size: 40px;
+  line-height: 1.5em;
+  margin-top: 20px!important;
+  margin-bottom: 20px!important;
+
+}
+
+
+/*  lists   */
+
+.block-editor-rich-text ol  {
+  font-family: Montserrat !important;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+  margin-top: 20px!important;
+  margin-bottom: 20px!important;
+}
+
+.block-editor-rich-text ul  {
+  font-family: Montserrat !important;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+  margin-top: 20px!important;
+  margin-bottom: 20px!important;
+}
+
+
+
+
+/*  quotes    */
+
+
+
+.wp-block-quote {
+  width: 85%;
+  margin: 30px auto;
+  text-align: center;
+  font-family: Montserrat !important;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border: none;
+  margin-top: 20px!important;
+  margin-bottom: 20px!important;
+}
+
+.wp-block-quote p {
+  font-size: 24px !important;
+  font-style: italic;
+  letter-spacing: 3px;
+  font-weight: 900;
+}
+
+.wp-block-quote cite {
+  color: grey;
+  font-size: 13px !important;
+  font-style: italic !important;
+}
+
+
+
+/*  code   */
+
+ .wp-block-code {
+  padding: 20px;
+  margin: 20px auto;
+  width: 95%;
+  background-color: #F1F3F4!important;
+  letter-spacing: 1px!important;
+  line-height: 1.5em!important;
+  border: none;
+  font-family: monospace!important;
+  margin-top: 20px!important;
+  margin-bottom: 20px!important;
+}
+
+.wp-block-code textarea {
+  background-color: #F1F3F4!important;
+  letter-spacing: 1px!important;
+  line-height: 1.5em!important;
+  font-family: monospace!important;
+}
+
+
+
+/*   table    */
+
+.wp-block-table {
+    display: table;
+    width: 90%;
+    margin: 30px auto !important;
+
+
+
+}
+
+.wp-block-table th {
+    text-align:         left;
+    padding:            5px 5px;
+
+}
+
+.wp-block-table td {
+    margin:             0;
+    padding:            5px 5px;
+
+}
+
+.is-style-regular td {
+  border-bottom: 1px solid #e5e5e5 !important;
+  font-family: Montserrat !important;
+  border: none;
+}
+
+
+
+/*  preformatted   */
+
+.wp-block-preformatted {
+  width: 95%;
+  margin: 30px auto;
+  padding: 20px 20px;
+  background-color: #F1F3F4;
+
+}
+
+/* verse   */
+
+
+.wp-block-verse {
+  margin: 20px auto;
+  background-color: #F1F3F4;
+  padding: 20px;
+  width: 95%;
+  text-align: left;
+  border-left: solid 2.5px darkgrey;
+}
+
+/*  button  */
+
+
+.wp-block-button__link {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 4px;
+  padding: 10px 30px;
+  transition-duration: 1s;
+  margin: 20px 0;
+  font-family: Montserrat !important;
+
+}
+
+.wp-block-button__link:hover {
+  letter-spacing: 5px;
+  transition-duration: 1s;
+}
+
+
+/* media with text */
+
+
+.wp-block-media-text p {
+  font-size: 30px;
+  line-height: 1.3em;
+  font-family: Montserrat !important;
+}
+
+.wp-block-media-text {
+  margin: 30px auto;
+}
+
+
+/*   Seperator   */
+
+
+
+.wp-block-separator {
+  width: 75%;
+  margin: 50px auto;
+
+}
+
+hr {
+  height: 6px;
+	background: url(http://ibrahimjabbari.com/images/hr-11.png) repeat-x 0 0;
+    border: 0;
+}
+
+
+/* calender */
+
+
+.wp-block-calendar {
+  margin: 20px auto;
+  width: 90%;
+
+}
+
+
+/* search */
+
+
+.wp-block-search {
+  margin: 50px auto;
+}
+
+.wp-block-search__input {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  padding-left: 10px;
+  border: solid lightgrey 1.5px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  font-family: Montserrat !important;
+}
+
+.wp-block-search__button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border: solid lightgrey 1.5px;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  background-color: white!important;
+
+
+}
+
+.wp-block-search__label {
+  width: 80%;
+  margin:  0 auto;
+  padding-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 14px;
+  font-family: Montserrat !important;
+}
+
+/* tag cloud block */
+
+
+
+.wp-block-tag-cloud {
+  width: 70%;
+  margin: 20px auto;
+  text-align: center;
+  font-family: Montserrat !important;
+}
+
+.wp-block-tag-cloud a {
+  padding: 8px 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+}
