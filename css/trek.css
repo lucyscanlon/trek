@@ -2460,3 +2460,69 @@ letter-spacing: 1px;
   font-size: 10px;
   line-height: 1.5em;
 }
+
+
+
+
+
+/*  404.php   */
+
+.oops-whole-container {
+  background-color: white;
+  margin-bottom: 50px;
+}
+
+.oops-title-container {
+  width: 85%;
+  margin: 0px auto;
+  text-align: center;
+  font-size: 110px;
+  padding-top: 20px;
+
+}
+
+.oops-text-container {
+  width: 90%;
+  margin: 0px auto;
+  text-align: center;
+  font-size: 40px;
+  padding-top: 10px;
+}
+
+.oops-paragraph-container {
+  width: 85%;
+  margin: 0px auto;
+  text-align: center;
+  font-size: 15px;
+  padding-top: 20px;
+  letter-spacing: 0.5px;
+  line-height: 1.5em;
+  padding-bottom: 40px;
+}
+
+.oops-search-container {
+  width: 50%;
+  margin: 0px auto;
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+
+.oops-search-container input {
+  width: 100%;
+  margin: 0px auto;
+  height: 60px;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+font-size: 20px;
+border: none;
+border: 1px solid #E8E8E8;
+letter-spacing: 1px;
+font-size: 15px;
+}
+
+.oops-search-container input:focus {
+  outline: none !important;
+
+}
