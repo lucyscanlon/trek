@@ -210,6 +210,11 @@ display: none;
   height: 93vh;
 }
 
+.homepage-logo-container {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
 .homepage-title-container h1 {
   width: 65%;
   margin-left: auto;
@@ -305,35 +310,31 @@ display: none;
 
 .featured-post-container {
   width: 100%;
-  min-height: 400px;
+
 }
 
 .featuredpost-homepage-image-container {
   width: 100%;
-  min-height: 400px;
 }
 
 .featuredpost-homepage-title-container {
-  width: 60%;
+  width: 75%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  font-size: 70px;
-  padding-top: 100px;
+  font-size: 65px;
 }
 
 .featuredpost-image-container {
   width: 100%;
-  min-height: 400px;
 }
 
 .featuredpost-title-container {
-  width: 60%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  font-size: 70px;
-  padding-top: 100px;
+  font-size: 60px;
   color: white;
   text-shadow: 6px 6px black;
   letter-spacing: 6px;
@@ -348,10 +349,34 @@ display: none;
   letter-spacing: 7px;
   font-size: 11px;
   text-shadow: 2px 2px black;
+  padding-top: 25px;
 }
 
 .featuredpost-readmore-container a {
   color: white;
+}
+
+.featuredpost-logo-container {
+  text-align: center;
+  width: 90%;
+  margin: 0px auto;
+}
+
+.featuredpost-description-container {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  letter-spacing: 5px;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding-top: 30px;
+}
+
+.featuredpost-container-padding {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  overflow: auto;
 }
 
 

@@ -638,6 +638,67 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
 
+        //homepage content height settings notice
+        $wp_customize->add_setting('homepage_contentheight_title_section');
+
+
+        $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'homepage_contentheight_title_section', array(
+          'label' => __('Homepage Content Height Settings', 'Trek'),
+          'description' => __('Adjust the height of your content to fit perfectly onto your homepage', 'trek'),
+          'section' => 'homepage_section',
+          'settings' => 'homepage_contentheight_title_section'
+        )));
+
+
+        //homepage content height
+        $wp_customize->add_setting( 'homepage_title_height', array(
+          'default' => 30,
+          'transport' => 'refresh',
+          'sanitize_callback' => 'absint'
+        ));
+
+        $wp_customize->add_control( new Skyrocket_Slider_Custom_Control( $wp_customize, 'homepage_title_height', array(
+          'label' => __('Content Height (vh)', 'Trek'),
+          'section' => 'homepage_section',
+        'settings' => 'homepage_title_height',
+        'input_attrs' => array(
+          'min' => 10,
+          'max' => 60,
+          'step' => 1,
+        ),
+      )));
+
+
+
+        //homepage logo settings notice
+        $wp_customize->add_setting('homepage_logo_title_section');
+
+
+        $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'homepage_logo_title_section', array(
+          'label' => __('Homepage Logo Settings', 'Trek'),
+          'description' => __('Choose whether to display your logo on your homepage or not', 'trek'),
+          'section' => 'homepage_section',
+          'settings' => 'homepage_logo_title_section'
+        )));
+
+
+
+        //toggle logo on or off
+        $wp_customize->add_setting('homepage_logo_toggle', array(
+          'default' => 1,
+          'transport' => 'refresh',
+
+        ));
+
+        $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'homepage_logo_toggle', array(
+          'label' => __('Display Logo', 'Trek'),
+          'description' => __('Choose whether to display your logo on your homepage', 'trek'),
+          'section' => 'homepage_section',
+          'settings'=> 'homepage_logo_toggle'
+        )));
+
+
+
 
 
 
@@ -652,25 +713,19 @@ function trek_lucyisobel_custom_settings($wp_customize){
         'settings' => 'homepage_title_title_section'
       )));
 
-
-      //homepage title height
-      $wp_customize->add_setting( 'homepage_title_height', array(
-        'default' => 30,
+      //toggle title on or off
+      $wp_customize->add_setting('homepage_title_toggle', array(
+        'default' => 1,
         'transport' => 'refresh',
-        'sanitize_callback' => 'absint'
+
       ));
 
-      $wp_customize->add_control( new Skyrocket_Slider_Custom_Control( $wp_customize, 'homepage_title_height', array(
-        'label' => __('Title Height (vh)', 'Trek'),
+      $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'homepage_title_toggle', array(
+        'label' => __('Display Site Title', 'Trek'),
+        'description' => __('Choose whether to display your site title on your homepage', 'trek'),
         'section' => 'homepage_section',
-      'settings' => 'homepage_title_height',
-      'input_attrs' => array(
-        'min' => 10,
-        'max' => 60,
-        'step' => 1,
-      ),
-    )));
-
+        'settings'=> 'homepage_title_toggle'
+      )));
 
 
     //homepage title color controls
@@ -904,23 +959,103 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
     $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'blog_banner_section', array(
       'label' => __('Blog Banner Section', 'Trek'),
-      'description' => __('Here you can either display your blog name with the background image from your homepage, or choose a post to feature here'),
+      'description' => __('This banner appears on every page of your blog (except the homepage). Either display some of your blog information such as your site title, logo or description here, or you can activate the featured post option in the section below. Skip to the section called "Enable featured post display" to learn more about this.', 'trek'),
       'section' => 'blog_section',
       'settings' => 'blog_banner_section'
     )));
 
 
+    //toggle for banner show logo over title
+    $wp_customize->add_setting('toggle_blogbanner_logo', array(
+      'default' => 0,
+      'transport' => 'refresh',
+
+    ));
+
+    $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'toggle_blogbanner_logo', array(
+      'label' => __('Display Logo instead of title', 'Trek'),
+      'description' => __('Turn this setting on to display your site logo instead of your site title', 'Trek'),
+      'section' => 'blog_section',
+      'settings'=> 'toggle_blogbanner_logo'
+    )));
+
+    //toggle for banner show description
+    $wp_customize->add_setting('toggle_blogbanner_description', array(
+      'default' => 0,
+      'transport' => 'refresh',
+
+    ));
+
+    $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'toggle_blogbanner_description', array(
+      'label' => __('Display blog description', 'Trek'),
+      'description' => __('Turn this setting on to display your site description', 'Trek'),
+      'section' => 'blog_section',
+      'settings'=> 'toggle_blogbanner_description'
+    )));
+
+    //banner text color
+    $wp_customize->add_setting('blog_banner_text_color', array(
+      'default' => get_theme_mod('homepage_title_color'),
+      'transport' => 'refresh',
+
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'blog_banner_text_color', array(
+      'label' => __('Banner Text Color', 'Trek'),
+      'section' => 'blog_section',
+      'settings' => 'blog_banner_text_color'
+    )));
+
+    //banner text shadow color
+    $wp_customize->add_setting('blog_banner_text_shadow_color', array(
+      'default' => get_theme_mod('homepage_title_shadow_color'),
+      'transport' => 'refresh',
+
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'blog_banner_text_shadow_color', array(
+      'label' => __('Banner Text Color', 'Trek'),
+      'section' => 'blog_section',
+      'settings' => 'blog_banner_text_shadow_color'
+    )));
+
+
+    //upload background image for banner  section
+    $wp_customize->add_setting('banner_background_image');
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'banner_background_image', array(
+      'label' => __('Upload an Image for Banner Background', 'Trek'),
+      'description' => __("Choose an image to be your banner background ", 'trek'),
+      'section' => 'blog_section',
+      'settings' => 'banner_background_image',
+
+
+    )));
+
+
+    //blog banner featured post notice
+    $wp_customize->add_setting('blog_banner_featured_section');
+
+
+    $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'blog_banner_featured_section', array(
+      'label' => __('Enable featured post display', 'Trek'),
+      'description' => __('This setting will display the featured image, title and link of a blog post of your choice. Please note if this setting is activated then your site information will not be displayed in the banner.', 'trek'),
+      'section' => 'blog_section',
+      'settings' => 'blog_banner_featured_section'
+    )));
+
+
+
 
     //toggle featured post feature on or off
     $wp_customize->add_setting('toggle_blogbanner_featuredpost', array(
-      'default' => 1,
+      'default' => 0,
       'transport' => 'refresh',
 
     ));
 
     $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'toggle_blogbanner_featuredpost', array(
       'label' => __('Enable featured post display', 'Trek'),
-      'description' => __('Please see below for instructions to activate', 'Trek'),
       'section' => 'blog_section',
       'settings'=> 'toggle_blogbanner_featuredpost'
     )));
@@ -932,7 +1067,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
     $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'featuredpost_category', array(
       'section' => 'blog_section',
       'label' => 'Chosen featured category name',
-      'description' => 'Please create a new category and assign your chosen post to feature into that category. Then paste the name of this category here. Please only assign one post to this category at a time. ',
+      'description' => 'Please create a new category and put your chosen post into that category. Then paste the name of this category here. Please only assign one post to this category at a time. ',
       'settings' => 'featuredpost_category',
       'input_attrs' => array(
         'placeholder' => __('Category name'),
@@ -942,7 +1077,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
 
-    //homepage notice
+    //blog  notice
     $wp_customize->add_setting('blog_title_section');
 
 
@@ -1445,6 +1580,9 @@ function trek_lucyisobel_custom_settings($wp_customize){
           'section' => 'singlepost_section',
           'settings'=> 'toggle_singlepost_authorbox'
         )));
+
+
+
 
 
 
