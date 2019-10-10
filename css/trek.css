@@ -2526,3 +2526,59 @@ font-size: 15px;
   outline: none !important;
 
 }
+
+
+
+
+
+/*   index-nocontent   */
+
+.no-content-whole-container {
+  background-color: white;
+
+}
+
+.nocontent-title-container {
+  width: 85%;
+  margin: 0px auto;
+  text-align: center;
+  font-size: 40px;
+  padding-top: 40px;
+}
+
+.nocontent-description-container {
+  width: 80%;
+  margin: 0px auto;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  line-height: 1.5em;
+
+}
+
+.nocontent-search-container {
+  background-color: white;
+}
+
+.nocontent-search-title {
+  width: 85%;
+  margin: 0px auto;
+  text-align: center;
+  font-size: 40px;
+  padding-top: 40px;
+
+}
+
+.nocontent-description-container {
+  width: 80%;
+  margin: 0px auto;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  line-height: 1.5em;
+
+}
