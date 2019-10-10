@@ -909,6 +909,30 @@ display: none;
 }
 
 
+/* search   */
+
+.searchform-container input {
+  width: 100%;
+  margin: 30px auto;
+  height: 40px;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+font-size: 20px;
+border: none;
+border: 1px solid #E8E8E8;
+letter-spacing: 1px;
+font-size: 12px;
+
+}
+
+.searchform-container input:focus {
+  outline: none !important;
+
+}
+
+
 
 
 
