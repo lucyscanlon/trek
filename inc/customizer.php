@@ -1639,18 +1639,56 @@ function trek_lucyisobel_custom_settings($wp_customize){
         // Archive
         // Creating the archive settings section
         $wp_customize->add_section('archive_section', array(
-          'title' => __('Archive Settings', 'Trek'),
+          'title' => __('Archive and Search Settings', 'Trek'),
           'panel' => 'theme_settings',
           'priority' => 23,
         ));
 
+        // Archive Nav Bar Title
+        $wp_customize->add_setting('archive_navtitle_section');
 
-        // Archive Title
+
+        $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'archive_navtitle_section', array(
+          'label' => __('Archive/Search Results Bar Settings', 'Trek'),
+          'description' => __('Choose the colors of your archive and search navigation bar', 'trek'),
+          'section' => 'archive_section',
+          'settings' => 'archive_navtitle_section'
+        )));
+
+
+        // Archive Nav Bar Background Color
+        $wp_customize->add_setting('archive_navbar_backgroundcolor', array(
+          'default' => get_theme_mod('header_background_color'),
+          'transport' => 'refresh',
+
+        ));
+
+        $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'archive_navbar_backgroundcolor', array(
+          'label' => __('Background Color', 'Trek'),
+          'section' => 'archive_section',
+          'settings' => 'archive_navbar_backgroundcolor'
+        )));
+
+        // Archive Nav Bar Text Color
+        $wp_customize->add_setting('archive_navbar_textcolor', array(
+          'default' => get_theme_mod('header_text_color'),
+          'transport' => 'refresh',
+
+        ));
+
+        $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'archive_navbar_textcolor', array(
+          'label' => __('Text Color', 'Trek'),
+          'section' => 'archive_section',
+          'settings' => 'archive_navbar_textcolor'
+        )));
+
+
+        // Archive and Search Title
         $wp_customize->add_setting('archive_title_section');
 
 
         $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'archive_title_section', array(
-          'label' => __('Archive Settings', 'Trek'),
+          'label' => __('Archive and Search Settings', 'Trek'),
           'description' => __('Edit the layout of your archives'),
           'section' => 'archive_section',
           'settings' => 'archive_title_section'
@@ -1704,6 +1742,76 @@ function trek_lucyisobel_custom_settings($wp_customize){
       				)
       			)
       		) );
+
+          // Archive Display Title
+          $wp_customize->add_setting('archive_displaytitle_section');
+
+
+          $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'archive_displaytitle_section', array(
+            'label' => __('Archive Meta Display Settings', 'Trek'),
+            'description' => __('Choose what post information to display on each post on your archive pages', 'trek'),
+            'section' => 'archive_section',
+            'settings' => 'archive_displaytitle_section'
+          )));
+
+          // Archive Categories On or Off
+          $wp_customize->add_setting('toggle_archive_categories', array(
+            'default' => 1,
+            'transport' => 'refresh',
+
+          ));
+
+          $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'toggle_archive_categories', array(
+            'label' => __('Display Categories', 'Trek'),
+            'section' => 'archive_section',
+            'settings'=> 'toggle_archive_categories'
+          )));
+
+          // Archive Date On or Off
+          $wp_customize->add_setting('toggle_archive_date', array(
+            'default' => 1,
+            'transport' => 'refresh',
+
+          ));
+
+          $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'toggle_archive_date', array(
+            'label' => __('Display Post Date', 'Trek'),
+            'section' => 'archive_section',
+            'settings'=> 'toggle_archive_date'
+          )));
+
+          // Archive Author On or Off
+          $wp_customize->add_setting('toggle_archive_author', array(
+            'default' => 1,
+            'transport' => 'refresh',
+
+          ));
+
+          $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'toggle_archive_author', array(
+            'label' => __('Display Post Author', 'Trek'),
+            'section' => 'archive_section',
+            'settings'=> 'toggle_archive_author'
+          )));
+
+          // Archive Comments Info On or Off
+          $wp_customize->add_setting('toggle_archive_comments', array(
+            'default' => 1,
+            'transport' => 'refresh',
+
+          ));
+
+          $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'toggle_archive_comments', array(
+            'label' => __('Display Post Comments Info', 'Trek'),
+            'section' => 'archive_section',
+            'settings'=> 'toggle_archive_comments'
+          )));
+
+          
+
+
+
+
+
 
 
 

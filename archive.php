@@ -80,9 +80,9 @@
         text-decoration: none;
       }
 
-      .blog-search-results {
-        background-color: <?php echo get_theme_mod('navigation_background_color'); ?>;
-        color: <?php echo get_theme_mod('navigation_text_color'); ?>;
+      .blog-archive-results {
+        background-color: <?php echo get_theme_mod('archive_navbar_backgroundcolor'); ?>;
+        color: <?php echo get_theme_mod('archive_navbar_textcolor'); ?>;
       }
 
 
@@ -104,8 +104,8 @@
     <div class="blog-column-container">
 
 
-      <div class="blog-search-results Montserrat">
-        <div class="blog-search-text">
+      <div class="blog-archive-results Montserrat">
+        <div class="blog-archive-text">
           <p>
             <?php printf('Showing results for the ', 'trek'); the_archive_title(); ?>
           </p>
@@ -122,7 +122,7 @@
         <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 
           <!--  REQUIRE TEMPLATE FOR WIDE POST LAYOUT  -->
-          <?php require get_template_directory() . '/inc/template-parts/index/widepostlayout.php'; ?>
+          <?php require get_template_directory() . '/inc/template-parts/archive/archive-widepostlayout.php'; ?>
 
 
 
@@ -133,7 +133,7 @@
             <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 
             <!--  REQUIRE TEMPLATE FOR GRID / LIST POST LAYOUT  -->
-            <?php require get_template_directory() . '/inc/template-parts/index/gridpostlayout.php'; ?>
+            <?php require get_template_directory() . '/inc/template-parts/archive/archive-gridpostlayout.php'; ?>
       </div>
 
 
@@ -143,7 +143,7 @@
             <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 
             <!--  REQUIRE TEMPLATE FOR GRID / LIST POST LAYOUT  -->
-            <?php require get_template_directory() . '/inc/template-parts/index/gridpostlayoutrightaligned.php'; ?>
+            <?php require get_template_directory() . '/inc/template-parts/archive/archive-gridpostlayoutrightaligned.php'; ?>
       </div>
 
     <?php } else if(( get_theme_mod('archive_preview_layout_radio_button') ) == 'imagepostlayout') { ?>
@@ -153,7 +153,7 @@
 
             <!--  REQUIRE TEMPLATE FOR IMAGE POST LAYOUT  -->
 
-            <?php require get_template_directory() . '/inc/template-parts/index/imagepostlayout.php'; ?>
+            <?php require get_template_directory() . '/inc/template-parts/archive/archive-imagepostlayout.php'; ?>
 
 
       </div>

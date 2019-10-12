@@ -82,8 +82,8 @@
       }
 
       .blog-search-results {
-        background-color: <?php echo get_theme_mod('navigation_background_color'); ?>;
-        color: <?php echo get_theme_mod('navigation_text_color'); ?>;
+        background-color: <?php echo get_theme_mod('archive_navbar_backgroundcolor'); ?>;
+        color: <?php echo get_theme_mod('archive_navbar_textcolor'); ?>;
       }
 
 
@@ -122,7 +122,7 @@
 
 
       <!-- WIDE POST LAYOUT  -->
-      <?php if(( get_theme_mod('post_preview_layout_radio_button') ) == 'widepostlayout') { ?>
+      <?php if(( get_theme_mod('archive_preview_layout_radio_button') ) == 'widepostlayout') { ?>
         <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 
           <!--  REQUIRE TEMPLATE FOR WIDE POST LAYOUT  -->
@@ -132,7 +132,7 @@
 
 
       <!-- LIST AND ALTERNATE POST LAYOUT  -->
-    <?php } else if(( get_theme_mod('post_preview_layout_radio_button') ) == 'gridleftpostlayout') { ?>
+    <?php } else if(( get_theme_mod('archive_preview_layout_radio_button') ) == 'gridleftpostlayout') { ?>
       <div class="gridpostlayout-flex-container">
             <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 
@@ -141,7 +141,7 @@
       </div>
 
 
-    <?php } else if(( get_theme_mod('post_preview_layout_radio_button') ) == 'gridrightpostlayout') { ?>
+    <?php } else if(( get_theme_mod('archive_preview_layout_radio_button') ) == 'gridrightpostlayout') { ?>
 
       <div class="gridpostlayout-flex-container">
             <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
@@ -150,7 +150,7 @@
             <?php require get_template_directory() . '/inc/template-parts/index/gridpostlayoutrightaligned.php'; ?>
       </div>
 
-    <?php } else if(( get_theme_mod('post_preview_layout_radio_button') ) == 'imagepostlayout') { ?>
+    <?php } else if(( get_theme_mod('archive_preview_layout_radio_button') ) == 'imagepostlayout') { ?>
 
       <div class="imagepostlayout-whole-container">
             <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
