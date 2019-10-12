@@ -424,6 +424,7 @@ display: none;
   overflow: auto;
 
 
+
 }
 
 .blog-sidebar-width-container {
@@ -440,7 +441,7 @@ display: none;
   margin-left: 25px;
   margin-right: 25px;
   overflow: auto;
-  margin-bottom: 50px;
+  margin-bottom: 100px!important;
 }
 
 .blog-sidebar-container {
@@ -2407,6 +2408,7 @@ font-family: Montserrat;
   width: 80%;
   margin: 0px auto;
   max-width: 1500px;
+
 }
 
 .blog-column-container-nosidebar {
@@ -2457,7 +2459,6 @@ font-family: Montserrat;
   margin: 0px auto;
   text-align: center;
   font-size: 40px;
-  text-shadow: pink 2px 2px;
   padding-top: 30vh;
   letter-spacing: 5px;
 }
@@ -2630,4 +2631,12 @@ font-size: 15px;
   font-size: 14px;
   line-height: 1.5em;
 
+}
+
+
+
+/*   archives    */
+
+.blog-search-text ul {
+  display: inline;
 }

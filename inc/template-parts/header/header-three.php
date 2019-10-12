@@ -1,3 +1,10 @@
+<style>
+.header-overlay-title-container {
+  text-shadow:  <?php echo get_theme_mod('header_text_hover_color'); ?> 2px 2px;
+}
+
+</style>
+
 <div class="menuleft-menu-container Montserrat headerTextColor">
 
   <?php

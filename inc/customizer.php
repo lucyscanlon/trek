@@ -1075,6 +1075,30 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
     )));
 
+    //secondary menu display
+    $wp_customize->add_setting('secondary_menu_display_title');
+
+
+    $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'secondary_menu_display_title', array(
+      'label' => __('Secondary Menu', 'Trek'),
+      'description' => __('This secondary menu was built to display some of your categories. If your blog is new and has limited posts then you might not have anything to fill this space. Turn it off for now here.', 'trek'),
+      'section' => 'blog_section',
+      'settings' => 'secondary_menu_display_title'
+    )));
+
+    //toggle secondary menu
+    $wp_customize->add_setting('secondary_menu_display', array(
+      'default' => 1,
+      'transport' => 'refresh',
+
+    ));
+
+    $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'secondary_menu_display', array(
+      'label' => __('Display Secondary Menu', 'Trek'),
+      'section' => 'blog_section',
+      'settings'=> 'secondary_menu_display'
+    )));
+
 
 
     //blog  notice
@@ -1086,6 +1110,20 @@ function trek_lucyisobel_custom_settings($wp_customize){
       'description' => __('Edit the appearance of your blog page'),
       'section' => 'blog_section',
       'settings' => 'blog_title_section'
+    )));
+
+
+    //toggle sidebar on or off
+    $wp_customize->add_setting('blog_toggle_sidebar', array(
+      'default' => 1,
+      'transport' => 'refresh',
+
+    ));
+
+    $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'blog_toggle_sidebar', array(
+      'label' => __('Display Sidebar', 'Trek'),
+      'section' => 'blog_section',
+      'settings'=> 'blog_toggle_sidebar'
     )));
 
 
@@ -1339,7 +1377,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       //single posts section
       //creating the single post settings section
       $wp_customize->add_section('singlepost_section', array(
-        'title' => __('Post Settings', 'Trek'),
+        'title' => __('Single Post Settings', 'Trek'),
         'panel' => 'theme_settings',
         'priority' => 22,
       ));
@@ -1353,6 +1391,20 @@ function trek_lucyisobel_custom_settings($wp_customize){
         'description' => __('Edit the layout of your posts'),
         'section' => 'singlepost_section',
         'settings' => 'singlespost_title_section'
+      )));
+
+
+      //toggle sidebar on or off for single posts
+      $wp_customize->add_setting('single_toggle_sidebar', array(
+        'default' => 1,
+        'transport' => 'refresh',
+
+      ));
+
+      $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'single_toggle_sidebar', array(
+        'label' => __('Display Sidebar', 'Trek'),
+        'section' => 'singlepost_section',
+        'settings'=> 'single_toggle_sidebar'
       )));
 
 
@@ -1580,6 +1632,78 @@ function trek_lucyisobel_custom_settings($wp_customize){
           'section' => 'singlepost_section',
           'settings'=> 'toggle_singlepost_authorbox'
         )));
+
+
+
+
+        // Archive
+        // Creating the archive settings section
+        $wp_customize->add_section('archive_section', array(
+          'title' => __('Archive Settings', 'Trek'),
+          'panel' => 'theme_settings',
+          'priority' => 23,
+        ));
+
+
+        // Archive Title
+        $wp_customize->add_setting('archive_title_section');
+
+
+        $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'archive_title_section', array(
+          'label' => __('Archive Settings', 'Trek'),
+          'description' => __('Edit the layout of your archives'),
+          'section' => 'archive_section',
+          'settings' => 'archive_title_section'
+        )));
+
+
+        // Toggle Sidebar on or off for Archive
+        $wp_customize->add_setting('archive_toggle_sidebar', array(
+          'default' => 1,
+          'transport' => 'refresh',
+
+        ));
+
+        $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'archive_toggle_sidebar', array(
+          'label' => __('Display Sidebar', 'Trek'),
+          'section' => 'archive_section',
+          'settings'=> 'archive_toggle_sidebar'
+        )));
+
+        // Setting to choose archive layout
+        $wp_customize->add_setting( 'archive_preview_layout_radio_button',
+      			array(
+      				'default' => 'widepostlayout',
+      				'transport' => 'refresh',
+      				'sanitize_callback' => 'skyrocket_radio_sanitization'
+      			)
+      		);
+      		$wp_customize->add_control( new Skyrocket_Image_Radio_Button_Custom_Control( $wp_customize, 'archive_preview_layout_radio_button',
+      			array(
+      				'label' => __( 'Archive Layout', 'Trek' ),
+      				'description' => esc_html__( 'Choose the layout of your archive pages', 'Trek' ),
+      				'section' => 'archive_section',
+              'settings' => 'archive_preview_layout_radio_button',
+      				'choices' => array(
+      					'widepostlayout' => array(
+      						'image' => trailingslashit( get_template_directory_uri() ) . 'img/wholeimagelayout.png',
+      						'name' => __( 'Whole Image Layout', 'Trek' )
+      					),
+      					'gridrightpostlayout' => array(
+      						'image' => trailingslashit( get_template_directory_uri() ) . 'img/listoptiontwo.png',
+      						'name' => __( 'List Option One', 'Trek' )
+      					),
+                'gridleftpostlayout' => array(
+      						'image' => trailingslashit( get_template_directory_uri() ) . 'img/listoptionone.png',
+      						'name' => __( 'List Option Two', 'Trek' )
+      					),
+                'imagepostlayout' => array(
+      						'image' => trailingslashit( get_template_directory_uri() ) . 'img/imageasbackground.png',
+      						'name' => __( 'Image as background', 'Trek' )
+      					),
+      				)
+      			)
+      		) );
 
 
 

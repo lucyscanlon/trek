@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-<?php // adding the color styles for links on the blog page ?>
 <head>
   <style>
 
@@ -16,8 +15,6 @@
     color: <?php echo get_theme_mod('header_text_hover_color');?>;
     transition-duration: 0.5s;
   }
-
-  <?php if(( get_theme_mod('blog_toggle_sidebar') ) == 1 ) { ?>
 
   <?php if(( get_theme_mod('sidebar_layout_radio_button') ) == 'sidebarright') { ?>
 
@@ -62,23 +59,6 @@
 
       <?php } ?>
 
-      <?php } else { ?>
-
-        .blog-sidebar-width-container {
-          display: none;
-        }
-
-        .blog-content-width-container {
-          width: 100%;
-
-        }
-
-        .blog-column-container {
-          margin: 0px auto;
-        }
-
-    <?php  }?>
-
       .blog-content-top-padding {
         background-color: <?php echo get_theme_mod('blog_page_background_color'); ?>;
       }
@@ -100,6 +80,11 @@
         text-decoration: none;
       }
 
+      .blog-search-results {
+        background-color: <?php echo get_theme_mod('navigation_background_color'); ?>;
+        color: <?php echo get_theme_mod('navigation_text_color'); ?>;
+      }
+
 
   </style>
 </head>
@@ -107,23 +92,25 @@
   <?php require get_template_directory() . '/inc/template-parts/index/blogbanner.php'; ?>
 </section>
 <div class="secondary-categories-whole-container Montserrat">
-  <?php if (( get_theme_mod('secondary_menu_display') ) == 1) { ?>
   <?php wp_nav_menu( array(
     'theme_location' => 'secondary',
     'container' => false,
   )); ?>
-<?php } ?>
 </div>
-
-
-<!-- BLOG POST PREVIEWS-->
-
 <div class="blog-content-top-padding">
-
 </div>
 <div class="blog-content-whole-container">
   <div class="blog-content-width-container">
     <div class="blog-column-container">
+
+
+      <div class="blog-search-results Montserrat">
+        <div class="blog-search-text">
+          <p>
+            <?php printf('Showing results for the ', 'trek'); the_archive_title(); ?>
+          </p>
+        </div>
+      </div>
 
       <?php if( have_posts() ) {
 
@@ -131,8 +118,7 @@
 
 
       <!-- WIDE POST LAYOUT  -->
-      <?php if(( get_theme_mod('post_preview_layout_radio_button') ) == 'widepostlayout') { ?>
-
+      <?php if(( get_theme_mod('archive_preview_layout_radio_button') ) == 'widepostlayout') { ?>
         <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 
           <!--  REQUIRE TEMPLATE FOR WIDE POST LAYOUT  -->
@@ -142,32 +128,27 @@
 
 
       <!-- LIST AND ALTERNATE POST LAYOUT  -->
-    <?php } else if(( get_theme_mod('post_preview_layout_radio_button') ) == 'gridleftpostlayout') { ?>
+    <?php } else if(( get_theme_mod('archive_preview_layout_radio_button') ) == 'gridleftpostlayout') { ?>
       <div class="gridpostlayout-flex-container">
-
             <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 
             <!--  REQUIRE TEMPLATE FOR GRID / LIST POST LAYOUT  -->
             <?php require get_template_directory() . '/inc/template-parts/index/gridpostlayout.php'; ?>
-
       </div>
 
 
-    <?php } else if(( get_theme_mod('post_preview_layout_radio_button') ) == 'gridrightpostlayout') { ?>
+    <?php } else if(( get_theme_mod('archive_preview_layout_radio_button') ) == 'gridrightpostlayout') { ?>
 
       <div class="gridpostlayout-flex-container">
-
             <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 
             <!--  REQUIRE TEMPLATE FOR GRID / LIST POST LAYOUT  -->
             <?php require get_template_directory() . '/inc/template-parts/index/gridpostlayoutrightaligned.php'; ?>
-
       </div>
 
-    <?php } else if(( get_theme_mod('post_preview_layout_radio_button') ) == 'imagepostlayout') { ?>
+    <?php } else if(( get_theme_mod('archive_preview_layout_radio_button') ) == 'imagepostlayout') { ?>
 
       <div class="imagepostlayout-whole-container">
-
             <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 
             <!--  REQUIRE TEMPLATE FOR IMAGE POST LAYOUT  -->
@@ -179,25 +160,19 @@
 
     <?php } ?>
 
-    <!--  POST LOOP ENDS HERE  -->
-  <?php  endwhile;
-} else {
-  require get_template_directory() . '/inc/template-parts/index/index-nocontent.php';
-
-} ?>
+      <!--  POST LOOP ENDS HERE  -->
+    <?php  endwhile;
+  } else {
+    require get_template_directory() . '/inc/template-parts/index/index-nocontent.php';
+  } ?>
 
 
     <div class="pagination-whole-container Montserrat">
       <?php wpex_pagination(); ?>
     </div>
 
-
     </div>
-
-
-
   </div>
-
 
 
   <!--  SIDEBAR  -->

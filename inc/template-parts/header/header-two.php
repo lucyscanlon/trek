@@ -1,3 +1,11 @@
+<style>
+
+.header-overlay-title-container {
+  text-shadow:  <?php echo get_theme_mod('header_text_hover_color'); ?> 2px 2px;
+}
+
+</style>
+
 <div class="menuright-socialmedia-search-container">
   <ul class="headerTextColor">
     <?php if (( get_theme_mod('toggle_switch_twitter') ) == 1){ ?>

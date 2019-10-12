@@ -16,6 +16,8 @@
 }
 
 
+<?php if(( get_theme_mod('single_toggle_sidebar') ) == 1 ) { ?>
+
 <?php if(( get_theme_mod('sidebar_layout_radio_button') ) == 'sidebarright') { ?>
 
   .blog-content-whole-container {
@@ -28,7 +30,6 @@
 
   .blog-sidebar-width-container {
     order: 2;
-    padding-bottom: 45px;
   }
 
   .blog-sidebar-container {
@@ -49,19 +50,33 @@
 
     .blog-sidebar-width-container {
       order: 1;
-      padding-bottom: 45px;
-
     }
 
     .blog-sidebar-container {
       float: right;
-
     }
 
 
 
 
     <?php } ?>
+
+    <?php } else { ?>
+
+      .blog-sidebar-width-container {
+        display: none;
+      }
+
+      .blog-content-width-container {
+        width: 100%;
+
+      }
+
+      .blog-column-container {
+        margin: 0px auto;
+      }
+
+  <?php  }?>
 
     .blog-content-top-padding {
       background-color: <?php echo get_theme_mod('blog_page_background_color'); ?>;
