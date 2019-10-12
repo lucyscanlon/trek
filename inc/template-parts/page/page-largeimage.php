@@ -46,12 +46,5 @@
   <div class="singlepost-content-container Montserrat">
     <?php echo the_content();  ?>
   </div>
-  <div class="singlepost-tags-like-whole-container Montserrat">
-    <div class="singlepost-tags-container">
-    </div>
-    <div class="singlepost-like-container">
-
-    </div>
-  </div>
 
 </div>
