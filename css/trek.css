@@ -935,6 +935,38 @@ display: none;
 }
 
 
+/* travel stats widget */
+
+.trek-travelstats-whole-container {
+  width: 95%;
+  margin: 0px auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.trek-travelstats-flex-container {
+  display: inline;
+  width: 50%;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+
+}
+
+.trek-travelstats-flex-container i {
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+.trek-travelstats-flex-container p {
+  font-size: 10px;
+}
+
+
 /* search   */
 
 .searchform-container input {
@@ -2431,7 +2463,7 @@ font-family: Montserrat;
 
 /*   search overlay    */
  .header-search-overlay-container {
-  background-color: white;
+   background-color: white;
   width: 100%;
   height: 0vh;
   position: fixed;
