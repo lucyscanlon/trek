@@ -302,8 +302,8 @@ display: none;
   text-align: center;
   padding-top: 13px;
   text-transform: uppercase;
-  letter-spacing: 6px;
-  font-size: 11px;
+  letter-spacing: 7px;
+  font-size: 9.5px;
   transition-duration: 0.5s;
 }
 
@@ -327,7 +327,7 @@ display: none;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  font-size: 65px;
+  font-size: 63px;
 }
 
 .featuredpost-image-container {
@@ -377,7 +377,7 @@ display: none;
   margin-right: auto;
   text-align: center;
   letter-spacing: 5px;
-  font-size: 15px;
+  font-size: 14px;
   text-transform: uppercase;
   padding-top: 30px;
 }
@@ -405,8 +405,8 @@ display: none;
   text-transform: uppercase;
   color: white;
   text-align: center;
-  letter-spacing: 5px;
-  font-size: 11px;
+  letter-spacing: 7px;
+  font-size: 9.5px;
 }
 
 .secondary-categories-whole-container ul {
@@ -526,9 +526,9 @@ display: none;
   line-height: 1.5em;
   letter-spacing: 1px;
   padding-top: 30px;
-  font-size: 14px;
+  font-size: 13px;
   padding-bottom: 20px;
-  text-align: center;
+  text-align: left;
 
 }
 
@@ -742,7 +742,7 @@ display: none;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.5em;
   letter-spacing: 1px;
   padding-top: 30px;
@@ -1094,7 +1094,7 @@ font-size: 12px;
 .singlepost-content-container p {
   padding-bottom: 20px;
   padding-top: 10px;
-  font-size: 14px;
+  font-size: 13px;
   letter-spacing: 1px;
   line-height: 1.5em;
 }
@@ -1492,8 +1492,8 @@ ul.page-numbers li {
 }
 
 .trek-aboutme-readmore-container p {
-  letter-spacing: 7px;
-  font-size: 11px;
+  letter-spacing: 6px;
+  font-size: 10px;
 }
 
 
@@ -1665,8 +1665,8 @@ ul.page-numbers li {
 }
 
 .trek-linktopage-readmore-container a {
-  letter-spacing: 7px;
-  font-size: 11px;
+  letter-spacing: 6px;
+  font-size: 10px;
 }
 
 
@@ -2464,7 +2464,7 @@ font-family: Montserrat;
 .page-split-content-container p {
   padding-bottom: 20px;
   padding-top: 10px;
-  font-size: 14px;
+  font-size: 13px;
   letter-spacing: 1px;
   line-height: 1.5em;
 }

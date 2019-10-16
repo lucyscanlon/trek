@@ -12,7 +12,7 @@
 
 
 <!-- BLOG POST PREVIEWS-->
-<div class="sidebar">
+<div class="archive">
 <div class="blog-content-top-padding">
 </div>
 <div class="blog-content-whole-container">
