@@ -6,38 +6,6 @@ if( post_password_required() ){
 }
 
 ?>
-<style>
-.comment-form #comment:focus {
-  outline: none !important;
-  border:1px solid red;
-  box-shadow: 0 0 10px <?php echo get_theme_mod('blog_page_link_hover_color'); ?>;
-}
-
-.author-group input:focus {
-  outline: none !important;
-  border:1px solid red;
-  box-shadow: 0 0 10px <?php echo get_theme_mod('blog_page_link_hover_color'); ?>;
-}
-
-.form-group input:focus {
-  outline: none !important;
-  border:1px solid red;
-  box-shadow: 0 0 10px <?php echo get_theme_mod('blog_page_link_hover_color'); ?>;
-}
-
-.form-submit input {
-  background-color: <?php echo get_theme_mod('header_background_color'); ?>;
-  color: <?php echo get_theme_mod('header_text_color'); ?>;
-
-}
-
-.form-submit input:hover {
-  color: <?php echo get_theme_mod('header_text_hover_color');?>;
-  transition-duration: 1s;
-}
-
-
-</style>
 <div class="comments-whole-container Montserrat">
   <div class="comments-area">
   <?php

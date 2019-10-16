@@ -6,57 +6,6 @@ Template Name: Split Screen
 ?>
 <?php get_header(); ?>
 <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
-<style>
-.secondary-categories-whole-container {
-  background-color: <?php echo get_theme_mod('header_background_color'); ?>;
-}
-
-.secondary-categories-whole-container a {
-  color: <?php echo get_theme_mod('header_text_color'); ?>;
-  transition-duration: 0.5s;
-}
-
-.secondary-categories-whole-container a:hover {
-  color: <?php echo get_theme_mod('header_text_hover_color');?>;
-  transition-duration: 0.5s;
-}
-
-.page-top-padding {
-  background-color: <?php echo get_theme_mod('blog_page_background_color'); ?>;
-}
-
-.page-background-color-container {
-  background-color: <?php echo get_theme_mod('blog_page_background_color'); ?>;
-}
-
-.page-split-tags-container {
-  background-color: <?php echo get_theme_mod('header_background_color'); ?>;
-  color: <?php echo get_theme_mod('header_text_color'); ?>; ?>;
-}
-
-.page-split-comment-container a {
-  color: <?php echo get_theme_mod('blog_page_link_color'); ?>
-}
-
-.page-split-comment-container a:hover {
-  color: <?php echo get_theme_mod('blog_page_link_hover_color'); ?>
-}
-
-.page-split-comment-container .reply {
-  background-color: <?php echo get_theme_mod('header_background_color'); ?>;
-}
-
-.page-split-comment-container .reply  a {
-  color: white
-}
-
-.page-split-comment-container .reply  a:hover {
-  color: <?php echo get_theme_mod('blog_page_link_hover_color'); ?>
-}
-
-
-
-</style>
 
 <?php
   while ( have_posts() ) :

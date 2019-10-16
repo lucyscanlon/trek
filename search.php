@@ -1,94 +1,5 @@
 <?php get_header(); ?>
 <?php // adding the color styles for links on the blog page ?>
-<head>
-  <style>
-
-  .secondary-categories-whole-container {
-    background-color: <?php echo get_theme_mod('header_background_color'); ?>;
-  }
-
-  .secondary-categories-whole-container a {
-    color: <?php echo get_theme_mod('header_text_color'); ?>;
-    transition-duration: 0.5s;
-  }
-
-  .secondary-categories-whole-container a:hover {
-    color: <?php echo get_theme_mod('header_text_hover_color');?>;
-    transition-duration: 0.5s;
-  }
-
-  <?php if(( get_theme_mod('sidebar_layout_radio_button') ) == 'sidebarright') { ?>
-
-    .blog-content-whole-container {
-      order: 1;
-    }
-
-    .blog-column-container {
-      float: right;
-    }
-
-    .blog-sidebar-width-container {
-      order: 2;
-    }
-
-    .blog-sidebar-container {
-      float: left;
-    }
-
-
-
-    <?php } else if(( get_theme_mod('sidebar_layout_radio_button') ) == 'sidebarleft') { ?>?>
-
-      .blog-content-whole-container {
-        order: 2;
-      }
-
-      .blog-column-container {
-        float: left;
-      }
-
-      .blog-sidebar-width-container {
-        order: 1;
-      }
-
-      .blog-sidebar-container {
-        float: right;
-      }
-
-
-
-
-      <?php } ?>
-
-      .blog-content-top-padding {
-        background-color: <?php echo get_theme_mod('blog_page_background_color'); ?>;
-      }
-
-      .blog-content-width-container {
-        background-color: <?php echo get_theme_mod('blog_page_background_color'); ?>;
-      }
-
-      .blog-sidebar-width-container {
-        background-color: <?php echo get_theme_mod('blog_page_background_color'); ?>;
-      }
-
-
-      .page-numbers a:hover,
-      .page-numbers.current,
-      .page-numbers.current:hover {
-        color: <?php echo get_theme_mod('navigation_text_color'); ?>;
-        background-color: <?php echo get_theme_mod('navigation_background_color'); ?>;
-        text-decoration: none;
-      }
-
-      .blog-search-results {
-        background-color: <?php echo get_theme_mod('archive_navbar_backgroundcolor'); ?>;
-        color: <?php echo get_theme_mod('archive_navbar_textcolor'); ?>;
-      }
-
-
-  </style>
-</head>
 <section class="featured-post-container">
   <?php require get_template_directory() . '/inc/template-parts/index/blogbanner.php'; ?>
 </section>
@@ -101,7 +12,7 @@
 
 
 <!-- BLOG POST PREVIEWS-->
-
+<div class="sidebar">
 <div class="blog-content-top-padding">
 </div>
 <div class="blog-content-whole-container">
@@ -191,6 +102,7 @@
     </div>
 
   </div>
+</div>
 </div>
 
 <?php get_footer(); ?>

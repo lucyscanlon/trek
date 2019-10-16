@@ -769,21 +769,6 @@ function trek_lucyisobel_custom_settings($wp_customize){
       'settings' => 'homepage_title_link_color'
     )));
 
-
-    //toggle title letter spacing on and off
-    $wp_customize->add_setting('homepage_title_letterspacing_toggle', array(
-      'default' => 1,
-      'transport' => 'refresh',
-
-    ));
-
-    $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'homepage_title_letterspacing_toggle', array(
-      'label' => __('Increase Letter Spacing', 'Trek'),
-      'description' => __('This setting increases the letter spacing when the mouse hovers over the title', 'trek'),
-      'section' => 'homepage_section',
-      'settings'=> 'homepage_title_letterspacing_toggle'
-    )));
-
     //rblog link
     $wp_customize->add_setting('homepage_blog_link', array(
 
@@ -1871,13 +1856,23 @@ add_action('customize_register', 'trek_lucyisobel_custom_settings');
       transition-duration: 0.5s;
     }
 
+    .homepage-title-container a  {
+      color: <?php echo get_theme_mod('homepage_title_color'); ?>;
+      text-shadow: <?php echo get_theme_mod('homepage_title_shadow_color' ); ?> 6px 6px;
+      transition-duration: 1s;
+    }
+
+    .homepage-title-container a:hover {
+        color: <?php echo get_theme_mod('homepage_title_link_color'); ?>;
+        transition-duration: 1s;
+    }
+
     .homepage-whole-body-container {
       background: url('<?php echo $homepage_background_image; ?>');
       background-position: center center;
       background-size: cover;
     }
 
-    /* homepage - image and video  */
 
     .homepage-readmore-button-container a {
       color: <?php echo get_theme_mod('homepage_readmore_text_color'); ?>;
@@ -1890,106 +1885,22 @@ add_action('customize_register', 'trek_lucyisobel_custom_settings');
       transition-duration: 0.5s;
     }
 
-    .homepage-title-container a h1:hover {
-      color: <?php echo get_theme_mod('homepage_title_link_color'); ?>;
-      transition-duration: 1s;
+    .homepage-description-container {
+      color: <?php echo get_theme_mod('homepage_description_color'); ?>;
+      text-shadow: <?php echo get_theme_mod('homepage_description_shadow_color'); ?>;
     }
 
-    <?php if(( get_theme_mod('homepage_title_letterspacing_toggle') ) == 1 ) { ?>
-    .homepage-title-container a h1:hover {
-      letter-spacing: 6px;
-    }
-    <?php } ?>
-
-    .homepage-title-container a h1 {
-      color: <?php echo get_theme_mod('homepage_title_color'); ?>;
-      text-shadow: <?php echo get_theme_mod('homepage_title_shadow_color' ); ?> 6px 6px;
-      transition-duration: 1s;
+    .homepage-readmore-button-container {
+      background-color: <?php echo get_theme_mod('homepage_readmore_color'); ?>;
     }
 
 
 
-    /* index   */
-
-    .secondary-categories-whole-container {
-      background-color: <?php echo get_theme_mod('header_background_color'); ?>;
-    }
-
-    .secondary-categories-whole-container a {
-      color: <?php echo get_theme_mod('header_text_color'); ?>;
-      transition-duration: 0.5s;
-    }
-
-    .secondary-categories-whole-container a:hover {
-      color: <?php echo get_theme_mod('header_text_hover_color');?>;
-      transition-duration: 0.5s;
-    }
-
-    .blog-content-top-padding {
-      background-color: <?php echo get_theme_mod('blog_page_background_color'); ?>;
-    }
-
-    .blog-content-width-container {
-      background-color: <?php echo get_theme_mod('blog_page_background_color'); ?>;
-    }
-
-    .blog-sidebar-width-container {
-      background-color: <?php echo get_theme_mod('blog_page_background_color'); ?>;
-    }
 
 
-    .page-numbers a:hover,
-    .page-numbers.current,
-    .page-numbers.current:hover {
-      color: <?php echo get_theme_mod('navigation_text_color'); ?>;
-      background-color: <?php echo get_theme_mod('navigation_background_color'); ?>;
-      text-decoration: none;
-    }
 
-/* Moving sidebar to correct location. Or if sidebar turned off centering the posts */
-    <?php if(( get_theme_mod('blog_toggle_sidebar') ) == 1 ) { ?>
-      <?php if(( get_theme_mod('sidebar_layout_radio_button') ) == 'sidebarright') { ?>
 
-       .blog-content-whole-container {
-        order: 1;
-      }
-       .blog-column-container {
-        float: right;
-      }
-       .blog-sidebar-width-container {
-        order: 2;
-      }
-      .blog-sidebar-container {
-        float: left;
-      }
-      <?php } else if(( get_theme_mod('sidebar_layout_radio_button') ) == 'sidebarleft') { ?>?>
 
-         .blog-content-whole-container {
-          order: 2;
-        }
-        .blog-column-container {
-          float: left;
-        }
-        .blog-sidebar-width-container {
-          order: 1;
-        }
-        .blog-sidebar-container {
-          float: right;
-        }
-        <?php } ?>
-      <?php } else { ?>
-
-          .blog-sidebar-width-container {
-            display: none;
-          }
-          .blog-content-width-container {
-            width: 100%;
-          }
-          .blog-column-container {
-            margin: 0px auto;
-          }
-
-      <?php  }?>
 
 
 

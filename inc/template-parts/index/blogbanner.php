@@ -11,34 +11,6 @@
 */
 
 ?>
-<style>
-
-.featuredpost-readmore-container a:hover {
-  color: <?php echo get_theme_mod('blog_page_link_hover_color'); ?>
-}
-
-.featuredpost-title-container a {
-  color: white;
-}
-
-.featuredpost-title-container a:hover {
-  color: <?php echo get_theme_mod('blog_page_link_hover_color'); ?>
-}
-
-.featuredpost-homepage-title-container a {
-  color: <?php echo get_theme_mod('blog_banner_text_color'); ?>;
-  text-shadow: <?php echo get_theme_mod('blog_banner_text_shadow_color' ); ?> 4px 4px;
-}
-
-.featuredpost-description-container {
-  color: <?php echo get_theme_mod('blog_banner_text_color'); ?>;
-  text-shadow: <?php echo get_theme_mod('blog_banner_text_shadow_color' ); ?> 1px 1px;
-}
-
-
-
-
-</style>
 <?php
 
 $featuredCategory = get_theme_mod('featuredpost_category');
@@ -57,10 +29,10 @@ $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
   <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' ); ?>
    <div class="featuredpost-image-container" style="<?php if ( has_post_thumbnail( get_the_ID() ) ) { ?> background:radial-gradient(circle, rgba(0,0,0,0.4 ) 20%, rgba(0,0,0,0) 92%), url('<?php echo $backgroundImg[0]; ?>'); background-size: cover; background-position: center center; <?php } else { ?> background-color: <?php echo get_theme_mod('no_featured_image_color_control'); ?>;  <?php } ?>">
      <div class="featuredpost-container-padding">
-     <div class="featuredpost-title-container ReenieBeanie">
+     <div class="featuredpost-title-container ReenieBeanie whitetext-hover-color">
        <a href="<?php the_permalink(); ?>"><h1><?php the_title(); ?></h1></a>
      </div>
-     <div class="featuredpost-readmore-container Montserrat">
+     <div class="featuredpost-readmore-container Montserrat whitetext-hover-color">
        <a href="<?php the_permalink(); ?>">read more</a>
      </div>
    </div>

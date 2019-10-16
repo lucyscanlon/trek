@@ -15,7 +15,7 @@
       </div>
     </div>
     <div class="singlepost-info-container">
-      <div class="singlepost-author-title-container Montserrat">
+      <div class="singlepost-author-title-container Montserrat bloglinkcolor">
         <h3>Author: <a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>"><?php the_author_meta( 'display_name' ); ?></a></h3>
       </div>
       <div class="singlepost-author-description-container Montserrat">

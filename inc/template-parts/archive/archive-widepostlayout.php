@@ -11,49 +11,19 @@
 */
 
 ?>
-
-<style>
-
-.widepostlayout-categories-container a {
-  color: <?php echo get_theme_mod('blog_page_link_color'); ?>
-}
-
-.widepostlayout-categories-container a:hover {
-  color: <?php echo get_theme_mod('blog_page_link_hover_color'); ?>
-}
-
-.widepostlayout-meta-container a {
-  color: <?php echo get_theme_mod('blog_page_link_color'); ?>
-}
-
-.widepostlayout-meta-container a:hover {
-  color: <?php echo get_theme_mod('blog_page_link_hover_color'); ?>
-}
-
-.widepostlayout-readmore-container a {
-  color: <?php echo get_theme_mod('blog_page_link_color'); ?>
-}
-
-.widepostlayout-readmore-container a:hover {
-  color: <?php echo get_theme_mod('blog_page_link_hover_color'); ?>
-}
-
-
-</style>
-
 <div class="widepostlayout-wholepost-container">
   <div class="widepost-layout-featuredimage-container">
     <img src="<?php echo $backgroundImg[0]; ?>">
   </div>
   <?php if (( get_theme_mod('toggle_archive_categories') ) == 1) { ?>
-  <div class="widepostlayout-categories-container Montserrat">
+  <div class="widepostlayout-categories-container Montserrat bloglinkcolor">
     <p><?php the_category(); ?></p>
   </div>
 <?php } ?>
 <div class="widepostlayout-title-container ReenieBeanie">
   <h1><?php the_title(); ?></h1>
 </div>
-<div class="widepostlayout-meta-container Montserrat">
+<div class="widepostlayout-meta-container Montserrat bloglinkcolor">
   <p><ul> <?php if (( get_theme_mod('toggle_archive_date') ) == 1) { ?>
 
      <li><?php the_time('jS F Y')?></li>
@@ -80,7 +50,7 @@
     <?php the_excerpt(); ?>
   </p>
 </div>
-<div class="widepostlayout-readmore-container Montserrat">
+<div class="widepostlayout-readmore-container Montserrat bloglinkcolor">
     <a href="<?php the_permalink(); ?>"><p>Read More</p></a>
   </div>
 </div>

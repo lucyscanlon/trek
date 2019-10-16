@@ -340,6 +340,10 @@ display: none;
   letter-spacing: 6px;
 }
 
+.featuredpost-title-container a {
+  color: white;
+}
+
 .featuredpost-readmore-container {
   width: 50%;
   margin-left: auto;
@@ -667,6 +671,9 @@ display: none;
 
 }
 
+.imagepostlayout-post-container a {
+  color: white;
+}
 
 
 .imagepostlayout-title-container {
@@ -684,6 +691,7 @@ display: none;
 .imagepostlayout-meta-container {
   text-align: center;
   padding-bottom: 180px;
+
 }
 
 .imagepostlayout-meta-container li {
@@ -709,6 +717,10 @@ display: none;
   letter-spacing: 7px;
   font-size: 10px;
   padding-bottom: 200px;
+}
+
+.imagepostlayout-readmore-container a {
+  color: white;
 }
 
 .imagepost-excerpt-whole-container {
@@ -2460,6 +2472,16 @@ font-family: Montserrat;
   text-align: center;
   letter-spacing: 6px;
   color: rgba(0,0,0,0.5);
+  font-size: 9px;
+  text-transform: uppercase;
+}
+
+.page-meta-container-three {
+  width: 80%;
+  margin: 0px auto;
+  text-align: center;
+  letter-spacing: 6px;
+  color: white;
   font-size: 9px;
   text-transform: uppercase;
 }

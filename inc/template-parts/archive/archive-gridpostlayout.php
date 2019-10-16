@@ -11,52 +11,6 @@
 */
 
 ?>
-<style>
-
-
-.gridpostlayout-info-categories-container a {
-  color: <?php echo get_theme_mod('blog_page_link_color'); ?>
-}
-
-.gridpostlayout-info-categories-container a:hover {
-  color: <?php echo get_theme_mod('blog_page_link_hover_color'); ?>
-}
-
-.gridpostlayout-info-readmore-container a {
-  color: <?php echo get_theme_mod('blog_page_link_color'); ?>
-}
-
-.gridpostlayout-info-readmore-container a:hover {
-  color: <?php echo get_theme_mod('blog_page_link_hover_color'); ?>
-}
-
-.gridpostlayout-readmore-container a {
-  color: <?php echo get_theme_mod('blog_page_link_color'); ?>
-}
-
-.gridpostlayout-readmore-container a:hover {
-  color: <?php echo get_theme_mod('blog_page_link_hover_color'); ?>
-}
-
-.gridpostlayout-meta-container a {
-  color: <?php echo get_theme_mod('blog_page_link_color'); ?>
-}
-
-.gridpostlayout-meta-container a:hover {
-  color: <?php echo get_theme_mod('blog_page_link_hover_color'); ?>
-}
-
-.gridpostlayout-title-container a {
-  color: <?php echo get_theme_mod('blog_page_link_color'); ?>
-}
-
-.gridpostlayout-title-container a:hover {
-  color: <?php echo get_theme_mod('blog_page_link_hover_color'); ?>
-}
-
-
-</style>
-
 <div class="gridpostlayout-post-container">
   <?php if ( has_post_thumbnail( get_the_ID() ) ) {?>
   <div class="gridpostlayout-featuredimage-container" style="background: url('<?php echo $backgroundImg[0]; ?>'); background-size: cover; background-position: center center;">
@@ -66,14 +20,14 @@
   <div class="gridpostlayout-information-container" style="<?php if ( has_post_thumbnail( get_the_ID() ) ) { ?> width: 60%; <?php } else { ?> width: 100%; <?php } ?>">
       <div class="gridpostlayout-info-categories-readmore-container" style="<?php if ( has_post_thumbnail( get_the_ID() ) ) { ?> width: 90%; <?php } else { ?> width: 94%; <?php } ?>">
         <?php if (( get_theme_mod('toggle_archive_categories') ) == 1) { ?>
-        <div class="gridpostlayout-info-categories-container Montserrat">
+        <div class="gridpostlayout-info-categories-container Montserrat bloglinkcolor">
           <p><?php the_category(); ?></p>
         </div>
       <?php } ?>
-      <div class="gridpostlayout-title-container ReenieBeanie">
+      <div class="gridpostlayout-title-container ReenieBeanie bloglinkcolor">
         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
       </div>
-      <div class="gridpostlayout-meta-container Montserrat">
+      <div class="gridpostlayout-meta-container Montserrat bloglinkcolor">
         <p><ul> <?php if (( get_theme_mod('toggle_archive_date') ) == 1) { ?>
 
            <li><?php the_time('jS F Y')?></li>
@@ -99,7 +53,7 @@
           <?php the_excerpt(); ?>
         </p>
       </div>
-      <div class="gridpostlayout-readmore-container Montserrat">
+      <div class="gridpostlayout-readmore-container Montserrat bloglinkcolor">
         <a href="<?php the_permalink(); ?>"><p>Read More</p></a>
       </div>
       </div>
