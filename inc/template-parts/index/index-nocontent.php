@@ -6,7 +6,7 @@
 <?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
   <div class="no-content-whole-container">
     <div class="nocontent-title-container ReenieBeanie">
-      <h2><?php esc_html_e('No Content', 'trek'); ?></h2>
+      <h1><?php esc_html_e('No Content', 'trek'); ?></h1>
     </div>
     <div class="nocontent-description-container Montserrat bloglinkcolor">
       <?php printf(
@@ -25,7 +25,7 @@
 <?php elseif ( is_search() ) : ?>
   <div class="nocontent-search-container">
     <div class="nocontent-search-title ReenieBeanie">
-      <h2><?php esc_html_e( 'Nothing Here')  ?></h2>
+      <h1><?php esc_html_e( 'Nothing Here')  ?></h1>
     </div>
     <div class="nocontent-description-container Montserrat bloglinkcolor">
       <p><?php esc_html_e('Unfortunately there was nothing here to match your search terms. Try searching using different keyterms instead.', 'trek' ); ?></p>
@@ -42,7 +42,7 @@
 <?php else : ?>
   <div class="nocontent-search-container">
     <div class="nocontent-search-title ReenieBeanie">
-      <h2><?php esc_html_e( 'Nothing Here')  ?></h2>
+      <h1><?php esc_html_e( 'Nothing Here')  ?></h1>
     </div>
     <div class="nocontent-description-container Montserrat">
       <p><?php esc_html_e('Unfortunately there was nothing found here. Try using the search box below.', 'trek' ); ?></p>

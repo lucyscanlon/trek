@@ -1890,9 +1890,7 @@ add_action('customize_register', 'trek_lucyisobel_custom_settings');
       text-shadow: <?php echo get_theme_mod('homepage_description_shadow_color'); ?>;
     }
 
-    .homepage-readmore-button-container {
-      background-color: <?php echo get_theme_mod('homepage_readmore_color'); ?>;
-    }
+
 
 
 

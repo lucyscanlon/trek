@@ -487,13 +487,13 @@ display: none;
 }
 
 .widepostlayout-title-container {
-  width: 80%;
+  width: 85%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  font-size: 35px;
+  font-size: 28px;
   padding-top: 35px;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   padding-bottom: 10px;
 }
 
@@ -615,10 +615,11 @@ display: none;
   margin-left: auto;
   margin-right: auto;
   text-align: left;
-  font-size: 60px;
-  padding-top: 35px;
-  padding-bottom: 30px;
+  font-size: 28px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   overflow: auto;
+  letter-spacing: 3px;
 }
 
 .gridpostlayout-meta-container {
@@ -675,22 +676,26 @@ display: none;
   color: white;
 }
 
+.imagepost-padding {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
 
 .imagepostlayout-title-container {
-  width: 80%;
+  width: 85%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  font-size: 40px;
+  font-size: 28px;
+  letter-spacing: 3px;
   color: white;
   text-shadow: black 3px 3px;
-  padding-top: 180px;
   padding-bottom: 20px;
 }
 
 .imagepostlayout-meta-container {
   text-align: center;
-  padding-bottom: 180px;
 
 }
 
@@ -1025,14 +1030,14 @@ font-size: 12px;
 }
 
 .singlepost1-title-container {
-  width: 80%;
+  width: 85%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  font-size: 35px;
+  font-size: 28px;
   padding-top: 40px;
   padding-bottom: 20px;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
 
 }
 
@@ -1124,13 +1129,14 @@ font-size: 12px;
 }
 
 .singlepost2-title-container {
-  width: 80%;
+  width: 85%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   padding-top: 35px;
-  font-size: 40px;
+  font-size: 28px;
   padding-bottom: 20px;
+  letter-spacing: 3px;
 }
 
 .singlepost2-featuredimage-container {
@@ -1154,19 +1160,23 @@ font-size: 12px;
 
 .singlepost3-featuredimage-container {
   width: 100%;
-  min-height: 600px;
+}
+
+.singlepost3-padding {
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 
 .singlepost3-title-container {
-  width: 75%;
+  width: 85%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   color: white;
-  text-shadow: 6px 6px black;
-  font-size: 45px;
-  padding-top: 200px;
+  text-shadow: 3px 3px black;
+  font-size: 28px;
   padding-bottom: 20px;
+  letter-spacing: 3px;
 }
 
 .singlepost3white {
@@ -2425,8 +2435,9 @@ font-family: Montserrat;
   width: 80%;
   margin: 0 auto;
   margin-top: 70px;
-  font-size: 30px;
+  font-size: 28px;
   padding-bottom: 25px;
+  letter-spacing: 3px;
 }
 
 .page-split-meta-container {
@@ -2674,8 +2685,9 @@ font-size: 15px;
   width: 85%;
   margin: 0px auto;
   text-align: center;
-  font-size: 40px;
+  font-size: 28px;
   padding-top: 40px;
+  letter-spacing: 3px;
 }
 
 .nocontent-description-container {
@@ -2698,8 +2710,9 @@ font-size: 15px;
   width: 85%;
   margin: 0px auto;
   text-align: center;
-  font-size: 40px;
+  font-size: 28px;
   padding-top: 40px;
+  letter-spacing: 3px;
 
 }
 

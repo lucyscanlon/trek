@@ -20,8 +20,8 @@
     <p><?php the_category(); ?></p>
   </div>
 <?php } ?>
-<div class="widepostlayout-title-container ReenieBeanie">
-  <h1><?php the_title(); ?></h1>
+<div class="widepostlayout-title-container ReenieBeanie bloglinkcolor">
+  <a href="<?php the_permalink(); ?>"><h1><?php the_title(); ?></h1></a>
 </div>
 <div class="widepostlayout-meta-container Montserrat bloglinkcolor">
   <p><ul> <?php if (( get_theme_mod('toggle_blog_date') ) == 1) { ?>
