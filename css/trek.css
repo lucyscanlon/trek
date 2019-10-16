@@ -43,7 +43,7 @@ a {
   width: 20%;
   height: 100%;
   float: left;
-  border:
+  font-size: 15px;
 }
 
 .menucenter-menu-container {
@@ -70,7 +70,7 @@ a {
   padding-right: 15px;
   text-transform: uppercase;
   text-align: center;
-  font-size: 11px;
+  font-size: 9.5px;
   transition-duration: 0.5s;
 
 
@@ -80,6 +80,7 @@ a {
   width: 20%;
   height: 100%;
   float: right;
+  font-size: 15px;
 }
 
 .screen-reader-text {
@@ -109,7 +110,8 @@ display: none;
 .menuright-socialmedia-search-container {
   width: 40%;
   float: left;
-  height: 100%
+  height: 100%;
+  font-size: 15px;
 }
 
 .menuright-socialmedia-search-container ul {
@@ -128,11 +130,12 @@ display: none;
   width: 60%;
   height: 100%;
   text-align: right;
+
 }
 
 .menuright-menu-container ul {
   padding-top: 14px;
-  padding-right: 50px;
+  padding-right: 10px;
 }
 
 .menuright-menu-container li {
@@ -141,7 +144,7 @@ display: none;
   padding-left: 15px;
   padding-right: 15px;
   display: inline;
-  font-size: 13px;
+  font-size: 9.5px;
   transition-duration: 0.5s;
 
 }
@@ -155,12 +158,14 @@ display: none;
   float: left;
   height: 100%;
 
+
 }
 
 .menuleft-socialmedia-container {
   width: 40%;
   float: right;
   height: 100%;
+  font-size: 15px;
 
 }
 
@@ -176,12 +181,12 @@ display: none;
   padding-right: 15px;
   letter-spacing: 7px;
   display: inline;
-  font-size: 13px;
+  font-size: 9.5px;
   transition-duration: 0.5s;
 }
 
 .menuleft-menu-container ul {
-  padding-left: 30px;
+  padding-left: 10px;
   padding-top: 14px;
 
 }
@@ -479,7 +484,7 @@ display: none;
 
 .widepostlayout-categories-container li {
   display: inline;
-  letter-spacing: 10px;
+  letter-spacing: 6px;
   font-size: 10px;
   padding-left: 13px;
   padding-right: 13px;
@@ -502,7 +507,7 @@ display: none;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   font-size: 10px;
   padding-top: 20px;
   text-transform: uppercase;
@@ -533,7 +538,7 @@ display: none;
   margin-right: auto;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 10px;
+  letter-spacing: 6px;
   font-size: 10px;
   padding-top: 20px;
   padding-bottom: 50px;
@@ -594,7 +599,7 @@ display: none;
   display: inline;
   text-transform: uppercase;
   font-size: 10px;
-  letter-spacing: 7px;
+  letter-spacing: 6px;
   padding-right: 14px;
 
 }
@@ -634,7 +639,7 @@ display: none;
   padding-right: 10px;
   text-transform: uppercase;
   font-size: 10px;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
 }
 
 .gridpostlayout-excerpt-container {
@@ -653,7 +658,7 @@ display: none;
   margin-right: auto;
   text-transform: uppercase;
   letter-spacing: 6px;
-  font-size: 11px;
+  font-size: 10px;
   padding-bottom: 40px;
   padding-top: 10px;
 }
@@ -702,11 +707,11 @@ display: none;
 .imagepostlayout-meta-container li {
   display: inline;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   color: white;
   font-size: 10px;
-  padding-left: 7px;
-  padding-right: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
 
 
 }
@@ -750,7 +755,7 @@ display: none;
   margin-right: auto;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 7px;
+  letter-spacing: 6px;
   font-size: 10px;
   padding-bottom: 60px;
 }
@@ -761,8 +766,8 @@ display: none;
   margin-right: auto;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 7px;
-  font-size: 11px;
+  letter-spacing: 6px;
+  font-size: 10px;
   padding-top: 20px;
 }
 
@@ -1047,8 +1052,8 @@ font-size: 12px;
   margin-right: auto;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 7px;
-  font-size: 11px;
+  letter-spacing: 6px;
+  font-size: 10px;
 }
 
 .singlepost1-categories-container li {
@@ -1064,11 +1069,11 @@ font-size: 12px;
 
 .singlepost1layout-meta-container li {
   display: inline;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
   text-transform: uppercase;
   font-size: 10px;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
 }
 
 .singlepost1layout-meta-container ul {
@@ -1119,8 +1124,8 @@ font-size: 12px;
   padding-left: 10px;
   padding-right: 10px;
   text-transform: uppercase;
-  font-size: 11px;
-  letter-spacing: 5px;
+  font-size: 10px;
+  letter-spacing: 6px;
 
 }
 
@@ -1197,8 +1202,8 @@ font-size: 12px;
   padding-left: 10px;
   padding-right: 10px;
   text-transform: uppercase;
-  letter-spacing: 7px;
-  font-size: 11px;
+  letter-spacing: 6px;
+  font-size: 10px;
 }
 
 
@@ -2443,9 +2448,9 @@ font-family: Montserrat;
 .page-split-meta-container {
   width: 80%;
   margin: 0px auto;
-  letter-spacing: 6px;
+  letter-spacing: 3px;
   color: rgba(0,0,0,0.5);
-  font-size: 9px;
+  font-size: 10px;
   text-transform: uppercase;
 }
 
@@ -2481,9 +2486,9 @@ font-family: Montserrat;
   width: 80%;
   margin: 0px auto;
   text-align: center;
-  letter-spacing: 6px;
+  letter-spacing: 3px;
   color: rgba(0,0,0,0.5);
-  font-size: 9px;
+  font-size: 10px;
   text-transform: uppercase;
 }
 
@@ -2491,9 +2496,9 @@ font-family: Montserrat;
   width: 80%;
   margin: 0px auto;
   text-align: center;
-  letter-spacing: 6px;
+  letter-spacing: 3px;
   color: white;
-  font-size: 9px;
+  font-size: 10px;
   text-transform: uppercase;
 }
 
