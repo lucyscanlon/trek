@@ -1,11 +1,3 @@
-<style>
-
-.header-overlay-title-container {
-  text-shadow:  <?php echo get_theme_mod('header_text_hover_color'); ?> 2px 2px;
-}
-
-</style>
-
 <div class="menuright-socialmedia-search-container">
   <ul class="headerTextColor">
     <?php if (( get_theme_mod('toggle_switch_twitter') ) == 1){ ?>
@@ -64,10 +56,10 @@
 </div>
 <div class="header-search-overlay" id="opensearch">
   <div class="header-search-overlay-container">
-    <div class="search-overlay-close-icon" id="closesearch">
+    <div class="search-overlay-close-icon" id="closesearch" style="cursor: pointer;">
       <i class="fas fa-times"></i>
     </div>
-    <div class="header-overlay-title-container ReenieBeanie">
+    <div class="header-overlay-title-container ReenieBeanie" style="text-shadow:  <?php echo get_theme_mod('header_text_hover_color'); ?> 2px 2px;">
       <h1><?php echo esc_html__( 'Search the blog', 'trek' ); ?></h1>
     </div>
     <div class="header-search-overlay-search-container">

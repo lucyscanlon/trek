@@ -1205,6 +1205,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
 
+
       //post preview display settings notice
       $wp_customize->add_setting('blog_post_preview_settings_notice');
 
@@ -1806,31 +1807,6 @@ function trek_lucyisobel_custom_settings($wp_customize){
             'settings'=> 'toggle_archive_comments'
           )));
 
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }
@@ -1841,7 +1817,7 @@ add_action('customize_register', 'trek_lucyisobel_custom_settings');
 
 
 //adding the styles from the customiser for the header in the head of the website
-function trek_customizer_css(){ ?>
+ function trek_customizer_css() { ?>
   <style type="text/css">
 
     .headerbackgroundcolor {
@@ -1858,6 +1834,14 @@ function trek_customizer_css(){ ?>
 
     .headerTextColor i {
       color: <?php echo get_theme_mod('header_text_color'); ?>;
+    }
+
+    .headerTextColor a:hover {
+      color: <?php echo get_theme_mod('header_text_hover_color'); ?>;
+    }
+
+    .headerTextColor i:hover {
+      color: <?php echo get_theme_mod('header_text_hover_color'); ?>;
     }
 
     .menucenter-socialmedia-container li i:hover {
@@ -1893,6 +1877,122 @@ function trek_customizer_css(){ ?>
       background-size: cover;
     }
 
+    /* homepage - image and video  */
+
+    .homepage-readmore-button-container a {
+      color: <?php echo get_theme_mod('homepage_readmore_text_color'); ?>;
+      transition-duration: 0.5s;
+
+    }
+
+    .homepage-readmore-button-container a:hover {
+      color: <?php echo get_theme_mod('homepage_readmore_text_hover_color'); ?>;
+      transition-duration: 0.5s;
+    }
+
+    .homepage-title-container a h1:hover {
+      color: <?php echo get_theme_mod('homepage_title_link_color'); ?>;
+      transition-duration: 1s;
+    }
+
+    <?php if(( get_theme_mod('homepage_title_letterspacing_toggle') ) == 1 ) { ?>
+    .homepage-title-container a h1:hover {
+      letter-spacing: 6px;
+    }
+    <?php } ?>
+
+    .homepage-title-container a h1 {
+      color: <?php echo get_theme_mod('homepage_title_color'); ?>;
+      text-shadow: <?php echo get_theme_mod('homepage_title_shadow_color' ); ?> 6px 6px;
+      transition-duration: 1s;
+    }
+
+
+
+    /* index   */
+
+    .secondary-categories-whole-container {
+      background-color: <?php echo get_theme_mod('header_background_color'); ?>;
+    }
+
+    .secondary-categories-whole-container a {
+      color: <?php echo get_theme_mod('header_text_color'); ?>;
+      transition-duration: 0.5s;
+    }
+
+    .secondary-categories-whole-container a:hover {
+      color: <?php echo get_theme_mod('header_text_hover_color');?>;
+      transition-duration: 0.5s;
+    }
+
+    .blog-content-top-padding {
+      background-color: <?php echo get_theme_mod('blog_page_background_color'); ?>;
+    }
+
+    .blog-content-width-container {
+      background-color: <?php echo get_theme_mod('blog_page_background_color'); ?>;
+    }
+
+    .blog-sidebar-width-container {
+      background-color: <?php echo get_theme_mod('blog_page_background_color'); ?>;
+    }
+
+
+    .page-numbers a:hover,
+    .page-numbers.current,
+    .page-numbers.current:hover {
+      color: <?php echo get_theme_mod('navigation_text_color'); ?>;
+      background-color: <?php echo get_theme_mod('navigation_background_color'); ?>;
+      text-decoration: none;
+    }
+
+/* Moving sidebar to correct location. Or if sidebar turned off centering the posts */
+    <?php if(( get_theme_mod('blog_toggle_sidebar') ) == 1 ) { ?>
+      <?php if(( get_theme_mod('sidebar_layout_radio_button') ) == 'sidebarright') { ?>
+
+       .blog-content-whole-container {
+        order: 1;
+      }
+       .blog-column-container {
+        float: right;
+      }
+       .blog-sidebar-width-container {
+        order: 2;
+      }
+      .blog-sidebar-container {
+        float: left;
+      }
+      <?php } else if(( get_theme_mod('sidebar_layout_radio_button') ) == 'sidebarleft') { ?>?>
+
+         .blog-content-whole-container {
+          order: 2;
+        }
+        .blog-column-container {
+          float: left;
+        }
+        .blog-sidebar-width-container {
+          order: 1;
+        }
+        .blog-sidebar-container {
+          float: right;
+        }
+        <?php } ?>
+      <?php } else { ?>
+
+          .blog-sidebar-width-container {
+            display: none;
+          }
+          .blog-content-width-container {
+            width: 100%;
+          }
+          .blog-column-container {
+            margin: 0px auto;
+          }
+
+      <?php  }?>
+
+
+
 
 
 
@@ -1903,4 +2003,4 @@ function trek_customizer_css(){ ?>
   </style>
 <?php }
 
-add_action('wp_head', 'trek_customizer_css');
+add_action( 'wp_head', 'trek_customizer_css', 999 );

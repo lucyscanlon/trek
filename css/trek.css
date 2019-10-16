@@ -1800,6 +1800,27 @@ ul.page-numbers li {
 
 }
 
+blockquote {
+  width: 85%;
+  margin: 30px auto;
+  text-align: center;
+}
+
+blockquote p {
+  font-size: 22px!important;
+  font-style: italic;
+  letter-spacing: 3px;
+}
+
+blockquote cite {
+  color: grey;
+  font-size: 13px;
+}
+
+
+
+
+
 
 
 /* audio and video embed */
@@ -1923,6 +1944,13 @@ ul.page-numbers li {
   padding: 20px 20px;
   background-color: #F1F3F4;
 
+}
+
+pre {
+  width: 95%;
+  margin: 30px auto;
+  padding: 20px 20px;
+  background-color: #F1F3F4;
 }
 
 
