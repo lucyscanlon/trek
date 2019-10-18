@@ -20,7 +20,7 @@
 <?php }  ?>
   <div class="gridpostlayout-information-container" style="<?php if ( has_post_thumbnail( get_the_ID() ) ) { ?> width: 60%; <?php } else { ?> width: 100%; <?php } ?> order: 1;">
       <div class="gridpostlayout-info-categories-readmore-container" style="<?php if ( has_post_thumbnail( get_the_ID() ) ) { ?> width: 90%; <?php } else { ?> width: 94%; <?php } ?>">
-        <?php if (( get_theme_mod('toggle_blog_categories') ) == 1) { ?>
+        <?php if (( get_theme_mod('toggle_blog_categories', 0 ) ) == 1) { ?>
         <div class="gridpostlayout-info-categories-container Montserrat bloglinkcolor">
           <p><?php the_category(); ?></p>
         </div>
@@ -29,19 +29,19 @@
         <a href="<?php the_permalink(); ?>"><h1><?php the_title(); ?></h1></a>
       </div>
       <div class="gridpostlayout-meta-container Montserrat bloglinkcolor">
-        <p><ul> <?php if (( get_theme_mod('toggle_blog_date') ) == 1) { ?>
+        <p><ul> <?php if (( get_theme_mod('toggle_blog_date', 1 ) ) == 1) { ?>
 
            <li><?php the_time('jS F Y')?></li>
 
         <?php } ?>
 
 
-        <?php if (( get_theme_mod('toggle_blog_author') ) == 1) { ?>
+        <?php if (( get_theme_mod('toggle_blog_author', 1 ) ) == 1) { ?>
            <li>by <?php the_author(); ?></li>
 
         <?php } ?>
 
-        <?php if (( get_theme_mod('toggle_blog_comments') ) == 1) { ?>
+        <?php if (( get_theme_mod('toggle_blog_comments', 1 ) ) == 1) { ?>
 
           <li><?php echo trek_comments(); ?></li>
 

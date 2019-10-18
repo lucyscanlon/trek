@@ -5,7 +5,7 @@
   <?php require get_template_directory() . '/inc/template-parts/index/blogbanner.php'; ?>
 </section>
 <div class="secondary-categories-whole-container Montserrat">
-  <?php if (( get_theme_mod('secondary_menu_display') ) == 1) { ?>
+  <?php if (( get_theme_mod('secondary_menu_display', 1 )  ) == 1) { ?>
   <?php wp_nav_menu( array(
     'theme_location' => 'secondary',
     'container' => false,
@@ -29,7 +29,7 @@
 
 
       <!-- WIDE POST LAYOUT  -->
-      <?php if(( get_theme_mod('post_preview_layout_radio_button') ) == 'widepostlayout') { ?>
+      <?php if(( get_theme_mod('post_preview_layout_radio_button', 'widepostlayout' ) ) == 'widepostlayout') { ?>
 
         <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 
@@ -40,7 +40,7 @@
 
 
       <!-- LIST AND ALTERNATE POST LAYOUT  -->
-    <?php } else if(( get_theme_mod('post_preview_layout_radio_button') ) == 'gridleftpostlayout') { ?>
+    <?php } else if(( get_theme_mod('post_preview_layout_radio_button', 'widepostlayout' ) ) == 'gridleftpostlayout') { ?>
       <div class="gridpostlayout-flex-container">
 
             <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
@@ -51,7 +51,7 @@
       </div>
 
 
-    <?php } else if(( get_theme_mod('post_preview_layout_radio_button') ) == 'gridrightpostlayout') { ?>
+    <?php } else if(( get_theme_mod('post_preview_layout_radio_button', 'widepostlayout' ) ) == 'gridrightpostlayout') { ?>
 
       <div class="gridpostlayout-flex-container">
 
@@ -62,7 +62,7 @@
 
       </div>
 
-    <?php } else if(( get_theme_mod('post_preview_layout_radio_button') ) == 'imagepostlayout') { ?>
+    <?php } else if(( get_theme_mod('post_preview_layout_radio_button', 'widepostlayout' ) ) == 'imagepostlayout') { ?>
 
       <div class="imagepostlayout-whole-container">
 

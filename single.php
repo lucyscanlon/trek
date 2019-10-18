@@ -21,17 +21,17 @@
          <?php trek_save_post_views( get_the_ID() ); ?>
         <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 
-        <?php if(( get_theme_mod('singlepost_layout_radio_button') ) == 'singlepost_optionone') { ?>
+        <?php if(( get_theme_mod('singlepost_layout_radio_button', 'singlepost_optionthree') ) == 'singlepost_optionone') { ?>
 
           <!--  REQUIRE TEMPLATE FOR SINGLE POST LAYOUT OPTION ONE  -->
           <?php require get_template_directory() . '/inc/template-parts/single-post/singlepost-optionone.php'; ?>
 
-        <?php } else if(( get_theme_mod('singlepost_layout_radio_button') ) == 'singlepost_optiontwo') {?>
+        <?php } else if(( get_theme_mod('singlepost_layout_radio_button', 'singlepost_optionthree') ) == 'singlepost_optiontwo') {?>
 
           <!--  REQUIRE TEMPLATE FOR SINGLE POST LAYOUT OPTION TWO  -->
           <?php require get_template_directory() . '/inc/template-parts/single-post/singlepost-optiontwo.php'; ?>
 
-        <?php } else if(( get_theme_mod('singlepost_layout_radio_button') ) == 'singlepost_optionthree') { ?>
+        <?php } else if(( get_theme_mod('singlepost_layout_radio_button', 'singlepost_optionthree') ) == 'singlepost_optionthree') { ?>
 
           <!--  REQUIRE TEMPLATE FOR SINGLE POST LAYOUT OPTION THREE  -->
           <?php require get_template_directory() . '/inc/template-parts/single-post/singlepost-optionthree.php'; ?>
@@ -43,7 +43,7 @@
     <?php // gets the template for the single post navigation bar - located in theme-support.php ?>
     <?php echo trek_post_navigation() ?>
 
-    <?php if(( get_theme_mod('toggle_singlepost_authorbox') ) == 1 ) { ?>
+    <?php if(( get_theme_mod('toggle_singlepost_authorbox', 1 ) ) == 1 ) { ?>
     <?php // gets the template for the author box ?>
       <?php require get_template_directory() . '/inc/template-parts/single-post/authorbox.php'; ?>
     <?php }  ?>

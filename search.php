@@ -33,7 +33,7 @@
 
 
       <!-- WIDE POST LAYOUT  -->
-      <?php if(( get_theme_mod('archive_preview_layout_radio_button') ) == 'widepostlayout') { ?>
+      <?php if(( get_theme_mod('archive_preview_layout_radio_button', 'gridleftpostlayout' ) ) == 'widepostlayout') { ?>
         <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 
           <!--  REQUIRE TEMPLATE FOR WIDE POST LAYOUT  -->
@@ -43,7 +43,7 @@
 
 
       <!-- LIST AND ALTERNATE POST LAYOUT  -->
-    <?php } else if(( get_theme_mod('archive_preview_layout_radio_button') ) == 'gridleftpostlayout') { ?>
+    <?php } else if(( get_theme_mod('archive_preview_layout_radio_button', 'gridleftpostlayout' ) ) == 'gridleftpostlayout') { ?>
       <div class="gridpostlayout-flex-container">
             <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 
@@ -52,7 +52,7 @@
       </div>
 
 
-    <?php } else if(( get_theme_mod('archive_preview_layout_radio_button') ) == 'gridrightpostlayout') { ?>
+    <?php } else if(( get_theme_mod('archive_preview_layout_radio_button', 'gridleftpostlayout' ) ) == 'gridrightpostlayout') { ?>
 
       <div class="gridpostlayout-flex-container">
             <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
@@ -61,7 +61,7 @@
             <?php require get_template_directory() . '/inc/template-parts/index/gridpostlayoutrightaligned.php'; ?>
       </div>
 
-    <?php } else if(( get_theme_mod('archive_preview_layout_radio_button') ) == 'imagepostlayout') { ?>
+    <?php } else if(( get_theme_mod('archive_preview_layout_radio_button', 'gridleftpostlayout' ) ) == 'imagepostlayout') { ?>
 
       <div class="imagepostlayout-whole-container">
             <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>

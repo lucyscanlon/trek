@@ -58,14 +58,14 @@
 
 
                   <!-- WIDE POST LAYOUT  -->
-                  <?php if(( get_theme_mod('archive_preview_layout_radio_button') ) == 'widepostlayout') { ?>
+                  <?php if(( get_theme_mod('archive_preview_layout_radio_button', 'gridleftpostlayout' ) ) == 'widepostlayout') { ?>
                     <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 
                       <!--  REQUIRE TEMPLATE FOR WIDE POST LAYOUT  -->
                       <?php require get_template_directory() . '/inc/template-parts/archive/archive-widepostlayout.php'; ?>
 
                   <!-- LIST AND ALTERNATE POST LAYOUT  -->
-                <?php } else if(( get_theme_mod('archive_preview_layout_radio_button') ) == 'gridleftpostlayout') { ?>
+                <?php } else if(( get_theme_mod('archive_preview_layout_radio_button', 'gridleftpostlayout' ) ) == 'gridleftpostlayout') { ?>
                   <div class="gridpostlayout-flex-container">
                     <!-- POST LOOP STARTS HERE -->
                         <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
@@ -74,7 +74,7 @@
                         <?php require get_template_directory() . '/inc/template-parts/archive/archive-gridpostlayout.php'; ?>
                   </div>
 
-                <?php } else if(( get_theme_mod('archive_preview_layout_radio_button') ) == 'gridrightpostlayout') { ?>
+                <?php } else if(( get_theme_mod('archive_preview_layout_radio_button', 'gridleftpostlayout' ) ) == 'gridrightpostlayout') { ?>
 
                   <div class="gridpostlayout-flex-container">
                         <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
@@ -82,7 +82,7 @@
                         <!--  REQUIRE TEMPLATE FOR GRID / LIST POST LAYOUT  -->
                         <?php require get_template_directory() . '/inc/template-parts/archive/archive-gridpostlayoutrightaligned.php'; ?>
                   </div>
-                <?php } else if(( get_theme_mod('archive_preview_layout_radio_button') ) == 'imagepostlayout') { ?>
+                <?php } else if(( get_theme_mod('archive_preview_layout_radio_button', 'gridleftpostlayout' ) ) == 'imagepostlayout') { ?>
 
                   <div class="imagepostlayout-whole-container">
                         <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>

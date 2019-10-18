@@ -1806,64 +1806,64 @@ add_action('customize_register', 'trek_lucyisobel_custom_settings');
   <style type="text/css">
 
     .headerbackgroundcolor {
-      background-color: <?php echo get_theme_mod('header_background_color'); ?>;
+      background-color: <?php echo get_theme_mod('header_background_color', '#1d272e' ); ?>;
     }
 
     .headerTextColor {
-      color: <?php echo get_theme_mod('header_text_color'); ?>;
+      color: <?php echo get_theme_mod('header_text_color', '#ffffff' ); ?>;
     }
 
     .headerTextColor a {
-      color: <?php echo get_theme_mod('header_text_color'); ?>;
+      color: <?php echo get_theme_mod('header_text_color', '#ffffff' ); ?>;
     }
 
     .headerTextColor i {
-      color: <?php echo get_theme_mod('header_text_color'); ?>;
+      color: <?php echo get_theme_mod('header_text_color', '#ffffff' ); ?>;
     }
 
     .headerTextColor a:hover {
-      color: <?php echo get_theme_mod('header_text_hover_color'); ?>;
+      color: <?php echo get_theme_mod('header_text_hover_color', '#e4bce4' ); ?>;
     }
 
     .headerTextColor i:hover {
-      color: <?php echo get_theme_mod('header_text_hover_color'); ?>;
+      color: <?php echo get_theme_mod('header_text_hover_color', '#e4bce4' ); ?>;
     }
 
     .menucenter-socialmedia-container li i:hover {
-      color: <?php echo get_theme_mod('header_text_hover_color'); ?>;
+      color: <?php echo get_theme_mod('header_text_hover_color', '#e4bce4' ); ?>;
     }
 
     .menuright-socialmedia-search-container li i:hover {
-      color: <?php echo get_theme_mod('header_text_hover_color'); ?>;
+      color: <?php echo get_theme_mod('header_text_hover_color', '#e4bce4' ); ?>;
     }
 
     .menuleft-socialmedia-container li i:hover {
-      color: <?php echo get_theme_mod('header_text_hover_color'); ?>;
+      color: <?php echo get_theme_mod('header_text_hover_color', '#e4bce4' ); ?>;
     }
 
     .menucenter-menu-container li a:hover {
-      color: <?php echo get_theme_mod('header_text_hover_color'); ?>;
+      color: <?php echo get_theme_mod('header_text_hover_color', '#e4bce4' ); ?>;
       transition-duration: 0.5s;
     }
 
     .menuright-menu-container li a:hover {
-      color: <?php echo get_theme_mod('header_text_hover_color'); ?>;
+      color: <?php echo get_theme_mod('header_text_hover_color', '#e4bce4' ); ?>;
       transition-duration: 0.5s;
     }
 
     .menuleft-menu-container li a:hover {
-      color: <?php echo get_theme_mod('header_text_hover_color'); ?>;
+      color: <?php echo get_theme_mod('header_text_hover_color', '#e4bce4' ); ?>;
       transition-duration: 0.5s;
     }
 
     .homepage-title-container a  {
-      color: <?php echo get_theme_mod('homepage_title_color'); ?>;
-      text-shadow: <?php echo get_theme_mod('homepage_title_shadow_color' ); ?> 6px 6px;
+      color: <?php echo get_theme_mod('homepage_title_color', '#FFFFFF' ); ?>;
+      text-shadow: <?php echo get_theme_mod('homepage_title_shadow_color', '#000000' ); ?> 6px 6px;
       transition-duration: 1s;
     }
 
     .homepage-title-container a:hover {
-        color: <?php echo get_theme_mod('homepage_title_link_color'); ?>;
+        color: <?php echo get_theme_mod('homepage_title_link_color', '#e4bce4' ); ?>;
         transition-duration: 1s;
     }
 
@@ -1875,19 +1875,19 @@ add_action('customize_register', 'trek_lucyisobel_custom_settings');
 
 
     .homepage-readmore-button-container a {
-      color: <?php echo get_theme_mod('homepage_readmore_text_color'); ?>;
+      color: <?php echo get_theme_mod('homepage_readmore_text_color', '#FFFFFF'); ?>;
       transition-duration: 0.5s;
 
     }
 
     .homepage-readmore-button-container a:hover {
-      color: <?php echo get_theme_mod('homepage_readmore_text_hover_color'); ?>;
+      color: <?php echo get_theme_mod('homepage_readmore_text_hover_color', '#e4bce4' ); ?>;
       transition-duration: 0.5s;
     }
 
     .homepage-description-container {
-      color: <?php echo get_theme_mod('homepage_description_color'); ?>;
-      text-shadow: <?php echo get_theme_mod('homepage_description_shadow_color'); ?>;
+      color: <?php echo get_theme_mod('homepage_description_color', '#FFFFFF'); ?>;
+      text-shadow: <?php echo get_theme_mod('homepage_description_shadow_color', '#000000'); ?>;
     }
 
 

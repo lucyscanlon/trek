@@ -15,7 +15,7 @@
   <div class="widepost-layout-featuredimage-container">
     <img src="<?php echo $backgroundImg[0]; ?>">
   </div>
-  <?php if (( get_theme_mod('toggle_archive_categories') ) == 1) { ?>
+  <?php if (( get_theme_mod('toggle_archive_categories', 0 ) ) == 1) { ?>
   <div class="widepostlayout-categories-container Montserrat bloglinkcolor">
     <p><?php the_category(); ?></p>
   </div>
@@ -24,19 +24,19 @@
   <h1><?php the_title(); ?></h1>
 </div>
 <div class="widepostlayout-meta-container Montserrat bloglinkcolor">
-  <p><ul> <?php if (( get_theme_mod('toggle_archive_date') ) == 1) { ?>
+  <p><ul> <?php if (( get_theme_mod('toggle_archive_date', 1 ) ) == 1) { ?>
 
      <li><?php the_time('jS F Y')?></li>
 
   <?php } ?>
 
 
-  <?php if (( get_theme_mod('toggle_archive_author') ) == 1) { ?>
+  <?php if (( get_theme_mod('toggle_archive_author', 1 ) ) == 1) { ?>
      <li>by <?php the_author(); ?></li>
 
   <?php } ?>
 
-  <?php if (( get_theme_mod('toggle_archive_comments') ) == 1) { ?>
+  <?php if (( get_theme_mod('toggle_archive_comments', 1 ) ) == 1) { ?>
 
     <li><?php echo trek_comments(); ?></li>
 
