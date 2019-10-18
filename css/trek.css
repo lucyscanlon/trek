@@ -458,6 +458,7 @@ display: none;
   margin-left: 25px;
   margin-right: 25px;
   max-width: 400px;
+  margin-bottom: 50px;
 }
 
 .widepostlayout-wholepost-container {
@@ -819,7 +820,7 @@ display: none;
 .trek-widget-width-container li {
   letter-spacing: 3px;
   padding-bottom: 15px;
-  font-size: 12px;
+  font-size: 11px;
   list-style-type: none;
 
 }
@@ -2292,8 +2293,12 @@ font-family: Montserrat;
 .comment-author {
   text-transform: uppercase;
   letter-spacing: 4px;
-  font-size: 12px;
+  font-size: 10px;
   padding-bottom: 3px;
+}
+
+.comment-body {
+  width: calc(100% - 220px);
 }
 
 .comment-metadata  {
@@ -2308,12 +2313,12 @@ font-family: Montserrat;
 }
 
 .comment-content {
-  font-size: 14px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  font-size: 12px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   letter-spacing: 1px;
   line-height: 1.3em;
-  width: calc(100% - 240px);
+
 }
 
 .comments .reply {

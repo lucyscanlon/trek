@@ -3,6 +3,7 @@
 function APIprac_reset_settings( $wp_customize )
 {
 
+    // Making the Site Title and Site Description pre-built WordPress Settings update live in the Customizer if they are changed
     $wp_customize->get_setting( 'blogname' )->transport = 'postMessage';
     $wp_customize->get_setting( 'blogdescription' )->transport = 'postMessage';
     $wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
@@ -18,6 +19,8 @@ function APIprac_reset_settings( $wp_customize )
         ) );
     }
 
+    // Removing the Colors, Header Image and Background Image sections from the customizer.
+    // More personalised settings are added instead in the trek_lucyisobel_custom_settings function
     $wp_customize->remove_section( 'colors' );
     $wp_customize->remove_section( 'header_image' );
     $wp_customize->remove_section( 'background_image' );
@@ -36,9 +39,11 @@ function APIprac_customize_blogdescription(){
   bloginfo('description');
 }
 
-//start of custom settings
+// Function which holds all the Trek custom settings in the customizer
 function trek_lucyisobel_custom_settings($wp_customize){
 
+
+  // Creates the panel "Your Theme Settings" in the customizer. This panel holds all the Trek custom settings
   $wp_customize->add_panel( 'theme_settings', array(
     'priority' => 0,
     'title' => 'Your Theme Options',
@@ -46,7 +51,15 @@ function trek_lucyisobel_custom_settings($wp_customize){
   ));
 
 
-  //creating header layout section
+
+  /*
+  ========================================
+  HEADER AND FOOTER SECTION
+  ========================================
+  */
+
+
+  // Creates the "header" section
   $wp_customize->add_section('header_section', array(
     'title' => __('Header and footer', 'Trek'),
     'priority' => 0,
@@ -54,7 +67,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
   ));
 
 
-  //creating notice for header section
+  // Adds the title "Header & Footer Settings" in the "header" section
   $wp_customize->add_setting('header_title_notice_setting');
 
 
@@ -67,7 +80,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
 
-  //creating header layout setting and control
+  // Creating the radio control "header layout" (this gives three options for the users header layout)
   $wp_customize->add_setting( 'header_layout_radio_button',
 			array(
 				'default' => 'menucenter',
@@ -99,7 +112,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 		) );
 
 
-    //header title color notice
+    // Creates the "Header & Footer Color Settings" title in the "header" section
     $wp_customize->add_setting('header_title_color_section');
 
 
@@ -112,7 +125,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
 
-    //creating header background color control
+    // Creating Color Control for the Header and Footer
     $wp_customize->add_setting('header_background_color', array(
       'default' => '#1d272e',
       'transport' => 'refresh',
@@ -128,7 +141,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
 
-    //creating the header text color controls
+    // Creating the Color Control for the Header & Footer text
       $wp_customize->add_setting('header_text_color', array(
         'default' => '#FFFFFF',
         'transport' => 'refresh',
@@ -143,31 +156,37 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
 
-      //creating the header text HOVER color controls
-        $wp_customize->add_setting('header_text_hover_color', array(
-          'default' => '#E4BCE4',
-          'transport' => 'refresh',
+      // Creating the Color Control for the Header & footer text on hover
+      $wp_customize->add_setting('header_text_hover_color', array(
+        'default' => '#E4BCE4',
+        'transport' => 'refresh',
 
-        ));
+      ));
 
-        $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'header_text_hover_color', array(
-          'label' => __('Header and Footer Text Hover Color', 'Trek'),
-          'section' => 'header_section',
-          'settings' => 'header_text_hover_color'
-        )));
+      $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'header_text_hover_color', array(
+        'label' => __('Header and Footer Text Hover Color', 'Trek'),
+        'section' => 'header_section',
+        'settings' => 'header_text_hover_color'
+      )));
 
 
 
-      //SOCIAL MEDIA SECTION
+        /*
+        ========================================
+        SOCIAL MEDIA SECTION
+        ========================================
+        */
 
-      //creating the social media SECTION
+
+      // Creates the "Social Media" section
       $wp_customize->add_section('socialmedia_section', array(
         'title' => __('Social Media', 'Trek'),
         'priority' => 10,
         'panel' => 'theme_settings',
       ));
 
-      //creating notice for socialmedia section
+
+      // Creates the title "Social Media Settings" in the "Social Media" section
       $wp_customize->add_setting('socialmedia_title_section');
 
 
@@ -179,7 +198,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       )));
 
 
-      //twitter
+      // Toggle setting to display Twitter Icon on or off
       $wp_customize->add_setting('toggle_switch_twitter', array(
         'default' => 0,
         'transport' => 'refresh',
@@ -193,6 +212,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       )));
 
 
+      // Creates input box for users Twitter link
       $wp_customize->add_setting('twitter_link', array(
 
       ));
@@ -207,7 +227,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       )));
 
 
-      //facebook
+      // Toggle setting to display Facebook Icon on or off
       $wp_customize->add_setting('toggle_switch_facebook', array(
         'default' => 0,
         'transport' => 'refresh',
@@ -221,6 +241,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       )));
 
 
+      // Creates input box for users Facebook link
       $wp_customize->add_setting('facebook_link', array(
 
       ));
@@ -235,7 +256,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       )));
 
 
-      //instagram
+      // Toggle setting to display Instagram Icon on or off
       $wp_customize->add_setting('toggle_switch_instagram', array(
         'default' => 0,
         'transport' => 'refresh',
@@ -249,6 +270,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       )));
 
 
+      // Creates input box for users Instagram link
       $wp_customize->add_setting('instagram_link', array(
 
       ));
@@ -264,7 +286,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
 
-      //pinterest
+      // Toggle setting to display Pinterest Icon on or off
       $wp_customize->add_setting('toggle_switch_pinterest', array(
         'default' => 0,
         'transport' => 'refresh',
@@ -278,6 +300,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       )));
 
 
+      // Creates input box for users Pinterest link
       $wp_customize->add_setting('pinterest_link', array(
 
       ));
@@ -293,7 +316,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
 
-      //google plus
+      // Toggle setting to display Google Plus Icon on or off
       $wp_customize->add_setting('toggle_switch_googleplus', array(
         'default' => 0,
         'transport' => 'refresh',
@@ -307,6 +330,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       )));
 
 
+      // Creates input box for users Google Plus link
       $wp_customize->add_setting('googleplus_link', array(
 
       ));
@@ -321,9 +345,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       )));
 
 
-
-
-      //YouTube
+      // Toggle setting to display YouTube Icon on or off
       $wp_customize->add_setting('toggle_switch_youtube', array(
         'default' => 0,
         'transport' => 'refresh',
@@ -337,6 +359,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       )));
 
 
+      // Creates input box for users YouTube link
       $wp_customize->add_setting('youtube_link', array(
 
       ));
@@ -351,8 +374,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       )));
 
 
-
-      //LinkedIn
+      // Toggle setting to display LinkedIn Icon on or off
       $wp_customize->add_setting('toggle_switch_linkedin', array(
         'default' => 0,
         'transport' => 'refresh',
@@ -366,6 +388,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       )));
 
 
+      // Creates input box for users LinkedIn link
       $wp_customize->add_setting('linkedin_link', array(
 
       ));
@@ -380,8 +403,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       )));
 
 
-
-      //snapchat
+      // Toggle setting to display Snapchat Icon on or off
       $wp_customize->add_setting('toggle_switch_snapchat', array(
         'default' => 0,
         'transport' => 'refresh',
@@ -395,6 +417,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       )));
 
 
+      // Creates input box for users Snapchat link
       $wp_customize->add_setting('snapchat_link', array(
 
       ));
@@ -409,12 +432,13 @@ function trek_lucyisobel_custom_settings($wp_customize){
       )));
 
 
-      //goodreads
+      // Toggle setting to display Goodreads Icon on or off
       $wp_customize->add_setting('toggle_switch_goodreads', array(
         'default' => 0,
         'transport' => 'refresh',
 
       ));
+
 
       $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'toggle_switch_goodreads', array(
         'label' => __('Goodreads', 'Trek'),
@@ -423,9 +447,11 @@ function trek_lucyisobel_custom_settings($wp_customize){
       )));
 
 
+      // Creates input box for users Goodreads link
       $wp_customize->add_setting('goodreads_link', array(
 
       ));
+
 
       $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'goodreads_link', array(
         'section' => 'socialmedia_section',
@@ -437,7 +463,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       )));
 
 
-      //shop
+      // Toggle setting to display Shop Icon on or off
       $wp_customize->add_setting('toggle_switch_shop', array(
         'default' => 0,
         'transport' => 'refresh',
@@ -451,6 +477,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       )));
 
 
+      // Creates input box for users Shop link
       $wp_customize->add_setting('shop_link', array(
 
       ));
@@ -466,8 +493,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
 
-
-      //email
+      // Toggle setting to display Email Icon on or off
       $wp_customize->add_setting('toggle_switch_email', array(
         'default' => 0,
         'transport' => 'refresh',
@@ -481,6 +507,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       )));
 
 
+      // Creates input box for users Email address
       $wp_customize->add_setting('email_link', array(
 
       ));
@@ -496,12 +523,13 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
 
-      //vimeo
+      // Toggle setting to display Vimeo Icon on or off
       $wp_customize->add_setting('toggle_switch_vimeo', array(
         'default' => 0,
         'transport' => 'refresh',
 
       ));
+
 
       $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'toggle_switch_vimeo', array(
         'label' => __('Vimeo', 'Trek'),
@@ -510,6 +538,8 @@ function trek_lucyisobel_custom_settings($wp_customize){
       )));
 
 
+
+      // Creates input box for users Vimeo link
       $wp_customize->add_setting('vimeo_link', array(
 
       ));
@@ -524,7 +554,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       )));
 
 
-      //tumblr
+      // Toggle setting to display Tumblr Icon on or off
       $wp_customize->add_setting('toggle_switch_tumblr', array(
         'default' => 0,
         'transport' => 'refresh',
@@ -538,6 +568,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       )));
 
 
+      // Creates input box for users Tumblr link
       $wp_customize->add_setting('tumblr_link', array(
 
       ));
@@ -553,28 +584,36 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
 
+      /*
+      ========================================
+      FRONT PAGE SECTION
+      ========================================
+      */
 
-      //HOMEPAGE section
-      //creating header layout section
+
+
+      // Creating the "Front Page" Section
       $wp_customize->add_section('homepage_section', array(
-        'title' => __('Homepage', 'Trek'),
+        'title' => __('Front Page', 'Trek'),
         'panel' => 'theme_settings',
         'priority' => 20,
       ));
 
-      //homepage notice
+
+
+      // Creating the title "Front Page Background Settings" title in the "Front Page" section
       $wp_customize->add_setting('homepage_title_section');
 
 
       $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'homepage_title_section', array(
-        'label' => __('Homepage Background Settings', 'Trek'),
+        'label' => __('Front Page Background Settings', 'Trek'),
         'description' => __('Edit your homepage to suit you'),
         'section' => 'homepage_section',
         'settings' => 'homepage_title_section'
       )));
 
 
-      //HOMEPAGE  section
+      // Creating the setting to upload an image as Front Page background
       $wp_customize->add_setting('homepage_background_image');
 
       $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'homepage_background_image', array(
@@ -588,8 +627,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
 
-
-      //toggle video // image background
+      // Toggle on or off Video background instead of Image background
       $wp_customize->add_setting('homepage_video_toggle', array(
         'default' => 0,
         'transport' => 'refresh',
@@ -604,62 +642,64 @@ function trek_lucyisobel_custom_settings($wp_customize){
       )));
 
 
+      // Creates the input box for the 1st link needed for Video Background
+      $wp_customize->add_setting('video_background_link', array(
 
-        $wp_customize->add_setting('video_background_link', array(
+      ));
 
-        ));
 
-        $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'video_background_link', array(
-          'section' => 'homepage_section',
-          'label' => __('Video link', 'trek'),
-          'description' => __('This is a very specific link needed. Please watch this <b>video</b> to see how to find it.', 'trek'),
+      $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'video_background_link', array(
+        'section' => 'homepage_section',
+        'label' => __('Video link', 'trek'),
+        'description' => __('This is a very specific link needed. Please watch this <b>video</b> to see how to find it.', 'trek'),
           'settings' => 'video_background_link',
           'input_attrs' => array(
-            'placeholder' => __('Paste the link here'),
-          )
+          'placeholder' => __('Paste the link here'),
+        )
 
-        )));
-
-
-        $wp_customize->add_setting('video_playlist_link', array(
-
-        ));
-
-        $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'video_playlist_link', array(
-          'section' => 'homepage_section',
-          'label' => __('Video 2nd Link', 'trek'),
-          'description' => __('This is also a very specific link needed. Please watch this <b>video</b> to see how to find it.', 'trek'),
-          'settings' => 'video_playlist_link',
-          'input_attrs' => array(
-            'placeholder' => __('Paste the link here'),
-          )
-
-        )));
+      )));
 
 
+      // Creates the input for the 2nd link needed for Video background
+      $wp_customize->add_setting('video_playlist_link', array(
 
-        //homepage content height settings notice
-        $wp_customize->add_setting('homepage_contentheight_title_section');
+      ));
+
+      $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'video_playlist_link', array(
+        'section' => 'homepage_section',
+        'label' => __('Video 2nd Link', 'trek'),
+        'description' => __('This is also a very specific link needed. Please watch this <b>video</b> to see how to find it.', 'trek'),
+        'settings' => 'video_playlist_link',
+        'input_attrs' => array(
+          'placeholder' => __('Paste the link here'),
+        )
+
+      )));
 
 
-        $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'homepage_contentheight_title_section', array(
-          'label' => __('Homepage Content Height Settings', 'Trek'),
-          'description' => __('Adjust the height of your content to fit perfectly onto your homepage', 'trek'),
-          'section' => 'homepage_section',
-          'settings' => 'homepage_contentheight_title_section'
-        )));
+
+      // Creates the title "Front Page Content Height Settings" in the "Front Page" section
+      $wp_customize->add_setting('homepage_contentheight_title_section');
 
 
-        //homepage content height
-        $wp_customize->add_setting( 'homepage_title_height', array(
-          'default' => 30,
-          'transport' => 'refresh',
-          'sanitize_callback' => 'absint'
-        ));
+      $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'homepage_contentheight_title_section', array(
+        'label' => __('Front Page Content Height Settings', 'Trek'),
+        'description' => __('Adjust the height of your content to fit perfectly onto your homepage', 'trek'),
+        'section' => 'homepage_section',
+        'settings' => 'homepage_contentheight_title_section'
+      )));
 
-        $wp_customize->add_control( new Skyrocket_Slider_Custom_Control( $wp_customize, 'homepage_title_height', array(
-          'label' => __('Content Height (vh)', 'Trek'),
-          'section' => 'homepage_section',
+
+      // Creates the Front Page content height setting
+      $wp_customize->add_setting( 'homepage_title_height', array(
+        'default' => 30,
+        'transport' => 'refresh',
+        'sanitize_callback' => 'absint'
+      ));
+
+      $wp_customize->add_control( new Skyrocket_Slider_Custom_Control( $wp_customize, 'homepage_title_height', array(
+        'label' => __('Content Height (vh)', 'Trek'),
+        'section' => 'homepage_section',
         'settings' => 'homepage_title_height',
         'input_attrs' => array(
           'min' => 10,
@@ -670,12 +710,12 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
 
-        //homepage logo settings notice
+      // Creates the title "Front Page Logo Settings" in "Front Page" section
         $wp_customize->add_setting('homepage_logo_title_section');
 
 
         $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'homepage_logo_title_section', array(
-          'label' => __('Homepage Logo Settings', 'Trek'),
+          'label' => __('Front Page Logo Settings', 'Trek'),
           'description' => __('Choose whether to display your logo on your homepage or not', 'trek'),
           'section' => 'homepage_section',
           'settings' => 'homepage_logo_title_section'
@@ -683,7 +723,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
 
-        //toggle logo on or off
+        // Toggle the logo to display or not on the Front Page
         $wp_customize->add_setting('homepage_logo_toggle', array(
           'default' => 1,
           'transport' => 'refresh',
@@ -699,21 +739,20 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
 
-
-
-
-      //homepage title settings notice
+        // Add the title "Front Page Title Settings" to the "Front Page" section
       $wp_customize->add_setting('homepage_title_title_section');
 
 
       $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'homepage_title_title_section', array(
-        'label' => __('Homepage Title Settings', 'Trek'),
+        'label' => __('Front Page Title Settings', 'Trek'),
         'description' => __('Edit your homepage title appearance'),
         'section' => 'homepage_section',
         'settings' => 'homepage_title_title_section'
       )));
 
-      //toggle title on or off
+
+
+      // Toggle the Site Title to display or not on the Front Page
       $wp_customize->add_setting('homepage_title_toggle', array(
         'default' => 1,
         'transport' => 'refresh',
@@ -728,7 +767,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       )));
 
 
-    //homepage title color controls
+    // Creates the setting to change the color of the Site Title on the Front Page
     $wp_customize->add_setting('homepage_title_color', array(
       'default' => '#FFFFFF',
       'transport' => 'refresh',
@@ -742,7 +781,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
     )));
 
 
-    //homepage title text shadow color controls
+    // Creates the setting to change the color of the Site Title shadow on the Front Page
     $wp_customize->add_setting('homepage_title_shadow_color', array(
       'default' => '#000000',
       'transport' => 'refresh',
@@ -756,7 +795,8 @@ function trek_lucyisobel_custom_settings($wp_customize){
     )));
 
 
-    //homepage title hover color controls
+
+    // Creates the setting to change the Site Title hover color on the Front Page
     $wp_customize->add_setting('homepage_title_link_color', array(
       'default' => '#e4bce4',
       'transport' => 'refresh',
@@ -769,7 +809,9 @@ function trek_lucyisobel_custom_settings($wp_customize){
       'settings' => 'homepage_title_link_color'
     )));
 
-    //rblog link
+
+
+    // Creates the input box for user to input their blog link
     $wp_customize->add_setting('homepage_blog_link', array(
 
     ));
@@ -787,18 +829,20 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
 
-    //homepage description settings notice
+    // Creates the title "Front Page Description Settings" in the "Front Page" section
     $wp_customize->add_setting('homepage_description_title_section');
 
 
     $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'homepage_description_title_section', array(
-      'label' => __('Homepage Description Settings', 'Trek'),
+      'label' => __('Front Page Description Settings', 'Trek'),
       'description' => __('Edit your homepage description appearance'),
       'section' => 'homepage_section',
       'settings' => 'homepage_description_title_section'
     )));
 
-    //toggle description on and off
+
+
+    // Toggle the description on or off on the Front Page
     $wp_customize->add_setting('toggle_switch_description', array(
       'default' => 1,
       'transport' => 'refresh',
@@ -812,7 +856,8 @@ function trek_lucyisobel_custom_settings($wp_customize){
     )));
 
 
-    //homepage description text color controls
+
+    // Creates the setting to change the color of the Site Description on the Front Page
     $wp_customize->add_setting('homepage_description_color', array(
       'default' => '#000000',
       'transport' => 'refresh',
@@ -826,7 +871,9 @@ function trek_lucyisobel_custom_settings($wp_customize){
       'settings' => 'homepage_description_color'
     )));
 
-    //homepage description text shadow color controls
+
+
+    // Creates the setting to change the text shadow color of the Site Description on the Front Page
     $wp_customize->add_setting('homepage_description_shadow_color', array(
       'default' => '#FFFFFF',
       'transport' => 'refresh',
@@ -841,7 +888,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
     )));
 
 
-    //homepage read more button notice
+    // Creates the title "Read More Button" in the "front Page" Section
     $wp_customize->add_setting('homepage_readmore_button_notice');
 
 
@@ -853,7 +900,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
     )));
 
 
-    //toggle read more button on off
+    // Toggles the read more button to display or not on the Front Page
     $wp_customize->add_setting('homepage_readmore_toggle', array(
       'default' => 1,
       'transport' => 'refresh',
@@ -869,7 +916,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
 
-    //homepage readmore button color
+    // Creates the setting to change the background color of the read more button on the Front Page
     $wp_customize->add_setting('homepage_readmore_color', array(
       'default' => '#1D272E',
       'transport' => 'refresh',
@@ -883,7 +930,8 @@ function trek_lucyisobel_custom_settings($wp_customize){
     )));
 
 
-    //homepage readmore button text color
+
+    // Creates the setting to change the color of the text of the read more button on the Front Page
     $wp_customize->add_setting('homepage_readmore_text_color', array(
       'default' => '#FFFFFF',
       'transport' => 'refresh',
@@ -898,7 +946,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
 
-    //homepage readmore button text hover color
+    // Creates the setting to change the hover text colors of the read more button on the Front Page
     $wp_customize->add_setting('homepage_readmore_text_hover_color', array(
       'default' => '#e4bce4',
       'transport' => 'refresh',
@@ -913,6 +961,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
 
+    // Creates the input box for user to input the text for the read more button on the Front Page
     $wp_customize->add_setting('homepage_readmore_text', array(
       'default' => 'Read More',
     ));
@@ -930,15 +979,25 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
 
-    //BLOG section
-    //creating the blog settings section
+
+    /*
+    ========================================
+    BLOG SETTINGS SECTION
+    ========================================
+    */
+
+
+
+    // Creates the blog settings section
     $wp_customize->add_section('blog_section', array(
       'title' => __('Blog Settings', 'Trek'),
       'panel' => 'theme_settings',
       'priority' => 21,
     ));
 
-    //blog banner notice
+
+
+    // Creates the title "Blog Banner Section" in the "Blog" section
     $wp_customize->add_setting('blog_banner_section');
 
 
@@ -950,7 +1009,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
     )));
 
 
-    //toggle for banner show logo over title
+    // Toggle to show the Site Logo instead of the Site Title
     $wp_customize->add_setting('toggle_blogbanner_logo', array(
       'default' => 0,
       'transport' => 'refresh',
@@ -964,7 +1023,9 @@ function trek_lucyisobel_custom_settings($wp_customize){
       'settings'=> 'toggle_blogbanner_logo'
     )));
 
-    //toggle for banner show description
+
+
+    // Toggle to display the Site Description on the Blog banner
     $wp_customize->add_setting('toggle_blogbanner_description', array(
       'default' => 0,
       'transport' => 'refresh',
@@ -978,7 +1039,9 @@ function trek_lucyisobel_custom_settings($wp_customize){
       'settings'=> 'toggle_blogbanner_description'
     )));
 
-    //banner text color
+
+
+    // Creates setting to change the color of the Blog Banner text
     $wp_customize->add_setting('blog_banner_text_color', array(
       'default' => get_theme_mod('homepage_title_color'),
       'transport' => 'refresh',
@@ -991,7 +1054,9 @@ function trek_lucyisobel_custom_settings($wp_customize){
       'settings' => 'blog_banner_text_color'
     )));
 
-    //banner text shadow color
+
+
+    // Creates the setting to change the shadow color of the text on the blog banner
     $wp_customize->add_setting('blog_banner_text_shadow_color', array(
       'default' => get_theme_mod('homepage_title_shadow_color'),
       'transport' => 'refresh',
@@ -1005,7 +1070,8 @@ function trek_lucyisobel_custom_settings($wp_customize){
     )));
 
 
-    //upload background image for banner  section
+
+    // Creates the setting for the user to upload a background image for the blog banner
     $wp_customize->add_setting('banner_background_image');
 
     $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'banner_background_image', array(
@@ -1018,7 +1084,8 @@ function trek_lucyisobel_custom_settings($wp_customize){
     )));
 
 
-    //blog banner featured post notice
+
+    // Creates the title "Enable Featured Post Display" in the "Blog" section
     $wp_customize->add_setting('blog_banner_featured_section');
 
 
@@ -1028,7 +1095,6 @@ function trek_lucyisobel_custom_settings($wp_customize){
       'section' => 'blog_section',
       'settings' => 'blog_banner_featured_section'
     )));
-
 
 
 
@@ -1045,6 +1111,9 @@ function trek_lucyisobel_custom_settings($wp_customize){
       'settings'=> 'toggle_blogbanner_featuredpost'
     )));
 
+
+
+    // Creates the input box for user to input chosen category for the featured post feature
     $wp_customize->add_setting('featuredpost_category', array(
 
     ));
@@ -1060,7 +1129,8 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
     )));
 
-    //secondary menu display
+
+    // Creates the title "Secondary Menu" in the "Blog" section
     $wp_customize->add_setting('secondary_menu_display_title');
 
 
@@ -1071,7 +1141,9 @@ function trek_lucyisobel_custom_settings($wp_customize){
       'settings' => 'secondary_menu_display_title'
     )));
 
-    //toggle secondary menu
+
+
+    // Toggle the secondary menu on or off on your blog
     $wp_customize->add_setting('secondary_menu_display', array(
       'default' => 1,
       'transport' => 'refresh',
@@ -1086,7 +1158,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
 
-    //blog  notice
+    // Creates the title "Blog Page Settings" in the "Blog" section
     $wp_customize->add_setting('blog_title_section');
 
 
@@ -1098,7 +1170,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
     )));
 
 
-    //toggle sidebar on or off
+    // Toggle the sidebar on or off on your blog
     $wp_customize->add_setting('blog_toggle_sidebar', array(
       'default' => 1,
       'transport' => 'refresh',
@@ -1113,7 +1185,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
 
-    //creating sidebar layout radio control
+    // Creates the setting for the user to choose which side their sidebar displays
     $wp_customize->add_setting( 'sidebar_layout_radio_button',
   			array(
   				'default' => 'sidebarright',
@@ -1140,7 +1212,8 @@ function trek_lucyisobel_custom_settings($wp_customize){
   			)
   		) );
 
-      //blog background-color control
+
+      // Color control to choose the background color of user's blog
       $wp_customize->add_setting('blog_page_background_color', array(
         'default' => '#e2d7e2',
         'transport' => 'refresh',
@@ -1153,7 +1226,9 @@ function trek_lucyisobel_custom_settings($wp_customize){
         'settings' => 'blog_page_background_color'
       )));
 
-      //creating post preview layout
+
+
+      // Creates the setting for the user to choose the layout of their blog posts on index page
       $wp_customize->add_setting( 'post_preview_layout_radio_button',
     			array(
     				'default' => 'widepostlayout',
@@ -1191,7 +1266,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
 
-      //post preview display settings notice
+      // Creates the title "Post Preview Display Settings" in the "blog" section
       $wp_customize->add_setting('blog_post_preview_settings_notice');
 
 
@@ -1202,7 +1277,9 @@ function trek_lucyisobel_custom_settings($wp_customize){
         'settings' => 'blog_post_preview_settings_notice'
       )));
 
-      //blog link color
+
+
+      // Color control for Blog Link color
       $wp_customize->add_setting('blog_page_link_color', array(
         'default' => '#1D272E',
         'transport' => 'refresh',
@@ -1217,7 +1294,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       )));
 
 
-      //blog link hover color
+      // Color control for blog link color on hover
       $wp_customize->add_setting('blog_page_link_hover_color', array(
         'default' => '#E4BCE4',
         'transport' => 'refresh',
@@ -1232,10 +1309,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
 
-
-
-
-      //toggle categories on or off
+      // Toggle categories on or off to be displayed on the index
       $wp_customize->add_setting('toggle_blog_categories', array(
         'default' => 1,
         'transport' => 'refresh',
@@ -1248,7 +1322,9 @@ function trek_lucyisobel_custom_settings($wp_customize){
         'settings'=> 'toggle_blog_categories'
       )));
 
-      //toggle date on or off
+
+
+      // Toggle dates on or off to be displayed on the index
       $wp_customize->add_setting('toggle_blog_date', array(
         'default' => 1,
         'transport' => 'refresh',
@@ -1261,7 +1337,9 @@ function trek_lucyisobel_custom_settings($wp_customize){
         'settings'=> 'toggle_blog_date'
       )));
 
-      //toggle author on or off
+
+
+      // Toggle author on or off to be displayed on the index
       $wp_customize->add_setting('toggle_blog_author', array(
         'default' => 1,
         'transport' => 'refresh',
@@ -1274,7 +1352,9 @@ function trek_lucyisobel_custom_settings($wp_customize){
         'settings'=> 'toggle_blog_author'
       )));
 
-      //toggle comments on or off
+
+
+      // Toggle comments information on or off to be displayed on the index
       $wp_customize->add_setting('toggle_blog_comments', array(
         'default' => 1,
         'transport' => 'refresh',
@@ -1287,7 +1367,9 @@ function trek_lucyisobel_custom_settings($wp_customize){
         'settings'=> 'toggle_blog_comments'
       )));
 
-      //no featured image section notice
+
+
+      // Creates the title "No Featured Image Settings" in the "blog" section
       $wp_customize->add_setting('blog_no_featured_image_notice');
 
 
@@ -1300,7 +1382,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
 
-      //creating the control for the background color of the 3rd post display option if there is no featured image
+      // Creating the control for the background color of the 3rd post display option if there is no featured image
         $wp_customize->add_setting('no_featured_image_color_control', array(
           'default' => get_theme_mod('header_background_color'),
           'transport' => 'refresh',
@@ -1315,7 +1397,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
         )));
 
 
-        // navigation colors
+        // Creates title "Blog Navigation Colors" on "Blog" section
         $wp_customize->add_setting('navigation_color_control');
 
 
@@ -1327,7 +1409,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
         )));
 
 
-        //background-color of navigation
+        // Color control for index navigation background color
         $wp_customize->add_setting('navigation_background_color', array(
           'default' => get_theme_mod('header_background_color'),
           'transport' => 'refresh',
@@ -1342,7 +1424,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
         )));
 
 
-        //color of navigation
+        // Color control for index navigation text
         $wp_customize->add_setting('navigation_text_color', array(
           'default' => get_theme_mod('header_text_color'),
           'transport' => 'refresh',
@@ -1359,16 +1441,23 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
 
+        /*
+        ========================================
+        SINGLE POST SETTINGS
+        ========================================
+        */
 
-      //single posts section
-      //creating the single post settings section
+
+      // Creates the "single post" Section
       $wp_customize->add_section('singlepost_section', array(
         'title' => __('Single Post Settings', 'Trek'),
         'panel' => 'theme_settings',
         'priority' => 22,
       ));
 
-      //single posts notice
+
+
+      // Creates title "Single Post Settings" in the "single post" section
       $wp_customize->add_setting('singlespost_title_section');
 
 
@@ -1380,7 +1469,8 @@ function trek_lucyisobel_custom_settings($wp_customize){
       )));
 
 
-      //toggle sidebar on or off for single posts
+
+      // Toggle sidebar on or off for Single posts
       $wp_customize->add_setting('single_toggle_sidebar', array(
         'default' => 1,
         'transport' => 'refresh',
@@ -1395,7 +1485,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
 
-      //creating single post layout options
+      // Creates the setting for the user to choose the layout of their single posts
       $wp_customize->add_setting( 'singlepost_layout_radio_button',
           array(
             'default' => 'singlepost_optionone',
@@ -1428,7 +1518,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
 
-        //single posts display info notice
+        // Creates the title "Single Post Header Display Settings" in the "Single Post" section
         $wp_customize->add_setting('singlespost_display_section');
 
 
@@ -1441,7 +1531,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
 
-        //toggle categories on or off
+        // Toggle categories on or off for single posts
         $wp_customize->add_setting('toggle_singlepost_categories', array(
           'default' => 1,
           'transport' => 'refresh',
@@ -1454,7 +1544,9 @@ function trek_lucyisobel_custom_settings($wp_customize){
           'settings'=> 'toggle_singlepost_categories'
         )));
 
-        //toggle date on or off
+
+
+        // Toggle date on or off for single posts
         $wp_customize->add_setting('toggle_singlepost_date', array(
           'default' => 1,
           'transport' => 'refresh',
@@ -1467,7 +1559,9 @@ function trek_lucyisobel_custom_settings($wp_customize){
           'settings'=> 'toggle_singlepost_date'
         )));
 
-        //toggle author on or off
+
+
+        // Toggle author on or off for single posts
         $wp_customize->add_setting('toggle_singlepost_author', array(
           'default' => 1,
           'transport' => 'refresh',
@@ -1480,7 +1574,9 @@ function trek_lucyisobel_custom_settings($wp_customize){
           'settings'=> 'toggle_singlepost_author'
         )));
 
-        //toggle comments on or off
+
+
+        // Toggle comments information display on or off for single posts
         $wp_customize->add_setting('toggle_singlepost_comments', array(
           'default' => 1,
           'transport' => 'refresh',
@@ -1506,7 +1602,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
 
-        //toggle tags on or off
+        // Toggle tags on or off on single posts
         $wp_customize->add_setting('toggle_singlepost_tags', array(
           'default' => 1,
           'transport' => 'refresh',
@@ -1520,7 +1616,8 @@ function trek_lucyisobel_custom_settings($wp_customize){
         )));
 
 
-        //toggle views on or off
+
+        // Toggle view count on or off
         $wp_customize->add_setting('toggle_singlepost_views', array(
           'default' => 1,
           'transport' => 'refresh',
@@ -1536,7 +1633,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
 
-        //single post navigation color control notice
+        // Creates title "Single Post Navigation Color Controls" on "single post" section
         $wp_customize->add_setting('singlepost_navigation_notice');
 
 
@@ -1548,7 +1645,8 @@ function trek_lucyisobel_custom_settings($wp_customize){
         )));
 
 
-        //background-color of single navigation
+
+        // Color controls for background-color of single navigation
         $wp_customize->add_setting('single_navigation_background_color', array(
           'default' => get_theme_mod('header_background_color'),
           'transport' => 'refresh',
@@ -1563,7 +1661,8 @@ function trek_lucyisobel_custom_settings($wp_customize){
         )));
 
 
-        //color of single navigation
+
+        // Color controls for color of single navigation
         $wp_customize->add_setting('single_navigation_text_color', array(
           'default' => get_theme_mod('header_text_color'),
           'transport' => 'refresh',
@@ -1578,7 +1677,8 @@ function trek_lucyisobel_custom_settings($wp_customize){
         )));
 
 
-        //color of single navigation
+
+        // Color controls for color of single navigation on hover
         $wp_customize->add_setting('single_navigation_text_hover_color', array(
           'default' => get_theme_mod('header_text_hover_color'),
           'transport' => 'refresh',
@@ -1593,7 +1693,8 @@ function trek_lucyisobel_custom_settings($wp_customize){
         )));
 
 
-        //single post author box notice
+
+        // Creates title "Single Post Author Box Controls" on "single post" section
         $wp_customize->add_setting('singlepost_authorbox_notice');
 
 
@@ -1605,7 +1706,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
         )));
 
 
-        //single post author box toggle
+        // Toggle author box on or off for single posts
         $wp_customize->add_setting('toggle_singlepost_authorbox', array(
           'default' => 1,
           'transport' => 'refresh',
@@ -1622,15 +1723,24 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
 
-        // Archive
-        // Creating the archive settings section
+        /*
+        ========================================
+        ARCHIVE SETTINGS
+        ========================================
+        */
+
+
+
+        // Creating the "Archive and Search Settings" section
         $wp_customize->add_section('archive_section', array(
           'title' => __('Archive and Search Settings', 'Trek'),
           'panel' => 'theme_settings',
           'priority' => 23,
         ));
 
-        // Archive Nav Bar Title
+
+
+        // Creates the title "Archive/Search Results Bar Settings" in "Archive and Search Settings" section
         $wp_customize->add_setting('archive_navtitle_section');
 
 
@@ -1642,7 +1752,8 @@ function trek_lucyisobel_custom_settings($wp_customize){
         )));
 
 
-        // Archive Nav Bar Background Color
+
+        // Color Control for Archive Nav Bar Background Color
         $wp_customize->add_setting('archive_navbar_backgroundcolor', array(
           'default' => get_theme_mod('header_background_color'),
           'transport' => 'refresh',
@@ -1655,7 +1766,9 @@ function trek_lucyisobel_custom_settings($wp_customize){
           'settings' => 'archive_navbar_backgroundcolor'
         )));
 
-        // Archive Nav Bar Text Color
+
+
+        // Color Control for Archive Nav Bar Text Color
         $wp_customize->add_setting('archive_navbar_textcolor', array(
           'default' => get_theme_mod('header_text_color'),
           'transport' => 'refresh',
@@ -1669,7 +1782,8 @@ function trek_lucyisobel_custom_settings($wp_customize){
         )));
 
 
-        // Archive and Search Title
+
+        // Creates title "Archive and Search Settings" in "Archive and Search Settings" section
         $wp_customize->add_setting('archive_title_section');
 
 
@@ -1679,6 +1793,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
           'section' => 'archive_section',
           'settings' => 'archive_title_section'
         )));
+
 
 
         // Toggle Sidebar on or off for Archive
@@ -1694,7 +1809,9 @@ function trek_lucyisobel_custom_settings($wp_customize){
           'settings'=> 'archive_toggle_sidebar'
         )));
 
-        // Setting to choose archive layout
+
+
+        // Creates the setting for the user to choose the layout of their archive
         $wp_customize->add_setting( 'archive_preview_layout_radio_button',
       			array(
       				'default' => 'widepostlayout',
@@ -1729,7 +1846,8 @@ function trek_lucyisobel_custom_settings($wp_customize){
       			)
       		) );
 
-          // Archive Display Title
+
+          // Creates title "Archive Meta Display Settings" in "Archive and Search Settings" section
           $wp_customize->add_setting('archive_displaytitle_section');
 
 
@@ -1739,6 +1857,8 @@ function trek_lucyisobel_custom_settings($wp_customize){
             'section' => 'archive_section',
             'settings' => 'archive_displaytitle_section'
           )));
+
+
 
           // Archive Categories On or Off
           $wp_customize->add_setting('toggle_archive_categories', array(
@@ -1753,6 +1873,8 @@ function trek_lucyisobel_custom_settings($wp_customize){
             'settings'=> 'toggle_archive_categories'
           )));
 
+
+
           // Archive Date On or Off
           $wp_customize->add_setting('toggle_archive_date', array(
             'default' => 1,
@@ -1766,6 +1888,8 @@ function trek_lucyisobel_custom_settings($wp_customize){
             'settings'=> 'toggle_archive_date'
           )));
 
+
+
           // Archive Author On or Off
           $wp_customize->add_setting('toggle_archive_author', array(
             'default' => 1,
@@ -1778,6 +1902,8 @@ function trek_lucyisobel_custom_settings($wp_customize){
             'section' => 'archive_section',
             'settings'=> 'toggle_archive_author'
           )));
+
+
 
           // Archive Comments Info On or Off
           $wp_customize->add_setting('toggle_archive_comments', array(
@@ -1801,7 +1927,7 @@ $homepage_background_image = get_theme_mod( 'homepage_background_image' );
 add_action('customize_register', 'trek_lucyisobel_custom_settings');
 
 
-//adding the styles from the customiser for the header in the head of the website
+// Adding the styles from the customiser for the header in the head of the website.
  function trek_customizer_css() { ?>
   <style type="text/css">
 
@@ -1889,25 +2015,6 @@ add_action('customize_register', 'trek_lucyisobel_custom_settings');
       color: <?php echo get_theme_mod('homepage_description_color', '#FFFFFF'); ?>;
       text-shadow: <?php echo get_theme_mod('homepage_description_shadow_color', '#000000'); ?>;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   </style>
 <?php }

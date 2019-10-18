@@ -245,7 +245,8 @@
         }
 
         .comment-author a {
-          color: <?php echo get_theme_mod('blog_page_link_color', '#1d272e' ); ?>
+          color: <?php echo get_theme_mod('blog_page_link_color', '#1d272e' ); ?>;
+
         }
 
         .comment-author a:hover {
