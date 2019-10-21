@@ -16,7 +16,7 @@
       <?php } ?>
       <?php if (( get_theme_mod('homepage_title_toggle', 1 ) ) == 1) { ?>
         <div class="homepage-title-container ReenieBeanie">
-          <a href="<?php echo get_theme_mod('homepage_readmore_link'); ?> "><h1><?php print get_bloginfo('name'); ?></h1></a>
+          <a href="<?php echo get_theme_mod('homepage_blog_link'); ?> "><h1><?php print get_bloginfo('name'); ?></h1></a>
         </div>
       <?php } ?>
       <?php if (( get_theme_mod('toggle_switch_description', 1 ) ) == 1) { ?>
@@ -27,7 +27,7 @@
       <?php if(( get_theme_mod('homepage_readmore_toggle', 0 ) ) == 1 ) { ?>
         <div class="homepage-readmore-button-container Montserrat" style="background-color: <?php echo get_theme_mod('homepage_readmore_color', '#1d272e' ); ?>; color: <?php echo get_theme_mod('homepage_readmore_text_color', '#FFFFFF' ); ?>;">
           <div class="homepage-readmore-button">
-            <a href="<?php echo get_theme_mod('homepage_readmore_link'); ?> "><p><?php echo get_theme_mod('homepage_readmore_text', 'Read More'); ?></p></a>
+            <a href="<?php echo get_theme_mod('homepage_blog_link'); ?> "><p><?php echo get_theme_mod('homepage_readmore_text', 'Read More'); ?></p></a>
           </div>
         </div>
       <?php } ?>

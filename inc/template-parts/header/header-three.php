@@ -46,7 +46,7 @@
         <li><a href="<?php echo get_theme_mod('shop_link')?>" target="blank"><i class="fas fa-shopping-cart"></i></a></li>
     <?php  } ?>
     <?php if (( get_theme_mod('toggle_switch_email', 1 ) ) == 1){ ?>
-        <li><a href="<?php echo get_theme_mod('email_link')?>" target="blank"><i class="far fa-envelope-open"></i></a></li>
+        <li><a href="mailto:<?php echo get_theme_mod('email_link')?>" target="blank"><i class="far fa-envelope-open"></i></a></li>
     <?php  } ?>
     <?php if (( get_theme_mod('toggle_switch_vimeo', 0 ) ) == 1){ ?>
         <li><a href="<?php echo get_theme_mod('vimeo_link')?>" target="blank"><i class="fab fa-vimeo-v"></i></a></li>
