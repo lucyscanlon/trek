@@ -47,7 +47,7 @@ $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
     <div class="featuredpost-container-padding">
     <?php if (( get_theme_mod('toggle_blogbanner_logo', 0 ) ) == 1) { ?>
       <div class="featuredpost-logo-container">
-      <a href="<?php echo get_theme_mod('homepage_readmore_link'); ?> "><img src="<?php echo $image[0]; ?>"></a>
+      <a href="<?php echo get_theme_mod('homepage_blog_link'); ?> "><img src="<?php echo $image[0]; ?>"></a>
     </div>
       <?php if (( get_theme_mod('toggle_blogbanner_description', 1 ) ) == 1) { ?>
         <div class="featuredpost-description-container Montserrat">
@@ -57,7 +57,7 @@ $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
     </div>
     <?php } else {?>
     <div class="featuredpost-homepage-title-container ReenieBeanie">
-      <a href="<?php echo get_theme_mod('homepage_readmore_link'); ?> "><h1><?php print get_bloginfo('name'); ?></h1></a>
+      <a href="<?php echo get_theme_mod('homepage_blog_link'); ?> "><h1><?php print get_bloginfo('name'); ?></h1></a>
     </div>
     <?php if (( get_theme_mod('toggle_blogbanner_description', 1 ) ) == 1) { ?>
       <div class="featuredpost-description-container Montserrat">
