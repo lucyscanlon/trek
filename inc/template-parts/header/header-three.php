@@ -54,6 +54,9 @@
     <?php if (( get_theme_mod('toggle_switch_tumblr', 0 ) ) == 1){ ?>
         <li><a href="<?php echo get_theme_mod('tumblr_link')?>" target="blank"><i class="fab fa-tumblr"></i></a></li>
     <?php  } ?>
+    <li>
+        <i class="fas fa-search" id="searchbutton" style="cursor: pointer;"></i>
+    </li>
 
   </ul>
 </div>

@@ -29,40 +29,40 @@
 
 
       <!-- WIDE POST LAYOUT  -->
-      <?php if(( get_theme_mod('post_preview_layout_radio_button', 'widepostlayout' ) ) == 'widepostlayout') { ?>
+      <?php if(( get_theme_mod('post_preview_layout_radio_button', 'fullimage' ) ) == 'fullimage') { ?>
 
         <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 
           <!--  REQUIRE TEMPLATE FOR WIDE POST LAYOUT  -->
-          <?php require get_template_directory() . '/inc/template-parts/index/widepostlayout.php'; ?>
+          <?php require get_template_directory() . '/inc/template-parts/index/fullimage.php'; ?>
 
 
 
 
       <!-- LIST AND ALTERNATE POST LAYOUT  -->
-    <?php } else if(( get_theme_mod('post_preview_layout_radio_button', 'widepostlayout' ) ) == 'gridleftpostlayout') { ?>
+    <?php } else if(( get_theme_mod('post_preview_layout_radio_button', 'fullimage' ) ) == 'liststyle') { ?>
       <div class="gridpostlayout-flex-container">
 
             <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 
             <!--  REQUIRE TEMPLATE FOR GRID / LIST POST LAYOUT  -->
-            <?php require get_template_directory() . '/inc/template-parts/index/gridpostlayout.php'; ?>
+            <?php require get_template_directory() . '/inc/template-parts/index/liststyle.php'; ?>
 
       </div>
 
 
-    <?php } else if(( get_theme_mod('post_preview_layout_radio_button', 'widepostlayout' ) ) == 'gridrightpostlayout') { ?>
+    <?php } else if(( get_theme_mod('post_preview_layout_radio_button', 'fullimage' ) ) == 'liststylereversed') { ?>
 
       <div class="gridpostlayout-flex-container">
 
             <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 
             <!--  REQUIRE TEMPLATE FOR GRID / LIST POST LAYOUT  -->
-            <?php require get_template_directory() . '/inc/template-parts/index/gridpostlayoutrightaligned.php'; ?>
+            <?php require get_template_directory() . '/inc/template-parts/index/liststylereversed.php'; ?>
 
       </div>
 
-    <?php } else if(( get_theme_mod('post_preview_layout_radio_button', 'widepostlayout' ) ) == 'imagepostlayout') { ?>
+    <?php } else if(( get_theme_mod('post_preview_layout_radio_button', 'fullimage' ) ) == 'textoverimage') { ?>
 
       <div class="imagepostlayout-whole-container">
 
@@ -70,7 +70,7 @@
 
             <!--  REQUIRE TEMPLATE FOR IMAGE POST LAYOUT  -->
 
-            <?php require get_template_directory() . '/inc/template-parts/index/imagepostlayout.php'; ?>
+            <?php require get_template_directory() . '/inc/template-parts/index/textoverimage.php'; ?>
 
 
       </div>

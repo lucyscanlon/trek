@@ -1231,7 +1231,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       // Creates the setting for the user to choose the layout of their blog posts on index page
       $wp_customize->add_setting( 'post_preview_layout_radio_button',
     			array(
-    				'default' => 'widepostlayout',
+    				'default' => 'fullimage',
     				'transport' => 'refresh',
     				'sanitize_callback' => 'skyrocket_radio_sanitization'
     			)
@@ -1239,25 +1239,25 @@ function trek_lucyisobel_custom_settings($wp_customize){
     		$wp_customize->add_control( new Skyrocket_Image_Radio_Button_Custom_Control( $wp_customize, 'post_preview_layout_radio_button',
     			array(
     				'label' => __( 'Post Preview Layout', 'Trek' ),
-    				'description' => esc_html__( 'Choose the layout of your post previews', 'Trek' ),
+    				'description' => esc_html__( 'Choose the layout of your post previews on your blog', 'Trek' ),
     				'section' => 'blog_section',
             'settings' => 'post_preview_layout_radio_button',
     				'choices' => array(
-    					'widepostlayout' => array(
-    						'image' => trailingslashit( get_template_directory_uri() ) . 'img/wholeimagelayout.png',
-    						'name' => __( 'Whole Image Layout', 'Trek' )
+    					'fullimage' => array(
+    						'image' => trailingslashit( get_template_directory_uri() ) . 'img/fullimage.png',
+    						'name' => __( 'Full Image Layout', 'Trek' )
     					),
-    					'gridrightpostlayout' => array(
-    						'image' => trailingslashit( get_template_directory_uri() ) . 'img/listoptiontwo.png',
-    						'name' => __( 'List Option One', 'Trek' )
+    					'liststyle' => array(
+    						'image' => trailingslashit( get_template_directory_uri() ) . 'img/liststyle.png',
+    						'name' => __( 'List Style', 'Trek' )
     					),
-              'gridleftpostlayout' => array(
-    						'image' => trailingslashit( get_template_directory_uri() ) . 'img/listoptionone.png',
-    						'name' => __( 'List Option Two', 'Trek' )
+              'liststylereversed' => array(
+    						'image' => trailingslashit( get_template_directory_uri() ) . 'img/liststylereversed.png',
+    						'name' => __( 'List Style Reversed', 'Trek' )
     					),
-              'imagepostlayout' => array(
-    						'image' => trailingslashit( get_template_directory_uri() ) . 'img/imageasbackground.png',
-    						'name' => __( 'Image as background', 'Trek' )
+              'textoverimage' => array(
+    						'image' => trailingslashit( get_template_directory_uri() ) . 'img/textoverimage.png',
+    						'name' => __( 'Text Over Image', 'Trek' )
     					),
     				)
     			)
@@ -1488,7 +1488,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       // Creates the setting for the user to choose the layout of their single posts
       $wp_customize->add_setting( 'singlepost_layout_radio_button',
           array(
-            'default' => 'singlepost_optionone',
+            'default' => 'singlefullimage',
             'transport' => 'refresh',
             'sanitize_callback' => 'skyrocket_radio_sanitization'
           )
@@ -1500,17 +1500,17 @@ function trek_lucyisobel_custom_settings($wp_customize){
             'section' => 'singlepost_section',
             'settings' => 'singlepost_layout_radio_button',
             'choices' => array(
-              'singlepost_optionone' => array(
-                'image' => trailingslashit( get_template_directory_uri() ) . 'img/singlepostoptionone.png',
-                'name' => __( 'Option One', 'Trek' )
+              'singlefullimage' => array(
+                'image' => trailingslashit( get_template_directory_uri() ) . 'img/singlefullimage.png',
+                'name' => __( 'Full Image Layout', 'Trek' )
               ),
-              'singlepost_optiontwo' => array(
-                'image' => trailingslashit( get_template_directory_uri() ) . 'img/singlepostoptiontwo.png',
-                'name' => __( 'List Option One', 'Trek' )
+              'singlebannerimage' => array(
+                'image' => trailingslashit( get_template_directory_uri() ) . 'img/singlebannerimage.png',
+                'name' => __( 'Banner Image Layout', 'Trek' )
               ),
-              'singlepost_optionthree' => array(
-                'image' => trailingslashit( get_template_directory_uri() ) . 'img/singlepostoptionthree.png',
-                'name' => __( 'List Option Two', 'Trek' )
+              'singletextoverimage' => array(
+                'image' => trailingslashit( get_template_directory_uri() ) . 'img/singletextoverimage.png',
+                'name' => __( 'Text Over Image Layout', 'Trek' )
               ),
             )
           )
@@ -1814,7 +1814,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
         // Creates the setting for the user to choose the layout of their archive
         $wp_customize->add_setting( 'archive_preview_layout_radio_button',
       			array(
-      				'default' => 'widepostlayout',
+      				'default' => 'archive-fullimage',
       				'transport' => 'refresh',
       				'sanitize_callback' => 'skyrocket_radio_sanitization'
       			)
@@ -1826,21 +1826,21 @@ function trek_lucyisobel_custom_settings($wp_customize){
       				'section' => 'archive_section',
               'settings' => 'archive_preview_layout_radio_button',
       				'choices' => array(
-      					'widepostlayout' => array(
-      						'image' => trailingslashit( get_template_directory_uri() ) . 'img/wholeimagelayout.png',
-      						'name' => __( 'Whole Image Layout', 'Trek' )
+      					'archive-fullimage' => array(
+      						'image' => trailingslashit( get_template_directory_uri() ) . 'img/fullimage.png',
+      						'name' => __( 'Full Image Layout', 'Trek' )
       					),
-      					'gridrightpostlayout' => array(
-      						'image' => trailingslashit( get_template_directory_uri() ) . 'img/listoptiontwo.png',
-      						'name' => __( 'List Option One', 'Trek' )
+      					'archive-liststyle' => array(
+      						'image' => trailingslashit( get_template_directory_uri() ) . 'img/liststyle.png',
+      						'name' => __( 'List Style Layout', 'Trek' )
       					),
-                'gridleftpostlayout' => array(
-      						'image' => trailingslashit( get_template_directory_uri() ) . 'img/listoptionone.png',
-      						'name' => __( 'List Option Two', 'Trek' )
+                'archive-liststylereversed' => array(
+      						'image' => trailingslashit( get_template_directory_uri() ) . 'img/liststylereversed.png',
+      						'name' => __( 'List Style Reversed Layout', 'Trek' )
       					),
-                'imagepostlayout' => array(
-      						'image' => trailingslashit( get_template_directory_uri() ) . 'img/imageasbackground.png',
-      						'name' => __( 'Image as background', 'Trek' )
+                'archive-textoverimage' => array(
+      						'image' => trailingslashit( get_template_directory_uri() ) . 'img/textoverimage.png',
+      						'name' => __( 'Text Over Image Layout', 'Trek' )
       					),
       				)
       			)

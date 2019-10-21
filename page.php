@@ -21,20 +21,20 @@
          <?php trek_save_post_views( get_the_ID() ); ?>
         <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 
-        <?php if(( get_theme_mod('singlepost_layout_radio_button', 'singlepost_optionthree' ) ) == 'singlepost_optionone') { ?>
+        <?php if(( get_theme_mod('singlepost_layout_radio_button', 'singlefullimage' ) ) == 'singlefullimage') { ?>
 
           <!--  REQUIRE TEMPLATE FOR SINGLE POST LAYOUT OPTION ONE  -->
-          <?php require get_template_directory() . '/inc/template-parts/page/page-largeimage.php'; ?>
+          <?php require get_template_directory() . '/inc/template-parts/page/page-fullimage.php'; ?>
 
-        <?php } else if(( get_theme_mod('singlepost_layout_radio_button', 'singlepost_optionthree' ) ) == 'singlepost_optiontwo') {?>
+        <?php } else if(( get_theme_mod('singlepost_layout_radio_button', 'singlefullimage' ) ) == 'singlebannerimage') {?>
 
           <!--  REQUIRE TEMPLATE FOR SINGLE POST LAYOUT OPTION TWO  -->
           <?php require get_template_directory() . '/inc/template-parts/page/page-bannerimage.php'; ?>
 
-        <?php } else if(( get_theme_mod('singlepost_layout_radio_button', 'singlepost_optionthree' ) ) == 'singlepost_optionthree') { ?>
+        <?php } else if(( get_theme_mod('singlepost_layout_radio_button', 'singlefullimage' ) ) == 'singletextoverimage') { ?>
 
           <!--  REQUIRE TEMPLATE FOR SINGLE POST LAYOUT OPTION THREE  -->
-          <?php require get_template_directory() . '/inc/template-parts/page/page-imageasbackground.php'; ?>
+          <?php require get_template_directory() . '/inc/template-parts/page/page-textoverimage.php'; ?>
 
         <?php } ?>
       <?php  endwhile; ?>

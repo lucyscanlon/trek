@@ -58,38 +58,38 @@
 
 
                   <!-- WIDE POST LAYOUT  -->
-                  <?php if(( get_theme_mod('archive_preview_layout_radio_button', 'gridleftpostlayout' ) ) == 'widepostlayout') { ?>
+                  <?php if(( get_theme_mod('archive_preview_layout_radio_button', 'archive-liststyle' ) ) == 'archive-fullimage') { ?>
                     <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 
                       <!--  REQUIRE TEMPLATE FOR WIDE POST LAYOUT  -->
-                      <?php require get_template_directory() . '/inc/template-parts/archive/archive-widepostlayout.php'; ?>
+                      <?php require get_template_directory() . '/inc/template-parts/archive/archive-fullimage.php'; ?>
 
                   <!-- LIST AND ALTERNATE POST LAYOUT  -->
-                <?php } else if(( get_theme_mod('archive_preview_layout_radio_button', 'gridleftpostlayout' ) ) == 'gridleftpostlayout') { ?>
+                <?php } else if(( get_theme_mod('archive_preview_layout_radio_button', 'archive-liststyle' ) ) == 'archive-liststyle') { ?>
                   <div class="gridpostlayout-flex-container">
                     <!-- POST LOOP STARTS HERE -->
                         <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 
                         <!--  REQUIRE TEMPLATE FOR GRID / LIST POST LAYOUT  -->
-                        <?php require get_template_directory() . '/inc/template-parts/archive/archive-gridpostlayout.php'; ?>
+                        <?php require get_template_directory() . '/inc/template-parts/archive/archive-liststyle.php'; ?>
                   </div>
 
-                <?php } else if(( get_theme_mod('archive_preview_layout_radio_button', 'gridleftpostlayout' ) ) == 'gridrightpostlayout') { ?>
+                <?php } else if(( get_theme_mod('archive_preview_layout_radio_button', 'archive-liststyle' ) ) == 'archive-liststylereversed') { ?>
 
                   <div class="gridpostlayout-flex-container">
                         <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 
                         <!--  REQUIRE TEMPLATE FOR GRID / LIST POST LAYOUT  -->
-                        <?php require get_template_directory() . '/inc/template-parts/archive/archive-gridpostlayoutrightaligned.php'; ?>
+                        <?php require get_template_directory() . '/inc/template-parts/archive/archive-liststylereversed.php'; ?>
                   </div>
-                <?php } else if(( get_theme_mod('archive_preview_layout_radio_button', 'gridleftpostlayout' ) ) == 'imagepostlayout') { ?>
+                <?php } else if(( get_theme_mod('archive_preview_layout_radio_button', 'archive-liststyle' ) ) == 'archive-textoverimage') { ?>
 
                   <div class="imagepostlayout-whole-container">
                         <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 
                         <!--  REQUIRE TEMPLATE FOR IMAGE POST LAYOUT  -->
 
-                        <?php require get_template_directory() . '/inc/template-parts/archive/archive-imagepostlayout.php'; ?>
+                        <?php require get_template_directory() . '/inc/template-parts/archive/archive-textoverimage.php'; ?>
 
                   </div>
 
