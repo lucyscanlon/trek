@@ -33,7 +33,7 @@ $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
        <a href="<?php the_permalink(); ?>"><h1><?php the_title(); ?></h1></a>
      </div>
      <div class="featuredpost-readmore-container Montserrat whitetext-hover-color">
-       <a href="<?php the_permalink(); ?>">read more</a>
+       <a href="<?php the_permalink(); ?>"><?php echo __('Read More', 'trek'); ?></a>
      </div>
    </div>
    </div>

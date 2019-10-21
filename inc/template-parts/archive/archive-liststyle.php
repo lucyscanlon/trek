@@ -54,7 +54,7 @@
         </p>
       </div>
       <div class="gridpostlayout-readmore-container Montserrat bloglinkcolor">
-        <a href="<?php the_permalink(); ?>"><p>Read More</p></a>
+        <a href="<?php the_permalink(); ?>"><p><?php echo __('Read More', 'trek'); ?></p></a>
       </div>
       </div>
   </div>

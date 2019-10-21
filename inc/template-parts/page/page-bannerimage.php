@@ -16,7 +16,7 @@
     <h1><?php the_title(); ?></h1>
   </div>
   <div class="page-meta-container Montserrat">
-    <p><?php the_time('jS F Y')?> By <?php the_author(); ?></p>
+    <p><?php the_time('jS F Y')?> <?php echo __('By ', 'trek'); ?><?php the_author(); ?></p>
   </div>
   <?php if ( has_post_thumbnail( get_the_ID()  ) ) { ?>
   <div class="singlepost2-featuredimage-container" style="background: url('<?php echo $backgroundImg[0]; ?>'); background-size: cover; background-position: center center;">

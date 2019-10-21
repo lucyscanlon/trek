@@ -27,7 +27,7 @@
       <?php if(( get_theme_mod('homepage_readmore_toggle', 0 ) ) == 1 ) { ?>
         <div class="homepage-readmore-button-container Montserrat" style="background-color: <?php echo get_theme_mod('homepage_readmore_color', '#1d272e' ); ?>; color: <?php echo get_theme_mod('homepage_readmore_text_color', '#FFFFFF' ); ?>;">
           <div class="homepage-readmore-button">
-            <a href="<?php echo get_theme_mod('homepage_blog_link'); ?> "><p><?php echo get_theme_mod('homepage_readmore_text', 'Read More'); ?></p></a>
+            <a href="<?php echo get_theme_mod('homepage_readmore_link'); ?> "><p><?php echo get_theme_mod('homepage_readmore_text', 'Read More'); ?></p></a>
           </div>
         </div>
       <?php } ?>

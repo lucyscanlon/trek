@@ -28,7 +28,7 @@
         if ( get_the_author_meta('user_url',$user_ID) ) :
       ?>
         <div class="singlepost-author-website-container Montserrat">
-          <a href="<?php the_author_meta( 'user_url' ); ?>"><p><?php the_author_meta( 'user_url' ); ?></p></a>
+          <a href="<?php the_author_meta( 'user_url' ); ?>" target="blank" ><p><?php the_author_meta( 'user_url' ); ?></p></a>
         </div>
       <?php endif; ?>
     </div>

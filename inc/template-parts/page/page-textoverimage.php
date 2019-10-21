@@ -18,7 +18,7 @@
       <h1><?php the_title(); ?></h1>
     </div>
     <div class="page-meta-container-three singlepost3white Montserrat">
-      <p><?php the_time('jS F Y')?> By <?php the_author(); ?></p>
+      <p><?php the_time('jS F Y')?><?php echo __('By ', 'trek'); ?><?php the_author(); ?></p>
     </div>
 
   </div>

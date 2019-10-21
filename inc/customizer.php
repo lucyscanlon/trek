@@ -817,8 +817,8 @@ function trek_lucyisobel_custom_settings($wp_customize){
     ));
 
     $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'homepage_blog_link', array(
-      'label' => 'Link to your blog',
-      'description' => 'Make sure your readers can access your blog',
+      'label' => __('Link to your blog', 'trek'),
+      'description' => __('Make sure your readers can access your blog', 'trek'),
       'section' => 'homepage_section',
       'settings' => 'homepage_blog_link',
       'input_attrs' => array(
@@ -967,12 +967,30 @@ function trek_lucyisobel_custom_settings($wp_customize){
     ));
 
     $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'homepage_readmore_text', array(
-      'label' => 'Read More button text',
-      'description' => 'Change the text for your blog link',
+      'label' => __('Read More button text', 'trek'),
+      'description' => __('Change the text for your blog link', 'trek'),
       'section' => 'homepage_section',
       'settings' => 'homepage_readmore_text',
       'input_attrs' => array(
         'placeholder' => __('Read More'),
+      )
+
+    )));
+
+
+
+    // Creates the input box for user to input their read more button link
+    $wp_customize->add_setting('homepage_readmore_link', array(
+
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'homepage_readmore_link', array(
+      'label' => __('Link for your Read More Button', 'trek'),
+      'description' => __('Link to any site you like, or just link to your blog', 'trek'),
+      'section' => 'homepage_section',
+      'settings' => 'homepage_readmore_link',
+      'input_attrs' => array(
+        'placeholder' => __('Paste the link to your blog here'),
       )
 
     )));
@@ -1120,8 +1138,8 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
     $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'featuredpost_category', array(
       'section' => 'blog_section',
-      'label' => 'Chosen featured category name',
-      'description' => 'Please create a new category and put your chosen post into that category. Then paste the name of this category here. Please only assign one post to this category at a time. ',
+      'label' => __('Chosen featured category name', 'trek'),
+      'description' => __('Please create a new category and put your chosen post into that category. Then paste the name of this category here. Please only assign one post to this category at a time. ', 'trek'),
       'settings' => 'featuredpost_category',
       'input_attrs' => array(
         'placeholder' => __('Category name'),
@@ -1814,7 +1832,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
         // Creates the setting for the user to choose the layout of their archive
         $wp_customize->add_setting( 'archive_preview_layout_radio_button',
       			array(
-      				'default' => 'archive-fullimage',
+      				'default' => 'archive-liststyle',
       				'transport' => 'refresh',
       				'sanitize_callback' => 'skyrocket_radio_sanitization'
       			)
