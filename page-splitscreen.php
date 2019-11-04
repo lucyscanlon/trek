@@ -5,24 +5,28 @@ Template Name: Split Screen
 */
 ?>
 <?php get_header(); ?>
-<?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
+
 
 <?php
   while ( have_posts() ) :
     the_post(); ?>
+    <?php $backgroundImgPage = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
+
       <section class="featured-post-container">
           <?php require get_template_directory() . '/inc/template-parts/index/blogbanner.php'; ?>
       </section>
       <div class="secondary-categories-whole-container Montserrat">
+        <?php if (( get_theme_mod('secondary_menu_display', 1 )  ) == 1) { ?>
         <?php wp_nav_menu( array(
           'theme_location' => 'secondary',
           'container' => false,
         )); ?>
+      <?php } ?>
       </div>
       <div class="page-background-color-container">
         <div class="page-split-width-container">
           <div class="page-fullwidth-whole-container">
-            <div class="page-fullwidth-featuredimage-container" style="background: url('<?php echo $backgroundImg[0]; ?>'); background-size: cover; background-position: center center;">
+            <div class="page-fullwidth-featuredimage-container" style="background: url('<?php echo $backgroundImgPage[0]; ?>'); background-size: cover; background-position: center center;">
 
             </div>
             <div class="page-fullwidth-content-container">

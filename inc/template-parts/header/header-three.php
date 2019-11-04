@@ -1,5 +1,5 @@
 <div class="menuleft-menu-container Montserrat headerTextColor">
-
+<div class="largescreen-menu">
   <?php
 
   wp_nav_menu( array(
@@ -9,6 +9,10 @@
 
 
   ?>
+</div>
+<div class="smallscreen-burger-icon">
+  <li><i class="fa fa-bars" aria-hidden="true" id="SmallScreenMenuOpen"></i></li>
+</div>
 
 
 

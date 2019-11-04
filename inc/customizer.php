@@ -1154,7 +1154,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
     $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'secondary_menu_display_title', array(
       'label' => __('Secondary Menu', 'Trek'),
-      'description' => __('This secondary menu was built to display some of your categories. If your blog is new and has limited posts then you might not have anything to fill this space. Turn it off for now here.', 'trek'),
+      'description' => __('This secondary menu was built to display some of your categories. If your blog is new and has limited posts then you might not have anything to fill this space. Turn it off for now here. Please note, this menu automatically does not display when viewing the website on smaller screens such as small laptops, tablets or phones.', 'trek'),
       'section' => 'blog_section',
       'settings' => 'secondary_menu_display_title'
     )));
@@ -1523,11 +1523,11 @@ function trek_lucyisobel_custom_settings($wp_customize){
                 'name' => __( 'Full Image Layout', 'Trek' )
               ),
               'singlebannerimage' => array(
-                'image' => trailingslashit( get_template_directory_uri() ) . 'img/singlebannerimage.png',
+                'image' => trailingslashit( get_template_directory_uri() ) . 'img/singletextoverimage.png',
                 'name' => __( 'Banner Image Layout', 'Trek' )
               ),
               'singletextoverimage' => array(
-                'image' => trailingslashit( get_template_directory_uri() ) . 'img/singletextoverimage.png',
+                'image' => trailingslashit( get_template_directory_uri() ) . 'img/singlebannerimage.png',
                 'name' => __( 'Text Over Image Layout', 'Trek' )
               ),
             )

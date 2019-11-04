@@ -3,10 +3,12 @@
   <?php require get_template_directory() . '/inc/template-parts/index/blogbanner.php'; ?>
 </section>
 <div class="secondary-categories-whole-container Montserrat">
+  <?php if (( get_theme_mod('secondary_menu_display', 1 )  ) == 1) { ?>
   <?php wp_nav_menu( array(
     'theme_location' => 'secondary',
     'container' => false,
   )); ?>
+<?php } ?>
 </div>
 <div class="single">
 <div class="blog-content-top-padding">
