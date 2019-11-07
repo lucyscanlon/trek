@@ -42,9 +42,23 @@
   .page-numbers a:hover,
   .page-numbers.current,
   .page-numbers.current:hover {
-    color: <?php echo get_theme_mod('navigation_text_color', '#ffffff' ); ?>;
-    background-color: <?php echo get_theme_mod('navigation_background_color', '#1d272e' ); ?>;
+    color: <?php echo get_theme_mod('navigation_text_color', get_theme_mod('header_text_color', '#FFFFFF') ); ?>;
+    background-color: <?php echo get_theme_mod('navigation_background_color', get_theme_mod('header_background_color', '#1D272E') ); ?>;
     text-decoration: none;
+  }
+
+  .featuredpost-homepage-title-container h1  {
+    text-shadow: <?php echo get_theme_mod('blog_banner_text_shadow_color', get_theme_mod('homepage_title_shadow_color', '#000000') ); ?> 5px 5px;;
+  }
+
+  .featuredpost-homepage-title-container h1  {
+    color: <?php echo get_theme_mod('blog_banner_text_color', get_theme_mod('homepage_title_color', '#FFFFFF') ); ?>;
+    transition-duration: 1s;
+  }
+
+  .featuredpost-homepage-title-container h1:hover {
+    color: <?php echo get_theme_mod('blog_banner_text_hover_color', get_theme_mod('homepage_title_link_color', '#E4BCE4') ); ?>;
+    transition-duration: 1s;
   }
 
   /* Moving sidebar to correct location. Or if sidebar turned off centering the posts */
@@ -135,7 +149,7 @@
         /* index templates link colors  */
 
         .bloglinkcolor a {
-          color: <?php echo get_theme_mod('blog_page_link_color', '#1d272e' ); ?>
+          color: <?php echo get_theme_mod('blog_page_link_color', '#000000' ); ?>
         }
 
         .bloglinkcolor a:hover {
@@ -156,13 +170,13 @@
         /* blog banner - if homepage information is displayed */
 
         .featuredpost-homepage-title-container a {
-          color: <?php echo get_theme_mod('blog_banner_text_color', '#ffffff' ); ?>;
-          text-shadow: <?php echo get_theme_mod('blog_banner_text_shadow_color', '#000000' ); ?> 4px 4px;
+          color: <?php echo get_theme_mod('blog_banner_text_color', get_theme_mod('homepage_title_color', '#FFFFFF') ); ?>;
+          text-shadow: <?php echo get_theme_mod('blog_banner_text_shadow_color', get_theme_mod('homepage_title_shadow_color', '#000000') ); ?> 4px 4px;
         }
 
         .featuredpost-description-container {
-          color: <?php echo get_theme_mod('blog_banner_text_color', '#FFFFFF'); ?>;
-          text-shadow: <?php echo get_theme_mod('blog_banner_text_shadow_color', '#000000' ); ?> 1px 1px;
+          color: <?php echo get_theme_mod('blog_banner_text_color', get_theme_mod('homepage_title_color', '#FFFFFF') ); ?>;
+          text-shadow: <?php echo get_theme_mod('blog_banner_text_shadow_color', get_theme_mod('homepage_title_shadow_color', '#000000') ); ?> 1px 1px;
         }
         /* sidebar settings for single.php */
 
@@ -233,16 +247,16 @@
         /* single post navigation colors */
 
         .singlepost-navigation-colors {
-          color: <?php echo get_theme_mod('single_navigation_text_color', '#FFFFFF'); ?>;
-          background-color: <?php echo get_theme_mod('single_navigation_background_color', '#1d272e' ); ?>;
+          color: <?php echo get_theme_mod('single_navigation_text_color', get_theme_mod('header_text_color', '#FFFFFF' ) ); ?>;
+          background-color: <?php echo get_theme_mod('single_navigation_background_color', get_theme_mod('header_background_color', '#1d272e') ); ?>;
         }
 
         .singlepost-navigation-colors a {
-          color: <?php echo get_theme_mod('single_navigation_text_color', '#FFFFFF'); ?>;
+          color: <?php echo get_theme_mod('single_navigation_text_color', get_theme_mod('header_text_color', '#FFFFFF' ) ); ?>;
         }
 
         .singlepost-navigation-colors a:hover {
-          color: <?php echo get_theme_mod('single_navigation_text_hover_color', '#e4bce4' ); ?>;
+          color: <?php echo get_theme_mod('single_navigation_text_hover_color', get_theme_mod('header_text_hover_color', '#e4bce4' ) ); ?>;
         }
 
         /* single post author box */
@@ -254,7 +268,7 @@
         /* comments */
 
         .logged-in-as a {
-          color: <?php echo get_theme_mod('blog_page_link_color', '#1d272e' ); ?>
+          color: <?php echo get_theme_mod('blog_page_link_color', '#000000' ); ?>
         }
 
         .logged-in-as a:hover {
@@ -266,18 +280,18 @@
         }
 
         .comments .reply a {
-          color: white;
+          color: <?php echo get_theme_mod('header_text_color', '#FFFFFF' ); ?>;
           transition-duration: 1s;
 
         }
 
         .comments .reply a:hover {
-          color: <?php echo get_theme_mod('blog_page_link_hover_color', '#e4bce4' ); ?>;
+          color: <?php echo get_theme_mod('header_text_hover_color', '#e4bce4' );?>;
           transition-duration: 1s;
         }
 
         .comment-reply-title a {
-          color: <?php echo get_theme_mod('blog_page_link_color', '#1d272e' ); ?>
+          color: <?php echo get_theme_mod('blog_page_link_color', '#000000' ); ?>
         }
 
         .comment-reply-title a:hover {
@@ -285,7 +299,7 @@
         }
 
         .comment-author a {
-          color: <?php echo get_theme_mod('blog_page_link_color', '#1d272e' ); ?>;
+          color: <?php echo get_theme_mod('blog_page_link_color', '#000000' ); ?>;
 
         }
 
@@ -294,7 +308,7 @@
         }
 
         .nav-right-container a {
-          color: <?php echo get_theme_mod('blog_page_link_color', '#1d272e' ); ?>
+          color: <?php echo get_theme_mod('blog_page_link_color', '#000000' ); ?>
         }
 
         .nav-right-container a:hover {
@@ -302,7 +316,7 @@
         }
 
         .nav-left-container a {
-          color: <?php echo get_theme_mod('blog_page_link_color', '#1d272e' ); ?>
+          color: <?php echo get_theme_mod('blog_page_link_color', '#000000' ); ?>
         }
 
         .nav-left-container a:hover {
@@ -412,7 +426,7 @@
         }
 
         .page-split-comment-container a {
-          color: <?php echo get_theme_mod('blog_page_link_color', '#1d272e' ); ?>
+          color: <?php echo get_theme_mod('blog_page_link_color', '#000000' ); ?>
         }
 
         .page-split-comment-container a:hover {
@@ -495,8 +509,8 @@
           <?php  }?>
 
           .blog-archive-results {
-            background-color: <?php echo get_theme_mod('archive_navbar_backgroundcolor', '#1d272e' ); ?>;
-            color: <?php echo get_theme_mod('archive_navbar_textcolor', '#FFFFFF' ); ?>;
+            background-color: <?php echo get_theme_mod('archive_navbar_backgroundcolor', get_theme_mod('header_background_color', '#1D272E') ); ?>;
+            color: <?php echo get_theme_mod('archive_navbar_textcolor', get_theme_mod('header_text_color', '#FFFFFF') ); ?>;
           }
 
           /*  footer  */
@@ -538,22 +552,32 @@
           .homepage-readmore-button-container a:hover {
             color: <?php echo get_theme_mod('homepage_readmore_text_hover_color', '#e4bce4' ); ?>;
           }
-          .homepage-readmore-button-container {
+          .homepage-readmore-button-container p {
             background-color: <?php echo get_theme_mod('homepage_readmore_color', '#1d272e' ); ?>;
+          }
+
+          .homepage-title-container h1:hover {
+            color: <?php echo get_theme_mod('homepage_title_link_color', '#e4bce4' ); ?>;
+            transition-duration: 1s;
+          }
+
+          .homepage-title-container h1 {
+            color: <?php echo get_theme_mod('homepage_title_color', '#FFFFFF' ); ?>;
+            transition-duration: 1s;
           }
 
           .page-numbers a:hover,
           .page-numbers.current,
           .page-numbers.current:hover {
-            color: <?php echo get_theme_mod('navigation_text_color', '#FFFFFF'); ?>;
-            background-color: <?php echo get_theme_mod('navigation_background_color', '#1d272e' ); ?>;
+            color: <?php echo get_theme_mod('navigation_text_color', get_theme_mod('header_text_color', '#FFFFFF') ); ?>;
+            background-color: <?php echo get_theme_mod('navigation_background_color', get_theme_mod('header_background_color', '#1D272E') ); ?>;
             text-decoration: none;
           }
 
           /* sidebar */
 
           .trek-widget-width-container a {
-            color: <?php echo get_theme_mod('blog_page_link_color', '#1d272e' ); ?>
+            color: <?php echo get_theme_mod('blog_page_link_color', '#000000' ); ?>
           }
 
           .trek-widget-width-container a:hover {
@@ -574,8 +598,8 @@
 
 
           .blog-search-results {
-            background-color: <?php echo get_theme_mod('archive_navbar_backgroundcolor', '#1d272e' ); ?>;
-            color: <?php echo get_theme_mod('archive_navbar_textcolor', '#FFFFFF' ); ?>;
+            background-color: <?php echo get_theme_mod('archive_navbar_backgroundcolor', get_theme_mod('header_background_color', '#1D272E') ); ?>;
+            color: <?php echo get_theme_mod('archive_navbar_textcolor', get_theme_mod('header_text_color', '#FFFFFF') ); ?>;
           }
 
 
@@ -604,8 +628,9 @@
 
 
             .featuredpost-title-container h1  {
-              text-shadow: <?php echo get_theme_mod('blog_banner_text_shadow_color', '#000000' ); ?> 3.5px 3.5px;;
+              text-shadow: <?php echo get_theme_mod('blog_banner_text_shadow_color', get_theme_mod('homepage_title_shadow_color', '#000000') ); ?> 3.5px 3.5px;;
             }
+
 
             .featuredpost-container-padding {
               padding-top: 40px;
@@ -613,7 +638,7 @@
             }
 
             .homepage-title-container h1 {
-              text-shadow: <?php echo get_theme_mod('homepage_title_shadow_color'); ?> 3.5px 3.5px;
+              text-shadow: <?php echo get_theme_mod('homepage_title_shadow_color', '#000000' ); ?> 3.5px 3.5px;
 
             }
 
@@ -663,15 +688,15 @@
 
     <div class="header-whole-container headerbackgroundcolor">
       <!-- get the header template for first option-->
-      <?php if(( get_theme_mod('header_layout_radio_button', 'menucenter' ) ) == 'menucenter') { ?>
+      <?php if(( get_theme_mod('header_layout_radio_button', 'menuleft' ) ) == 'menucenter') { ?>
 
               <?php require get_template_directory() . '/inc/template-parts/header/header-one.php'; ?>
 
-            <?php } else if (( get_theme_mod('header_layout_radio_button', 'menucenter') ) == 'menuright') { ?>
+            <?php } else if (( get_theme_mod('header_layout_radio_button', 'menuleft') ) == 'menuright') { ?>
 
               <?php require get_template_directory() . '/inc/template-parts/header/header-two.php'; ?>
 
-            <?php  } else if (( get_theme_mod('header_layout_radio_button', 'menucenter') ) == 'menuleft') { ?>
+            <?php  } else if (( get_theme_mod('header_layout_radio_button', 'menuleft') ) == 'menuleft') { ?>
 
               <?php require get_template_directory() . '/inc/template-parts/header/header-three.php'; ?>
 

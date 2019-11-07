@@ -77,10 +77,10 @@ class trek_socialmedia_widget extends WP_widget {
       <?php endif; ?>
       <div class="trek-socialmedia-list-container">
         <ul>
-          <?php if (( get_theme_mod('toggle_switch_twitter', 1 ) ) == 1){ ?>
+          <?php if (( get_theme_mod('toggle_switch_twitter', 0 ) ) == 1){ ?>
               <li><a href="<?php echo get_theme_mod('twitter_link')?>" target="blank"><i class="fab fa-twitter"></i></a></li>
           <?php } ?>
-          <?php if (( get_theme_mod('toggle_switch_facebook', 1 ) ) == 1){ ?>
+          <?php if (( get_theme_mod('toggle_switch_facebook', 0 ) ) == 1){ ?>
               <li><a href="<?php echo get_theme_mod('facebook_link')?>" target="blank"><i class="fab fa-facebook"></i></a></li>
           <?php } ?>
           <?php if (( get_theme_mod('toggle_switch_instagram', 1 ) ) == 1){ ?>
@@ -104,7 +104,7 @@ class trek_socialmedia_widget extends WP_widget {
           <?php if (( get_theme_mod('toggle_switch_goodreads', 0 ) ) == 1){ ?>
               <li><a href="<?php echo get_theme_mod('goodreads_link')?>" target="blank"><i class="fab fa-goodreads"></i></a></li>
           <?php } ?>
-          <?php if (( get_theme_mod('toggle_switch_shop', 0 ) ) == 1){ ?>
+          <?php if (( get_theme_mod('toggle_switch_shop', 1 ) ) == 1){ ?>
               <li><a href="<?php echo get_theme_mod('shop_link')?>" target="blank"><i class="fas fa-shopping-cart"></i></a></li>
           <?php } ?>
           <?php if (( get_theme_mod('toggle_switch_email', 1 ) ) == 1){ ?>

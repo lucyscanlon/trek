@@ -250,7 +250,7 @@ display: none;
 }
 
 .homepage-readmore-button-container {
-  width: 15%;
+  width: 200px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -265,6 +265,10 @@ display: none;
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 13px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .homepage-video-whole-container {
@@ -348,9 +352,9 @@ display: none;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  font-size: 60px;
+  font-size: 45px;
   color: white;
-  text-shadow: 6px 6px black;
+  text-shadow: 4px 4px black;
   letter-spacing: 6px;
 }
 
@@ -2815,9 +2819,6 @@ font-size: 15px;
     height: 100vh;
     position: absolute;
     top: 0;
-    left: 0;
-    position: absolute;
-    top: 0;
     left: -330px;
     transition: all .3s ease-in-out;
     overflow-y: scroll;
@@ -2837,7 +2838,7 @@ font-size: 15px;
   }
 
   .smallmenuisopen {
-    position: absolute;
+    position: fixed;
     left: 0!important;
     top: 0!important;
     transition: all .3s ease-in-out;
@@ -2917,7 +2918,7 @@ font-size: 15px;
   }
 
   .featuredpost-title-container h1 {
-    font-size: 75px!important;
+    font-size: 60px!important;
   }
 
   .widepostlayout-title-container  {
@@ -3018,7 +3019,7 @@ font-size: 15px;
 
 
   .featuredpost-title-container h1  {
-    font-size: 55px!important;
+    font-size: 45px!important;
   }
 
   .widepostlayout-meta-container {
@@ -3075,8 +3076,7 @@ font-size: 15px;
 
   .comment .children article {
     width: calc(100% - 140px)!important;
-    position: re
-    lative;
+    position: relative;
     left: 130px!important;
   }
 
@@ -3094,11 +3094,11 @@ font-size: 15px;
 
   .homepage-title-container h1 {
     width: 90%;
-    font-size: 65px!important;
+    font-size: 75px!important;
   }
 
   .homepage-description-container p {
-    font-size: 10px;
+    font-size: 16px;
 
   }
 

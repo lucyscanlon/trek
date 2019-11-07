@@ -8,15 +8,15 @@
     <iframe class="vid" width="100%" height="100%" src="<?php echo get_theme_mod('video_background_link'); ?>?autoplay=1&mute=1&loop=1&playlist=<?php echo get_theme_mod('video_playlist_link'); ?>&background=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
   <div class="homepage-video-zindex-container">
-    <div class="homepage-content-container" style="padding-top: <?php echo get_theme_mod('homepage_title_height', 20 ); ?>vh;">
+    <div class="homepage-content-container" style="padding-top: <?php echo get_theme_mod('homepage_title_height', 32 ); ?>vh;">
       <?php if (( get_theme_mod('homepage_logo_toggle', 0 ) ) == 1) { ?>
         <div class="homepage-logo-container">
-          <a href="<?php echo get_theme_mod('homepage_readmore_link'); ?> "><img src="<?php echo $image[0]; ?>"></a>
+          <a href="<?php echo get_theme_mod('homepage_blog_link', get_permalink( get_option('page_for_posts' ) )); ?> "><img src="<?php echo $image[0]; ?>"></a>
         </div>
       <?php } ?>
       <?php if (( get_theme_mod('homepage_title_toggle', 1 ) ) == 1) { ?>
-        <div class="homepage-title-container ReenieBeanie" style="color: <?php echo get_theme_mod('homepage_title_color', '#FFFFFF' ); ?>; text-shadow: <?php echo get_theme_mod('homepage_title_shadow_color', '#000000' ); ?> 6px 6px;">
-          <a href="<?php echo get_theme_mod('homepage_blog_link'); ?> "><h1><?php print get_bloginfo('name'); ?></h1></a>
+        <div class="homepage-title-container ReenieBeanie" style="color: <?php echo get_theme_mod('homepage_title_color', '#FFFFFF' ); ?>; text-shadow: <?php echo get_theme_mod('homepage_title_shadow_color', '#000000' ); ?> 5px 5px;">
+          <a href="<?php echo get_theme_mod('homepage_blog_link', get_permalink( get_option('page_for_posts' ) )); ?> "><h1><?php print get_bloginfo('name'); ?></h1></a>
         </div>
       <?php } ?>
       <?php if (( get_theme_mod('toggle_switch_description', 1 ) ) == 1) { ?>
