@@ -660,6 +660,26 @@
             box-shadow: 0 0 10px <?php echo get_theme_mod('blog_page_link_hover_color', '#e4bce4' ); ?>;
           }
 
+          .page input:focus {
+            outline: none !important;
+            box-shadow: 0 0 10px <?php echo get_theme_mod('blog_page_link_hover_color', '#e4bce4' ); ?>;
+          }
+
+          .page textarea:focus {
+            outline: none !important;
+            box-shadow: 0 0 10px <?php echo get_theme_mod('blog_page_link_hover_color', '#e4bce4' ); ?>;
+          }
+
+          .trek-widget-width-container input:focus {
+            outline: none !important;
+            box-shadow: 0 0 10px <?php echo get_theme_mod('blog_page_link_hover_color', '#e4bce4' ); ?>;
+          }
+
+          .trek-widget-width-container textarea:focus {
+            outline: none !important;
+            box-shadow: 0 0 10px <?php echo get_theme_mod('blog_page_link_hover_color', '#e4bce4' ); ?>;
+          }
+
 
   </style>
 </head>
