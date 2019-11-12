@@ -45,21 +45,21 @@ class trek_aboutme_widget extends WP_Widget {
       <button class="upload_image_button button button-primary">Upload a Profile Image</button>
     </p>
     <p>
-             <label for="<?php echo esc_attr( $this->get_field_id( 'name' ) ); ?>"><?php esc_html_e( 'Name:', 'trek' ); ?></label>
-             <input id="<?php echo esc_attr( $this->get_field_id( 'name' ) ); ?>"
-                    name="<?php echo esc_attr( $this->get_field_name( 'name' ) ); ?>"
-                    value="<?php echo esc_attr( $instance[ 'name' ] ); ?>" style="width:96%;"/><br/>
+      <label for="<?php echo esc_attr( $this->get_field_id( 'name' ) ); ?>"><?php esc_html_e( 'Name:', 'trek' ); ?></label>
+      <input id="<?php echo esc_attr( $this->get_field_id( 'name' ) ); ?>"
+        name="<?php echo esc_attr( $this->get_field_name( 'name' ) ); ?>"
+        value="<?php echo esc_attr( $instance[ 'name' ] ); ?>" style="width:96%;"/><br/>
     </p>
     <p>
-            <label for="<?php echo esc_attr( $this->get_field_id( 'bio' ) ); ?>"><?php esc_html_e( 'Bio:', 'trek' ); ?></label>
-            <textarea id="<?php echo esc_attr( $this->get_field_id( 'bio' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'bio' ) ); ?>" style="width:95%;"
-                      rows="6"><?php echo esc_attr( $instance[ 'bio' ] ); ?></textarea>
+      <label for="<?php echo esc_attr( $this->get_field_id( 'bio' ) ); ?>"><?php esc_html_e( 'Bio:', 'trek' ); ?></label>
+      <textarea id="<?php echo esc_attr( $this->get_field_id( 'bio' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'bio' ) ); ?>" style="width:95%;"
+          rows="6"><?php echo esc_attr( $instance[ 'bio' ] ); ?></textarea>
    </p>
    <p>
-            <label for="<?php echo esc_attr( $this->get_field_id( 'link' ) ); ?>"><?php esc_html_e( 'Link:', 'trek' ); ?></label>
-            <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'link' ) ); ?>"
-                   name="<?php echo esc_attr( $this->get_field_name( 'link' ) ); ?>" type="text"
-                   value="<?php echo esc_url( $link ); ?>" style="margin-bottom: 5px"/>
+     <label for="<?php echo esc_attr( $this->get_field_id( 'link' ) ); ?>"><?php esc_html_e( 'Link:', 'trek' ); ?></label>
+     <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'link' ) ); ?>"
+          name="<?php echo esc_attr( $this->get_field_name( 'link' ) ); ?>" type="text"
+          value="<?php echo esc_url( $link ); ?>" style="margin-bottom: 5px"/>
   </p>
 
   <?php

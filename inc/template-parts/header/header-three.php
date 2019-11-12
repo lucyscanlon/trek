@@ -1,69 +1,65 @@
-<div class="menuleft-menu-container Montserrat headerTextColor">
-<div class="largescreen-menu">
-  <?php
-
-  wp_nav_menu( array(
-    'theme_location' => 'primary',
-    'container' => false,
-  ));
-
-
-  ?>
-</div>
-<div class="smallscreen-burger-icon">
-  <li><i class="fa fa-bars" aria-hidden="true" id="SmallScreenMenuOpen"></i></li>
-</div>
-
-
-
-</div>
-<div class="menuleft-socialmedia-container headerTextColor">
-  <ul class="headerTextColor">
-    <?php if (( get_theme_mod('toggle_switch_twitter', 0 ) ) == 1){ ?>
+<div class="header-wrap">
+  <!--  Displays Primary Menu  -->
+  <div class="menuleft-menu-container Montserrat headerTextColor">
+    <div class="largescreen-menu">
+      <?php
+      wp_nav_menu( array(
+        'theme_location' => 'primary',
+        'container' => false,
+      ));
+      ?>
+    </div>
+  </div>
+  <div class="menuleft-socialmedia-container headerTextColor">
+    <ul class="headerTextColor">
+      <!--  Checks whether to display each social media icon as a link in the header (customiser option) -->
+      <?php if (( get_theme_mod('toggle_switch_twitter', 0 ) ) == 1){ ?>
         <li><a href="<?php echo get_theme_mod('twitter_link')?>" target="blank"><i class="fab fa-twitter"></i></a></li>
       <?php  } ?>
-    <?php if (( get_theme_mod('toggle_switch_facebook', 0 ) ) == 1){ ?>
+      <?php if (( get_theme_mod('toggle_switch_facebook', 0 ) ) == 1){ ?>
         <li><a href="<?php echo get_theme_mod('facebook_link')?>" target="blank"><i class="fab fa-facebook"></i></a></li>
-    <?php } ?>
-    <?php if (( get_theme_mod('toggle_switch_instagram', 1 ) ) == 1){ ?>
+      <?php } ?>
+      <?php if (( get_theme_mod('toggle_switch_instagram', 1 ) ) == 1){ ?>
         <li><a href="<?php echo get_theme_mod('instagram_link')?>" target="blank"><i class="fab fa-instagram"></i></a></li>
-    <?php  } ?>
-    <?php if (( get_theme_mod('toggle_switch_pinterest', 0 ) ) == 1){ ?>
+      <?php  } ?>
+      <?php if (( get_theme_mod('toggle_switch_pinterest', 0 ) ) == 1){ ?>
         <li><a href="<?php echo get_theme_mod('pinterest_link')?>" target="blank"><i class="fab fa-pinterest"></i></a></li>
-    <?php } ?>
-    <?php if (( get_theme_mod('toggle_switch_googleplus', 0 ) ) == 1){ ?>
+      <?php } ?>
+      <?php if (( get_theme_mod('toggle_switch_googleplus', 0 ) ) == 1){ ?>
         <li><a href="<?php echo get_theme_mod('googleplus_link')?>" target="blank"><i class="fab fa-google-plus"></i></a></li>
-    <?php  } ?>
-    <?php if (( get_theme_mod('toggle_switch_youtube', 1 ) ) == 1){ ?>
+      <?php  } ?>
+      <?php if (( get_theme_mod('toggle_switch_youtube', 1 ) ) == 1){ ?>
         <li><a href="<?php echo get_theme_mod('youtube_link')?>" target="blank"><i class="fab fa-youtube"></i></a></li>
-    <?php } ?>
-    <?php if (( get_theme_mod('toggle_switch_linkedin', 0 ) ) == 1){ ?>
+      <?php } ?>
+      <?php if (( get_theme_mod('toggle_switch_linkedin', 0 ) ) == 1){ ?>
         <li><a href="<?php echo get_theme_mod('linkedin_link')?>" target="blank"><i class="fab fa-linkedin"></i></a></li>
-    <?php  } ?>
-    <?php if (( get_theme_mod('toggle_switch_snapchat', 0 ) ) == 1){ ?>
+      <?php  } ?>
+      <?php if (( get_theme_mod('toggle_switch_snapchat', 0 ) ) == 1){ ?>
         <li><a href="<?php echo get_theme_mod('snapchat_link')?>" target="blank"><i class="fab fa-snapchat-ghost"></i></a></li>
-    <?php  } ?>
-    <?php if (( get_theme_mod('toggle_switch_goodreads', 0 ) ) == 1){ ?>
+      <?php  } ?>
+      <?php if (( get_theme_mod('toggle_switch_goodreads', 0 ) ) == 1){ ?>
         <li><a href="<?php echo get_theme_mod('goodreads_link')?>" target="blank"><i class="fab fa-goodreads"></i></a></li>
-    <?php  } ?>
-    <?php if (( get_theme_mod('toggle_switch_shop', 1 ) ) == 1){ ?>
+      <?php  } ?>
+      <?php if (( get_theme_mod('toggle_switch_shop', 1 ) ) == 1){ ?>
         <li><a href="<?php echo get_theme_mod('shop_link')?>" target="blank"><i class="fas fa-shopping-cart"></i></a></li>
-    <?php  } ?>
-    <?php if (( get_theme_mod('toggle_switch_email', 1 ) ) == 1){ ?>
+      <?php  } ?>
+      <?php if (( get_theme_mod('toggle_switch_email', 1 ) ) == 1){ ?>
         <li><a href="mailto:<?php echo get_theme_mod('email_link')?>" target="blank"><i class="far fa-envelope-open"></i></a></li>
-    <?php  } ?>
-    <?php if (( get_theme_mod('toggle_switch_vimeo', 0 ) ) == 1){ ?>
+      <?php  } ?>
+      <?php if (( get_theme_mod('toggle_switch_vimeo', 0 ) ) == 1){ ?>
         <li><a href="<?php echo get_theme_mod('vimeo_link')?>" target="blank"><i class="fab fa-vimeo-v"></i></a></li>
-    <?php  } ?>
-    <?php if (( get_theme_mod('toggle_switch_tumblr', 0 ) ) == 1){ ?>
+      <?php  } ?>
+      <?php if (( get_theme_mod('toggle_switch_tumblr', 0 ) ) == 1){ ?>
         <li><a href="<?php echo get_theme_mod('tumblr_link')?>" target="blank"><i class="fab fa-tumblr"></i></a></li>
-    <?php  } ?>
-    <li>
+      <?php  } ?>
+      <li>
+        <!--  Displays the search icon for search overlay  -->
         <i class="fas fa-search" id="searchbutton" style="cursor: pointer;"></i>
-    </li>
-
-  </ul>
+      </li>
+    </ul>
+  </div>
 </div>
+<!-- Displays whole page search overlay - this appears when the search icon is pressed  -->
 <div class="header-search-overlay" id="opensearch">
   <div class="header-search-overlay-container">
     <div class="search-overlay-close-icon" id="closesearch" style="cursor: pointer;">
@@ -80,5 +76,4 @@
         </form>
   </div>
 </div>
-
 </div>

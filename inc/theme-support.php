@@ -10,7 +10,7 @@
 *
 */
 
-
+/* Registering Menu Locations */
 function trek_register_nav_menu() {
   register_nav_menu( 'primary', 'Header Navigation Menu');
   register_nav_menu('secondary', 'Blog Categories Menu' );
@@ -18,13 +18,15 @@ function trek_register_nav_menu() {
 
 add_action( 'after_setup_theme', 'trek_register_nav_menu');
 
+
+/* Add Featured Image */
 add_action( 'after_setup_theme', function(){
 	remove_theme_support( 'post-thumbnails' );
 	add_theme_support( 'post-thumbnails', array( 'post', 'page' ) );
 }, 11 );
 
 
-/*  function for retrieveing comment info   */
+/*  function for retrieveing comment information   */
 function trek_comments() {
   $comments_num = get_comments_number();
   $comments;
@@ -46,11 +48,7 @@ function trek_comments() {
 }
 
 
-
-
-
-
-//sidebar functions
+/* Sidebar Initialisation */
 function trek_sidebar_init() {
   register_sidebar(
     array(
@@ -69,8 +67,7 @@ function trek_sidebar_init() {
 add_action('widgets_init', 'trek_sidebar_init');
 
 
-//pagination
-// Numbered Pagination
+/* Pagination for index */
 if ( !function_exists( 'wpex_pagination' ) ) {
 
 	function wpex_pagination() {
@@ -104,7 +101,7 @@ if ( !function_exists( 'wpex_pagination' ) ) {
 
 }
 
-// single post naviagtion bar
+/* Single Post Navigation Bar */
 function trek_post_navigation(){
 
   $nav = '<div class="single-post-navigation Montserrat">';
@@ -123,7 +120,6 @@ function trek_post_navigation(){
 
 
 /* fetching single post tags and adding a hastag infront  */
-
 function trek_get_tags() {
   return get_the_tag_list('<div class="tags-list">#', ' #', '</div>');
 }
@@ -136,7 +132,7 @@ add_theme_support( 'html5', array( 'comment-list', 'commentform') );
 
 
 
-//collecting the template for the comment section naviagtion
+/* Comment Section Navigation */
 function trek_get_post_navigation() {
 
   if( get_comment_pages_count() > 1 && get_option('page_comments') ):
@@ -149,8 +145,7 @@ function trek_get_post_navigation() {
 
 
 
-//adding option to add logo to site
-
+/* Adding the option to add a logo */
 add_theme_support( 'custom-logo', array(
   'height' => '100',
   'width' => '100',

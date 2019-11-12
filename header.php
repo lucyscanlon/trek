@@ -20,9 +20,11 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Reenie+Beanie&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/978397fef6.js"></script>
-
   <?php wp_head(); ?>
+  <!-- Below is Customiser generated css - this needs to be placed inside the head of the website  -->
   <style>
+
+
 
   /* index */
   .blog-content-top-padding {
@@ -647,59 +649,88 @@
           }
 
 
-
-
-
-
-
-
-
-
-
   </style>
 </head>
-
 <body id="whole-body" class="bodynormal">
   <header>
+    <!-- This menu is displayed on iPads and mobile menus and hidden on larger screens  -->
     <div class="smallscreenmenuoverflow">
-    <div class="smallscreenmenu Montserrat headerTextColor" id="smallmenu">
-
-      <div class="smallmenutitle">
-        <p><?php echo __('menu', 'trek'); ?><i class="fas fa-times" id="crossclosebutton"></i></p>
+      <div class="smallscreenmenu Montserrat headerTextColor" id="smallmenu">
+        <div class="smallmenutitle">
+          <p><?php echo __('menu', 'trek'); ?><i class="fas fa-times" id="crossclosebutton"></i></p>
         </div>
+        <!-- Displays main menu as well as secondary menu in one  -->
         <div class="smallmenuprimary">
-        <?php
-
-        wp_nav_menu( array(
-          'theme_location' => 'primary',
-          'container' => false,
-        ));
-
-
-        ?>
-
-        <?php wp_nav_menu( array(
-          'theme_location' => 'secondary',
-          'container' => false,
-        )); ?>
+          <?php
+          wp_nav_menu( array(
+            'theme_location' => 'primary',
+            'container' => false,
+          ));
+          ?>
+          <?php wp_nav_menu( array(
+            'theme_location' => 'secondary',
+            'container' => false,
+          )); ?>
         </div>
+      </div>
     </div>
-  </div>
-
-    <div class="header-whole-container headerbackgroundcolor">
-      <!-- get the header template for first option-->
-      <?php if(( get_theme_mod('header_layout_radio_button', 'menuleft' ) ) == 'menucenter') { ?>
-
+    <div class="header-whole-container headerbackgroundcolor headerTextColor">
+      <div class="smallscreenheader">
+        <div class="smallscreen-burger-icon">
+          <li><i class="fa fa-bars" aria-hidden="true" id="SmallScreenMenuOpen"></i></li>
+        </div>
+        <div class="smallscreen-socialmedia-search">
+          <ul class="headerTextColor">
+            <?php if (( get_theme_mod('toggle_switch_twitter', 0 ) ) == 1){ ?>
+                <li><a href="<?php echo get_theme_mod('twitter_link')?>" target="blank"><i class="fab fa-twitter"></i></a></li>
+              <?php  } ?>
+              <?php if (( get_theme_mod('toggle_switch_facebook', 0 ) ) == 1){ ?>
+                <li><a href="<?php echo get_theme_mod('facebook_link')?>" target="blank"><i class="fab fa-facebook"></i></a></li>
+              <?php } ?>
+              <?php if (( get_theme_mod('toggle_switch_instagram', 1 ) ) == 1){ ?>
+                <li><a href="<?php echo get_theme_mod('instagram_link')?>" target="blank"><i class="fab fa-instagram"></i></a></li>
+              <?php  } ?>
+              <?php if (( get_theme_mod('toggle_switch_pinterest', 0 ) ) == 1){ ?>
+                <li><a href="<?php echo get_theme_mod('pinterest_link')?>" target="blank"><i class="fab fa-pinterest"></i></a></li>
+              <?php } ?>
+              <?php if (( get_theme_mod('toggle_switch_googleplus', 0 ) ) == 1){ ?>
+                <li><a href="<?php echo get_theme_mod('googleplus_link')?>" target="blank"><i class="fab fa-google-plus"></i></a></li>
+              <?php  } ?>
+              <?php if (( get_theme_mod('toggle_switch_youtube', 1 ) ) == 1){ ?>
+                <li><a href="<?php echo get_theme_mod('youtube_link')?>" target="blank"><i class="fab fa-youtube"></i></a></li>
+              <?php } ?>
+              <?php if (( get_theme_mod('toggle_switch_linkedin', 0 ) ) == 1){ ?>
+                <li><a href="<?php echo get_theme_mod('linkedin_link')?>" target="blank"><i class="fab fa-linkedin"></i></a></li>
+              <?php  } ?>
+              <?php if (( get_theme_mod('toggle_switch_snapchat', 0 ) ) == 1){ ?>
+                <li><a href="<?php echo get_theme_mod('snapchat_link')?>" target="blank"><i class="fab fa-snapchat-ghost"></i></a></li>
+              <?php  } ?>
+              <?php if (( get_theme_mod('toggle_switch_goodreads', 0 ) ) == 1){ ?>
+                <li><a href="<?php echo get_theme_mod('goodreads_link')?>" target="blank"><i class="fab fa-goodreads"></i></a></li>
+              <?php  } ?>
+              <?php if (( get_theme_mod('toggle_switch_shop', 1 ) ) == 1){ ?>
+                <li><a href="<?php echo get_theme_mod('shop_link')?>" target="blank"><i class="fas fa-shopping-cart"></i></a></li>
+              <?php  } ?>
+              <?php if (( get_theme_mod('toggle_switch_email', 1 ) ) == 1){ ?>
+                <li><a href="mailto:<?php echo get_theme_mod('email_link')?>" target="blank"><i class="far fa-envelope-open"></i></a></li>
+              <?php  } ?>
+              <?php if (( get_theme_mod('toggle_switch_vimeo', 0 ) ) == 1){ ?>
+                <li><a href="<?php echo get_theme_mod('vimeo_link')?>" target="blank"><i class="fab fa-vimeo-v"></i></a></li>
+              <?php  } ?>
+              <?php if (( get_theme_mod('toggle_switch_tumblr', 0 ) ) == 1){ ?>
+                <li><a href="<?php echo get_theme_mod('tumblr_link')?>" target="blank"><i class="fab fa-tumblr"></i></a></li>
+              <?php  } ?>
+                <li><i class="fas fa-search" id="searchbutton" style="cursor: pointer;"></i></li>
+              </ul>
+            </div>
+          </div>
+      <!-- Gets the header template for first option (customiser option) only displays on larger screens -->
+          <?php if(( get_theme_mod('header_layout_radio_button', 'menuleft' ) ) == 'menucenter') { ?>
               <?php require get_template_directory() . '/inc/template-parts/header/header-one.php'; ?>
-
             <?php } else if (( get_theme_mod('header_layout_radio_button', 'menuleft') ) == 'menuright') { ?>
-
               <?php require get_template_directory() . '/inc/template-parts/header/header-two.php'; ?>
-
             <?php  } else if (( get_theme_mod('header_layout_radio_button', 'menuleft') ) == 'menuleft') { ?>
-
               <?php require get_template_directory() . '/inc/template-parts/header/header-three.php'; ?>
-
             <?php  }?>
     </div>
   </header>

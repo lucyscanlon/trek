@@ -1,6 +1,6 @@
 <?php
 
-//if a password is required for a post and it has not been entered yet, this will stop comments section from opening.
+// If a password is required for a post and it has not been entered yet, this will stop comments section from opening.
 if( post_password_required() ){
   return;
 }
@@ -10,7 +10,7 @@ if( post_password_required() ){
   <div class="comments-area">
   <?php
 
-  //shows how many comments there are
+  // Shows how many comments there are
     if ( comments_open() ) :
       echo '<div class="comments-title-wrap" id="comments">';
       echo '<h2 class="comments-title">';
@@ -38,7 +38,7 @@ if( post_password_required() ){
     trek_get_post_navigation();
 
 
-    //comment submission form
+    // Comment submission form
     $fields = array(
     'author' => '<div class="author-group"><label for="author">'. __( 'Name', 'trek' ) . '</label><span class="required">*</span> <input id="author" name="author" type="text" clas="author-input" value="'. esc_attr( $commenter['comment_author'] ).'" required="required" /></div> ',
 

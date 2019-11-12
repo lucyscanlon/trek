@@ -1,6 +1,6 @@
 <?php
 
-
+// Enqueuing css and js for trek
 function trek_lucyisobel_scripts(){
 
   wp_enqueue_style('trek', get_template_directory_uri() . '/css/trek.css', array(), '1.0.0', 'all');
@@ -17,7 +17,7 @@ function trek_lucyisobel_scripts(){
 add_action('wp_enqueue_scripts', 'trek_lucyisobel_scripts');
 
 
-//enqueuing styles for the text editor
+// Enqueuing styles for the text editor
 function block_editor_styles() {
   wp_enqueue_style( 'edit-styles', get_template_directory_uri() . '/css/editor-style.css');
   wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Montserrat|Reenie+Beanie&display=swap', false );
