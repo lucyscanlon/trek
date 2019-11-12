@@ -8,7 +8,7 @@ function trek_theme_register_required_plugins() {
   $plugins = array(
     array(
 			'name'     => 'One Click Demo Import',
-			'slug'     => 'buddypress',
+			'slug'     => 'one-click-demo-import',
 			'required' => true,
 		),
   );

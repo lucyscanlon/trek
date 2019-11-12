@@ -2785,6 +2785,71 @@ font-size: 15px;
 
 
 
+/* contact form */
+
+.singlepost-content-container form input {
+  width: 100%;
+  height: 30px;
+}
+
+
+.singlepost-content-container textarea {
+  width: 100%;
+}
+
+.singlepost-content-container form {
+  width: 80%;
+  margin: 40px auto;
+
+}
+
+.singlepost-content-container input {
+  height: 40px;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+font-size: 20px;
+border: none;
+border: 1px solid #E8E8E8;
+letter-spacing: 1px;
+font-size: 14px;
+font-family: Montserrat;
+}
+
+.singlepost-content-container input:focus {
+  outline: none !important;
+}
+
+.singlepost-content-container textarea:focus {
+  outline: none !important;
+}
+
+.singlepost-content-container textarea {
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+font-size: 20px;
+border: none;
+border: 1px solid #E8E8E8;
+letter-spacing: 1px;
+font-size: 14px;
+font-family: Montserrat;
+}
+
+.wpcf7-response-output {
+  font-size: 12px;
+  border: none!important;
+  text-align: center;
+}
+
+
+
+
+
+
+
 /*   css for ipad   */
 
 @media screen and (max-width: 1130px) {

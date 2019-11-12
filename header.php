@@ -327,7 +327,6 @@
 
         .comment-form #comment:focus {
           outline: none !important;
-          border:1px solid red;
           box-shadow: 0 0 10px <?php echo get_theme_mod('blog_page_link_hover_color', '#e4bce4' ); ?>;
         }
 
@@ -646,6 +645,19 @@
 
 
 
+          }
+
+
+          /* contact form */
+
+          .singlepost-content-container input:focus {
+            outline: none !important;
+            box-shadow: 0 0 10px <?php echo get_theme_mod('blog_page_link_hover_color', '#e4bce4' ); ?>;
+          }
+
+          .singlepost-content-container textarea:focus {
+            outline: none !important;
+            box-shadow: 0 0 10px <?php echo get_theme_mod('blog_page_link_hover_color', '#e4bce4' ); ?>;
           }
 
 
