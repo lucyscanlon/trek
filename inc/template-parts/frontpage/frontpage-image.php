@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<?php $homepage_background_image = get_theme_mod( 'homepage_background_image', get_template_directory_uri().'/img/girlsinfrontofmountain.jpg' ); ?>
+<?php $homepage_background_image = get_theme_mod( 'homepage_background_image', "https://images.unsplash.com/photo-1564844336080-c1a2a9b149a8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80" ); ?>
 <?php
   $custom_logo_id = get_theme_mod( 'custom_logo' );
    $image = wp_get_attachment_image_src( $custom_logo_id , 'full' ); ?>

@@ -13,7 +13,7 @@
 ?>
 <?php
 $featuredCategory = get_theme_mod('featuredpost_category');
-$blogBannerBackground = get_theme_mod('banner_background_image', get_template_directory_uri().'/img/vanatnight.jpg');
+$blogBannerBackground = get_theme_mod('banner_background_image', "https://images.unsplash.com/photo-1513657713647-0182f4ee3bf8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80");
 $custom_logo_id = get_theme_mod( 'custom_logo' );
 $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
 ?>

@@ -32,5 +32,3 @@ require get_template_directory() . '/inc/widgets/travelstats-widget.php';
 
 
 /* required plugins */
-
-require get_template_directory() . '/inc/requiredplugins/required-plugins.php';

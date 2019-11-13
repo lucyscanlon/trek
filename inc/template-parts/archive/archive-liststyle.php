@@ -12,7 +12,6 @@
 
 ?>
 <div class="gridpostlayout-post-container">
-  <!--  Checks if the post has a featured image or not  -->
   <?php if ( has_post_thumbnail( get_the_ID() ) ) {?>
     <!--  If post has featured image, it is displayed. If not a color is displayed instead (customiser option)  -->
     <div class="gridpostlayout-featuredimage-container" style="background: url('<?php echo $backgroundImg[0]; ?>'); background-size: cover; background-position: center center;">
