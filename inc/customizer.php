@@ -1217,6 +1217,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
     $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'blog_toggle_sidebar', array(
       'label' => __('Display Sidebar', 'trek'),
+      'description' => __('This will also affect your archive sidebar display', 'trek'),
       'section' => 'blog_section',
       'settings'=> 'blog_toggle_sidebar'
     )));
@@ -1310,7 +1311,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
       $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'blog_post_preview_settings_notice', array(
         'label' => __('Post Preview Display Settings', 'trek'),
-        'description' => __('Edit the appearance of your posts', 'trek'),
+        'description' => __('Edit the appearance and information display of your posts. This will also affect your archive display', 'trek'),
         'section' => 'blog_section',
         'settings' => 'blog_post_preview_settings_notice'
       )));
