@@ -1217,7 +1217,6 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
     $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'blog_toggle_sidebar', array(
       'label' => __('Display Sidebar', 'trek'),
-      'description' => __('This will also affect your archive sidebar display', 'trek'),
       'section' => 'blog_section',
       'settings'=> 'blog_toggle_sidebar'
     )));
@@ -1311,7 +1310,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
       $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'blog_post_preview_settings_notice', array(
         'label' => __('Post Preview Display Settings', 'trek'),
-        'description' => __('Edit the appearance and information display of your posts. This will also affect your archive display', 'trek'),
+        'description' => __('Edit the appearance of your posts', 'trek'),
         'section' => 'blog_section',
         'settings' => 'blog_post_preview_settings_notice'
       )));
@@ -1834,6 +1833,22 @@ function trek_lucyisobel_custom_settings($wp_customize){
         )));
 
 
+
+        // Toggle Sidebar on or off for Archive
+        $wp_customize->add_setting('archive_toggle_sidebar', array(
+          'default' => 1,
+          'transport' => 'refresh',
+
+        ));
+
+        $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'archive_toggle_sidebar', array(
+          'label' => __('Display Sidebar', 'trek'),
+          'section' => 'archive_section',
+          'settings'=> 'archive_toggle_sidebar'
+        )));
+
+
+
         // Creates the setting for the user to choose the layout of their archive
         $wp_customize->add_setting( 'archive_preview_layout_radio_button',
       			array(
@@ -1869,6 +1884,77 @@ function trek_lucyisobel_custom_settings($wp_customize){
       			)
       		) );
 
+
+          // Creates title "Archive Meta Display Settings" in "Archive and Search Settings" section
+          $wp_customize->add_setting('archive_displaytitle_section');
+
+
+          $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'archive_displaytitle_section', array(
+            'label' => __('Archive Meta Display Settings', 'trek'),
+            'description' => __('Choose what post information to display on each post on your archive pages', 'trek'),
+            'section' => 'archive_section',
+            'settings' => 'archive_displaytitle_section'
+          )));
+
+
+
+          // Archive Categories On or Off
+          $wp_customize->add_setting('toggle_archive_categories', array(
+            'default' => 0,
+            'transport' => 'refresh',
+
+          ));
+
+          $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'toggle_archive_categories', array(
+            'label' => __('Display Categories', 'trek'),
+            'section' => 'archive_section',
+            'settings'=> 'toggle_archive_categories'
+          )));
+
+
+
+          // Archive Date On or Off
+          $wp_customize->add_setting('toggle_archive_date', array(
+            'default' => 1,
+            'transport' => 'refresh',
+
+          ));
+
+          $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'toggle_archive_date', array(
+            'label' => __('Display Post Date', 'trek'),
+            'section' => 'archive_section',
+            'settings'=> 'toggle_archive_date'
+          )));
+
+
+
+          // Archive Author On or Off
+          $wp_customize->add_setting('toggle_archive_author', array(
+            'default' => 1,
+            'transport' => 'refresh',
+
+          ));
+
+          $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'toggle_archive_author', array(
+            'label' => __('Display Post Author', 'trek'),
+            'section' => 'archive_section',
+            'settings'=> 'toggle_archive_author'
+          )));
+
+
+
+          // Archive Comments Info On or Off
+          $wp_customize->add_setting('toggle_archive_comments', array(
+            'default' => 1,
+            'transport' => 'refresh',
+
+          ));
+
+          $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'toggle_archive_comments', array(
+            'label' => __('Display Post Comments Info', 'trek'),
+            'section' => 'archive_section',
+            'settings'=> 'toggle_archive_comments'
+          )));
 
 
 

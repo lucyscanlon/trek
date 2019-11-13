@@ -15,6 +15,14 @@ body {
   width: 100%;
 }
 
+.header-overlay-title-container h1 {
+  color: black!important;
+}
+
+.search-overlay-close-icon i {
+  color: black!important;
+}
+
 
 
 
@@ -3454,6 +3462,8 @@ font-family: Montserrat;
   .featuredpost-description-container p {
     font-size: 11px!important;
   }
+
+
 
 
 }

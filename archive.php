@@ -32,24 +32,24 @@
 
                 <!-- Full Image template  -->
                 <?php if(( get_theme_mod('archive_preview_layout_radio_button', 'archive-liststyle' ) ) == 'archive-fullimage') { ?>
-                  <?php require get_template_directory() . '/inc/template-parts/index/fullimage.php'; ?>
+                  <?php require get_template_directory() . '/inc/template-parts/archive/archive-fullimage.php'; ?>
 
                 <!-- List Style template  -->
                 <?php } else if(( get_theme_mod('archive_preview_layout_radio_button', 'archive-liststyle' ) ) == 'archive-liststyle') { ?>
                   <div class="gridpostlayout-flex-container">
-                    <?php require get_template_directory() . '/inc/template-parts/index/liststyle.php'; ?>
+                    <?php require get_template_directory() . '/inc/template-parts/archive/archive-liststyle.php'; ?>
                   </div>
 
                 <!-- List Style Reversed template  -->
                 <?php } else if(( get_theme_mod('archive_preview_layout_radio_button', 'archive-liststyle' ) ) == 'archive-liststylereversed') { ?>
                   <div class="gridpostlayout-flex-container">
-                    <?php require get_template_directory() . '/inc/template-parts/index/liststylereversed.php'; ?>
+                    <?php require get_template_directory() . '/inc/template-parts/archive/archive-liststylereversed.php'; ?>
                   </div>
 
                 <!-- Text Over Image template  -->
                 <?php } else if(( get_theme_mod('archive_preview_layout_radio_button', 'archive-liststyle' ) ) == 'archive-textoverimage') { ?>
                   <div class="imagepostlayout-whole-container">
-                    <?php require get_template_directory() . '/inc/template-parts/index/textoverimage.php'; ?>
+                    <?php require get_template_directory() . '/inc/template-parts/archive/archive-textoverimage.php'; ?>
                   </div>
                 <?php } ?>
 

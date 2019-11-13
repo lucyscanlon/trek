@@ -43,7 +43,7 @@
       <?php  } ?>
       <li>
         <!--  Displays the search icon for search overlay  -->
-        <i class="fas fa-search" id="searchbutton" style="cursor: pointer;"></i>
+        <i class="fas fa-search" id="searchicon" style="cursor: pointer;"></i>
       </li>
     </ul>
   </div>

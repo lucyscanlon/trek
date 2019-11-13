@@ -54,7 +54,7 @@
     </div>
     <!--  Displays the search icon for search overlay  -->
     <div class="menucenter-search-container Montserrat headerTextColor">
-      <i class="fas fa-search" id="searchbutton" style="cursor: pointer;"></i>
+      <i class="fas fa-search" id="searchicon" style="cursor: pointer;"></i>
     </div>
   </div>
   <!-- Displays whole page search overlay - this appears when the search icon is pressed  -->

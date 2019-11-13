@@ -4,6 +4,10 @@ jQuery( document ).ready(function() {
   $("#opensearch").addClass("is_active");
 });
 
+$("#searchicon").click(function(){
+$("#opensearch").addClass("is_active");
+});
+
   /* When the close icon is clicked, close the search overlay */
   $("#closesearch").click(function(){
   $("#opensearch").removeClass("is_active");
