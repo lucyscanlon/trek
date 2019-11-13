@@ -1957,6 +1957,20 @@ function trek_lucyisobel_custom_settings($wp_customize){
           )));
 
 
+          $wp_customize->add_section( new Skyrocket_Upsell_Section( $wp_customize, 'upsell_section',
+			array(
+				'title' => __( 'Click For Theme Set Up Instructions', 'trek' ),
+				'url' => 'http://www.lucyisobel.co.uk/',
+        'panel' => 'theme_settings',
+				'backgroundcolor' => '#1D272E',
+				'textcolor' => '#fff',
+				'priority' => 100,
+			)
+		) );
+
+
+
+
 
 }
 

@@ -1726,6 +1726,10 @@ ul.page-numbers li {
   width: 90%!important;
 }
 
+.wp-block-image {
+  padding-top: 1em;
+}
+
 
 
 /* cover images */
