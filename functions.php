@@ -29,3 +29,8 @@ require get_template_directory() . '/inc/widgets/socialmedia-widget.php';
 require get_template_directory() . '/inc/widgets/popularposts-widget.php';
 require get_template_directory() . '/inc/widgets/linktopage-widget.php';
 require get_template_directory() . '/inc/widgets/travelstats-widget.php';
+
+
+/*  required plugins  */
+
+require get_template_directory() . '/inc/requiredplugins/required-plugins.php';
