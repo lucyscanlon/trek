@@ -53,7 +53,7 @@ a {
 
 .header-whole-container {
   width: 100%;
-  height: 50px;
+  overflow: auto;
 }
 
 .menucenter-socialmedia-container {
@@ -68,6 +68,7 @@ a {
   height: 100%;
   float: left;
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .menucenter-menu-container ul {
@@ -125,7 +126,7 @@ display: none;
 }
 
 .menuright-socialmedia-search-container {
-  width: 40%;
+  width: 20%;
   float: left;
   height: 100%;
   font-size: 15px;
@@ -144,9 +145,10 @@ display: none;
 
 .menuright-menu-container {
   float: right;
-  width: 60%;
+  width: 80%;
   height: 100%;
   text-align: right;
+  padding-bottom: 20px;
 
 }
 
@@ -173,12 +175,13 @@ display: none;
 .menuleft-menu-container {
   float: left;
   height: 100%;
+  padding-bottom: 20px;
 
 
 }
 
 .menuleft-socialmedia-container {
-  width: 40%;
+  width: 20%;
   float: right;
   height: 100%;
   font-size: 15px;
@@ -415,7 +418,7 @@ display: none;
 
 .secondary-categories-whole-container {
   width: 100%;
-  height: 50px;
+  overflow: auto
   text-align: center;
 }
 
@@ -432,6 +435,8 @@ display: none;
 
 .secondary-categories-whole-container ul {
   padding-top: 12px;
+  padding-bottom: 20px;
+  text-align: center;
 }
 
 .blog-content-whole-container {
@@ -2990,6 +2995,7 @@ font-family: Montserrat;
     font-size: 18px;
     padding-top: 15px;
     padding-left: 10px;
+    padding-bottom: 20px;
   }
 
   .vid {
@@ -3244,7 +3250,7 @@ font-family: Montserrat;
   }
 
   .menuleft-menu-container {
-    width: 60%;
+    width: 80%;
   }
 
   .smallscreenheader {
