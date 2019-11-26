@@ -1,0 +1,108 @@
+body {
+  background-color: #E2D8E2;
+}
+
+.whole-page-container {
+  width: 95%;
+  overflow: auto;
+  margin: 40px auto;
+}
+
+
+.options-panel-whole-flex-container {
+  display: inline-flex;
+  flex-direction: row;
+  width: 100%;
+  overflow: auto;
+  font-family: Montserrat;
+}
+
+.trek-box {
+  background-color: white;
+  margin: 15px;
+  height: inherit;
+  display: inline;
+  width: 90%;
+
+
+}
+
+
+.installinstruct-title-container {
+  width: 80%;
+  margin: 0px auto;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  letter-spacing: 4px;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+.trek-description-container {
+  width: 80%;
+  margin: 0px auto;
+  text-align: center;
+  padding-bottom: 20px;
+
+}
+
+.trek-description-container p {
+  font-size: 15px;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+}
+
+.trekbutton-container {
+  min-width: 200px;
+  width: 75%;
+  text-align: center;
+  margin: 0px auto;
+  background-color: #1D272E;
+  margin-bottom: 50px;
+}
+
+.trekbutton-container p {
+  text-transform: uppercase;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  letter-spacing: 4px;
+  text-decoration: none;
+}
+
+.trekbutton-container:hover p {
+  color: #E4BCE4;
+}
+
+.trekbutton-container p {
+  text-decoration: none!important;
+}
+
+a {
+  text-decoration: none!important;
+}
+
+.problem-whole-container {
+  width: 97.8%;
+  margin: 0px auto;
+  overflow: auto;
+  background-color: white;
+  margin-top: 10px;
+  font-family: Montserrat
+}
+
+@media only screen and (max-width: 1000px ) {
+  .options-panel-whole-flex-container {
+    flex-direction: column!important;
+  }
+
+  .problem-whole-container {
+    width: 90%;
+    position: relative;
+    right: 20px;
+  }
+}
