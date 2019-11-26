@@ -418,7 +418,7 @@ display: none;
 
 .secondary-categories-whole-container {
   width: 100%;
-  overflow: auto
+  overflow: auto;
   text-align: center;
 }
 
@@ -1732,7 +1732,9 @@ ul.page-numbers li {
 }
 
 .wp-block-image {
-  padding-top: 1em;
+  padding-top: 2em;
+  padding-bottom: 1em;
+
 }
 
 
