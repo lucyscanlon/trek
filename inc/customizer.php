@@ -1957,53 +1957,6 @@ function trek_lucyisobel_custom_settings($wp_customize){
           )));
 
 
-
-          /*
-          ========================================
-          FONT SETTINGS
-          ========================================
-          */
-
-
-          // Creating the "Font settinga" section
-          $wp_customize->add_section('fonts_section', array(
-            'title' => __('Font Settings', 'trek'),
-            'panel' => 'theme_settings',
-            'priority' => 24,
-          ));
-
-
-          // Site title font settings
-
-          $wp_customize->add_setting( 'site_title_font',
-          array(
-            'default' => json_encode(
-              array(
-                'font' => 'Reenie Beanie',
-                'regularweight' => 'regular',
-                'italicweight' => 'italic',
-                'boldweight' => '700',
-                'category' => 'sans-serif'
-              )
-            ),
-            'sanitize_callback' => 'skyrocket_google_font_sanitization'
-          )
-		);
-
-
-		$wp_customize->add_control( new Skyrocket_Google_Font_Select_Custom_Control( $wp_customize, 'site_title_font',
-			array(
-				'label' => __( 'Site Title Font Settings', 'trek' ),
-				'description' => esc_html__( 'All Google Fonts sorted alphabetically', 'trek' ),
-				'section' => 'fonts_section',
-				'input_attrs' => array(
-					'font_count' => 'all',
-					'orderby' => 'alpha',
-				),
-			)
-		) );
-
-
           $wp_customize->add_section( new Skyrocket_Upsell_Section( $wp_customize, 'upsell_section',
 			array(
 				'title' => __( 'Click For Theme Set Up Instructions', 'trek' ),
