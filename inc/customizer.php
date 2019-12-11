@@ -1956,17 +1956,46 @@ function trek_lucyisobel_custom_settings($wp_customize){
             'settings'=> 'toggle_archive_comments'
           )));
 
-          $wp_customize->add_setting( 'sample_google_font_select',
-			       array(
-				'default' => ['sample_google_font_select'],
-				'sanitize_callback' => 'skyrocket_google_font_sanitization'
-			)
+
+
+          /*
+          ========================================
+          FONT SETTINGS
+          ========================================
+          */
+
+
+          // Creating the "Font settinga" section
+          $wp_customize->add_section('fonts_section', array(
+            'title' => __('Font Settings', 'trek'),
+            'panel' => 'theme_settings',
+            'priority' => 24,
+          ));
+
+
+          // Site title font settings
+
+          $wp_customize->add_setting( 'site_title_font',
+          array(
+            'default' => json_encode(
+              array(
+                'font' => 'Reenie Beanie',
+                'regularweight' => 'regular',
+                'italicweight' => 'italic',
+                'boldweight' => '700',
+                'category' => 'sans-serif'
+              )
+            ),
+            'sanitize_callback' => 'skyrocket_google_font_sanitization'
+          )
 		);
-		$wp_customize->add_control( new Skyrocket_Google_Font_Select_Custom_Control( $wp_customize, 'sample_google_font_select',
+
+
+		$wp_customize->add_control( new Skyrocket_Google_Font_Select_Custom_Control( $wp_customize, 'site_title_font',
 			array(
-				'label' => __( 'Google Font Control', 'skyrocket' ),
-				'description' => esc_html__( 'All Google Fonts sorted alphabetically', 'skyrocket' ),
-				'section' => 'sample_custom_controls_section',
+				'label' => __( 'Site Title Font Settings', 'trek' ),
+				'description' => esc_html__( 'All Google Fonts sorted alphabetically', 'trek' ),
+				'section' => 'fonts_section',
 				'input_attrs' => array(
 					'font_count' => 'all',
 					'orderby' => 'alpha',

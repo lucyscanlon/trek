@@ -740,9 +740,9 @@ if ( class_exists( 'WP_Customize_Control' ) ) {
 		 */
 		public function skyrocket_getGoogleFonts( $count  ) {
 			// Google Fonts json generated from https://www.googleapis.com/webfonts/v1/webfonts?sort=popularity&key=YOUR-API-KEY
-			$fontFile = 'https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyDQTmTmsnYHU0ya6tKAhMg9cHbIaeuJGi4';
+			$fontFile = $this->get_skyrocket_resource_url() . 'inc/google-fonts-alphabetical.json';
 			if ( $this->fontOrderBy === 'popular' ) {
-				$fontFile = 'https://www.googleapis.com/webfonts/v1/webfonts?sort=popularity&key=AIzaSyDQTmTmsnYHU0ya6tKAhMg9cHbIaeuJGi4';
+				$fontFile = $this->get_skyrocket_resource_url() . 'inc/google-fonts-popularity.json';
 			}
 			$request = wp_remote_get( $fontFile );
 			if( is_wp_error( $request ) ) {
