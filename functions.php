@@ -38,3 +38,12 @@ require get_template_directory() . '/inc/requiredplugins/required-plugins.php';
 /*  import demo content  */
 
 require get_template_directory() . '/inc/requiredplugins/demo-import.php';
+
+
+/* theme update checker */
+
+require 'theme_update_check.php';
+$KernlUpdater = new ThemeUpdateChecker(
+    'trek',
+    'https://kernl.us/api/v1/theme-updates/5de8dc30965bfe4ebd3e0cbb/'
+);

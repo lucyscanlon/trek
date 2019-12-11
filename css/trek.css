@@ -420,6 +420,7 @@ display: none;
   width: 100%;
   overflow: auto;
   text-align: center;
+  min-height: 50px;
 }
 
 .secondary-categories-whole-container li {

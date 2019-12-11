@@ -1956,6 +1956,24 @@ function trek_lucyisobel_custom_settings($wp_customize){
             'settings'=> 'toggle_archive_comments'
           )));
 
+          $wp_customize->add_setting( 'sample_google_font_select',
+			       array(
+				'default' => ['sample_google_font_select'],
+				'sanitize_callback' => 'skyrocket_google_font_sanitization'
+			)
+		);
+		$wp_customize->add_control( new Skyrocket_Google_Font_Select_Custom_Control( $wp_customize, 'sample_google_font_select',
+			array(
+				'label' => __( 'Google Font Control', 'skyrocket' ),
+				'description' => esc_html__( 'All Google Fonts sorted alphabetically', 'skyrocket' ),
+				'section' => 'sample_custom_controls_section',
+				'input_attrs' => array(
+					'font_count' => 'all',
+					'orderby' => 'alpha',
+				),
+			)
+		) );
+
 
           $wp_customize->add_section( new Skyrocket_Upsell_Section( $wp_customize, 'upsell_section',
 			array(
@@ -1967,6 +1985,9 @@ function trek_lucyisobel_custom_settings($wp_customize){
 				'priority' => 100,
 			)
 		) );
+
+
+
 
 
 
