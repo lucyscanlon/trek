@@ -153,3 +153,7 @@ add_theme_support( 'custom-logo', array(
   'flex-width' => true,
   'header-text' => array( 'site-title', 'site-description' ),
 ) );
+
+
+add_theme_support( 'title-tag' );
+add_theme_support( 'automatic-feed-links' );
