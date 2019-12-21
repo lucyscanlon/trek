@@ -267,6 +267,14 @@
           color: <?php echo get_theme_mod('blog_page_link_hover_color', '#e4bce4' ); ?>
         }
 
+        .page-links a {
+          color: <?php echo get_theme_mod('blog_page_link_color', '#000000' ); ?>
+        }
+
+        .page-links a:hover {
+          color: <?php echo get_theme_mod('blog_page_link_hover_color', '#e4bce4' ); ?>
+        }
+
         /* comments */
 
         .logged-in-as a {
@@ -684,7 +692,7 @@
 
           /* fonts */
 
-        
+
 
 
   </style>

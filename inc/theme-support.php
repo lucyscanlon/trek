@@ -72,8 +72,8 @@ if ( !function_exists( 'wpex_pagination' ) ) {
 
 	function wpex_pagination() {
 
-		$prev_arrow = is_rtl() ? '→' : '←';
-		$next_arrow = is_rtl() ? '←' : '→';
+		$prev_arrow = is_rtl() ? '<i class="fas fa-long-arrow-alt-right"></i>' : '<i class="fas fa-long-arrow-alt-left"></i>';
+		$next_arrow = is_rtl() ? '<i class="fas fa-long-arrow-alt-left"></i>' : '<i class="fas fa-long-arrow-alt-right"></i>';
 
 		global $wp_query;
 		$total = $wp_query->max_num_pages;
@@ -106,10 +106,10 @@ function trek_post_navigation(){
 
   $nav = '<div class="single-post-navigation Montserrat">';
 
-  $prev = get_previous_post_link( '<div class="single-link-nav">%link →</div>', '<i>(Previous)</i> %title');
+  $prev = get_previous_post_link( '<div class="single-link-nav">%link <i class="fas fa-long-arrow-alt-right"></i></div>', '<i>(Previous)</i> %title');
   $nav .= '<div class="text-right singlepostnav-right-container singlepost-navigation-colors" style="width: 50%; float: right;">' . $prev . '</div>';
 
-  $next = get_next_post_link('<div class="post-link-nav">← %link</div>', '<i>(Newer)</i> %title');
+  $next = get_next_post_link('<div class="post-link-nav"><i class="fas fa-long-arrow-alt-left"></i> %link</div>', '<i>(Newer)</i> %title');
   $nav .= '<div class="text-right singlepostnav-left-container singlepost-navigation-colors" style="width: 50%; float: left;">' . $next . '</div>';
 
   $nav .= '</div>';

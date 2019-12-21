@@ -18,12 +18,12 @@ add_action( 'admin_menu', 'trek_add_admin_page');
 
 function trek_create_page() {
   //grabs template for page
-  require_once( get_template_directory() . '/inc/template-parts/admin/admin-trek.php');
+  get_template_directory() . '/inc/template-parts/admin/admin-trek.php';
 }
 
 function trek_travelstats_create_page() {
   //grabs template for page
-  require_once( get_template_directory() . '/inc/template-parts/admin/admin-travelstats.php');
+  get_template_directory() . '/inc/template-parts/admin/admin-travelstats.php';
 }
 
 
