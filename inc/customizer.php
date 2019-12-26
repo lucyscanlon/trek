@@ -686,7 +686,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
       $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'homepage_contentheight_title_section', array(
-        'label' => __('Front Page Content Height Settings', 'Trek'),
+        'label' => __('Front Page Content Height Settings', 'trek'),
         'description' => __('Adjust the height of your content to fit perfectly onto your homepage', 'trek'),
         'section' => 'homepage_section',
         'settings' => 'homepage_contentheight_title_section'

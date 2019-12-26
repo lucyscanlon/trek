@@ -42,7 +42,7 @@
   <!--  If the user cannot publish posts and it is not a search:  -->
   <div class="nocontent-search-container">
     <div class="nocontent-search-title ReenieBeanie">
-      <h1><?php esc_html_e( 'Nothing Here')  ?></h1>
+      <h1><?php esc_html_e( 'Nothing Here', 'trek')  ?></h1>
     </div>
     <div class="nocontent-description-container Montserrat">
       <p><?php esc_html_e('Unfortunately there was nothing found here. Try using the search box below.', 'trek' ); ?></p>

@@ -1759,6 +1759,12 @@ ul.page-numbers li {
 
 }
 
+figcaption {
+  font-size: 12px;
+  text-align: center;
+  color: grey;
+}
+
 
 
 /* cover images */

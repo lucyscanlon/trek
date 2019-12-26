@@ -52,9 +52,9 @@
     <div class="singlepost-linkpages-container Montserrat">
       <?php
         wp_link_pages( array(
-          'before' => '<div class="page-links">← ',
+          'before' => '<div class="page-links"><i class="fas fa-long-arrow-alt-left"></i> ',
           'next_or_number' => 'number',
-          'after' => ' →</div>',
+          'after' => ' <i class="fas fa-long-arrow-alt-right"></i></div>',
         ) );
       ?>
     </div>

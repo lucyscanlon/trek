@@ -52,7 +52,7 @@ function trek_comments() {
 function trek_sidebar_init() {
   register_sidebar(
     array(
-      'name' => esc_html__( 'Trek Sidebar', 'trek '),
+      'name' => esc_html__( 'Trek Sidebar', 'trek'),
       'id' => 'trek-sidebar',
       'description' => 'Dynamic Sidebar',
       'before_widget' => '<section id="%1$s" class="trek-widget Montserrat %2$s"> <div class="trek-widget-width-container">',

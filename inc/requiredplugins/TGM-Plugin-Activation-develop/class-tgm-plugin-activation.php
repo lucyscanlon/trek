@@ -2109,7 +2109,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 				esc_html(
 					sprintf(
 						/* translators: %s: version number */
-						__( 'TGMPA v%s', 'tgmpa' ),
+						__( 'TGMPA v%s', 'trek' ),
 						self::TGMPA_VERSION
 					)
 				),
