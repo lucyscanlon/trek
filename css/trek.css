@@ -1072,6 +1072,10 @@ font-size: 12px;
 
 }
 
+.singlepost1-title-container h1 {
+  font-size: 56px!important;
+}
+
 .singlepost1-categories-container {
   width: 80%;
   margin-left: auto;
@@ -1125,6 +1129,16 @@ font-size: 12px;
   line-height: 1.5em;
 }
 
+.page-links {
+  width: 85%;
+  margin: 0px auto;
+  text-align: center;
+  padding-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 10px;
+}
+
 
 
 
@@ -1165,9 +1179,13 @@ font-size: 12px;
   margin-right: auto;
   text-align: center;
   padding-top: 35px;
-  font-size: 28px;
+  font-size: 28px!important;
   padding-bottom: 20px;
   letter-spacing: 3px;
+}
+
+.singlepost1-title-container h1 {
+  font-size: 56px!important;
 }
 
 .singlepost2-featuredimage-container {
@@ -1205,9 +1223,12 @@ font-size: 12px;
   text-align: center;
   color: white;
   text-shadow: 3px 3px black;
-  font-size: 28px;
   padding-bottom: 20px;
   letter-spacing: 3px;
+}
+
+.singlepost3-title-container h1 {
+  font-size: 56px!important;
 }
 
 .singlepost3white {
@@ -1738,6 +1759,12 @@ ul.page-numbers li {
 
 }
 
+figcaption {
+  font-size: 12px;
+  text-align: center;
+  color: grey;
+}
+
 
 
 /* cover images */
@@ -1762,15 +1789,18 @@ ul.page-numbers li {
 
 .singlepost-content-container h2 {
   margin: 20px 0;
+  padding-top: 50px!important;
 
 }
 
 .singlepost-content-container h3 {
   margin: 12px 0;
+  padding-top: 40px!important;
 }
 
 .singlepost-content-container h4 {
   margin: 12px 0;
+  padding-top: 30px!important;
 }
 
 
@@ -1790,15 +1820,18 @@ ul.page-numbers li {
 
 .page h2 {
   margin: 20px 0;
+  padding-top: 50px!important;
 
 }
 
 .page h3 {
   margin: 12px 0;
+  padding-top: 40px!important;
 }
 
 .page h4 {
   margin: 12px 0;
+  padding-top: 30px!important;
 }
 
 

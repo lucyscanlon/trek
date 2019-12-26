@@ -47,3 +47,10 @@ $KernlUpdater = new ThemeUpdateChecker(
     'trek',
     'https://kernl.us/api/v1/theme-updates/5de8dc30965bfe4ebd3e0cbb/'
 );
+
+
+/* content width */
+
+if ( ! isset( $content_width ) )
+    $content_width = 1500;
+?>

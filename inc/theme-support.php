@@ -52,7 +52,7 @@ function trek_comments() {
 function trek_sidebar_init() {
   register_sidebar(
     array(
-      'name' => esc_html__( 'Trek Sidebar', 'trek '),
+      'name' => esc_html__( 'Trek Sidebar', 'trek'),
       'id' => 'trek-sidebar',
       'description' => 'Dynamic Sidebar',
       'before_widget' => '<section id="%1$s" class="trek-widget Montserrat %2$s"> <div class="trek-widget-width-container">',
@@ -72,8 +72,8 @@ if ( !function_exists( 'wpex_pagination' ) ) {
 
 	function wpex_pagination() {
 
-		$prev_arrow = is_rtl() ? '→' : '←';
-		$next_arrow = is_rtl() ? '←' : '→';
+		$prev_arrow = is_rtl() ? '<i class="fas fa-long-arrow-alt-right"></i>' : '<i class="fas fa-long-arrow-alt-left"></i>';
+		$next_arrow = is_rtl() ? '<i class="fas fa-long-arrow-alt-left"></i>' : '<i class="fas fa-long-arrow-alt-right"></i>';
 
 		global $wp_query;
 		$total = $wp_query->max_num_pages;
@@ -106,10 +106,10 @@ function trek_post_navigation(){
 
   $nav = '<div class="single-post-navigation Montserrat">';
 
-  $prev = get_previous_post_link( '<div class="single-link-nav">%link →</div>', '<i>(Previous)</i> %title');
+  $prev = get_previous_post_link( '<div class="single-link-nav">%link <i class="fas fa-long-arrow-alt-right"></i></div>', '<i>(Previous)</i> %title');
   $nav .= '<div class="text-right singlepostnav-right-container singlepost-navigation-colors" style="width: 50%; float: right;">' . $prev . '</div>';
 
-  $next = get_next_post_link('<div class="post-link-nav">← %link</div>', '<i>(Newer)</i> %title');
+  $next = get_next_post_link('<div class="post-link-nav"><i class="fas fa-long-arrow-alt-left"></i> %link</div>', '<i>(Newer)</i> %title');
   $nav .= '<div class="text-right singlepostnav-left-container singlepost-navigation-colors" style="width: 50%; float: left;">' . $next . '</div>';
 
   $nav .= '</div>';
@@ -153,3 +153,7 @@ add_theme_support( 'custom-logo', array(
   'flex-width' => true,
   'header-text' => array( 'site-title', 'site-description' ),
 ) );
+
+
+add_theme_support( 'title-tag' );
+add_theme_support( 'automatic-feed-links' );

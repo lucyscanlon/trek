@@ -25,19 +25,19 @@
 
 .block-editor-rich-text h2 {
   font-family: Montserrat !important;
-  margin-top: 20px!important;
+  margin-top: 50px!important;
   margin-bottom: 20px!important;
 }
 
 .block-editor-rich-text h3 {
   font-family: Montserrat !important;
-  margin-top: 20px!important;
+  margin-top: 40px!important;
   margin-bottom: 20px!important;
 }
 
 .block-editor-rich-text h4 {
   font-family: Montserrat !important;
-  margin-top: 10px!important;
+  margin-top: 30px!important;
   margin-bottom: 10px!important;
 }
 
@@ -196,13 +196,14 @@
 /* verse   */
 
 
-.wp-block-verse {
+.wp-block-verse pre {
   margin: 20px auto;
   background-color: #F1F3F4;
   padding: 20px;
   width: 95%;
   text-align: left;
   border-left: solid 2.5px darkgrey;
+  font-family: Montserrat!important;
 }
 
 /*  button  */
