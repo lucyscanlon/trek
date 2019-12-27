@@ -1,15 +1,11 @@
 <?php
 /*
-* This is the BLOG BANNER TEMPLATE for the Trek theme
+* The template for displaying the blog banner, this sticks to the top of every page of your blog (except the front page)
 *
-* This template appears on the blog page for the posts preview if the grid post layout (whether left or right aligned) option is selected in the customizer
+* @link https://developer.wordpress.org/themes/basics/template-hierarchy/
 *
-*
-* @package TrekLucyIsobel
-*
-*
+* @package Trek
 */
-
 ?>
 <?php
 $featuredCategory = get_theme_mod('featuredpost_category');

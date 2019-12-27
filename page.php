@@ -1,3 +1,12 @@
+<?php
+/*
+* The default template for displaying all pages
+*
+* @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+*
+* @package Trek
+*/
+?>
 <?php get_header(); ?>
   <section class="featured-post-container">
     <!--  Fetches template for blog banner  -->

@@ -1,4 +1,12 @@
-<?php get_header(); ?>
+<?php
+/*
+* The Index template - the main template file
+*
+* @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+*
+* @package Trek
+*/
+?><?php get_header(); ?>
 <section class="featured-post-container">
   <!--  Fetches template for blog banner  -->
   <?php require get_template_directory() . '/inc/template-parts/index/blogbanner.php'; ?>

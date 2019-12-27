@@ -1,15 +1,11 @@
 <?php
 /*
-* This is the SINGLE POST LAYOUT OPTION ONE TEMPLATE for the Trek theme
+* The template for displaying a page if the full image layout is chosen (chosen in the customiser)
 *
-* This template appears on the blog page for the posts preview if the grid post layout (whether left or right aligned) option is selected in the customizer
+* @link https://developer.wordpress.org/themes/basics/template-hierarchy/
 *
-*
-* @package TrekLucyIsobel
-*
-*
+* @package Trek
 */
-
 ?>
 <div class="singlepost1-whole-container">
   <div class="singlepost1-featuredimage-container">

@@ -1,15 +1,11 @@
 <?php
 /*
-* This is the GRID POST LAYOUT TEMPLATE for the Trek theme
+* The template for displaying the Archive pages in the list style layout (chosen in the customiser)
 *
-* This template appears on the blog page for the posts preview if the grid post layout (whether left or right aligned) option is selected in the customizer
+* @link https://developer.wordpress.org/themes/basics/template-hierarchy/
 *
-*
-* @package TrekLucyIsobel
-*
-*
+* @package Trek
 */
-
 ?>
 <div class="gridpostlayout-post-container">
   <?php if ( has_post_thumbnail( get_the_ID() ) ) {?>

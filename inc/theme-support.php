@@ -1,14 +1,4 @@
 <?php
-/*
-* This is the theme support page of the Trek Theme
-*
-* This page adds some default WordPress features to the theme e.g a custom logo.
-*
-*
-* @package TrekLucyIsobel
-*
-*
-*/
 
 /* Registering Menu Locations */
 function trek_register_nav_menu() {

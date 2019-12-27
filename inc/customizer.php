@@ -64,11 +64,14 @@ function trek_lucyisobel_custom_settings($wp_customize){
     'title' => __('Header and footer', 'trek'),
     'priority' => 0,
     'panel' => 'theme_settings',
+
   ));
 
 
   // Adds the title "Header & Footer Settings" in the "header" section
-  $wp_customize->add_setting('header_title_notice_setting');
+  $wp_customize->add_setting('header_title_notice_setting', array(
+    'sanitize_callback' => 'wp_filter_nohtml_kses',
+  ));
 
 
   $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'header_title_notice_control', array(
@@ -113,7 +116,9 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
     // Creates the "Header & Footer Color Settings" title in the "header" section
-    $wp_customize->add_setting('header_title_color_section');
+    $wp_customize->add_setting('header_title_color_section', array(
+      'sanitize_callback' => 'wp_filter_nohtml_kses',
+    ));
 
 
     $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'header_title_color_section', array(
@@ -129,6 +134,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
     $wp_customize->add_setting('header_background_color', array(
       'default' => '#1d272e',
       'transport' => 'refresh',
+      'sanitize_callback' => 'sanitize_hex_color',
 
     ));
 
@@ -145,6 +151,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       $wp_customize->add_setting('header_text_color', array(
         'default' => '#FFFFFF',
         'transport' => 'refresh',
+        'sanitize_callback' => 'sanitize_hex_color',
 
       ));
 
@@ -160,6 +167,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       $wp_customize->add_setting('header_text_hover_color', array(
         'default' => '#E4BCE4',
         'transport' => 'refresh',
+        'sanitize_callback' => 'sanitize_hex_color',
 
       ));
 
@@ -187,7 +195,9 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
       // Creates the title "Social Media Settings" in the "Social Media" section
-      $wp_customize->add_setting('socialmedia_title_section');
+      $wp_customize->add_setting('socialmedia_title_section', array(
+        'sanitize_callback' => 'wp_filter_nohtml_kses',
+      ));
 
 
       $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'socialmedia_title_section', array(
@@ -202,6 +212,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       $wp_customize->add_setting('toggle_switch_twitter', array(
         'default' => 0,
         'transport' => 'refresh',
+        'sanitize_callback' => 'skyrocket_switch_sanitization',
 
       ));
 
@@ -214,7 +225,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
       // Creates input box for users Twitter link
       $wp_customize->add_setting('twitter_link', array(
-
+        'sanitize_callback' => 'esc_url_raw',
       ));
 
       $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'twitter_link', array(
@@ -231,6 +242,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       $wp_customize->add_setting('toggle_switch_facebook', array(
         'default' => 0,
         'transport' => 'refresh',
+        'sanitize_callback' => 'skyrocket_switch_sanitization',
 
       ));
 
@@ -243,7 +255,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
       // Creates input box for users Facebook link
       $wp_customize->add_setting('facebook_link', array(
-
+        'sanitize_callback' => 'esc_url_raw',
       ));
 
       $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'facebook_link', array(
@@ -260,6 +272,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       $wp_customize->add_setting('toggle_switch_instagram', array(
         'default' => 1,
         'transport' => 'refresh',
+        'sanitize_callback' => 'skyrocket_switch_sanitization',
 
       ));
 
@@ -272,7 +285,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
       // Creates input box for users Instagram link
       $wp_customize->add_setting('instagram_link', array(
-
+        'sanitize_callback' => 'esc_url_raw',
       ));
 
       $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'instagram_link', array(
@@ -290,6 +303,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       $wp_customize->add_setting('toggle_switch_pinterest', array(
         'default' => 0,
         'transport' => 'refresh',
+        'sanitize_callback' => 'skyrocket_switch_sanitization',
 
       ));
 
@@ -302,7 +316,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
       // Creates input box for users Pinterest link
       $wp_customize->add_setting('pinterest_link', array(
-
+        'sanitize_callback' => 'esc_url_raw',
       ));
 
       $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'pinterest_link', array(
@@ -320,6 +334,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       $wp_customize->add_setting('toggle_switch_googleplus', array(
         'default' => 0,
         'transport' => 'refresh',
+        'sanitize_callback' => 'skyrocket_switch_sanitization',
 
       ));
 
@@ -332,7 +347,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
       // Creates input box for users Google Plus link
       $wp_customize->add_setting('googleplus_link', array(
-
+        'sanitize_callback' => 'esc_url_raw',
       ));
 
       $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'googleplus_link', array(
@@ -349,6 +364,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       $wp_customize->add_setting('toggle_switch_youtube', array(
         'default' => 1,
         'transport' => 'refresh',
+        'sanitize_callback' => 'skyrocket_switch_sanitization',
 
       ));
 
@@ -361,7 +377,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
       // Creates input box for users YouTube link
       $wp_customize->add_setting('youtube_link', array(
-
+        'sanitize_callback' => 'esc_url_raw',
       ));
 
       $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'youtube_link', array(
@@ -378,6 +394,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       $wp_customize->add_setting('toggle_switch_linkedin', array(
         'default' => 0,
         'transport' => 'refresh',
+        'sanitize_callback' => 'skyrocket_switch_sanitization',
 
       ));
 
@@ -390,7 +407,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
       // Creates input box for users LinkedIn link
       $wp_customize->add_setting('linkedin_link', array(
-
+        'sanitize_callback' => 'esc_url_raw',
       ));
 
       $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'linkedin_link', array(
@@ -407,6 +424,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       $wp_customize->add_setting('toggle_switch_snapchat', array(
         'default' => 0,
         'transport' => 'refresh',
+        'sanitize_callback' => 'skyrocket_switch_sanitization',
 
       ));
 
@@ -419,7 +437,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
       // Creates input box for users Snapchat link
       $wp_customize->add_setting('snapchat_link', array(
-
+        'sanitize_callback' => 'esc_url_raw',
       ));
 
       $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'snapchat_link', array(
@@ -436,6 +454,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       $wp_customize->add_setting('toggle_switch_goodreads', array(
         'default' => 0,
         'transport' => 'refresh',
+        'sanitize_callback' => 'skyrocket_switch_sanitization',
 
       ));
 
@@ -449,7 +468,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
       // Creates input box for users Goodreads link
       $wp_customize->add_setting('goodreads_link', array(
-
+        'sanitize_callback' => 'esc_url_raw',
       ));
 
 
@@ -467,6 +486,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       $wp_customize->add_setting('toggle_switch_shop', array(
         'default' => 1,
         'transport' => 'refresh',
+        'sanitize_callback' => 'skyrocket_switch_sanitization',
 
       ));
 
@@ -479,7 +499,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
       // Creates input box for users Shop link
       $wp_customize->add_setting('shop_link', array(
-
+        'sanitize_callback' => 'esc_url_raw',
       ));
 
       $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'shop_link', array(
@@ -497,6 +517,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       $wp_customize->add_setting('toggle_switch_email', array(
         'default' => 1,
         'transport' => 'refresh',
+        'sanitize_callback' => 'skyrocket_switch_sanitization',
 
       ));
 
@@ -509,7 +530,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
       // Creates input box for users Email address
       $wp_customize->add_setting('email_link', array(
-
+        'sanitize_callback' => 'sanitize_email'
       ));
 
       $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'email_link', array(
@@ -527,6 +548,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       $wp_customize->add_setting('toggle_switch_vimeo', array(
         'default' => 0,
         'transport' => 'refresh',
+        'sanitize_callback' => 'skyrocket_switch_sanitization',
 
       ));
 
@@ -541,7 +563,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
       // Creates input box for users Vimeo link
       $wp_customize->add_setting('vimeo_link', array(
-
+        'sanitize_callback' => 'esc_url_raw',
       ));
 
       $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'vimeo_link', array(
@@ -558,6 +580,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       $wp_customize->add_setting('toggle_switch_tumblr', array(
         'default' => 0,
         'transport' => 'refresh',
+        'sanitize_callback' => 'skyrocket_switch_sanitization',
 
       ));
 
@@ -570,7 +593,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
       // Creates input box for users Tumblr link
       $wp_customize->add_setting('tumblr_link', array(
-
+        'sanitize_callback' => 'esc_url_raw',
       ));
 
       $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'tumblr_link', array(
@@ -602,7 +625,9 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
       // Creating the title "Front Page Background Settings" title in the "Front Page" section
-      $wp_customize->add_setting('homepage_title_section');
+      $wp_customize->add_setting('homepage_title_section', array(
+        'sanitize_callback' => 'wp_filter_nohtml_kses',
+      ));
 
 
       $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'homepage_title_section', array(
@@ -616,6 +641,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       // Creating the setting to upload an image as Front Page background
       $wp_customize->add_setting('homepage_background_image', array(
         'default' => "https://images.unsplash.com/photo-1564844336080-c1a2a9b149a8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80",
+        'sanitize_callback' => 'theme_slug_sanitize_file'
       ));
 
 
@@ -634,6 +660,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       $wp_customize->add_setting('homepage_video_toggle', array(
         'default' => 0,
         'transport' => 'refresh',
+        'sanitize_callback' => 'skyrocket_switch_sanitization',
 
       ));
 
@@ -647,14 +674,14 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
       // Creates the input box for the 1st link needed for Video Background
       $wp_customize->add_setting('video_background_link', array(
-
+        'sanitize_callback' => 'wp_filter_nohtml_kses'
       ));
 
 
       $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'video_background_link', array(
         'section' => 'homepage_section',
         'label' => __('Video link', 'trek'),
-        'description' => __('This is a very specific link needed. Please watch this <b>video</b> to see how to find it.', 'trek'),
+        'description' => __('This is a very specific link needed. Please follow the install instructions to see how to find it.', 'trek'),
           'settings' => 'video_background_link',
           'input_attrs' => array(
           'placeholder' => __('Paste the link here', 'trek'),
@@ -665,13 +692,13 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
       // Creates the input for the 2nd link needed for Video background
       $wp_customize->add_setting('video_playlist_link', array(
-
+        'sanitize_callback' => 'wp_filter_nohtml_kses'
       ));
 
       $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'video_playlist_link', array(
         'section' => 'homepage_section',
         'label' => __('Video 2nd Link', 'trek'),
-        'description' => __('This is also a very specific link needed. Please watch this <b>video</b> to see how to find it.', 'trek'),
+        'description' => __('This is also a very specific link needed. Please follow the install instructions to see how to find it.', 'trek'),
         'settings' => 'video_playlist_link',
         'input_attrs' => array(
           'placeholder' => __('Paste the link here', 'trek'),
@@ -682,7 +709,9 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
       // Creates the title "Front Page Content Height Settings" in the "Front Page" section
-      $wp_customize->add_setting('homepage_contentheight_title_section');
+      $wp_customize->add_setting('homepage_contentheight_title_section', array(
+        'sanitize_callback' => 'wp_filter_nohtml_kses',
+      ));
 
 
       $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'homepage_contentheight_title_section', array(
@@ -714,7 +743,9 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
       // Creates the title "Front Page Logo Settings" in "Front Page" section
-        $wp_customize->add_setting('homepage_logo_title_section');
+        $wp_customize->add_setting('homepage_logo_title_section', array(
+          'sanitize_callback' => 'wp_filter_nohtml_kses',
+        ));
 
 
         $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'homepage_logo_title_section', array(
@@ -730,6 +761,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
         $wp_customize->add_setting('homepage_logo_toggle', array(
           'default' => 0,
           'transport' => 'refresh',
+          'sanitize_callback' => 'skyrocket_switch_sanitization',
 
         ));
 
@@ -743,7 +775,9 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
         // Add the title "Front Page Title Settings" to the "Front Page" section
-      $wp_customize->add_setting('homepage_title_title_section');
+      $wp_customize->add_setting('homepage_title_title_section', array(
+        'sanitize_callback' => 'wp_filter_nohtml_kses',
+      ));
 
 
       $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'homepage_title_title_section', array(
@@ -759,6 +793,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       $wp_customize->add_setting('homepage_title_toggle', array(
         'default' => 1,
         'transport' => 'refresh',
+        'sanitize_callback' => 'skyrocket_switch_sanitization',
 
       ));
 
@@ -774,6 +809,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
     $wp_customize->add_setting('homepage_title_color', array(
       'default' => '#FFFFFF',
       'transport' => 'refresh',
+      'sanitize_callback' => 'sanitize_hex_color',
 
     ));
 
@@ -788,6 +824,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
     $wp_customize->add_setting('homepage_title_shadow_color', array(
       'default' => '#000000',
       'transport' => 'refresh',
+      'sanitize_callback' => 'sanitize_hex_color',
 
     ));
 
@@ -803,6 +840,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
     $wp_customize->add_setting('homepage_title_link_color', array(
       'default' => '#e4bce4',
       'transport' => 'refresh',
+      'sanitize_callback' => 'sanitize_hex_color',
 
     ));
 
@@ -816,7 +854,8 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
     // Creates the input box for user to input their blog link
     $wp_customize->add_setting('homepage_blog_link', array(
-      'default' => get_permalink( get_option('page_for_posts' ) )
+      'default' => get_permalink( get_option('page_for_posts' ) ),
+      'sanitize_callback' => 'esc_url_raw',
     ));
 
     $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'homepage_blog_link', array(
@@ -833,7 +872,9 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
     // Creates the title "Front Page Description Settings" in the "Front Page" section
-    $wp_customize->add_setting('homepage_description_title_section');
+    $wp_customize->add_setting('homepage_description_title_section', array(
+      'sanitize_callback' => 'wp_filter_nohtml_kses',
+    ));
 
 
     $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'homepage_description_title_section', array(
@@ -849,6 +890,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
     $wp_customize->add_setting('toggle_switch_description', array(
       'default' => 1,
       'transport' => 'refresh',
+      'sanitize_callback' => 'skyrocket_switch_sanitization',
 
     ));
 
@@ -864,6 +906,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
     $wp_customize->add_setting('homepage_description_color', array(
       'default' => '#FFFFFF',
       'transport' => 'refresh',
+      'sanitize_callback' => 'sanitize_hex_color',
 
     ));
 
@@ -880,6 +923,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
     $wp_customize->add_setting('homepage_description_shadow_color', array(
       'default' => '#000000',
       'transport' => 'refresh',
+      'sanitize_callback' => 'sanitize_hex_color',
 
     ));
 
@@ -892,7 +936,9 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
     // Creates the title "Read More Button" in the "front Page" Section
-    $wp_customize->add_setting('homepage_readmore_button_notice');
+    $wp_customize->add_setting('homepage_readmore_button_notice', array(
+      'sanitize_callback' => 'wp_filter_nohtml_kses',
+    ));
 
 
     $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'homepage_readmore_button_notice', array(
@@ -907,6 +953,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
     $wp_customize->add_setting('homepage_readmore_toggle', array(
       'default' => 0,
       'transport' => 'refresh',
+      'sanitize_callback' => 'skyrocket_switch_sanitization',
 
     ));
 
@@ -923,6 +970,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
     $wp_customize->add_setting('homepage_readmore_color', array(
       'default' => '#1D272E',
       'transport' => 'refresh',
+      'sanitize_callback' => 'sanitize_hex_color',
 
     ));
 
@@ -938,6 +986,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
     $wp_customize->add_setting('homepage_readmore_text_color', array(
       'default' => '#FFFFFF',
       'transport' => 'refresh',
+      'sanitize_callback' => 'sanitize_hex_color',
 
     ));
 
@@ -953,6 +1002,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
     $wp_customize->add_setting('homepage_readmore_text_hover_color', array(
       'default' => '#e4bce4',
       'transport' => 'refresh',
+      'sanitize_callback' => 'sanitize_hex_color',
 
     ));
 
@@ -967,6 +1017,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
     // Creates the input box for user to input the text for the read more button on the Front Page
     $wp_customize->add_setting('homepage_readmore_text', array(
       'default' => __('Read More', 'trek'),
+      'sanitize_callback' => 'wp_filter_nohtml_kses',
     ));
 
     $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'homepage_readmore_text', array(
@@ -984,7 +1035,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
     // Creates the input box for user to input their read more button link
     $wp_customize->add_setting('homepage_readmore_link', array(
-
+      'sanitize_callback' => 'wp_filter_nohtml_kses'
     ));
 
     $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'homepage_readmore_link', array(
@@ -1019,7 +1070,9 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
     // Creates the title "Blog Banner Section" in the "Blog" section
-    $wp_customize->add_setting('blog_banner_section');
+    $wp_customize->add_setting('blog_banner_section', array(
+      'sanitize_callback' => 'esc_url_raw',
+    ));
 
 
     $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'blog_banner_section', array(
@@ -1034,6 +1087,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
     $wp_customize->add_setting('toggle_blogbanner_logo', array(
       'default' => 0,
       'transport' => 'refresh',
+      'sanitize_callback' => 'skyrocket_switch_sanitization',
 
     ));
 
@@ -1050,6 +1104,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
     $wp_customize->add_setting('toggle_blogbanner_description', array(
       'default' => 1,
       'transport' => 'refresh',
+      'sanitize_callback' => 'skyrocket_switch_sanitization',
 
     ));
 
@@ -1066,6 +1121,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
     $wp_customize->add_setting('blog_banner_text_color', array(
       'default' => get_theme_mod('homepage_title_color', '#FFFFFF'),
       'transport' => 'refresh',
+      'sanitize_callback' => 'sanitize_hex_color',
 
     ));
 
@@ -1081,6 +1137,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
     $wp_customize->add_setting('blog_banner_text_shadow_color', array(
       'default' => get_theme_mod('homepage_title_shadow_color', '#000000'),
       'transport' => 'refresh',
+      'sanitize_callback' => 'sanitize_hex_color',
 
     ));
 
@@ -1095,6 +1152,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
     $wp_customize->add_setting('blog_banner_text_hover_color', array(
       'default' => get_theme_mod('homepage_title_link_color', '#E4BCE4'),
       'transport' => 'refresh',
+      'sanitize_callback' => 'sanitize_hex_color',
 
     ));
 
@@ -1110,6 +1168,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
     // Creates the setting for the user to upload a background image for the blog banner
     $wp_customize->add_setting('banner_background_image', array(
       'default' => "https://images.unsplash.com/photo-1513657713647-0182f4ee3bf8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80",
+      'sanitize_callback' => 'theme_slug_sanitize_file'
     ));
 
     $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'banner_background_image', array(
@@ -1124,7 +1183,9 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
     // Creates the title "Enable Featured Post Display" in the "Blog" section
-    $wp_customize->add_setting('blog_banner_featured_section');
+    $wp_customize->add_setting('blog_banner_featured_section', array(
+      'sanitize_callback' => 'wp_filter_nohtml_kses'
+    ));
 
 
     $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'blog_banner_featured_section', array(
@@ -1140,6 +1201,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
     $wp_customize->add_setting('toggle_blogbanner_featuredpost', array(
       'default' => 0,
       'transport' => 'refresh',
+      'sanitize_callback' => 'skyrocket_switch_sanitization',
 
     ));
 
@@ -1153,7 +1215,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
     // Creates the input box for user to input chosen category for the featured post feature
     $wp_customize->add_setting('featuredpost_category', array(
-
+      'sanitize_callback' => 'wp_filter_nohtml_kses'
     ));
 
     $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'featuredpost_category', array(
@@ -1169,7 +1231,9 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
     // Creates the title "Secondary Menu" in the "Blog" section
-    $wp_customize->add_setting('secondary_menu_display_title');
+    $wp_customize->add_setting('secondary_menu_display_title', array(
+      'sanitize_callback' => 'wp_filter_nohtml_kses',
+    ));
 
 
     $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'secondary_menu_display_title', array(
@@ -1185,6 +1249,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
     $wp_customize->add_setting('secondary_menu_display', array(
       'default' => 1,
       'transport' => 'refresh',
+      'sanitize_callback' => 'skyrocket_switch_sanitization',
 
     ));
 
@@ -1197,7 +1262,9 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
     // Creates the title "Blog Page Settings" in the "Blog" section
-    $wp_customize->add_setting('blog_title_section');
+    $wp_customize->add_setting('blog_title_section', array(
+      'sanitize_callback' => 'wp_filter_nohtml_kses',
+    ));
 
 
     $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'blog_title_section', array(
@@ -1212,6 +1279,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
     $wp_customize->add_setting('blog_toggle_sidebar', array(
       'default' => 1,
       'transport' => 'refresh',
+      'sanitize_callback' => 'skyrocket_switch_sanitization',
 
     ));
 
@@ -1255,6 +1323,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       $wp_customize->add_setting('blog_page_background_color', array(
         'default' => '#e2d7e2',
         'transport' => 'refresh',
+        'sanitize_callback' => 'sanitize_hex_color',
 
       ));
 
@@ -1305,7 +1374,9 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
       // Creates the title "Post Preview Display Settings" in the "blog" section
-      $wp_customize->add_setting('blog_post_preview_settings_notice');
+      $wp_customize->add_setting('blog_post_preview_settings_notice', array(
+        'sanitize_callback' => 'wp_filter_nohtml_kses',
+      ));
 
 
       $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'blog_post_preview_settings_notice', array(
@@ -1321,6 +1392,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       $wp_customize->add_setting('blog_page_link_color', array(
         'default' => '#000000',
         'transport' => 'refresh',
+        'sanitize_callback' => 'sanitize_hex_color',
 
       ));
 
@@ -1336,6 +1408,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       $wp_customize->add_setting('blog_page_link_hover_color', array(
         'default' => '#E4BCE4',
         'transport' => 'refresh',
+        'sanitize_callback' => 'sanitize_hex_color',
 
       ));
 
@@ -1351,6 +1424,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       $wp_customize->add_setting('toggle_blog_categories', array(
         'default' => 0,
         'transport' => 'refresh',
+        'sanitize_callback' => 'skyrocket_switch_sanitization',
 
       ));
 
@@ -1366,6 +1440,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       $wp_customize->add_setting('toggle_blog_date', array(
         'default' => 1,
         'transport' => 'refresh',
+        'sanitize_callback' => 'skyrocket_switch_sanitization',
 
       ));
 
@@ -1381,6 +1456,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       $wp_customize->add_setting('toggle_blog_author', array(
         'default' => 1,
         'transport' => 'refresh',
+        'sanitize_callback' => 'skyrocket_switch_sanitization',
 
       ));
 
@@ -1396,6 +1472,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       $wp_customize->add_setting('toggle_blog_comments', array(
         'default' => 1,
         'transport' => 'refresh',
+        'sanitize_callback' => 'skyrocket_switch_sanitization',
 
       ));
 
@@ -1408,7 +1485,9 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
       // Creates the title "No Featured Image Settings" in the "blog" section
-      $wp_customize->add_setting('blog_no_featured_image_notice');
+      $wp_customize->add_setting('blog_no_featured_image_notice', array(
+        'sanitize_callback' => 'wp_filter_nohtml_kses',
+      ));
 
 
       $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'blog_no_featured_image_notice', array(
@@ -1424,6 +1503,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
         $wp_customize->add_setting('no_featured_image_color_control', array(
           'default' => get_theme_mod('header_background_color', '#1D272E'),
           'transport' => 'refresh',
+          'sanitize_callback' => 'sanitize_hex_color',
 
         ));
 
@@ -1436,7 +1516,9 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
         // Creates title "Blog Navigation Colors" on "Blog" section
-        $wp_customize->add_setting('navigation_color_control');
+        $wp_customize->add_setting('navigation_color_control', array(
+          'sanitize_callback' => 'wp_filter_nohtml_kses',
+        ));
 
 
         $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'navigation_color_control', array(
@@ -1451,6 +1533,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
         $wp_customize->add_setting('navigation_background_color', array(
           'default' => get_theme_mod('header_background_color', '#1D272E'),
           'transport' => 'refresh',
+          'sanitize_callback' => 'sanitize_hex_color',
 
         ));
 
@@ -1466,6 +1549,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
         $wp_customize->add_setting('navigation_text_color', array(
           'default' => get_theme_mod('header_text_color', '#FFFFFF'),
           'transport' => 'refresh',
+          'sanitize_callback' => 'sanitize_hex_color',
 
         ));
 
@@ -1496,7 +1580,9 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
       // Creates title "Single Post Settings" in the "single post" section
-      $wp_customize->add_setting('singlespost_title_section');
+      $wp_customize->add_setting('singlespost_title_section', array(
+        'sanitize_callback' => 'wp_filter_nohtml_kses',
+      ));
 
 
       $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'singlespost_title_section', array(
@@ -1512,6 +1598,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
       $wp_customize->add_setting('single_toggle_sidebar', array(
         'default' => 1,
         'transport' => 'refresh',
+        'sanitize_callback' => 'sanitize_hex_color',
 
       ));
 
@@ -1557,7 +1644,9 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
         // Creates the title "Single Post Header Display Settings" in the "Single Post" section
-        $wp_customize->add_setting('singlespost_display_section');
+        $wp_customize->add_setting('singlespost_display_section', array(
+          'sanitize_callback' => 'wp_filter_nohtml_kses',
+        ));
 
 
         $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'singlespost_display_section', array(
@@ -1573,6 +1662,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
         $wp_customize->add_setting('toggle_singlepost_categories', array(
           'default' => 0,
           'transport' => 'refresh',
+          'sanitize_callback' => 'skyrocket_switch_sanitization',
 
         ));
 
@@ -1588,6 +1678,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
         $wp_customize->add_setting('toggle_singlepost_date', array(
           'default' => 1,
           'transport' => 'refresh',
+          'sanitize_callback' => 'skyrocket_switch_sanitization',
 
         ));
 
@@ -1603,6 +1694,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
         $wp_customize->add_setting('toggle_singlepost_author', array(
           'default' => 1,
           'transport' => 'refresh',
+          'sanitize_callback' => 'skyrocket_switch_sanitization',
 
         ));
 
@@ -1618,6 +1710,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
         $wp_customize->add_setting('toggle_singlepost_comments', array(
           'default' => 1,
           'transport' => 'refresh',
+          'sanitize_callback' => 'skyrocket_switch_sanitization',
 
         ));
 
@@ -1628,7 +1721,9 @@ function trek_lucyisobel_custom_settings($wp_customize){
         )));
 
 
-        $wp_customize->add_setting('singlespost_footerdisplay_section');
+        $wp_customize->add_setting('singlespost_footerdisplay_section', array(
+          'sanitize_callback' => 'wp_filter_nohtml_kses',
+        ));
 
 
         $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'singlespost_footerdisplay_section', array(
@@ -1644,6 +1739,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
         $wp_customize->add_setting('toggle_singlepost_tags', array(
           'default' => 1,
           'transport' => 'refresh',
+          'sanitize_callback' => 'skyrocket_switch_sanitization',
 
         ));
 
@@ -1659,6 +1755,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
         $wp_customize->add_setting('toggle_singlepost_views', array(
           'default' => 1,
           'transport' => 'refresh',
+          'sanitize_callback' => 'skyrocket_switch_sanitization',
 
         ));
 
@@ -1672,7 +1769,9 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
         // Creates title "Single Post Navigation Color Controls" on "single post" section
-        $wp_customize->add_setting('singlepost_navigation_notice');
+        $wp_customize->add_setting('singlepost_navigation_notice', array(
+          'sanitize_callback' => 'wp_filter_nohtml_kses',
+        ));
 
 
         $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'singlepost_navigation_notice', array(
@@ -1688,6 +1787,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
         $wp_customize->add_setting('single_navigation_background_color', array(
           'default' => get_theme_mod('header_background_color', '#1D272E'),
           'transport' => 'refresh',
+          'sanitize_callback' => 'sanitize_hex_color',
 
         ));
 
@@ -1704,6 +1804,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
         $wp_customize->add_setting('single_navigation_text_color', array(
           'default' => get_theme_mod('header_text_color', '#FFFFFF'),
           'transport' => 'refresh',
+          'sanitize_callback' => 'sanitize_hex_color',
 
         ));
 
@@ -1720,6 +1821,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
         $wp_customize->add_setting('single_navigation_text_hover_color', array(
           'default' => get_theme_mod('header_text_hover_color', '#E4BCE4'),
           'transport' => 'refresh',
+          'sanitize_callback' => 'sanitize_hex_color',
 
         ));
 
@@ -1733,7 +1835,9 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
         // Creates title "Single Post Author Box Controls" on "single post" section
-        $wp_customize->add_setting('singlepost_authorbox_notice');
+        $wp_customize->add_setting('singlepost_authorbox_notice', array(
+          'sanitize_callback' => 'wp_filter_nohtml_kses',
+        ));
 
 
         $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'singlepost_authorbox_notice', array(
@@ -1748,6 +1852,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
         $wp_customize->add_setting('toggle_singlepost_authorbox', array(
           'default' => 1,
           'transport' => 'refresh',
+          'sanitize_callback' => 'skyrocket_switch_sanitization',
 
         ));
 
@@ -1779,7 +1884,9 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
         // Creates the title "Archive/Search Results Bar Settings" in "Archive and Search Settings" section
-        $wp_customize->add_setting('archive_navtitle_section');
+        $wp_customize->add_setting('archive_navtitle_section', array(
+          'sanitize_callback' => 'wp_filter_nohtml_kses',
+        ));
 
 
         $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'archive_navtitle_section', array(
@@ -1795,6 +1902,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
         $wp_customize->add_setting('archive_navbar_backgroundcolor', array(
           'default' => get_theme_mod('header_background_color', '#1d272e'),
           'transport' => 'refresh',
+          'sanitize_callback' => 'sanitize_hex_color',
 
         ));
 
@@ -1810,6 +1918,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
         $wp_customize->add_setting('archive_navbar_textcolor', array(
           'default' => get_theme_mod('header_text_color', '#FFFFFF'),
           'transport' => 'refresh',
+          'sanitize_callback' => 'sanitize_hex_color',
 
         ));
 
@@ -1822,7 +1931,9 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
         // Creates title "Archive and Search Settings" in "Archive and Search Settings" section
-        $wp_customize->add_setting('archive_title_section');
+        $wp_customize->add_setting('archive_title_section', array(
+          'sanitize_callback' => 'wp_filter_nohtml_kses',
+        ));
 
 
         $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'archive_title_section', array(
@@ -1838,6 +1949,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
         $wp_customize->add_setting('archive_toggle_sidebar', array(
           'default' => 1,
           'transport' => 'refresh',
+          'sanitize_callback' => 'skyrocket_switch_sanitization',
 
         ));
 
@@ -1886,7 +1998,9 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
 
           // Creates title "Archive Meta Display Settings" in "Archive and Search Settings" section
-          $wp_customize->add_setting('archive_displaytitle_section');
+          $wp_customize->add_setting('archive_displaytitle_section', array(
+            'sanitize_callback' => 'wp_filter_nohtml_kses',
+          ));
 
 
           $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'archive_displaytitle_section', array(
@@ -1902,6 +2016,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
           $wp_customize->add_setting('toggle_archive_categories', array(
             'default' => 0,
             'transport' => 'refresh',
+            'sanitize_callback' => 'skyrocket_switch_sanitization',
 
           ));
 
@@ -1917,6 +2032,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
           $wp_customize->add_setting('toggle_archive_date', array(
             'default' => 1,
             'transport' => 'refresh',
+            'sanitize_callback' => 'skyrocket_switch_sanitization',
 
           ));
 
@@ -1932,6 +2048,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
           $wp_customize->add_setting('toggle_archive_author', array(
             'default' => 1,
             'transport' => 'refresh',
+            'sanitize_callback' => 'skyrocket_switch_sanitization',
 
           ));
 
@@ -1947,6 +2064,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
           $wp_customize->add_setting('toggle_archive_comments', array(
             'default' => 1,
             'transport' => 'refresh',
+            'sanitize_callback' => 'skyrocket_switch_sanitization',
 
           ));
 

@@ -1,3 +1,12 @@
+<?php
+/*
+* The template for displaying the Front Page if background is an image (chosen in the customiser)
+*
+* @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+*
+* @package Trek
+*/
+?>
 <?php get_header(); ?>
 <?php $homepage_background_video = wp_get_attachment_url( get_theme_mod( 'video_upload' )); ?>
 <?php

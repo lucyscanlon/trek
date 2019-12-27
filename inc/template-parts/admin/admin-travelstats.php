@@ -1,3 +1,12 @@
+<?php
+/*
+* The template for displaying the Travel Stats admin page
+*
+* @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+*
+* @package Trek
+*/
+?>
 <?php $widgetLink = esc_url( admin_url( 'widgets.php' ) );?>
 
 <h1><?php echo __('Travel Stats Widget', 'trek') ?></h1>

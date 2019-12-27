@@ -1,3 +1,12 @@
+<?php
+/*
+* The template for displaying the Front Page if background is an image (chosen in the customiser)
+*
+* @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+*
+* @package Trek
+*/
+?>
 <?php get_header(); ?>
 <?php $homepage_background_image = get_theme_mod( 'homepage_background_image', "https://images.unsplash.com/photo-1564844336080-c1a2a9b149a8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80" ); ?>
 <?php

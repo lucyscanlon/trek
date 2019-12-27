@@ -1,3 +1,12 @@
+<?php
+/*
+* The template for displaying the footer
+*
+* @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+*
+* @package Trek
+*/
+?>
 <?php wp_footer(); ?>
     <footer>
       <div class="footer-whole-container headerbackgroundcolor">

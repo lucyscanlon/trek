@@ -1,3 +1,12 @@
+<?php
+/*
+* The template for displaying the comments navigation
+*
+* @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+*
+* @package Trek
+*/
+?>
 <nav class="comment-navigation" role="navigation">
   <div class="nav-link">
     <div class="nav-whole-container">

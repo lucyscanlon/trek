@@ -1,3 +1,12 @@
+<?php
+/*
+* The default template for displaying single pages
+*
+* @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
+*
+* @package Trek
+*/
+?>
 <?php get_header(); ?>
   <section class="featured-post-container">
     <!--  Fetches template for blog banner  -->

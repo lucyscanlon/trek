@@ -1,7 +1,13 @@
-
+<?php
+/*
+* The template for displaying the Trek admin page
+*
+* @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+*
+* @package Trek
+*/
+?>
 <div class="whole-page-container">
-
-
 <div class="options-panel-whole-flex-container">
   <div class="trek-box installinstruct-whole-container">
     <div class="installinstruct-title-container">

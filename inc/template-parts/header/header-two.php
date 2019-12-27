@@ -1,3 +1,12 @@
+<?php
+/*
+* The template for displaying the header if the third layout is chosen (chosen in the customiser)
+*
+* @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+*
+* @package Trek
+*/
+?>
 <div class="header-wrap">
   <div class="menuright-socialmedia-search-container">
     <ul class="headerTextColor">

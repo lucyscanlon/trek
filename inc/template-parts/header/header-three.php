@@ -1,3 +1,12 @@
+<?php
+/*
+* The template for displaying the header if the second layout is chosen (chosen in the customiser)
+*
+* @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+*
+* @package Trek
+*/
+?>
 <div class="header-wrap">
   <!--  Displays Primary Menu  -->
   <div class="menuleft-menu-container Montserrat headerTextColor">

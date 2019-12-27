@@ -12,7 +12,7 @@
 
 ?>
 <!--  Displays featured image as background, if no featured image then a colour is displayed (customiser option)  -->
-<div class="imagepostlayout-post-container" <?php body_class( $class ); ?> style="<?php if ( has_post_thumbnail( get_the_ID() ) ) { ?> background:radial-gradient(circle, rgba(0,0,0,0.4 ) 20%, rgba(0,0,0,0) 92%), url('<?php echo $backgroundImg[0]; ?>'); background-size: cover; background-position: center center; <?php } else { ?> background-color: <?php echo get_theme_mod('no_featured_image_color_control', '#1d272e' ); ?>;  <?php } ?>">
+<div class="imagepostlayout-post-container" style="<?php if ( has_post_thumbnail( get_the_ID() ) ) { ?> background:radial-gradient(circle, rgba(0,0,0,0.4 ) 20%, rgba(0,0,0,0) 92%), url('<?php echo $backgroundImg[0]; ?>'); background-size: cover; background-position: center center; <?php } else { ?> background-color: <?php echo get_theme_mod('no_featured_image_color_control', '#1d272e' ); ?>;  <?php } ?>">
   <div class="imagepost-padding">
     <div class="imagepostlayout-title-container ReenieBeanie whitetext-hover-color">
       <a href="<?php the_permalink(); ?>"><h1><?php the_title(); ?></h1></a>

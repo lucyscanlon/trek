@@ -1,15 +1,11 @@
 <?php
 /*
-* This is the header for the Trek theme
+* The Header for the Trek theme
 *
-* This template appears on every page of the website and includes all the <head> section.
+* @link https://developer.wordpress.org/themes/basics/template-hierarchy/
 *
-*
-* @package TrekLucyIsobel
-*
-*
+* @package Trek
 */
-
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>

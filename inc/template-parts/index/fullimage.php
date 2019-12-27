@@ -1,15 +1,11 @@
 <?php
 /*
-* This is the WIDE POST LAYOUT TEMPLATE for the Trek theme
+* The template for displaying the index if the full image layout is chosen (chosen in the customiser)
 *
-* This template appears on the blog page for the posts preview if the wide post layout option is selected in the customizer
+* @link https://developer.wordpress.org/themes/basics/template-hierarchy/
 *
-*
-* @package TrekLucyIsobel
-*
-*
+* @package Trek
 */
-
 ?>
 <div class="widepostlayout-wholepost-container" <?php body_class( $class ); ?>>
   <div class="widepost-layout-featuredimage-container">

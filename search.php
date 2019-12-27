@@ -1,3 +1,12 @@
+<?php
+/*
+* The template for displaying search results
+*
+* @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
+*
+* @package Trek
+*/
+?>
 <?php get_header(); ?>
 <section class="featured-post-container">
   <!--  Fetches template for blog banner  -->

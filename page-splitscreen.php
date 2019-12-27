@@ -1,7 +1,6 @@
 <?php
 /*
 Template Name: Split Screen
-
 */
 ?>
 <?php get_header(); ?>

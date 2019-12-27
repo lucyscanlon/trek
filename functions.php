@@ -1,15 +1,11 @@
 <?php
 /*
-* This is the functions.php page for the Trek theme
+* Trek theme functions and definitions
 *
-* This page links together the functionality of the theme.
+* @link https://developer.wordpress.org/themes/basics/theme-functions/
 *
-*
-* @package TrekLucyIsobel
-*
-*
+* @package Trek
 */
-
 ?>
 <?php
 require get_template_directory() . '/inc/theme-support.php';

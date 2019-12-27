@@ -1,15 +1,11 @@
 <?php
 /*
-* This is the IMAGE POST LAYOUT TEMPLATE for the Trek theme
+* The template for displaying the Archive pages in the text over image layout (chosen in the customiser)
 *
-* This template appears on the blog page for the posts preview if the image post layout option is selected in the customizer
+* @link https://developer.wordpress.org/themes/basics/template-hierarchy/
 *
-*
-* @package TrekLucyIsobel
-*
-*
+* @package Trek
 */
-
 ?>
 <!--  Displays featured image as background, if no featured image then a colour is displayed (customiser option)  -->
 <div class="imagepostlayout-post-container" style="<?php if ( has_post_thumbnail( get_the_ID() ) ) { ?> background:radial-gradient(circle, rgba(0,0,0,0.4 ) 20%, rgba(0,0,0,0) 92%), url('<?php echo $backgroundImg[0]; ?>'); background-size: cover; background-position: center center; <?php } else { ?> background-color: <?php echo get_theme_mod('no_featured_image_color_control', '#1d272e' ); ?>;  <?php } ?>">

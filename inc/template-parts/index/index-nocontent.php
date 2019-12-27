@@ -1,4 +1,13 @@
 <?php
+/*
+* The template for displaying the index if there is no content to display
+*
+* @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+*
+* @package Trek
+*/
+?>
+<?php
   $newPostLink = esc_url( admin_url( 'post-new.php' ) );
 ?>
 <!--  Checks if the user can publish posts  -->

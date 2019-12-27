@@ -1,3 +1,13 @@
+<?php
+/*
+* The template for displaying the 404 pages (page not found)
+*
+* @link https://codex.wordpress.org/Creating_an_Error_404_Page
+*
+* @package Trek
+*/
+?>
+
 <?php get_header(); ?>
   <section class="featured-post-container">
     <!--  Fetches template for blog banner  -->

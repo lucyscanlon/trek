@@ -1,4 +1,13 @@
 <?php
+/*
+* The template for displaying comments
+*
+* @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+*
+* @package Trek
+*/
+?>
+<?php
 
 // If a password is required for a post and it has not been entered yet, this will stop comments section from opening.
 if( post_password_required() ){

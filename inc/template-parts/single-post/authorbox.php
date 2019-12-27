@@ -1,4 +1,13 @@
 <?php
+/*
+* The template for displaying the author information for single posts
+*
+* @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+*
+* @package Trek
+*/
+?>
+<?php
   $noAvatar = get_template_directory_uri() . '/img/noavatar.svg';
 ?>
 <div class="trek-singlepost-author-theme-whole-container">

@@ -1,16 +1,12 @@
 <?php
 /*
-* This is the sidebar template for the Trek theme
+* The default template for displaying the sidebar (the widget area)
 *
+* @link https://developer.wordpress.org/themes/basics/template-hierarchy/
 *
-*
-*
-* @package TrekLucyIsobel
-*
-*
-*/ ?>
-
-
+* @package Trek
+*/
+?>
 <?php
 if ( ! is_active_sidebar( 'trek-sidebar' ) ) {
   return;
