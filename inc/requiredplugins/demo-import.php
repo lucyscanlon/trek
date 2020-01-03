@@ -5,7 +5,7 @@ function trek_import_files() {
   array(
     'import_file_name' => 'Demo Demo Data',
     'categories' => array('New Category', 'Old category' ),
-    'local_import_file' => trailingslashit( get_template_directory() ) .'/inc/requiredplugins/democontent/theroadtripper.WordPress.2019-12-12.xml',
+    'local_import_file' => trailingslashit( get_template_directory() ) .'/inc/requiredplugins/democontent/theroadtripper.WordPress.2019-12-30.xml',
     'local_import_widget_file' => trailingslashit( get_template_directory() ) .'/inc/requiredplugins/democontent/www.lucyisobeltrekdemo.online-widgets.wie',
     'import_notice' => __('Click the button below to import the demo content. This may take a few minutes.', 'trek'),
   ),

@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-	<!-- generator="WordPress/5.3" created="2019-12-12 13:47" -->
+	<!-- generator="WordPress/5.3.2" created="2019-12-30 16:55" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>The Roadtripper</title>
 	<link>https://www.lucyisobeltrekdemo.online</link>
 	<description>A Demo of the trek wordpress theme</description>
-	<pubDate>Thu, 12 Dec 2019 13:47:51 +0000</pubDate>
+	<pubDate>Mon, 30 Dec 2019 16:55:41 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>https://www.lucyisobeltrekdemo.online</wp:base_site_url>
@@ -119,6 +119,11 @@
 		<wp:term_id>14</wp:term_id>
 		<wp:tag_slug><![CDATA[fresh]]></wp:tag_slug>
 		<wp:tag_name><![CDATA[fresh]]></wp:tag_name>
+	</wp:tag>
+		<wp:tag>
+		<wp:term_id>25</wp:term_id>
+		<wp:tag_slug><![CDATA[hobbies]]></wp:tag_slug>
+		<wp:tag_name><![CDATA[hobbies]]></wp:tag_name>
 	</wp:tag>
 		<wp:tag>
 		<wp:term_id>15</wp:term_id>
@@ -233,6 +238,13 @@
 		<wp:term_name><![CDATA[fresh]]></wp:term_name>
 	</wp:term>
 		<wp:term>
+		<wp:term_id><![CDATA[25]]></wp:term_id>
+		<wp:term_taxonomy><![CDATA[post_tag]]></wp:term_taxonomy>
+		<wp:term_slug><![CDATA[hobbies]]></wp:term_slug>
+		<wp:term_parent><![CDATA[]]></wp:term_parent>
+		<wp:term_name><![CDATA[hobbies]]></wp:term_name>
+	</wp:term>
+		<wp:term>
 		<wp:term_id><![CDATA[4]]></wp:term_id>
 		<wp:term_taxonomy><![CDATA[category]]></wp:term_taxonomy>
 		<wp:term_slug><![CDATA[lifestyle]]></wp:term_slug>
@@ -328,7 +340,15 @@
 	<wp:term><wp:term_id>23</wp:term_id><wp:term_taxonomy>nav_menu</wp:term_taxonomy><wp:term_slug><![CDATA[main-menu]]></wp:term_slug><wp:term_name><![CDATA[Main Menu]]></wp:term_name>
 </wp:term>
 
-	<generator>https://wordpress.org/?v=5.3</generator>
+	<generator>https://wordpress.org/?v=5.3.2</generator>
+
+<image>
+	<url>https://www.lucyisobeltrekdemo.online/wp-content/uploads/2019/12/cropped-smallerlogo-1-32x32.png</url>
+	<title>The Roadtripper</title>
+	<link>https://www.lucyisobeltrekdemo.online</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
 
 		<item>
 		<title>One Click Demo Import - log_file_2019-11-27__18-43-12</title>
@@ -578,61 +598,6 @@
 		</wp:postmeta>
 							</item>
 					<item>
-		<title></title>
-		<link>https://www.lucyisobeltrekdemo.online/2019/11/01/63/</link>
-		<pubDate>Fri, 01 Nov 2019 15:49:26 +0000</pubDate>
-		<dc:creator><![CDATA[lucyisobeltrekdemo_pwarxi]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/trek-vanlife/2019/11/01/63/</guid>
-		<description></description>
-		<content:encoded><![CDATA[ ]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>63</wp:post_id>
-		<wp:post_date><![CDATA[2019-11-01 15:49:26]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2019-11-01 15:49:26]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[63]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>5</wp:menu_order>
-		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-										<category domain="nav_menu" nicename="categories"><![CDATA[Categories]]></category>
-						<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key>
-		<wp:meta_value><![CDATA[taxonomy]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key>
-		<wp:meta_value><![CDATA[0]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
-		<wp:meta_value><![CDATA[7]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
-		<wp:meta_value><![CDATA[category]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key>
-		<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key>
-		<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
-		<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-					<item>
 		<title>One Click Demo Import - log_file_2019-11-27__18-44-21</title>
 		<link>https://www.lucyisobeltrekdemo.online/one-click-demo-import-log_file_2019-11-27__18-44-21/</link>
 		<pubDate>Wed, 27 Nov 2019 18:44:21 +0000</pubDate>
@@ -715,7 +680,7 @@
 							</item>
 					<item>
 		<title>laurine-bailly-qkMQ5N2d9aY-unsplash</title>
-		<link>https://www.lucyisobeltrekdemo.online/2019/11/01/our-essentials/laurine-bailly-qkmq5n2d9ay-unsplash/</link>
+		<link>https://www.lucyisobeltrekdemo.online/2019/12/30/our-essentials__trashed/laurine-bailly-qkmq5n2d9ay-unsplash/</link>
 		<pubDate>Wed, 27 Nov 2019 19:30:12 +0000</pubDate>
 		<dc:creator><![CDATA[lucyisobeltrekdemo_pwarxi]]></dc:creator>
 		<guid isPermaLink="false">https://www.lucyisobeltrekdemo.online/wp-content/uploads/2019/11/laurine-bailly-qkMQ5N2d9aY-unsplash.jpg</guid>
@@ -746,7 +711,7 @@
 							</item>
 					<item>
 		<title>jatniel-tunon-D4f5wkW9H9U-unsplash</title>
-		<link>https://www.lucyisobeltrekdemo.online/2019/11/01/what-happens-when-winter-strikes/jatniel-tunon-d4f5wkw9h9u-unsplash/</link>
+		<link>https://www.lucyisobeltrekdemo.online/2019/11/01/what-happens-when-winter-strikes__trashed/jatniel-tunon-d4f5wkw9h9u-unsplash/</link>
 		<pubDate>Wed, 27 Nov 2019 19:31:45 +0000</pubDate>
 		<dc:creator><![CDATA[lucyisobeltrekdemo_pwarxi]]></dc:creator>
 		<guid isPermaLink="false">https://www.lucyisobeltrekdemo.online/wp-content/uploads/2019/11/jatniel-tunon-D4f5wkW9H9U-unsplash.jpg</guid>
@@ -777,7 +742,7 @@
 							</item>
 					<item>
 		<title>jimmy-conover-J_XuXX9m0KM-unsplash</title>
-		<link>https://www.lucyisobeltrekdemo.online/2019/11/01/our-furry-travel-buddy/jimmy-conover-j_xuxx9m0km-unsplash/</link>
+		<link>https://www.lucyisobeltrekdemo.online/2019/11/01/our-furry-travel-buddy__trashed/jimmy-conover-j_xuxx9m0km-unsplash/</link>
 		<pubDate>Wed, 27 Nov 2019 19:33:10 +0000</pubDate>
 		<dc:creator><![CDATA[lucyisobeltrekdemo_pwarxi]]></dc:creator>
 		<guid isPermaLink="false">https://www.lucyisobeltrekdemo.online/wp-content/uploads/2019/11/jimmy-conover-J_XuXX9m0KM-unsplash.jpg</guid>
@@ -808,7 +773,7 @@
 							</item>
 					<item>
 		<title>brina-blum-LUfmqLfEAoE-unsplash</title>
-		<link>https://www.lucyisobeltrekdemo.online/2019/11/01/easy-meals-from-the-van/brina-blum-lufmqlfeaoe-unsplash/</link>
+		<link>https://www.lucyisobeltrekdemo.online/2019/11/01/easy-meals-from-the-van__trashed/brina-blum-lufmqlfeaoe-unsplash/</link>
 		<pubDate>Wed, 27 Nov 2019 19:35:03 +0000</pubDate>
 		<dc:creator><![CDATA[lucyisobeltrekdemo_pwarxi]]></dc:creator>
 		<guid isPermaLink="false">https://www.lucyisobeltrekdemo.online/wp-content/uploads/2019/11/brina-blum-LUfmqLfEAoE-unsplash.jpg</guid>
@@ -835,61 +800,6 @@
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
 		<wp:meta_value><![CDATA[a:6:{s:5:"width";i:2560;s:6:"height";i:1707;s:4:"file";s:50:"2019/11/brina-blum-LUfmqLfEAoE-unsplash-scaled.jpg";s:5:"sizes";a:6:{s:6:"medium";a:4:{s:4:"file";s:43:"brina-blum-LUfmqLfEAoE-unsplash-300x200.jpg";s:5:"width";i:300;s:6:"height";i:200;s:9:"mime-type";s:10:"image/jpeg";}s:5:"large";a:4:{s:4:"file";s:44:"brina-blum-LUfmqLfEAoE-unsplash-1024x683.jpg";s:5:"width";i:1024;s:6:"height";i:683;s:9:"mime-type";s:10:"image/jpeg";}s:9:"thumbnail";a:4:{s:4:"file";s:43:"brina-blum-LUfmqLfEAoE-unsplash-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:12:"medium_large";a:4:{s:4:"file";s:43:"brina-blum-LUfmqLfEAoE-unsplash-768x512.jpg";s:5:"width";i:768;s:6:"height";i:512;s:9:"mime-type";s:10:"image/jpeg";}s:9:"1536x1536";a:4:{s:4:"file";s:45:"brina-blum-LUfmqLfEAoE-unsplash-1536x1024.jpg";s:5:"width";i:1536;s:6:"height";i:1024;s:9:"mime-type";s:10:"image/jpeg";}s:9:"2048x2048";a:4:{s:4:"file";s:45:"brina-blum-LUfmqLfEAoE-unsplash-2048x1365.jpg";s:5:"width";i:2048;s:6:"height";i:1365;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}s:14:"original_image";s:35:"brina-blum-LUfmqLfEAoE-unsplash.jpg";}]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-					<item>
-		<title></title>
-		<link>https://www.lucyisobeltrekdemo.online/2019/11/27/90/</link>
-		<pubDate>Wed, 27 Nov 2019 19:43:48 +0000</pubDate>
-		<dc:creator><![CDATA[lucyisobeltrekdemo_pwarxi]]></dc:creator>
-		<guid isPermaLink="false">https://www.lucyisobeltrekdemo.online/?p=90</guid>
-		<description></description>
-		<content:encoded><![CDATA[ ]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>90</wp:post_id>
-		<wp:post_date><![CDATA[2019-11-27 19:43:48]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2019-11-27 19:43:48]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[90]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>2</wp:menu_order>
-		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-										<category domain="nav_menu" nicename="main-menu"><![CDATA[Main Menu]]></category>
-						<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key>
-		<wp:meta_value><![CDATA[post_type]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key>
-		<wp:meta_value><![CDATA[0]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
-		<wp:meta_value><![CDATA[12]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
-		<wp:meta_value><![CDATA[page]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key>
-		<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key>
-		<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
-		<wp:meta_value><![CDATA[]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 					<item>
@@ -1087,124 +997,65 @@
 		</wp:postmeta>
 							</item>
 					<item>
-		<title>Hello world!</title>
-		<link>https://www.lucyisobeltrekdemo.online/2019/11/23/hello-world__trashed-2/</link>
-		<pubDate>Sat, 23 Nov 2019 16:26:03 +0000</pubDate>
+		<title>One Click Demo Import - log_file_2019-12-12__17-18-25</title>
+		<link>https://www.lucyisobeltrekdemo.online/one-click-demo-import-log_file_2019-12-12__17-18-25/</link>
+		<pubDate>Thu, 12 Dec 2019 17:18:25 +0000</pubDate>
 		<dc:creator><![CDATA[lucyisobeltrekdemo_pwarxi]]></dc:creator>
-		<guid isPermaLink="false">https://www.lucyisobeltrekdemo.online/?p=1</guid>
+		<guid isPermaLink="false">https://www.lucyisobeltrekdemo.online/wp-content/uploads/2019/12/log_file_2019-12-12__17-18-25.txt</guid>
 		<description></description>
-		<content:encoded><![CDATA[<!-- wp:paragraph -->
-<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
-<!-- /wp:paragraph -->]]></content:encoded>
+		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1</wp:post_id>
-		<wp:post_date><![CDATA[2019-11-23 16:26:03]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2019-11-23 16:26:03]]></wp:post_date_gmt>
+		<wp:post_id>137</wp:post_id>
+		<wp:post_date><![CDATA[2019-12-12 17:18:25]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2019-12-12 17:18:25]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[hello-world__trashed-2]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[one-click-demo-import-log_file_2019-12-12__17-18-25]]></wp:post_name>
+		<wp:status><![CDATA[inherit]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-										<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
-						<wp:postmeta>
-		<wp:meta_key><![CDATA[trek_post_views]]></wp:meta_key>
-		<wp:meta_value><![CDATA[1]]></wp:meta_value>
+						<wp:attachment_url><![CDATA[https://www.lucyisobeltrekdemo.online/wp-content/uploads/2019/12/log_file_2019-12-12__17-18-25.txt]]></wp:attachment_url>
+											<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
+		<wp:meta_value><![CDATA[2019/12/log_file_2019-12-12__17-18-25.txt]]></wp:meta_value>
 		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-		<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-		<wp:meta_value><![CDATA[1574882845]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-		<wp:meta_value><![CDATA[hello-world]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_trash_meta_comments_status]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:1:{i:1;s:1:"1";}]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:comment>
-			<wp:comment_id>1</wp:comment_id>
-			<wp:comment_author><![CDATA[A WordPress Commenter]]></wp:comment_author>
-			<wp:comment_author_email><![CDATA[wapuu@wordpress.example]]></wp:comment_author_email>
-			<wp:comment_author_url>https://wordpress.org/</wp:comment_author_url>
-			<wp:comment_author_IP><![CDATA[]]></wp:comment_author_IP>
-			<wp:comment_date><![CDATA[2019-11-23 16:26:03]]></wp:comment_date>
-			<wp:comment_date_gmt><![CDATA[2019-11-23 16:26:03]]></wp:comment_date_gmt>
-			<wp:comment_content><![CDATA[Hi, this is a comment.
-To get started with moderating, editing, and deleting comments, please visit the Comments screen in the dashboard.
-Commenter avatars come from <a href="https://gravatar.com">Gravatar</a>.]]></wp:comment_content>
-			<wp:comment_approved><![CDATA[post-trashed]]></wp:comment_approved>
-			<wp:comment_type><![CDATA[]]></wp:comment_type>
-			<wp:comment_parent>0</wp:comment_parent>
-			<wp:comment_user_id>0</wp:comment_user_id>
-							</wp:comment>
-					</item>
+							</item>
 					<item>
-		<title>Sample Page</title>
-		<link>https://www.lucyisobeltrekdemo.online/sample-page__trashed/</link>
-		<pubDate>Sat, 23 Nov 2019 16:26:03 +0000</pubDate>
+		<title>cropped-smallerlogo-1.png</title>
+		<link>https://www.lucyisobeltrekdemo.online/cropped-smallerlogo-1-png/</link>
+		<pubDate>Thu, 12 Dec 2019 17:31:05 +0000</pubDate>
 		<dc:creator><![CDATA[lucyisobeltrekdemo_pwarxi]]></dc:creator>
-		<guid isPermaLink="false">https://www.lucyisobeltrekdemo.online/?page_id=2</guid>
+		<guid isPermaLink="false">https://www.lucyisobeltrekdemo.online/wp-content/uploads/2019/12/cropped-smallerlogo-1.png</guid>
 		<description></description>
-		<content:encoded><![CDATA[<!-- wp:paragraph -->
-<p>This is an example page. It's different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:quote -->
-<blockquote class="wp-block-quote"><p>Hi there! I'm a bike messenger by day, aspiring actor by night, and this is my website. I live in Los Angeles, have a great dog named Jack, and I like pi&#241;a coladas. (And gettin' caught in the rain.)</p></blockquote>
-<!-- /wp:quote -->
-
-<!-- wp:paragraph -->
-<p>...or something like this:</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:quote -->
-<blockquote class="wp-block-quote"><p>The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community.</p></blockquote>
-<!-- /wp:quote -->
-
-<!-- wp:paragraph -->
-<p>As a new WordPress user, you should go to <a href="https://www.lucyisobeltrekdemo.online/wp-admin/">your dashboard</a> to delete this page and create new pages for your content. Have fun!</p>
-<!-- /wp:paragraph -->]]></content:encoded>
+		<content:encoded><![CDATA[https://www.lucyisobeltrekdemo.online/wp-content/uploads/2019/12/cropped-smallerlogo-1.png]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>2</wp:post_id>
-		<wp:post_date><![CDATA[2019-11-23 16:26:03]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2019-11-23 16:26:03]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[sample-page__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
+		<wp:post_id>138</wp:post_id>
+		<wp:post_date><![CDATA[2019-12-12 17:31:05]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2019-12-12 17:31:05]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[cropped-smallerlogo-1-png]]></wp:post_name>
+		<wp:status><![CDATA[inherit]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-														<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-		<wp:meta_value><![CDATA[default]]></wp:meta_value>
+						<wp:attachment_url><![CDATA[https://www.lucyisobeltrekdemo.online/wp-content/uploads/2019/12/cropped-smallerlogo-1.png]]></wp:attachment_url>
+											<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
+		<wp:meta_value><![CDATA[2019/12/cropped-smallerlogo-1.png]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
-		<wp:meta_key><![CDATA[trek_post_views]]></wp:meta_key>
-		<wp:meta_value><![CDATA[2]]></wp:meta_value>
+		<wp:meta_key><![CDATA[_wp_attachment_context]]></wp:meta_key>
+		<wp:meta_value><![CDATA[site-icon]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-		<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-		<wp:meta_value><![CDATA[1574882810]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-		<wp:meta_value><![CDATA[sample-page]]></wp:meta_value>
+		<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:5:{s:5:"width";i:512;s:6:"height";i:512;s:4:"file";s:33:"2019/12/cropped-smallerlogo-1.png";s:5:"sizes";a:6:{s:6:"medium";a:4:{s:4:"file";s:33:"cropped-smallerlogo-1-300x300.png";s:5:"width";i:300;s:6:"height";i:300;s:9:"mime-type";s:9:"image/png";}s:9:"thumbnail";a:4:{s:4:"file";s:33:"cropped-smallerlogo-1-150x150.png";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";}s:13:"site_icon-270";a:4:{s:4:"file";s:33:"cropped-smallerlogo-1-270x270.png";s:5:"width";i:270;s:6:"height";i:270;s:9:"mime-type";s:9:"image/png";}s:13:"site_icon-192";a:4:{s:4:"file";s:33:"cropped-smallerlogo-1-192x192.png";s:5:"width";i:192;s:6:"height";i:192;s:9:"mime-type";s:9:"image/png";}s:13:"site_icon-180";a:4:{s:4:"file";s:33:"cropped-smallerlogo-1-180x180.png";s:5:"width";i:180;s:6:"height";i:180;s:9:"mime-type";s:9:"image/png";}s:12:"site_icon-32";a:4:{s:4:"file";s:31:"cropped-smallerlogo-1-32x32.png";s:5:"width";i:32;s:6:"height";i:32;s:9:"mime-type";s:9:"image/png";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 					<item>
@@ -1332,55 +1183,11 @@ Commenter avatars come from <a href="https://gravatar.com">Gravatar</a>.]]></wp:
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[trek_post_views]]></wp:meta_key>
-		<wp:meta_value><![CDATA[6]]></wp:meta_value>
+		<wp:meta_value><![CDATA[9]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_wp_suggested_privacy_policy_content]]></wp:meta_key>
 		<wp:meta_value><![CDATA[a:3:{s:11:"plugin_name";s:9:"WordPress";s:11:"policy_text";s:11796:"<div class="wp-suggested-text"><h2>Who we are</h2><p class="privacy-policy-tutorial">In this section you should note your site URL, as well as the name of the company, organization, or individual behind it, and some accurate contact information.</p><p class="privacy-policy-tutorial">The amount of information you may be required to show will vary depending on your local or national business regulations. You may, for example, be required to display a physical address, a registered address, or your company registration number.</p><p><strong class="privacy-policy-tutorial">Suggested text: </strong>Our website address is: https://www.lucyisobeltrekdemo.online.</p><h2>What personal data we collect and why we collect it</h2><p class="privacy-policy-tutorial">In this section you should note what personal data you collect from users and site visitors. This may include personal data, such as name, email address, personal account preferences; transactional data, such as purchase information; and technical data, such as information about cookies.</p><p class="privacy-policy-tutorial">You should also note any collection and retention of sensitive personal data, such as data concerning health.</p><p class="privacy-policy-tutorial">In addition to listing what personal data you collect, you need to note why you collect it. These explanations must note either the legal basis for your data collection and retention or the active consent the user has given.</p><p class="privacy-policy-tutorial">Personal data is not just created by a user&#8217;s interactions with your site. Personal data is also generated from technical processes such as contact forms, comments, cookies, analytics, and third party embeds.</p><p class="privacy-policy-tutorial">By default WordPress does not collect any personal data about visitors, and only collects the data shown on the User Profile screen from registered users. However some of your plugins may collect personal data. You should add the relevant information below.</p><h3>Comments</h3><p class="privacy-policy-tutorial">In this subsection you should note what information is captured through comments. We have noted the data which WordPress collects by default.</p><p><strong class="privacy-policy-tutorial">Suggested text: </strong>When visitors leave comments on the site we collect the data shown in the comments form, and also the visitor&#8217;s IP address and browser user agent string to help spam detection.</p><p>An anonymized string created from your email address (also called a hash) may be provided to the Gravatar service to see if you are using it. The Gravatar service privacy policy is available here: https://automattic.com/privacy/. After approval of your comment, your profile picture is visible to the public in the context of your comment.</p><h3>Media</h3><p class="privacy-policy-tutorial">In this subsection you should note what information may be disclosed by users who can upload media files. All uploaded files are usually publicly accessible.</p><p><strong class="privacy-policy-tutorial">Suggested text: </strong>If you upload images to the website, you should avoid uploading images with embedded location data (EXIF GPS) included. Visitors to the website can download and extract any location data from images on the website.</p><h3>Contact forms</h3><p class="privacy-policy-tutorial">By default, WordPress does not include a contact form. If you use a contact form plugin, use this subsection to note what personal data is captured when someone submits a contact form, and how long you keep it. For example, you may note that you keep contact form submissions for a certain period for customer service purposes, but you do not use the information submitted through them for marketing purposes.</p><h3>Cookies</h3><p class="privacy-policy-tutorial">In this subsection you should list the cookies your web site uses, including those set by your plugins, social media, and analytics. We have provided the cookies which WordPress installs by default.</p><p><strong class="privacy-policy-tutorial">Suggested text: </strong>If you leave a comment on our site you may opt-in to saving your name, email address and website in cookies. These are for your convenience so that you do not have to fill in your details again when you leave another comment. These cookies will last for one year.</p><p>If you visit our login page, we will set a temporary cookie to determine if your browser accepts cookies. This cookie contains no personal data and is discarded when you close your browser.</p><p>When you log in, we will also set up several cookies to save your login information and your screen display choices. Login cookies last for two days, and screen options cookies last for a year. If you select &quot;Remember Me&quot;, your login will persist for two weeks. If you log out of your account, the login cookies will be removed.</p><p>If you edit or publish an article, an additional cookie will be saved in your browser. This cookie includes no personal data and simply indicates the post ID of the article you just edited. It expires after 1 day.</p><h3>Embedded content from other websites</h3><p><strong class="privacy-policy-tutorial">Suggested text: </strong>Articles on this site may include embedded content (e.g. videos, images, articles, etc.). Embedded content from other websites behaves in the exact same way as if the visitor has visited the other website.</p><p>These websites may collect data about you, use cookies, embed additional third-party tracking, and monitor your interaction with that embedded content, including tracking your interaction with the embedded content if you have an account and are logged in to that website.</p><h3>Analytics</h3><p class="privacy-policy-tutorial">In this subsection you should note what analytics package you use, how users can opt out of analytics tracking, and a link to your analytics provider&#8217;s privacy policy, if any.</p><p class="privacy-policy-tutorial">By default WordPress does not collect any analytics data. However, many web hosting accounts collect some anonymous analytics data. You may also have installed a WordPress plugin that provides analytics services. In that case, add information from that plugin here.</p><h2>Who we share your data with</h2><p class="privacy-policy-tutorial">In this section you should name and list all third party providers with whom you share site data, including partners, cloud-based services, payment processors, and third party service providers, and note what data you share with them and why. Link to their own privacy policies if possible.</p><p class="privacy-policy-tutorial">By default WordPress does not share any personal data with anyone.</p><h2>How long we retain your data</h2><p class="privacy-policy-tutorial">In this section you should explain how long you retain personal data collected or processed by the web site. While it is your responsibility to come up with the schedule of how long you keep each dataset for and why you keep it, that information does need to be listed here. For example, you may want to say that you keep contact form entries for six months, analytics records for a year, and customer purchase records for ten years.</p><p><strong class="privacy-policy-tutorial">Suggested text: </strong>If you leave a comment, the comment and its metadata are retained indefinitely. This is so we can recognize and approve any follow-up comments automatically instead of holding them in a moderation queue.</p><p>For users that register on our website (if any), we also store the personal information they provide in their user profile. All users can see, edit, or delete their personal information at any time (except they cannot change their username). Website administrators can also see and edit that information.</p><h2>What rights you have over your data</h2><p class="privacy-policy-tutorial">In this section you should explain what rights your users have over their data and how they can invoke those rights.</p><p><strong class="privacy-policy-tutorial">Suggested text: </strong>If you have an account on this site, or have left comments, you can request to receive an exported file of the personal data we hold about you, including any data you have provided to us. You can also request that we erase any personal data we hold about you. This does not include any data we are obliged to keep for administrative, legal, or security purposes.</p><h2>Where we send your data</h2><p class="privacy-policy-tutorial">In this section you should list all transfers of your site data outside the European Union and describe the means by which that data is safeguarded to European data protection standards. This could include your web hosting, cloud storage, or other third party services.</p><p class="privacy-policy-tutorial">European data protection law requires data about European residents which is transferred outside the European Union to be safeguarded to the same standards as if the data was in Europe. So in addition to listing where data goes, you should describe how you ensure that these standards are met either by yourself or by your third party providers, whether that is through an agreement such as Privacy Shield, model clauses in your contracts, or binding corporate rules.</p><p><strong class="privacy-policy-tutorial">Suggested text: </strong>Visitor comments may be checked through an automated spam detection service.</p><h2>Your contact information</h2><p class="privacy-policy-tutorial">In this section you should provide a contact method for privacy-specific concerns. If you are required to have a Data Protection Officer, list their name and full contact details here as well.</p><h2>Additional information</h2><p class="privacy-policy-tutorial">If you use your site for commercial purposes and you engage in more complex collection or processing of personal data, you should note the following information in your privacy policy in addition to the information we have already discussed.</p><h3>How we protect your data</h3><p class="privacy-policy-tutorial">In this section you should explain what measures you have taken to protect your users&#8217; data. This could include technical measures such as encryption; security measures such as two factor authentication; and measures such as staff training in data protection. If you have carried out a Privacy Impact Assessment, you can mention it here too.</p><h3>What data breach procedures we have in place</h3><p class="privacy-policy-tutorial">In this section you should explain what procedures you have in place to deal with data breaches, either potential or real, such as internal reporting systems, contact mechanisms, or bug bounties.</p><h3>What third parties we receive data from</h3><p class="privacy-policy-tutorial">If your web site receives data about users from third parties, including advertisers, this information must be included within the section of your privacy policy dealing with third party data.</p><h3>What automated decision making and/or profiling we do with user data</h3><p class="privacy-policy-tutorial">If your web site provides a service which includes automated decision making - for example, allowing customers to apply for credit, or aggregating their data into an advertising profile - you must note that this is taking place, and include information about how that information is used, what decisions are made with that aggregated data, and what rights users have over decisions made without human intervention.</p><h3>Industry regulatory disclosure requirements</h3><p class="privacy-policy-tutorial">If you are a member of a regulated industry, or if you are subject to additional privacy laws, you may be required to disclose that information here.</p></div>";s:5:"added";i:1574882538;}]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-					<item>
-		<title>Attribution</title>
-		<link>https://www.lucyisobeltrekdemo.online/attribution__trashed/</link>
-		<pubDate>Sat, 23 Nov 2019 16:51:06 +0000</pubDate>
-		<dc:creator><![CDATA[lucyisobeltrekdemo_pwarxi]]></dc:creator>
-		<guid isPermaLink="false">https://www.lucyisobeltrekdemo.online/attribution/</guid>
-		<description></description>
-		<content:encoded><![CDATA[
-<p>Coming soon.</p>
-]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>5</wp:post_id>
-		<wp:post_date><![CDATA[2019-11-23 16:51:06]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2019-11-23 16:51:06]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[attribution__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-		<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[trek_post_views]]></wp:meta_key>
-		<wp:meta_value><![CDATA[4]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-		<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-		<wp:meta_value><![CDATA[1574882439]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-		<wp:meta_value><![CDATA[attribution]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 					<item>
@@ -1429,7 +1236,7 @@ Commenter avatars come from <a href="https://gravatar.com">Gravatar</a>.]]></wp:
 														</item>
 					<item>
 		<title>Easy Meals from the Van</title>
-		<link>https://www.lucyisobeltrekdemo.online/2019/11/01/easy-meals-from-the-van/</link>
+		<link>https://www.lucyisobeltrekdemo.online/2019/11/01/easy-meals-from-the-van__trashed/</link>
 		<pubDate>Fri, 01 Nov 2019 14:54:08 +0000</pubDate>
 		<dc:creator><![CDATA[lucyisobeltrekdemo_pwarxi]]></dc:creator>
 		<guid isPermaLink="false">http://localhost:8888/trek-vanlife/?p=25</guid>
@@ -1451,8 +1258,8 @@ Commenter avatars come from <a href="https://gravatar.com">Gravatar</a>.]]></wp:
 		<wp:post_date_gmt><![CDATA[2019-11-01 14:54:08]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[open]]></wp:comment_status>
 		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[easy-meals-from-the-van]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[easy-meals-from-the-van__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type><![CDATA[post]]></wp:post_type>
@@ -1468,12 +1275,24 @@ Commenter avatars come from <a href="https://gravatar.com">Gravatar</a>.]]></wp:
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[trek_post_views]]></wp:meta_key>
-		<wp:meta_value><![CDATA[14]]></wp:meta_value>
+		<wp:meta_value><![CDATA[18]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+		<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1577724468]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+		<wp:meta_value><![CDATA[easy-meals-from-the-van]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 					<item>
 		<title>My furry travel buddy</title>
-		<link>https://www.lucyisobeltrekdemo.online/2019/11/01/our-furry-travel-buddy/</link>
+		<link>https://www.lucyisobeltrekdemo.online/2019/11/01/our-furry-travel-buddy__trashed/</link>
 		<pubDate>Fri, 01 Nov 2019 15:02:41 +0000</pubDate>
 		<dc:creator><![CDATA[lucyisobeltrekdemo_pwarxi]]></dc:creator>
 		<guid isPermaLink="false">http://localhost:8888/trek-vanlife/?p=29</guid>
@@ -1491,8 +1310,8 @@ Commenter avatars come from <a href="https://gravatar.com">Gravatar</a>.]]></wp:
 		<wp:post_date_gmt><![CDATA[2019-11-01 15:02:41]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[open]]></wp:comment_status>
 		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[our-furry-travel-buddy]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[our-furry-travel-buddy__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type><![CDATA[post]]></wp:post_type>
@@ -1509,7 +1328,19 @@ Commenter avatars come from <a href="https://gravatar.com">Gravatar</a>.]]></wp:
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[trek_post_views]]></wp:meta_key>
-		<wp:meta_value><![CDATA[8]]></wp:meta_value>
+		<wp:meta_value><![CDATA[10]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+		<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1577724517]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+		<wp:meta_value><![CDATA[our-furry-travel-buddy]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 					<item>
@@ -1554,7 +1385,7 @@ Commenter avatars come from <a href="https://gravatar.com">Gravatar</a>.]]></wp:
 							</item>
 					<item>
 		<title>Exciting News</title>
-		<link>https://www.lucyisobeltrekdemo.online/2019/11/01/exciting-news/</link>
+		<link>https://www.lucyisobeltrekdemo.online/2019/11/01/exciting-news__trashed/</link>
 		<pubDate>Fri, 01 Nov 2019 15:12:53 +0000</pubDate>
 		<dc:creator><![CDATA[lucyisobeltrekdemo_pwarxi]]></dc:creator>
 		<guid isPermaLink="false">http://localhost:8888/trek-vanlife/?p=45</guid>
@@ -1576,8 +1407,8 @@ Commenter avatars come from <a href="https://gravatar.com">Gravatar</a>.]]></wp:
 		<wp:post_date_gmt><![CDATA[2019-11-01 15:12:53]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[open]]></wp:comment_status>
 		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[exciting-news]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[exciting-news__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type><![CDATA[post]]></wp:post_type>
@@ -1588,7 +1419,19 @@ Commenter avatars come from <a href="https://gravatar.com">Gravatar</a>.]]></wp:
 		<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
 						<wp:postmeta>
 		<wp:meta_key><![CDATA[trek_post_views]]></wp:meta_key>
-		<wp:meta_value><![CDATA[8]]></wp:meta_value>
+		<wp:meta_value><![CDATA[10]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+		<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1577724569]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+		<wp:meta_value><![CDATA[exciting-news]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 					<item>
@@ -1628,178 +1471,12 @@ Commenter avatars come from <a href="https://gravatar.com">Gravatar</a>.]]></wp:
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[trek_post_views]]></wp:meta_key>
-		<wp:meta_value><![CDATA[29]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-					<item>
-		<title>Sample Page</title>
-		<link>https://www.lucyisobeltrekdemo.online/sample-page-2__trashed/</link>
-		<pubDate>Fri, 01 Nov 2019 14:25:41 +0000</pubDate>
-		<dc:creator><![CDATA[lucyisobeltrekdemo_pwarxi]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/trek-vanlife/?page_id=2</guid>
-		<description></description>
-		<content:encoded><![CDATA[<!-- wp:paragraph -->
-<p>This is an example page. It's different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:quote -->
-<blockquote class="wp-block-quote"><p>Hi there! I'm a bike messenger by day, aspiring actor by night, and this is my website. I live in Los Angeles, have a great dog named Jack, and I like pi&#241;a coladas. (And gettin' caught in the rain.)</p></blockquote>
-<!-- /wp:quote -->
-
-<!-- wp:paragraph -->
-<p>...or something like this:</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:quote -->
-<blockquote class="wp-block-quote"><p>The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community.</p></blockquote>
-<!-- /wp:quote -->
-
-<!-- wp:paragraph -->
-<p>As a new WordPress user, you should go to <a href="http://localhost:8888/trek-vanlife/wp-admin/">your dashboard</a> to delete this page and create new pages for your content. Have fun!</p>
-<!-- /wp:paragraph -->]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>55</wp:post_id>
-		<wp:post_date><![CDATA[2019-11-01 14:25:41]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2019-11-01 14:25:41]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[sample-page-2__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-		<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-		<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-		<wp:meta_value><![CDATA[1574882813]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-		<wp:meta_value><![CDATA[sample-page-2]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-					<item>
-		<title>Privacy Policy</title>
-		<link>https://www.lucyisobeltrekdemo.online/privacy-policy__trashed/</link>
-		<pubDate>Fri, 01 Nov 2019 14:25:41 +0000</pubDate>
-		<dc:creator><![CDATA[lucyisobeltrekdemo_pwarxi]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/trek-vanlife/?page_id=3</guid>
-		<description></description>
-		<content:encoded><![CDATA[<!-- wp:heading --><h2>Who we are</h2><!-- /wp:heading --><!-- wp:paragraph --><p>Our website address is: http://localhost:8888/trek-vanlife.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>What personal data we collect and why we collect it</h2><!-- /wp:heading --><!-- wp:heading {"level":3} --><h3>Comments</h3><!-- /wp:heading --><!-- wp:paragraph --><p>When visitors leave comments on the site we collect the data shown in the comments form, and also the visitor&#8217;s IP address and browser user agent string to help spam detection.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>An anonymized string created from your email address (also called a hash) may be provided to the Gravatar service to see if you are using it. The Gravatar service privacy policy is available here: https://automattic.com/privacy/. After approval of your comment, your profile picture is visible to the public in the context of your comment.</p><!-- /wp:paragraph --><!-- wp:heading {"level":3} --><h3>Media</h3><!-- /wp:heading --><!-- wp:paragraph --><p>If you upload images to the website, you should avoid uploading images with embedded location data (EXIF GPS) included. Visitors to the website can download and extract any location data from images on the website.</p><!-- /wp:paragraph --><!-- wp:heading {"level":3} --><h3>Contact forms</h3><!-- /wp:heading --><!-- wp:heading {"level":3} --><h3>Cookies</h3><!-- /wp:heading --><!-- wp:paragraph --><p>If you leave a comment on our site you may opt-in to saving your name, email address and website in cookies. These are for your convenience so that you do not have to fill in your details again when you leave another comment. These cookies will last for one year.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>If you visit our login page, we will set a temporary cookie to determine if your browser accepts cookies. This cookie contains no personal data and is discarded when you close your browser.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>When you log in, we will also set up several cookies to save your login information and your screen display choices. Login cookies last for two days, and screen options cookies last for a year. If you select &quot;Remember Me&quot;, your login will persist for two weeks. If you log out of your account, the login cookies will be removed.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>If you edit or publish an article, an additional cookie will be saved in your browser. This cookie includes no personal data and simply indicates the post ID of the article you just edited. It expires after 1 day.</p><!-- /wp:paragraph --><!-- wp:heading {"level":3} --><h3>Embedded content from other websites</h3><!-- /wp:heading --><!-- wp:paragraph --><p>Articles on this site may include embedded content (e.g. videos, images, articles, etc.). Embedded content from other websites behaves in the exact same way as if the visitor has visited the other website.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>These websites may collect data about you, use cookies, embed additional third-party tracking, and monitor your interaction with that embedded content, including tracking your interaction with the embedded content if you have an account and are logged in to that website.</p><!-- /wp:paragraph --><!-- wp:heading {"level":3} --><h3>Analytics</h3><!-- /wp:heading --><!-- wp:heading --><h2>Who we share your data with</h2><!-- /wp:heading --><!-- wp:heading --><h2>How long we retain your data</h2><!-- /wp:heading --><!-- wp:paragraph --><p>If you leave a comment, the comment and its metadata are retained indefinitely. This is so we can recognize and approve any follow-up comments automatically instead of holding them in a moderation queue.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>For users that register on our website (if any), we also store the personal information they provide in their user profile. All users can see, edit, or delete their personal information at any time (except they cannot change their username). Website administrators can also see and edit that information.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>What rights you have over your data</h2><!-- /wp:heading --><!-- wp:paragraph --><p>If you have an account on this site, or have left comments, you can request to receive an exported file of the personal data we hold about you, including any data you have provided to us. You can also request that we erase any personal data we hold about you. This does not include any data we are obliged to keep for administrative, legal, or security purposes.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Where we send your data</h2><!-- /wp:heading --><!-- wp:paragraph --><p>Visitor comments may be checked through an automated spam detection service.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Your contact information</h2><!-- /wp:heading --><!-- wp:heading --><h2>Additional information</h2><!-- /wp:heading --><!-- wp:heading {"level":3} --><h3>How we protect your data</h3><!-- /wp:heading --><!-- wp:heading {"level":3} --><h3>What data breach procedures we have in place</h3><!-- /wp:heading --><!-- wp:heading {"level":3} --><h3>What third parties we receive data from</h3><!-- /wp:heading --><!-- wp:heading {"level":3} --><h3>What automated decision making and/or profiling we do with user data</h3><!-- /wp:heading --><!-- wp:heading {"level":3} --><h3>Industry regulatory disclosure requirements</h3><!-- /wp:heading -->]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>56</wp:post_id>
-		<wp:post_date><![CDATA[2019-11-01 14:25:41]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2019-11-01 14:25:41]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[privacy-policy__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-		<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-		<wp:meta_value><![CDATA[draft]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-		<wp:meta_value><![CDATA[1574882804]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-		<wp:meta_value><![CDATA[privacy-policy]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-					<item>
-		<title>home</title>
-		<link>https://www.lucyisobeltrekdemo.online/home-2__trashed/</link>
-		<pubDate>Fri, 01 Nov 2019 14:32:39 +0000</pubDate>
-		<dc:creator><![CDATA[lucyisobeltrekdemo_pwarxi]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/trek-vanlife/?page_id=11</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>57</wp:post_id>
-		<wp:post_date><![CDATA[2019-11-01 14:32:39]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2019-11-01 14:32:39]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[home-2__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-		<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-		<wp:meta_value><![CDATA[1574882445]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-		<wp:meta_value><![CDATA[home-2]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-					<item>
-		<title>blog</title>
-		<link>https://www.lucyisobeltrekdemo.online/blog-2__trashed/</link>
-		<pubDate>Fri, 01 Nov 2019 14:32:46 +0000</pubDate>
-		<dc:creator><![CDATA[lucyisobeltrekdemo_pwarxi]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/trek-vanlife/?page_id=13</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>58</wp:post_id>
-		<wp:post_date><![CDATA[2019-11-01 14:32:46]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2019-11-01 14:32:46]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[blog-2__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														<wp:postmeta>
-		<wp:meta_key><![CDATA[trek_post_views]]></wp:meta_key>
-		<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-		<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-		<wp:meta_value><![CDATA[1574882442]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-		<wp:meta_value><![CDATA[blog-2]]></wp:meta_value>
+		<wp:meta_value><![CDATA[35]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 					<item>
 		<title>how I edit my photos</title>
-		<link>https://www.lucyisobeltrekdemo.online/2019/11/01/what-happens-when-winter-strikes/</link>
+		<link>https://www.lucyisobeltrekdemo.online/2019/11/01/what-happens-when-winter-strikes__trashed/</link>
 		<pubDate>Fri, 01 Nov 2019 15:23:40 +0000</pubDate>
 		<dc:creator><![CDATA[lucyisobeltrekdemo_pwarxi]]></dc:creator>
 		<guid isPermaLink="false">http://localhost:8888/trek-vanlife/?p=55</guid>
@@ -1833,8 +1510,8 @@ Commenter avatars come from <a href="https://gravatar.com">Gravatar</a>.]]></wp:
 		<wp:post_date_gmt><![CDATA[2019-11-01 15:23:40]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[open]]></wp:comment_status>
 		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[what-happens-when-winter-strikes]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[what-happens-when-winter-strikes__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type><![CDATA[post]]></wp:post_type>
@@ -1851,13 +1528,80 @@ Commenter avatars come from <a href="https://gravatar.com">Gravatar</a>.]]></wp:
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[trek_post_views]]></wp:meta_key>
-		<wp:meta_value><![CDATA[44]]></wp:meta_value>
+		<wp:meta_value><![CDATA[49]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+		<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1577724605]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+		<wp:meta_value><![CDATA[what-happens-when-winter-strikes]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+					<item>
+		<title></title>
+		<link>https://www.lucyisobeltrekdemo.online/2019/11/01/63/</link>
+		<pubDate>Fri, 01 Nov 2019 15:49:26 +0000</pubDate>
+		<dc:creator><![CDATA[lucyisobeltrekdemo_pwarxi]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:8888/trek-vanlife/2019/11/01/63/</guid>
+		<description></description>
+		<content:encoded><![CDATA[ ]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>63</wp:post_id>
+		<wp:post_date><![CDATA[2019-11-01 15:49:26]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2019-11-01 15:49:26]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[63]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>5</wp:menu_order>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+										<category domain="nav_menu" nicename="categories"><![CDATA[Categories]]></category>
+						<wp:postmeta>
+		<wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key>
+		<wp:meta_value><![CDATA[taxonomy]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key>
+		<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
+		<wp:meta_value><![CDATA[7]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
+		<wp:meta_value><![CDATA[category]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 					<item>
 		<title>My essentials</title>
-		<link>https://www.lucyisobeltrekdemo.online/2019/11/01/our-essentials/</link>
-		<pubDate>Fri, 01 Nov 2019 15:52:11 +0000</pubDate>
+		<link>https://www.lucyisobeltrekdemo.online/2019/12/30/our-essentials__trashed/</link>
+		<pubDate>Mon, 30 Dec 2019 15:52:00 +0000</pubDate>
 		<dc:creator><![CDATA[lucyisobeltrekdemo_pwarxi]]></dc:creator>
 		<guid isPermaLink="false">http://localhost:8888/trek-vanlife/?p=64</guid>
 		<description></description>
@@ -1916,12 +1660,12 @@ https://www.youtube.com/watch?v=dQw4w9WgXcQ
 <!-- /wp:paragraph -->]]></content:encoded>
 		<excerpt:encoded><![CDATA[Etiam vitae mollis ex, sit amet fermentum metus. Ut sit amet est posuere, bibendum erat ac, egestas magna. Donec metus purus, congue sit amet molestie id, venenatis vel diam. In eleifend tortor id egestas commodo. Sed et efficitur magna. Etiam ante lorem, varius id neque nec, porta convallis ante. Donec quis urna fermentum urna venenatis viverra posuere nec magna.]]></excerpt:encoded>
 		<wp:post_id>64</wp:post_id>
-		<wp:post_date><![CDATA[2019-11-01 15:52:11]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2019-11-01 15:52:11]]></wp:post_date_gmt>
+		<wp:post_date><![CDATA[2019-12-30 15:52:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2019-12-30 15:52:00]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[open]]></wp:comment_status>
 		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[our-essentials]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[our-essentials__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type><![CDATA[post]]></wp:post_type>
@@ -1939,7 +1683,7 @@ https://www.youtube.com/watch?v=dQw4w9WgXcQ
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[trek_post_views]]></wp:meta_key>
-		<wp:meta_value><![CDATA[124]]></wp:meta_value>
+		<wp:meta_value><![CDATA[134]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_wxr_import_has_attachment_refs]]></wp:meta_key>
@@ -1953,6 +1697,26 @@ https://www.youtube.com/watch?v=dQw4w9WgXcQ
 		<wp:meta_key><![CDATA[_oembed_time_7f466c039531b7f2026582f3a8786163]]></wp:meta_key>
 		<wp:meta_value><![CDATA[1576156483]]></wp:meta_value>
 		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_old_date]]></wp:meta_key>
+		<wp:meta_value><![CDATA[2019-11-01]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+		<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1577724387]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+		<wp:meta_value><![CDATA[our-essentials]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_trash_meta_comments_status]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:5:{i:3;s:1:"1";i:4;s:1:"1";i:5;s:1:"1";i:6;s:1:"1";i:7;s:1:"1";}]]></wp:meta_value>
+		</wp:postmeta>
 							<wp:comment>
 			<wp:comment_id>3</wp:comment_id>
 			<wp:comment_author><![CDATA[Claire]]></wp:comment_author>
@@ -1962,7 +1726,7 @@ https://www.youtube.com/watch?v=dQw4w9WgXcQ
 			<wp:comment_date><![CDATA[2019-11-01 16:18:40]]></wp:comment_date>
 			<wp:comment_date_gmt><![CDATA[2019-11-01 16:18:40]]></wp:comment_date_gmt>
 			<wp:comment_content><![CDATA[Nulla tincidunt tortor ac lacinia tristique!]]></wp:comment_content>
-			<wp:comment_approved><![CDATA[1]]></wp:comment_approved>
+			<wp:comment_approved><![CDATA[post-trashed]]></wp:comment_approved>
 			<wp:comment_type><![CDATA[]]></wp:comment_type>
 			<wp:comment_parent>0</wp:comment_parent>
 			<wp:comment_user_id>0</wp:comment_user_id>
@@ -1976,7 +1740,7 @@ https://www.youtube.com/watch?v=dQw4w9WgXcQ
 			<wp:comment_date><![CDATA[2019-11-01 16:19:22]]></wp:comment_date>
 			<wp:comment_date_gmt><![CDATA[2019-11-01 16:19:22]]></wp:comment_date_gmt>
 			<wp:comment_content><![CDATA[Etiam ante lorem, varius id neque nec, porta convallis ante. Donec quis urna fermentum urna venenatis viverra posuere nec magna. Etiam ante lorem, varius id neque nec, porta convallis ante. Donec quis urna fermentum urna venenatis viverra posuere nec magna.]]></wp:comment_content>
-			<wp:comment_approved><![CDATA[1]]></wp:comment_approved>
+			<wp:comment_approved><![CDATA[post-trashed]]></wp:comment_approved>
 			<wp:comment_type><![CDATA[]]></wp:comment_type>
 			<wp:comment_parent>0</wp:comment_parent>
 			<wp:comment_user_id>0</wp:comment_user_id>
@@ -1990,7 +1754,7 @@ https://www.youtube.com/watch?v=dQw4w9WgXcQ
 			<wp:comment_date><![CDATA[2019-11-01 16:20:17]]></wp:comment_date>
 			<wp:comment_date_gmt><![CDATA[2019-11-01 16:20:17]]></wp:comment_date_gmt>
 			<wp:comment_content><![CDATA[Donec quis urna fermentum urna venenatis viverra posuere nec magna!! xxx]]></wp:comment_content>
-			<wp:comment_approved><![CDATA[1]]></wp:comment_approved>
+			<wp:comment_approved><![CDATA[post-trashed]]></wp:comment_approved>
 			<wp:comment_type><![CDATA[]]></wp:comment_type>
 			<wp:comment_parent>3</wp:comment_parent>
 			<wp:comment_user_id>0</wp:comment_user_id>
@@ -2008,7 +1772,7 @@ https://www.youtube.com/watch?v=dQw4w9WgXcQ
 			<wp:comment_date><![CDATA[2019-11-01 16:20:51]]></wp:comment_date>
 			<wp:comment_date_gmt><![CDATA[2019-11-01 16:20:51]]></wp:comment_date_gmt>
 			<wp:comment_content><![CDATA[Donec quis urna fermentum urna venenatis viverra posuere nec magna. Donec quis urna fermentum urna venenatis viverra posuere nec magna. xx]]></wp:comment_content>
-			<wp:comment_approved><![CDATA[1]]></wp:comment_approved>
+			<wp:comment_approved><![CDATA[post-trashed]]></wp:comment_approved>
 			<wp:comment_type><![CDATA[]]></wp:comment_type>
 			<wp:comment_parent>5</wp:comment_parent>
 			<wp:comment_user_id>0</wp:comment_user_id>
@@ -2022,7 +1786,7 @@ https://www.youtube.com/watch?v=dQw4w9WgXcQ
 			<wp:comment_date><![CDATA[2019-11-01 16:21:23]]></wp:comment_date>
 			<wp:comment_date_gmt><![CDATA[2019-11-01 16:21:23]]></wp:comment_date_gmt>
 			<wp:comment_content><![CDATA[Etiam ante lorem, varius id neque nec, porta convallis ante!]]></wp:comment_content>
-			<wp:comment_approved><![CDATA[1]]></wp:comment_approved>
+			<wp:comment_approved><![CDATA[post-trashed]]></wp:comment_approved>
 			<wp:comment_type><![CDATA[]]></wp:comment_type>
 			<wp:comment_parent>0</wp:comment_parent>
 			<wp:comment_user_id>0</wp:comment_user_id>
@@ -2032,6 +1796,61 @@ https://www.youtube.com/watch?v=dQw4w9WgXcQ
 			</wp:commentmeta>
 							</wp:comment>
 					</item>
+					<item>
+		<title></title>
+		<link>https://www.lucyisobeltrekdemo.online/2019/11/27/90/</link>
+		<pubDate>Wed, 27 Nov 2019 19:43:48 +0000</pubDate>
+		<dc:creator><![CDATA[lucyisobeltrekdemo_pwarxi]]></dc:creator>
+		<guid isPermaLink="false">https://www.lucyisobeltrekdemo.online/?p=90</guid>
+		<description></description>
+		<content:encoded><![CDATA[ ]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>90</wp:post_id>
+		<wp:post_date><![CDATA[2019-11-27 19:43:48]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2019-11-27 19:43:48]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[90]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>2</wp:menu_order>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+										<category domain="nav_menu" nicename="main-menu"><![CDATA[Main Menu]]></category>
+						<wp:postmeta>
+		<wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key>
+		<wp:meta_value><![CDATA[post_type]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key>
+		<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
+		<wp:meta_value><![CDATA[12]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
+		<wp:meta_value><![CDATA[page]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
 					<item>
 		<title>About</title>
 		<link>https://www.lucyisobeltrekdemo.online/2019/11/27/about-2/</link>
@@ -2195,6 +2014,346 @@ https://www.youtube.com/watch?v=dQw4w9WgXcQ
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
 		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+					<item>
+		<title>My Essentials</title>
+		<link>https://www.lucyisobeltrekdemo.online/2019/12/30/my-essentials/</link>
+		<pubDate>Mon, 30 Dec 2019 16:51:00 +0000</pubDate>
+		<dc:creator><![CDATA[lucyisobeltrekdemo_pwarxi]]></dc:creator>
+		<guid isPermaLink="false">https://www.lucyisobeltrekdemo.online/?p=143</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Etiam vitae mollis ex, sit amet fermentum metus. Ut sit amet est posuere, bibendum erat ac, egestas magna. Donec metus purus, congue sit amet molestie id, venenatis vel diam. In eleifend tortor id egestas commodo. Sed et efficitur magna. Etiam ante lorem, varius id neque nec, porta convallis ante. Donec quis urna fermentum urna venenatis viverra posuere nec magna.Maecenas at lorem et risus laoreet condimentum vel malesuada diam. Vivamus et eros nibh. Donec eget tellus vitae diam pulvinar aliquet suscipit a dui. Morbi purus dui, eleifend eu feugiat quis, laoreet non odio. Praesent massa urna, feugiat vel augue et, consectetur mattis massa.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><li>feugiat velit</li><li>Proin eleifend magna ut vulputate ullamcorper.</li><li>Donec tempor vehicula gravida</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Quisque tempor, quam ac auctor malesuada, est enim fermentum nulla, et consectetur odio tortor nec nisl. Phasellus pretium consectetur mauris tempus suscipit. Mauris auctor facilisis metus. Vestibulum porta nunc quis vulputate tempus.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>Aliquam blandit mattis mollis.</p><cite>– Sed commodo<br></cite></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:paragraph -->
+<p>Vivamus et eros nibh. Donec eget tellus vitae diam pulvinar aliquet suscipit a dui. Morbi purus dui, eleifend eu feugiat quis, laoreet non odio. Praesent massa urna, feugiat vel augue et, consectetur mattis massa.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>facilisis metus</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Mauris auctor facilisis metus. Vestibulum porta nunc quis vulputate tempus. Nullam placerat varius bibendum. Sed commodo lacus laoreet dolor maximus consequat. Maecenas at lorem et risus laoreet condimentum vel malesuada diam. Vivamus et eros nibh. Donec eget tellus vitae diam pulvinar aliquet suscipit a dui. Morbi purus dui, eleifend eu feugiat quis, laoreet non odio. Praesent massa urna, feugiat vel augue et, consectetur mattis massa.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<figure><iframe width="500" height="281" src="https://www.youtube.com/embed/dQw4w9WgXcQ?feature=oembed" allowfullscreen=""></iframe></figure>
+<!-- /wp:html -->
+
+<!-- wp:preformatted -->
+<pre class="wp-block-preformatted">Never gonna give you up<br>Never gonna let you down<br>Never gonna run around and desert you<br>Never gonna make you cry<br>Never gonna say goodbye<br>Never gonna tell a lie and hurt you</pre>
+<!-- /wp:preformatted -->
+
+<!-- wp:heading -->
+<h2>tellus vitae diam</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Vestibulum porta nunc quis vulputate tempus. Nullam placerat varius bibendum. Sed commodo lacus laoreet dolor maximus consequat. Maecenas at lorem et risus laoreet condimentum vel malesuada diam. Vivamus et eros nibh. Donec eget tellus vitae diam pulvinar aliquet suscipit a dui. Morbi purus dui, eleifend eu feugiat quis, laoreet non odio. Praesent massa urna, feugiat vel augue et, consectetur mattis massa.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":84} -->
+<figure class="wp-block-image"><img src="https://www.lucyisobeltrekdemo.online/wp-content/uploads/2019/11/brina-blum-LUfmqLfEAoE-unsplash-1024x683.jpg" alt="" class="wp-image-84"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>Donec quis urna fermentum urna venenatis viverra posuere nec magna.Maecenas at lorem et risus laoreet condimentum vel malesuada diam. Vivamus et eros nibh. Donec eget tellus vitae diam pulvinar aliquet suscipit a dui. Morbi purus dui, eleifend eu feugiat quis, laoreet non odio. Praesent massa urna, feugiat vel augue et, consectetur mattis massa.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[Etiam vitae mollis ex, sit amet fermentum metus. Ut sit amet est posuere, bibendum erat ac, egestas magna. Donec metus purus, congue sit amet molestie id, venenatis vel diam. In eleifend tortor id egestas commodo. Sed et efficitur magna. Etiam ante lorem, varius id neque nec, porta convallis ante.]]></excerpt:encoded>
+		<wp:post_id>143</wp:post_id>
+		<wp:post_date><![CDATA[2019-12-30 16:51:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2019-12-30 16:51:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[open]]></wp:ping_status>
+		<wp:post_name><![CDATA[my-essentials]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+										<category domain="category" nicename="cooking"><![CDATA[Cooking]]></category>
+		<category domain="category" nicename="equipment"><![CDATA[equipment]]></category>
+		<category domain="post_tag" nicename="equipment"><![CDATA[equipment]]></category>
+		<category domain="post_tag" nicename="essentials"><![CDATA[essentials]]></category>
+		<category domain="category" nicename="lifestyle"><![CDATA[Lifestyle]]></category>
+		<category domain="post_tag" nicename="van-life"><![CDATA[van life]]></category>
+						<wp:postmeta>
+		<wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
+		<wp:meta_value><![CDATA[78]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[trek_post_views]]></wp:meta_key>
+		<wp:meta_value><![CDATA[9]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:comment>
+			<wp:comment_id>8</wp:comment_id>
+			<wp:comment_author><![CDATA[claire]]></wp:comment_author>
+			<wp:comment_author_email><![CDATA[katieprice@email.com]]></wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_author_IP><![CDATA[86.143.27.103]]></wp:comment_author_IP>
+			<wp:comment_date><![CDATA[2019-12-30 16:54:13]]></wp:comment_date>
+			<wp:comment_date_gmt><![CDATA[2019-12-30 16:54:13]]></wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Maecenas vulputate hendrerit erat sit amet porttitor. Curabitur sed enim lectus.]]></wp:comment_content>
+			<wp:comment_approved><![CDATA[1]]></wp:comment_approved>
+			<wp:comment_type><![CDATA[]]></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+			<wp:comment_user_id>0</wp:comment_user_id>
+							</wp:comment>
+					<wp:comment>
+			<wp:comment_id>9</wp:comment_id>
+			<wp:comment_author><![CDATA[Emily]]></wp:comment_author>
+			<wp:comment_author_email><![CDATA[emilymarsh@example.com]]></wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_author_IP><![CDATA[86.143.27.103]]></wp:comment_author_IP>
+			<wp:comment_date><![CDATA[2019-12-30 16:54:44]]></wp:comment_date>
+			<wp:comment_date_gmt><![CDATA[2019-12-30 16:54:44]]></wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Donec quis urna fermentum urna venenatis viverra posuere nec magna.Maecenas at lorem et risus laoreet condimentum vel malesuada diam. Vivamus et eros nibh. Donec eget tellus vitae diam pulvinar aliquet suscipit a dui. Morbi purus dui, eleifend eu feugiat quis, laoreet non odio. Praesent massa urna, feugiat vel augue et, consectetur mattis massa.]]></wp:comment_content>
+			<wp:comment_approved><![CDATA[1]]></wp:comment_approved>
+			<wp:comment_type><![CDATA[]]></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+			<wp:comment_user_id>0</wp:comment_user_id>
+							</wp:comment>
+					<wp:comment>
+			<wp:comment_id>10</wp:comment_id>
+			<wp:comment_author><![CDATA[Lucy Isobel]]></wp:comment_author>
+			<wp:comment_author_email><![CDATA[lucyscanlon1910@gmail.com]]></wp:comment_author_email>
+			<wp:comment_author_url>http://www.lucyisobel.co.uk</wp:comment_author_url>
+			<wp:comment_author_IP><![CDATA[86.143.27.103]]></wp:comment_author_IP>
+			<wp:comment_date><![CDATA[2019-12-30 16:55:19]]></wp:comment_date>
+			<wp:comment_date_gmt><![CDATA[2019-12-30 16:55:19]]></wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Morbi purus dui, eleifend eu feugiat quis, laoreet non odio. Praesent massa urna, feugiat vel augue et, consectetur mattis massa.]]></wp:comment_content>
+			<wp:comment_approved><![CDATA[1]]></wp:comment_approved>
+			<wp:comment_type><![CDATA[]]></wp:comment_type>
+			<wp:comment_parent>8</wp:comment_parent>
+			<wp:comment_user_id>1</wp:comment_user_id>
+							</wp:comment>
+					</item>
+					<item>
+		<title>Easy Meals From the Van</title>
+		<link>https://www.lucyisobeltrekdemo.online/2019/12/30/easy-meals-from-the-van/</link>
+		<pubDate>Mon, 30 Dec 2019 16:48:24 +0000</pubDate>
+		<dc:creator><![CDATA[lucyisobeltrekdemo_pwarxi]]></dc:creator>
+		<guid isPermaLink="false">https://www.lucyisobeltrekdemo.online/?p=145</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet tincidunt viverra. In faucibus erat in accumsan iaculis. Quisque congue nulla est, id sodales tellus egestas ac. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras pulvinar leo lacus, quis pulvinar ex scelerisque eget. Vestibulum gravida ac arcu in feugiat. Praesent quis rutrum enim. Integer ac lacinia leo. Nulla tincidunt tortor ac lacinia tristique. Pellentesque sagittis non augue eget porta. Curabitur vitae nibh vel justo fringilla pretium sollicitudin nec leo. Sed dapibus commodo mi, nec auctor lacus tempor ut. Aenean auctor felis at libero sagittis dignissim. Integer lorem nunc, venenatis id elit nec, porttitor tristique nunc. Nam facilisis imperdiet ligula ac aliquam. Proin placerat congue ullamcorper.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Morbi porttitor, purus at hendrerit interdum, nisi dolor consequat ex, sit amet gravida augue nibh lobortis arcu. Donec rhoncus, nisl lacinia vulputate lacinia, nibh ipsum vestibulum nisi, ut tempus quam lectus eget magna. Etiam vestibulum semper pellentesque. Mauris pellentesque mi non mi suscipit, ut condimentum magna maximus. Aliquam leo magna, elementum at magna volutpat, convallis faucibus nisi. Etiam vitae mollis ex, sit amet fermentum metus. Ut sit amet est posuere, bibendum erat ac, egestas magna. Donec metus purus, congue sit amet molestie id, venenatis vel diam. In eleifend tortor id egestas commodo. Sed et efficitur magna. Etiam ante lorem, varius id neque nec, porta convallis ante. Donec quis urna fermentum urna venenatis viverra posuere nec magna. Ut sed lectus a ex pellentesque aliquet a feugiat purus. Cras egestas efficitur turpis, ac convallis nisi mollis sed. Curabitur rhoncus, dui iaculis pulvinar rutrum, nulla felis efficitur risus, eu suscipit eros erat eu ligula. Pellentesque egestas augue ac dolor suscipit, ut congue ex posuere.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum hendrerit felis suscipit dapibus dictum. Phasellus ornare dictum urna, vitae egestas erat viverra sit amet. Morbi mollis laoreet ante, vel consequat sem. Ut tempor sem eget massa ornare efficitur. Vivamus at mi ac leo varius tempus. Integer at urna eu enim facilisis pulvinar. Sed sodales nibh massa, non elementum libero lacinia et. Mauris dapibus fermentum purus, in aliquet dui rutrum vel. Praesent dictum commodo aliquam. Phasellus pellentesque ex sit amet ex condimentum, at tempus elit rhoncus. Etiam placerat non diam vitae porttitor. Etiam vestibulum tellus eleifend tellus ullamcorper lacinia. Duis massa ipsum, suscipit placerat rhoncus eget, congue non ex. Pellentesque vel velit felis. Nam et diam commodo, faucibus magna a, imperdiet purus.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet tincidunt viverra. In faucibus erat in accumsan iaculis. Quisque congue nulla est, id sodales tellus egestas ac. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.]]></excerpt:encoded>
+		<wp:post_id>145</wp:post_id>
+		<wp:post_date><![CDATA[2019-12-30 16:48:24]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2019-12-30 16:48:24]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[open]]></wp:ping_status>
+		<wp:post_name><![CDATA[easy-meals-from-the-van]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+										<category domain="category" nicename="cooking"><![CDATA[Cooking]]></category>
+		<category domain="post_tag" nicename="cooking"><![CDATA[cooking]]></category>
+		<category domain="post_tag" nicename="fresh"><![CDATA[fresh]]></category>
+		<category domain="category" nicename="lifestyle"><![CDATA[Lifestyle]]></category>
+		<category domain="post_tag" nicename="outdoors"><![CDATA[outdoors]]></category>
+						<wp:postmeta>
+		<wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
+		<wp:meta_value><![CDATA[84]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[trek_post_views]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+					<item>
+		<title>My Furry Travel Buddy</title>
+		<link>https://www.lucyisobeltrekdemo.online/2019/12/30/my-furry-travel-buddy/</link>
+		<pubDate>Mon, 30 Dec 2019 16:49:07 +0000</pubDate>
+		<dc:creator><![CDATA[lucyisobeltrekdemo_pwarxi]]></dc:creator>
+		<guid isPermaLink="false">https://www.lucyisobeltrekdemo.online/?p=147</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Cras pulvinar leo lacus, quis pulvinar ex scelerisque eget. Vestibulum gravida ac arcu in feugiat. Praesent quis rutrum enim. Integer ac lacinia leo. Nulla tincidunt tortor ac lacinia tristique. Pellentesque sagittis non augue eget porta. Curabitur vitae nibh vel justo fringilla pretium sollicitudin nec leo. Sed dapibus commodo mi, nec auctor lacus tempor ut. Aenean auctor felis at libero sagittis dignissim.<br><br>Cras pulvinar leo lacus, quis pulvinar ex scelerisque eget. Vestibulum gravida ac arcu in feugiat. Praesent quis rutrum enim. Integer ac lacinia leo. Nulla tincidunt tortor ac lacinia tristique. Pellentesque sagittis non augue eget porta. Curabitur vitae nibh vel justo fringilla pretium sollicitudin nec leo. Sed dapibus commodo mi, nec auctor lacus tempor ut. Aenean auctor felis at libero sagittis dignissim.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Cras pulvinar leo lacus, quis pulvinar ex scelerisque eget. Vestibulum gravida ac arcu in feugiat. Praesent quis rutrum enim. Integer ac lacinia leo. Nulla tincidunt tortor ac lacinia tristique. Pellentesque sagittis non augue eget porta. Curabitur vitae nibh vel justo fringilla pretium sollicitudin nec leo. Sed dapibus commodo mi, nec auctor lacus tempor ut. Aenean auctor felis at libero sagittis dignissim.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[Cras pulvinar leo lacus, quis pulvinar ex scelerisque eget. Vestibulum gravida ac arcu in feugiat. Praesent quis rutrum enim. Integer ac lacinia leo. Nulla tincidunt tortor ac lacinia tristique. Pellentesque sagittis non augue eget porta. Curabitur vitae nibh vel justo fringilla pretium sollicitudin nec leo. Sed dapibus commodo mi, nec auctor lacus tempor ut. Aenean auctor felis at libero sagittis dignissim.]]></excerpt:encoded>
+		<wp:post_id>147</wp:post_id>
+		<wp:post_date><![CDATA[2019-12-30 16:49:07]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2019-12-30 16:49:07]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[open]]></wp:ping_status>
+		<wp:post_name><![CDATA[my-furry-travel-buddy]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+										<category domain="post_tag" nicename="freddie"><![CDATA[freddie]]></category>
+		<category domain="category" nicename="lifestyle"><![CDATA[Lifestyle]]></category>
+		<category domain="post_tag" nicename="meet-the-crew"><![CDATA[meet the crew]]></category>
+		<category domain="category" nicename="pets"><![CDATA[Pets]]></category>
+		<category domain="post_tag" nicename="pets"><![CDATA[pets]]></category>
+						<wp:postmeta>
+		<wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
+		<wp:meta_value><![CDATA[82]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+					<item>
+		<title>Exciting News</title>
+		<link>https://www.lucyisobeltrekdemo.online/2019/12/30/exciting-news/</link>
+		<pubDate>Mon, 30 Dec 2019 16:49:55 +0000</pubDate>
+		<dc:creator><![CDATA[lucyisobeltrekdemo_pwarxi]]></dc:creator>
+		<guid isPermaLink="false">https://www.lucyisobeltrekdemo.online/?p=150</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet tincidunt viverra. In faucibus erat in accumsan iaculis. Quisque congue nulla est, id sodales tellus egestas ac. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras pulvinar leo lacus, quis pulvinar ex scelerisque eget. Vestibulum gravida ac arcu in feugiat. Praesent quis rutrum enim. Integer ac lacinia leo. Nulla tincidunt tortor ac lacinia tristique. Pellentesque sagittis non augue eget porta. Curabitur vitae nibh vel justo fringilla pretium sollicitudin nec leo. Sed dapibus commodo mi, nec auctor lacus tempor ut. Aenean auctor felis at libero sagittis dignissim. Integer lorem nunc, venenatis id elit nec, porttitor tristique nunc. Nam facilisis imperdiet ligula ac aliquam. Proin placerat congue ullamcorper.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Morbi porttitor, purus at hendrerit interdum, nisi dolor consequat ex, sit amet gravida augue nibh lobortis arcu. Donec rhoncus, nisl lacinia vulputate lacinia, nibh ipsum vestibulum nisi, ut tempus quam lectus eget magna. Etiam vestibulum semper pellentesque. Mauris pellentesque mi non mi suscipit, ut condimentum magna maximus. Aliquam leo magna, elementum at magna volutpat, convallis faucibus nisi. Etiam vitae mollis ex, sit amet fermentum metus. Ut sit amet est posuere, bibendum erat ac, egestas magna. Donec metus purus, congue sit amet molestie id, venenatis vel diam. In eleifend tortor id egestas commodo. Sed et efficitur magna. Etiam ante lorem, varius id neque nec, porta convallis ante. Donec quis urna fermentum urna venenatis viverra posuere nec magna. Ut sed lectus a ex pellentesque aliquet a feugiat purus. Cras egestas efficitur turpis, ac convallis nisi mollis sed. Curabitur rhoncus, dui iaculis pulvinar rutrum, nulla felis efficitur risus, eu suscipit eros erat eu ligula. Pellentesque egestas augue ac dolor suscipit, ut congue ex posuere.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum hendrerit felis suscipit dapibus dictum. Phasellus ornare dictum urna, vitae egestas erat viverra sit amet. Morbi mollis laoreet ante, vel consequat sem. Ut tempor sem eget massa ornare efficitur. Vivamus at mi ac leo varius tempus. Integer at urna eu enim facilisis pulvinar. Sed sodales nibh massa, non elementum libero lacinia et. Mauris dapibus fermentum purus, in aliquet dui rutrum vel. Praesent dictum commodo aliquam. Phasellus pellentesque ex sit amet ex condimentum, at tempus elit rhoncus. Etiam placerat non diam vitae porttitor. Etiam vestibulum tellus eleifend tellus ullamcorper lacinia. Duis massa ipsum, suscipit placerat rhoncus eget, congue non ex. Pellentesque vel velit felis. Nam et diam commodo, faucibus magna a, imperdiet purus.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet tincidunt viverra. In faucibus erat in accumsan iaculis. Quisque congue nulla est, id sodales tellus egestas ac. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras pulvinar leo lacus, quis pulvinar ex scelerisque eget. Vestibulum gravida ac arcu in feugiat. Praesent quis rutrum enim. Integer ac lacinia leo.]]></excerpt:encoded>
+		<wp:post_id>150</wp:post_id>
+		<wp:post_date><![CDATA[2019-12-30 16:49:55]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2019-12-30 16:49:55]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[open]]></wp:ping_status>
+		<wp:post_name><![CDATA[exciting-news]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+										<category domain="post_tag" nicename="book"><![CDATA[book]]></category>
+		<category domain="post_tag" nicename="news"><![CDATA[news]]></category>
+		<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+						</item>
+					<item>
+		<title>How I Edit My Photos</title>
+		<link>https://www.lucyisobeltrekdemo.online/2019/12/30/how-i-edit-my-photos/</link>
+		<pubDate>Mon, 30 Dec 2019 16:50:54 +0000</pubDate>
+		<dc:creator><![CDATA[lucyisobeltrekdemo_pwarxi]]></dc:creator>
+		<guid isPermaLink="false">https://www.lucyisobeltrekdemo.online/?p=152</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Etiam vitae mollis ex, sit amet fermentum metus. Ut sit amet est posuere, bibendum erat ac, egestas magna. Donec metus purus, congue sit amet molestie id, venenatis vel diam. In eleifend tortor id egestas commodo. Sed et efficitur magna. Etiam ante lorem, varius id neque nec, porta convallis ante. Donec quis urna fermentum urna venenatis viverra posuere nec magna.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc bibendum molestie nisl, id ornare mauris laoreet sed. Morbi dolor lectus, accumsan sit amet euismod eu, commodo ac velit. Proin eget magna non enim maximus pharetra vel eget velit. In rhoncus odio mauris. Nam tellus sapien, porttitor vel lacinia id, semper at libero. Etiam consectetur eget eros vitae rhoncus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec fermentum risus eget ex mattis feugiat. Maecenas vulputate hendrerit erat sit amet porttitor. Curabitur sed enim lectus. Fusce hendrerit, eros euismod faucibus pulvinar, neque sem congue leo, non tristique nisi nisl dictum nisl. Nunc vestibulum eros et justo mollis sagittis. Nunc placerat fermentum nunc, nec cursus erat dictum at. Duis eleifend porta iaculis. Ut posuere elementum dolor ac malesuada. Duis facilisis eros at tempus hendrerit.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Nam id volutpat metus. Quisque vel dolor orci. In bibendum mollis justo eget semper. Curabitur eu ex vel neque gravida pretium at in sem. Praesent auctor congue arcu vestibulum finibus. Vivamus quis urna purus. Morbi dui lectus, rutrum ac sapien ac, aliquet feugiat velit. Proin eleifend magna ut vulputate ullamcorper. Donec tempor vehicula gravida. Proin convallis, eros in gravida imperdiet, ligula nunc commodo massa, hendrerit congue ipsum justo finibus quam. Proin nec tortor commodo, finibus diam sed, egestas nisi.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Integer sed nisi ultrices, eleifend justo in, sollicitudin magna. Quisque tempor, quam ac auctor malesuada, est enim fermentum nulla, et consectetur odio tortor nec nisl. Phasellus pretium consectetur mauris tempus suscipit. Mauris auctor facilisis metus. Vestibulum porta nunc quis vulputate tempus. Nullam placerat varius bibendum. Sed commodo lacus laoreet dolor maximus consequat.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Integer ac justo sed dui sollicitudin varius sed in neque. Aliquam blandit mattis mollis. Sed porta ac tortor at tincidunt. Aliquam bibendum varius sem, vitae tincidunt erat varius vel. Etiam at purus quis velit tempus elementum. Maecenas at lorem et risus laoreet condimentum vel malesuada diam. Vivamus et eros nibh. Donec eget tellus vitae diam pulvinar aliquet suscipit a dui. Morbi purus dui, eleifend eu feugiat quis, laoreet non odio. Praesent massa urna, feugiat vel augue et, consectetur mattis massa.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Nulla facilisi. Etiam nec nunc eget diam luctus dictum ut vel ante. Sed facilisis sapien et iaculis dignissim. Vivamus eget nibh varius, ultricies mauris tempor, lacinia erat. Cras bibendum, augue ut luctus ultricies, magna felis feugiat est, at commodo odio tortor sed urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed sit amet egestas dui. Duis blandit vitae orci sit amet vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam non odio vel neque fringilla vehicula non in purus. Suspendisse euismod ipsum id augue consectetur pharetra. Donec consectetur risus non massa molestie placerat.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[Etiam vitae mollis ex, sit amet fermentum metus. Ut sit amet est posuere, bibendum erat ac, egestas magna. Donec metus purus, congue sit amet molestie id, venenatis vel diam. In eleifend tortor id egestas commodo. Sed et efficitur magna. Etiam ante lorem, varius id neque nec, porta convallis ante. Donec quis urna fermentum urna venenatis viverra posuere nec magna.]]></excerpt:encoded>
+		<wp:post_id>152</wp:post_id>
+		<wp:post_date><![CDATA[2019-12-30 16:50:54]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2019-12-30 16:50:54]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[open]]></wp:ping_status>
+		<wp:post_name><![CDATA[how-i-edit-my-photos]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+										<category domain="category" nicename="equipment"><![CDATA[equipment]]></category>
+		<category domain="post_tag" nicename="hobbies"><![CDATA[hobbies]]></category>
+		<category domain="category" nicename="lifestyle"><![CDATA[Lifestyle]]></category>
+		<category domain="category" nicename="photography"><![CDATA[Photography]]></category>
+		<category domain="post_tag" nicename="photography"><![CDATA[photography]]></category>
+		<category domain="post_tag" nicename="social-media"><![CDATA[social media]]></category>
+						<wp:postmeta>
+		<wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
+		<wp:meta_value><![CDATA[80]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+					<item>
+		<title>hello</title>
+		<link>https://www.lucyisobeltrekdemo.online/2019/12/30/hello__trashed/</link>
+		<pubDate>Mon, 30 Dec 2019 16:37:25 +0000</pubDate>
+		<dc:creator><![CDATA[lucyisobeltrekdemo_pwarxi]]></dc:creator>
+		<guid isPermaLink="false">https://www.lucyisobeltrekdemo.online/?p=141</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>this is a practise post</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>141</wp:post_id>
+		<wp:post_date><![CDATA[2019-12-30 16:37:25]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2019-12-30 16:37:25]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[open]]></wp:ping_status>
+		<wp:post_name><![CDATA[hello__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+										<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+						<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+		<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1577724201]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+		<wp:meta_value><![CDATA[hello]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 				</channel>
