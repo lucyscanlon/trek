@@ -44,3 +44,15 @@ function trek_lucyisobel_adminscripts($hook) {
 }
 
 add_action('admin_enqueue_scripts', 'trek_lucyisobel_adminscripts');
+
+
+// Enqueuing Fonts
+
+function trek_google_fonts() {
+  require get_template_directory() . '/inc/fonts/google-fonts.php';
+  $mainFontFullLink = str_replace( ',', '%2C', 'https://fonts.googleapis.com/css?family=' . $mainFont . '&display=swap' );
+  wp_enqueue_style( 'blog-title-font', $mainFontFullLink , false );
+
+}
+
+add_action('wp_enqueue_scripts', 'trek_google_fonts');

@@ -2075,6 +2075,62 @@ function trek_lucyisobel_custom_settings($wp_customize){
           )));
 
 
+          // Add a Google Font control
+          $wp_customize->add_setting( 'google_font_setting_two', array(
+            'default'        => 132,
+         ) );
+
+         $wp_customize->add_control( new Google_Font_Dropdown_Custom_Control( $wp_customize, 'google_font_setting_two', array(
+            'label'   => 'Google Font Setting',
+            'section' => 'archive_section',
+            'settings'   => 'google_font_setting_two',
+            'priority' => 12
+          ) ) );
+
+
+
+
+          /*
+          ========================================
+          FONTS SETTINGS
+          ========================================
+          */
+
+
+
+          // Creating the "Fonts" section
+          $wp_customize->add_section('fonts_section', array(
+            'title' => __('Fonts', 'trek'),
+            'panel' => 'theme_settings',
+            'priority' => 24,
+          ));
+
+          // Creates the title "Blog Title" in "Fonts" section
+          $wp_customize->add_setting('fonts_blogtitlefontitle_section', array(
+            'sanitize_callback' => 'wp_filter_nohtml_kses',
+          ));
+
+
+          $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'fonts_blogtitlefontitle_section', array(
+            'label' => __('Blog Title', 'trek'),
+            'description' => __('This is the font settings for your blog title which appears on your homepage and your blog banner.', 'trek'),
+            'section' => 'fonts_section',
+            'settings' => 'fonts_blogtitlefontitle_section'
+          )));
+
+
+          
+
+
+
+
+
+
+
+
+
+
+
 
           $wp_customize->add_section( new Skyrocket_Upsell_Section( $wp_customize, 'upsell_section',
 			array(
