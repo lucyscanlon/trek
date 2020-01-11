@@ -2075,17 +2075,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
           )));
 
 
-          // Add a Google Font control
-          $wp_customize->add_setting( 'google_font_setting_two', array(
-            'default'        => 132,
-         ) );
 
-         $wp_customize->add_control( new Google_Font_Dropdown_Custom_Control( $wp_customize, 'google_font_setting_two', array(
-            'label'   => 'Google Font Setting',
-            'section' => 'archive_section',
-            'settings'   => 'google_font_setting_two',
-            'priority' => 12
-          ) ) );
 
 
 
@@ -2119,7 +2109,21 @@ function trek_lucyisobel_custom_settings($wp_customize){
           )));
 
 
-          
+          // Add a Google Font control for Blog Title
+          $wp_customize->add_setting( 'blog_title_font_control', array(
+            'default'        => 132,
+            'sanitize_callback' => 'absint',
+         ) );
+
+         $wp_customize->add_control( new Google_Font_Dropdown_Custom_Control( $wp_customize, 'blog_title_font_control', array(
+            'label'   => __('Blog Title Font Selector', 'trek' ),
+            'section' => 'fonts_section',
+            'settings'   => 'blog_title_font_control',
+            'priority' => 12
+          ) ) );
+
+
+
 
 
 

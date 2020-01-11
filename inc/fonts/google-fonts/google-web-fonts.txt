@@ -105,23 +105,6 @@
   },
   {
    "kind": "webfonts#webfont",
-   "family": "Droid Sans",
-   "variants": [
-    "regular",
-    "700"
-   ],
-   "subsets": [
-    "latin"
-   ],
-   "version": "v3",
-   "lastModified": "2012-07-25",
-   "files": {
-    "regular": "http://themes.googleusercontent.com/static/fonts/droidsans/v3/rS9BT6-asrfjpkcV3DXf__esZW2xOQ-xsNqO47m55DA.ttf",
-    "700": "http://themes.googleusercontent.com/static/fonts/droidsans/v3/EFpQQyG9GqCrobXxL-KRMQJKKGfqHaYFsRG-T3ceEVo.ttf"
-   }
-  },
-  {
-   "kind": "webfonts#webfont",
    "family": "Lato",
    "variants": [
     "100",
@@ -204,27 +187,6 @@
   },
   {
    "kind": "webfonts#webfont",
-   "family": "Droid Serif",
-   "variants": [
-    "regular",
-    "italic",
-    "700",
-    "700italic"
-   ],
-   "subsets": [
-    "latin"
-   ],
-   "version": "v3",
-   "lastModified": "2012-07-25",
-   "files": {
-    "regular": "http://themes.googleusercontent.com/static/fonts/droidserif/v3/DgAtPy6rIVa2Zx3Xh9KaNaCWcynf_cDxXwCLxiixG1c.ttf",
-    "italic": "http://themes.googleusercontent.com/static/fonts/droidserif/v3/cj2hUnSRBhwmSPr9kS5890eOrDcLawS7-ssYqLr2Xp4.ttf",
-    "700": "http://themes.googleusercontent.com/static/fonts/droidserif/v3/QQt14e8dY39u-eYBZmppwXe1Pd76Vl7zRpE7NLJQ7XU.ttf",
-    "700italic": "http://themes.googleusercontent.com/static/fonts/droidserif/v3/c92rD_x0V1LslSFt3-QEps_zJjSACmk0BRPxQqhnNLU.ttf"
-   }
-  },
-  {
-   "kind": "webfonts#webfont",
    "family": "Ubuntu",
    "variants": [
     "300",
@@ -255,76 +217,6 @@
     "500italic": "http://themes.googleusercontent.com/static/fonts/ubuntu/v4/NWdMogIO7U6AtEM4dDdf_aCWcynf_cDxXwCLxiixG1c.ttf",
     "700": "http://themes.googleusercontent.com/static/fonts/ubuntu/v4/B7BtHjNYwAp3HgLNagENOQ.ttf",
     "700italic": "http://themes.googleusercontent.com/static/fonts/ubuntu/v4/pqisLQoeO9YTDCNnlQ9bf6CWcynf_cDxXwCLxiixG1c.ttf"
-   }
-  },
-  {
-   "kind": "webfonts#webfont",
-   "family": "Roboto Condensed",
-   "variants": [
-    "300",
-    "300italic",
-    "regular",
-    "italic",
-    "700",
-    "700italic"
-   ],
-   "subsets": [
-    "cyrillic-ext",
-    "latin",
-    "latin-ext",
-    "greek-ext",
-    "cyrillic",
-    "greek",
-    "vietnamese"
-   ],
-   "version": "v8",
-   "lastModified": "2013-07-31",
-   "files": {
-    "300": "http://themes.googleusercontent.com/static/fonts/robotocondensed/v8/b9QBgL0iMZfDSpmcXcE8nJRhFVcex_hajThhFkHyhYk.ttf",
-    "300italic": "http://themes.googleusercontent.com/static/fonts/robotocondensed/v8/mg0cGfGRUERshzBlvqxeAPYa9bgCHecWXGgisnodcS0.ttf",
-    "regular": "http://themes.googleusercontent.com/static/fonts/robotocondensed/v8/Zd2E9abXLFGSr9G3YK2MsKDbm6fPDOZJsR8PmdG62gY.ttf",
-    "italic": "http://themes.googleusercontent.com/static/fonts/robotocondensed/v8/BP5K8ZAJv9qEbmuFp8RpJY_eiqgTfYGaH0bJiUDZ5GA.ttf",
-    "700": "http://themes.googleusercontent.com/static/fonts/robotocondensed/v8/b9QBgL0iMZfDSpmcXcE8nPOYkGiSOYDq_T7HbIOV1hA.ttf",
-    "700italic": "http://themes.googleusercontent.com/static/fonts/robotocondensed/v8/mg0cGfGRUERshzBlvqxeAE2zk2RGRC3SlyyLLQfjS_8.ttf"
-   }
-  },
-  {
-   "kind": "webfonts#webfont",
-   "family": "Source Sans Pro",
-   "variants": [
-    "200",
-    "200italic",
-    "300",
-    "300italic",
-    "regular",
-    "italic",
-    "600",
-    "600italic",
-    "700",
-    "700italic",
-    "900",
-    "900italic"
-   ],
-   "subsets": [
-    "latin",
-    "latin-ext",
-    "vietnamese"
-   ],
-   "version": "v6",
-   "lastModified": "2013-09-26",
-   "files": {
-    "200": "http://themes.googleusercontent.com/static/fonts/sourcesanspro/v6/toadOcfmlt9b38dHJxOBGKXvKVW_haheDNrHjziJZVk.ttf",
-    "200italic": "http://themes.googleusercontent.com/static/fonts/sourcesanspro/v6/fpTVHK8qsXbIeTHTrnQH6OptKU7UIBg2hLM7eMTU8bI.ttf",
-    "300": "http://themes.googleusercontent.com/static/fonts/sourcesanspro/v6/toadOcfmlt9b38dHJxOBGFP7R5lD_au4SZC6Ks_vyWs.ttf",
-    "300italic": "http://themes.googleusercontent.com/static/fonts/sourcesanspro/v6/fpTVHK8qsXbIeTHTrnQH6DUpNKoQAsDux-Todp8f29w.ttf",
-    "regular": "http://themes.googleusercontent.com/static/fonts/sourcesanspro/v6/ODelI1aHBYDBqgeIAH2zlNRl0pGnog23EMYRrBmUzJQ.ttf",
-    "italic": "http://themes.googleusercontent.com/static/fonts/sourcesanspro/v6/M2Jd71oPJhLKp0zdtTvoMwRX4TIfMQQEXLu74GftruE.ttf",
-    "600": "http://themes.googleusercontent.com/static/fonts/sourcesanspro/v6/toadOcfmlt9b38dHJxOBGOiMeWyi5E_-XkTgB5psiDg.ttf",
-    "600italic": "http://themes.googleusercontent.com/static/fonts/sourcesanspro/v6/fpTVHK8qsXbIeTHTrnQH6Pp6lGoTTgjlW0sC4r900Co.ttf",
-    "700": "http://themes.googleusercontent.com/static/fonts/sourcesanspro/v6/toadOcfmlt9b38dHJxOBGPgXsetDviZcdR5OzC1KPcw.ttf",
-    "700italic": "http://themes.googleusercontent.com/static/fonts/sourcesanspro/v6/fpTVHK8qsXbIeTHTrnQH6LVT4locI09aamSzFGQlDMY.ttf",
-    "900": "http://themes.googleusercontent.com/static/fonts/sourcesanspro/v6/toadOcfmlt9b38dHJxOBGBA_awHl7mXRjE_LQVochcU.ttf",
-    "900italic": "http://themes.googleusercontent.com/static/fonts/sourcesanspro/v6/fpTVHK8qsXbIeTHTrnQH6A0NcF6HPGWR298uWIdxWv0.ttf"
    }
   },
   {
@@ -1911,21 +1803,6 @@
    "lastModified": "2012-08-08",
    "files": {
     "regular": "http://themes.googleusercontent.com/static/fonts/patuaone/v3/njZwotTYjswR4qdhsW-kJw.ttf"
-   }
-  },
-  {
-   "kind": "webfonts#webfont",
-   "family": "Droid Sans Mono",
-   "variants": [
-    "regular"
-   ],
-   "subsets": [
-    "latin"
-   ],
-   "version": "v4",
-   "lastModified": "2012-07-25",
-   "files": {
-    "regular": "http://themes.googleusercontent.com/static/fonts/droidsansmono/v4/ns-m2xQYezAtqh7ai59hJcwD6PD0c3_abh9zHKQtbGU.ttf"
    }
   },
   {

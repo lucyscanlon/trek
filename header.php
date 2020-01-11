@@ -688,9 +688,18 @@
 
           /* fonts */
 
+          <?php require get_template_directory() . '/inc/fonts/google-fonts.php'; ?>
+
           .ReenieBeanie {
             font-family: <?php echo $cssFont ?>;
+
           }
+
+          .featuredpost-homepage-title-container h1 {
+            font-weight: 400!important;
+          }
+
+
 
 
 
