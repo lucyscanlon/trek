@@ -7,7 +7,7 @@
 * @package Trek
 */
 ?>
-<div class="gridpostlayout-post-container" <?php body_class( $class ); ?>>
+<div class="gridpostlayout-post-container">
   <!--  Checks if the post has a featured image or not  -->
   <?php if ( has_post_thumbnail( get_the_ID() ) ) {?>
     <!--  If post has featured image, it is displayed. If not a color is displayed instead (customiser option)  -->

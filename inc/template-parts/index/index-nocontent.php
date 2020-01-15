@@ -33,7 +33,7 @@
   <!--  Checks if it is a search instead  -->
 <?php elseif ( is_search() ) : ?>
   <div class="nocontent-search-container">
-    <div class="nocontent-search-title ReenieBeanie">
+    <div class="nocontent-search-title ReenieBeaniePostFont">
       <h1><?php esc_html_e( 'Nothing Here', 'trek')  ?></h1>
     </div>
     <div class="nocontent-description-container Montserrat bloglinkcolor">

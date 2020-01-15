@@ -7,7 +7,7 @@
 * @package Trek
 */
 ?>
-<div class="widepostlayout-wholepost-container" <?php body_class( $class ); ?>>
+<div class="widepostlayout-wholepost-container">
   <div class="widepost-layout-featuredimage-container">
     <!--  Displays featured image  -->
     <img src="<?php echo $backgroundImg[0]; ?>">

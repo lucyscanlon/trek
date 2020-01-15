@@ -1370,3 +1370,29 @@ switch ($postsAndPagesfontArray) {
     $postsAndPagescssFont = "Sanchez";
     break;
 }
+
+
+/* posts and pages title font size   */
+
+$postsandpagesTitleFontSize = get_theme_mod('slider_postpagesfont_size', 1.9 );
+
+$postsandpagesLetterSpacing = get_theme_mod('slider_postsandpagesfont_letterspacing', 3 );
+
+
+
+// Adding the italic css for the posts and pages Title Font Italic switch.
+
+if ( get_theme_mod('toggle_postandpagestitlefont_italic', 0 )  == 1 ) {
+  $postandpagesTitleFontItalic = 'font-style: italic;';
+} else {
+  $postandpagesTitleFontItalic = '';
+}
+
+
+// Adding the bold css for posts and pages Title Bold switch.
+
+if ( get_theme_mod('toggle_postandpagestitlefont_bold', 1 ) == 1 ) {
+  $postandpagesTitleFontBold = 'font-weight: 700!important;';
+} else {
+  $postandpagesTitleFontBold = 'font-weight: 400!important;';
+}

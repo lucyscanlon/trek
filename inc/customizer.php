@@ -2090,7 +2090,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
           // Creating the "Fonts" section
           $wp_customize->add_section('fonts_section', array(
-            'title' => __('Fonts', 'trek'),
+            'title' => __('Accent Fonts', 'trek'),
             'panel' => 'theme_settings',
             'priority' => 24,
           ));
@@ -2103,7 +2103,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
           $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'fonts_blogtitlefontitle_section', array(
             'label' => __('Blog Title', 'trek'),
-            'description' => __('This is the font settings for your blog title which appears on your homepage and your blog banner. Please note if the Italic / bold switch is turned on and the font does not change, then the selected font only comes with one style.', 'trek'),
+            'description' => __('In this section you can change the accent font choices for your blog. Please note the font size setting does not alter your website when viewed on a mobile device. The Blog Title Font settings affect your blog title on your homepage and in the blog banner. Please note if the italic / bold switch is turned on and you see no change, this font does not allow this option.', 'trek'),
             'section' => 'fonts_section',
             'settings' => 'fonts_blogtitlefontitle_section'
           )));
@@ -2128,7 +2128,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
           ));
 
           $wp_customize->add_control( new Skyrocket_Slider_Custom_Control( $wp_customize, 'slider_blogtitlefont_size', array(
-            'label' => __('Font Size (em)', 'trek'),
+            'label' => __('Font Size', 'trek'),
             'section' => 'fonts_section',
             'settings' => 'slider_blogtitlefont_size',
             'input_attrs' => array(
@@ -2194,7 +2194,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
           $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'fonts_postspagesfontitle_section', array(
             'label' => __('Posts and Pages Title Font', 'trek'),
-            'description' => __('This is the section for your Post & Page Title Font settings.', 'trek'),
+            'description' => __('The Post & Page Title Font settings affect the titles of all your posts and pages. ', 'trek'),
             'section' => 'fonts_section',
             'settings' => 'fonts_postspagesfontitle_section'
           )));
@@ -2211,6 +2211,70 @@ function trek_lucyisobel_custom_settings($wp_customize){
             'section' => 'fonts_section',
             'settings'   => 'postsandpagestitle_font_control',
           ) ) );
+
+
+          // Creates the Slider for Posts and Pages Title Font Size
+          $wp_customize->add_setting( 'slider_postpagesfont_size', array(
+            'default' => 1.9,
+            'transport' => 'refresh',
+          ));
+
+          $wp_customize->add_control( new Skyrocket_Slider_Custom_Control( $wp_customize, 'slider_postpagesfont_size', array(
+            'label' => __('Font Size', 'trek'),
+            'section' => 'fonts_section',
+            'settings' => 'slider_postpagesfont_size',
+            'input_attrs' => array(
+              'min' => 1.0,
+              'max' => 2.5,
+              'step' => 0.1,
+            ),
+          )));
+
+          // Creates the Slider for posts and pages Title letter spacing
+          $wp_customize->add_setting( 'slider_postsandpagesfont_letterspacing', array(
+            'default' => 3,
+            'transport' => 'refresh',
+          ));
+
+          $wp_customize->add_control( new Skyrocket_Slider_Custom_Control( $wp_customize, 'slider_postsandpagesfont_letterspacing', array(
+            'label' => __('Letter Spacing', 'trek'),
+            'section' => 'fonts_section',
+            'settings' => 'slider_postsandpagesfont_letterspacing',
+            'input_attrs' => array(
+              'min' => 0,
+              'max' => 7,
+              'step' => 1,
+            ),
+          )));
+
+          // Toggle to make post and pages Title Font Italic
+          $wp_customize->add_setting('toggle_postandpagestitlefont_italic', array(
+            'default' => 0,
+            'transport' => 'refresh',
+            'sanitize_callback' => 'skyrocket_switch_sanitization',
+
+          ));
+
+          $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'toggle_postandpagestitlefont_italic', array(
+            'label' => __('Italic', 'trek'),
+            'section' => 'fonts_section',
+            'settings'=> 'toggle_postandpagestitlefont_italic',
+          )));
+
+
+          // Toggle to make post and pages Title Font Bold
+          $wp_customize->add_setting('toggle_postandpagestitlefont_bold', array(
+            'default' => 1,
+            'transport' => 'refresh',
+            'sanitize_callback' => 'skyrocket_switch_sanitization',
+
+          ));
+
+          $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'toggle_postandpagestitlefont_bold', array(
+            'label' => __('Bold', 'trek'),
+            'section' => 'fonts_section',
+            'settings'=> 'toggle_postandpagestitlefont_bold',
+          )));
 
 
 

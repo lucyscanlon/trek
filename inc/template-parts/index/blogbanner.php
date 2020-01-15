@@ -20,7 +20,7 @@ $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
       <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' ); ?>
       <div class="featuredpost-image-container" style="<?php if ( has_post_thumbnail( get_the_ID() ) ) { ?> background:radial-gradient(circle, rgba(0,0,0,0.4 ) 20%, rgba(0,0,0,0) 92%), url('<?php echo $backgroundImg[0]; ?>'); background-size: cover; background-position: center center; <?php } else { ?> background-color: <?php echo get_theme_mod('no_featured_image_color_control', get_theme_mod('header_background_color', '#1D272E') ); ?>;  <?php } ?>">
         <div class="featuredpost-container-padding">
-          <div class="featuredpost-title-container ReenieBeanie whitetext-hover-color">
+          <div class="featuredpost-title-container ReenieBeaniePostFont whitetext-hover-color">
             <!--  Displays Post Title  -->
             <a href="<?php the_permalink(); ?>"><h1><?php the_title(); ?></h1></a>
           </div>

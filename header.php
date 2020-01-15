@@ -713,11 +713,96 @@
 
           }
 
-          .imagepostlayout-title-container h1 {
-            font-family: <?php echo $postsAndPagescssFont ?>;
+          .header-overlay-title-container h1 {
+            <?php echo $blogTitleFontBold ?>
+            letter-spacing: <?php echo $blogTitleLetterSpacing; ?>px;
+            font-size: 70px;
           }
 
+          .ReenieBeaniePostFont {
+            font-family: <?php echo $postsAndPagescssFont ?>;
+            font-size:<?php echo $postsandpagesTitleFontSize ?>em;
+            letter-spacing: <?php echo $postsandpagesLetterSpacing; ?>px;
+            <?php echo $postandpagesTitleFontItalic ?>
+            <?php echo $postandpagesTitleFontBold ?>
+          }
 
+          .widepostlayout-title-container h1 {
+            font-size:<?php echo $postsandpagesTitleFontSize ?>em;
+            letter-spacing: <?php echo $postsandpagesLetterSpacing; ?>px;
+            <?php echo $postandpagesTitleFontItalic ?>
+            <?php echo $postandpagesTitleFontBold ?>
+          }
+
+          .imagepostlayout-title-container h1 {
+            font-size:<?php echo $postsandpagesTitleFontSize ?>em;
+            letter-spacing: <?php echo $postsandpagesLetterSpacing; ?>px;
+            <?php echo $postandpagesTitleFontItalic ?>
+            <?php echo $postandpagesTitleFontBold ?>
+          }
+
+          .gridpostlayout-title-container h1 {
+            font-size:<?php echo $postsandpagesTitleFontSize ?>em;
+            letter-spacing: <?php echo $postsandpagesLetterSpacing; ?>px;
+            <?php echo $postandpagesTitleFontItalic ?>
+            <?php echo $postandpagesTitleFontBold ?>
+          }
+
+          .singlepost2-title-container h1 {
+            font-size:<?php echo $postsandpagesTitleFontSize ?>em;
+            letter-spacing: <?php echo $postsandpagesLetterSpacing; ?>px;
+            <?php echo $postandpagesTitleFontItalic ?>
+            <?php echo $postandpagesTitleFontBold ?>
+          }
+
+          .singlepost1-title-container h1 {
+            font-size:<?php echo $postsandpagesTitleFontSize ?>em;
+            letter-spacing: <?php echo $postsandpagesLetterSpacing; ?>px;
+            <?php echo $postandpagesTitleFontItalic ?>
+            <?php echo $postandpagesTitleFontBold ?>
+          }
+
+          .singlepost3-title-container h1 {
+            font-size:<?php echo $postsandpagesTitleFontSize ?>em;
+            letter-spacing: <?php echo $postsandpagesLetterSpacing; ?>px;
+            <?php echo $postandpagesTitleFontItalic ?>
+            <?php echo $postandpagesTitleFontBold ?>
+          }
+
+          .nocontent-title-container h1 {
+            font-size:<?php echo $postsandpagesTitleFontSize ?>em;
+            letter-spacing: <?php echo $postsandpagesLetterSpacing; ?>px;
+            <?php echo $postandpagesTitleFontItalic ?>
+            <?php echo $postandpagesTitleFontBold ?>
+          }
+
+          .nocontent-search-title h1 {
+            font-size:<?php echo $postsandpagesTitleFontSize ?>em;
+            letter-spacing: <?php echo $postsandpagesLetterSpacing; ?>px;
+            <?php echo $postandpagesTitleFontItalic ?>
+            <?php echo $postandpagesTitleFontBold ?>
+          }
+
+          .nocontent-search-title h1 {
+            font-size:<?php echo $postsandpagesTitleFontSize ?>em;
+            letter-spacing: <?php echo $postsandpagesLetterSpacing; ?>px;
+            <?php echo $postandpagesTitleFontItalic ?>
+            <?php echo $postandpagesTitleFontBold ?>
+          }
+
+          .page-split-title-container h1 {
+            font-size:<?php echo $postsandpagesTitleFontSize ?>em;
+            letter-spacing: <?php echo $postsandpagesLetterSpacing; ?>px;
+            <?php echo $postandpagesTitleFontItalic ?>
+            <?php echo $postandpagesTitleFontBold ?>
+          }
+
+          .featuredpost-title-container h1 {
+            font-size:<?php echo $postsandpagesTitleFontSize ?>em;
+            letter-spacing: <?php echo $postsandpagesLetterSpacing; ?>px;
+            <?php echo $postandpagesTitleFontItalic ?>
+            <?php echo $postandpagesTitleFontBold ?>
+          }
 
 
 

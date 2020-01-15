@@ -52,8 +52,9 @@ function trek_google_fonts() {
   require get_template_directory() . '/inc/fonts/google-fonts.php';
   $mainFontFullLink = str_replace( ',', '%2C', 'https://fonts.googleapis.com/css?family=' . $mainFont . '&display=swap' );
   wp_enqueue_style( 'blog-title-font', $mainFontFullLink , false );
-  //$postandpagesFullLink = str_replace( ',', '%2C', 'https://fonts.googleapis.com/css?family=' . $postsAndPagesmainFont . '&display=swap' )
-  //wp_enqueue_style( 'postsandpages-title-font', $postandpagesFullLink , false );
+  $postandpagesFullLink = str_replace( ',', '%2C', 'https://fonts.googleapis.com/css?family=' . $postsAndPagesmainFont . '&display=swap' );
+  wp_enqueue_style( 'post-page-title-font', $postandpagesFullLink , false );
+
 
 }
 
