@@ -688,7 +688,10 @@
 
           /* fonts */
 
-          <?php require get_template_directory() . '/inc/fonts/google-fonts.php'; ?>
+          <?php
+            require get_template_directory() . '/inc/fonts/google-fonts.php';
+            $blogTitleFontSizeResized = $blogTitleFontSize * 4;
+          ?>
 
           .ReenieBeanie {
             font-family: <?php echo $cssFont ?>;
@@ -700,12 +703,23 @@
           .featuredpost-homepage-title-container h1 {
             <?php echo $blogTitleFontBold ?>
             font-size:<?php echo $blogTitleFontSize ?>em;
+            letter-spacing: <?php echo $blogTitleLetterSpacing; ?>px;
           }
 
           .homepage-title-container h1 {
             <?php echo $blogTitleFontBold ?>
-            font-size:<?php echo $blogTitleFontSize ?>em;
+            font-size:<?php echo $blogTitleFontSizeResized ?>em;
+            letter-spacing: <?php echo $blogTitleLetterSpacing; ?>px;
+
           }
+
+          .imagepostlayout-title-container h1 {
+            font-family: <?php echo $postsAndPagescssFont ?>;
+          }
+
+
+
+
 
 
 

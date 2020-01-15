@@ -22,7 +22,7 @@
           <p><?php the_category(); ?></p>
         </div>
       <?php } ?>
-      <div class="gridpostlayout-title-container ReenieBeanie bloglinkcolor">
+      <div class="gridpostlayout-title-container ReenieBeaniePostFont bloglinkcolor">
         <a href="<?php the_permalink(); ?>"><h1><?php the_title(); ?></h1></a>
       </div>
       <div class="gridpostlayout-meta-container Montserrat bloglinkcolor">

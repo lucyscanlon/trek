@@ -8,7 +8,7 @@
 */
 ?>
 <div class="singlepost2-whole-container">
-  <div class="singlepost2-title-container ReenieBeanie">
+  <div class="singlepost2-title-container ReenieBeaniePostFont">
     <!--  Displays page title  -->
     <h1><?php the_title(); ?></h1>
   </div>

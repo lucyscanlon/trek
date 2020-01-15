@@ -13,7 +13,7 @@
 <!--  Checks if the user can publish posts  -->
 <?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
   <div class="no-content-whole-container">
-    <div class="nocontent-title-container ReenieBeanie">
+    <div class="nocontent-title-container ReenieBeaniePostFont">
       <h1><?php esc_html_e('No Content', 'trek'); ?></h1>
     </div>
     <div class="nocontent-description-container Montserrat bloglinkcolor">

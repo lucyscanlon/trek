@@ -2111,7 +2111,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
           // Add a Google Font control for Blog Title
           $wp_customize->add_setting( 'blog_title_font_control', array(
-            'default'        => 132,
+            'default'        => 127,
             'sanitize_callback' => 'absint',
          ) );
 
@@ -2135,6 +2135,23 @@ function trek_lucyisobel_custom_settings($wp_customize){
               'min' => 1.0,
               'max' => 2.0,
               'step' => 0.1,
+            ),
+          )));
+
+          // Creates the Slider for Blog Title letter spacing
+          $wp_customize->add_setting( 'slider_blogtitlefont_letterspacing', array(
+            'default' => 4,
+            'transport' => 'refresh',
+          ));
+
+          $wp_customize->add_control( new Skyrocket_Slider_Custom_Control( $wp_customize, 'slider_blogtitlefont_letterspacing', array(
+            'label' => __('Letter Spacing', 'trek'),
+            'section' => 'fonts_section',
+            'settings' => 'slider_blogtitlefont_letterspacing',
+            'input_attrs' => array(
+              'min' => 0,
+              'max' => 7,
+              'step' => 1,
             ),
           )));
 
@@ -2167,6 +2184,33 @@ function trek_lucyisobel_custom_settings($wp_customize){
             'section' => 'fonts_section',
             'settings'=> 'toggle_blogtitlefont_bold',
           )));
+
+
+          // Creates the title "Posts & Pages Title Font" in "Fonts" section
+          $wp_customize->add_setting('fonts_postspagesfontitle_section', array(
+            'sanitize_callback' => 'wp_filter_nohtml_kses',
+          ));
+
+
+          $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'fonts_postspagesfontitle_section', array(
+            'label' => __('Posts and Pages Title Font', 'trek'),
+            'description' => __('This is the section for your Post & Page Title Font settings.', 'trek'),
+            'section' => 'fonts_section',
+            'settings' => 'fonts_postspagesfontitle_section'
+          )));
+
+
+          // Add a Google Font control for Posts and Pages Title Font
+          $wp_customize->add_setting( 'postsandpagestitle_font_control', array(
+            'default'        => 127,
+            'sanitize_callback' => 'absint',
+         ) );
+
+         $wp_customize->add_control( new Google_Font_Dropdown_Custom_Control( $wp_customize, 'postsandpagestitle_font_control', array(
+            'label'   => __('Posts and Pages Title Font', 'trek' ),
+            'section' => 'fonts_section',
+            'settings'   => 'postsandpagestitle_font_control',
+          ) ) );
 
 
 

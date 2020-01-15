@@ -29,7 +29,7 @@ Template Name: Split Screen
               <div class="page-fullwidth-featuredimage-container" style="background: url('<?php echo $backgroundImgPage[0]; ?>'); background-size: cover; background-position: center center;">
               </div>
               <div class="page-fullwidth-content-container">
-                <div class="page-split-title-container ReenieBeanie">
+                <div class="page-split-title-container ReenieBeaniePostFont">
                   <h1><?php the_title(); ?></h1>
                 </div>
                 <div class="page-split-meta-container Montserrat">

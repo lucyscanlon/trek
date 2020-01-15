@@ -242,8 +242,6 @@ display: none;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  font-size: 95px;
-  letter-spacing: 4px;
 }
 
 .homepage-description-container {
@@ -3134,9 +3132,6 @@ font-family: Montserrat;
     margin: 0px auto!important;
   }
 
-  .homepage-title-container h1 {
-    font-size: 85px!important;
-  }
 
   .featuredpost-title-container h1 {
     font-size: 60px!important;
@@ -3370,7 +3365,7 @@ font-family: Montserrat;
 
   .homepage-title-container h1 {
     width: 90%;
-    font-size: 75px!important;
+
   }
 
   .homepage-description-container p {

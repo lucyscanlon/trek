@@ -12,7 +12,7 @@
     <!--  Checks whether the post has a featured image and displays it  -->
     <div class="singlepost3-featuredimage-container" style="<?php if ( has_post_thumbnail( get_the_ID() ) ) { ?> background:radial-gradient(circle, rgba(0,0,0,0.4 ) 20%, rgba(0,0,0,0) 92%), url('<?php echo $backgroundImg[0]; ?>'); background-size: cover; background-position: center center; <?php } else { ?> background-color: <?php echo get_theme_mod('no_featured_image_color_control', '#1d272e' ); ?>;  <?php } ?>">
       <div class="singlepost3-padding">
-        <div class="singlepost3-title-container ReenieBeanie">
+        <div class="singlepost3-title-container ReenieBeaniePostFont">
           <h1><?php the_title(); ?></h1>
         </div>
         <div class="singlepost1layout-meta-container singlepost3white Montserrat whitetext-hover-color">

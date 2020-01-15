@@ -15,7 +15,7 @@
         <p><?php the_category(); ?></p>
       </div>
     <?php } ?>
-    <div class="singlepost2-title-container ReenieBeanie">
+    <div class="singlepost2-title-container ReenieBeaniePostFont">
       <h1><?php the_title(); ?></h1>
     </div>
     <div class="singlepost1layout-meta-container Montserrat bloglinkcolor">

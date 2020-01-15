@@ -12,7 +12,7 @@
     <!--  Displays page featured image  -->
     <img src="<?php echo $backgroundImg[0]; ?>">
   </div>
-  <div class="singlepost1-title-container ReenieBeanie">
+  <div class="singlepost1-title-container ReenieBeaniePostFont">
     <!--  Displays page title  -->
     <h1><?php the_title(); ?></h1>
   </div>
