@@ -692,14 +692,20 @@
 
           .ReenieBeanie {
             font-family: <?php echo $cssFont ?>;
+            <?php echo $blogTitleFontItalic ?>
+            <?php echo $blogTitleFontBold ?>
 
           }
 
           .featuredpost-homepage-title-container h1 {
-            font-weight: 400!important;
+            <?php echo $blogTitleFontBold ?>
+            font-size:<?php echo $blogTitleFontSize ?>em;
           }
 
-
+          .homepage-title-container h1 {
+            <?php echo $blogTitleFontBold ?>
+            font-size:<?php echo $blogTitleFontSize ?>em;
+          }
 
 
 

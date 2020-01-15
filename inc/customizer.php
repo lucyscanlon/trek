@@ -2103,7 +2103,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
           $wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_Control($wp_customize, 'fonts_blogtitlefontitle_section', array(
             'label' => __('Blog Title', 'trek'),
-            'description' => __('This is the font settings for your blog title which appears on your homepage and your blog banner.', 'trek'),
+            'description' => __('This is the font settings for your blog title which appears on your homepage and your blog banner. Please note if the Italic / bold switch is turned on and the font does not change, then the selected font only comes with one style.', 'trek'),
             'section' => 'fonts_section',
             'settings' => 'fonts_blogtitlefontitle_section'
           )));
@@ -2119,8 +2119,57 @@ function trek_lucyisobel_custom_settings($wp_customize){
             'label'   => __('Blog Title Font Selector', 'trek' ),
             'section' => 'fonts_section',
             'settings'   => 'blog_title_font_control',
-            'priority' => 12
           ) ) );
+
+          // Creates the Slider for Blog Title Font Size
+          $wp_customize->add_setting( 'slider_blogtitlefont_size', array(
+            'default' => 1.5,
+            'transport' => 'refresh',
+          ));
+
+          $wp_customize->add_control( new Skyrocket_Slider_Custom_Control( $wp_customize, 'slider_blogtitlefont_size', array(
+            'label' => __('Font Size (em)', 'trek'),
+            'section' => 'fonts_section',
+            'settings' => 'slider_blogtitlefont_size',
+            'input_attrs' => array(
+              'min' => 1.0,
+              'max' => 2.0,
+              'step' => 0.1,
+            ),
+          )));
+
+
+          // Toggle to make Blog Title Font Italic
+          $wp_customize->add_setting('toggle_blogtitlefont_italic', array(
+            'default' => 0,
+            'transport' => 'refresh',
+            'sanitize_callback' => 'skyrocket_switch_sanitization',
+
+          ));
+
+          $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'toggle_blogtitlefont_italic', array(
+            'label' => __('Italic', 'trek'),
+            'section' => 'fonts_section',
+            'settings'=> 'toggle_blogtitlefont_italic',
+          )));
+
+
+          // Toggle to make Blog Title Font Bold
+          $wp_customize->add_setting('toggle_blogtitlefont_bold', array(
+            'default' => 1,
+            'transport' => 'refresh',
+            'sanitize_callback' => 'skyrocket_switch_sanitization',
+
+          ));
+
+          $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'toggle_blogtitlefont_bold', array(
+            'label' => __('Bold', 'trek'),
+            'section' => 'fonts_section',
+            'settings'=> 'toggle_blogtitlefont_bold',
+          )));
+
+
+
 
 
 

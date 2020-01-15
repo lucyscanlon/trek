@@ -1,6 +1,6 @@
 <?php
 
-$fontArray = get_theme_mod('blog_title_font_control', 129 );
+$fontArray = get_theme_mod('blog_title_font_control', 127 );
 
 
 
@@ -671,3 +671,23 @@ switch ($fontArray) {
     $cssFont = "Sanchez";
     break;
 }
+
+// Adding the italic css for the Blog Title Font Italic switch.
+
+if ( get_theme_mod('toggle_blogtitlefont_italic', 0 )  == 1 ) {
+  $blogTitleFontItalic = 'font-style: italic;';
+} else {
+  $blogTitleFontItalic = '';
+}
+
+
+// Adding the bold css for Blog Title Bold switch.
+
+if ( get_theme_mod('toggle_blogtitlefont_bold', 1 ) == 1 ) {
+  $blogTitleFontBold = 'font-weight: 700!important;';
+} else {
+  $blogTitleFontBold = 'font-weight: 400!important;';
+}
+
+
+$blogTitleFontSize = get_theme_mod('slider_blogtitlefont_size', 1.5 );
