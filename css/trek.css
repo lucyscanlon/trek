@@ -1818,20 +1818,22 @@ figcaption {
 
 .page h4 {
   margin: 12px 0;
-  padding-top: 30px!important;
+  padding-top: 10px!important;
 }
 
 
 .page ul {
   margin-left: 20px;
-  font-size: 14px;
+  font-size: 13px;
   margin-top: 20px;
   margin-bottom: 20px;
+  letter-spacing: 1px;
+
 }
 
 .page ol {
   margin-left: 20px;
-  font-size: 14px;
+  font-size: 13px;
   margin-top: 10px;
   margin-bottom: 20px;
 }
@@ -3282,12 +3284,21 @@ font-family: Montserrat;
 
 
   .featuredpost-title-container h1  {
-    font-size: 45px!important;
+    font-size: 10vw!important;
   }
 
   .featuredpost-homepage-title-container h1 {
-    font-size: 55px!important;
+    /*font-size: 55px!important;*/
+    font-size: 10vw!important;
   }
+
+  .imagepostlayout-title-container h1 {
+    font-size: 10vw!important;
+  }
+
+ .singlepost3-title-container h1 {
+   font-size: 10vw!important;
+ }
 
   .widepostlayout-meta-container {
     font-size: 9px!important;
@@ -3361,7 +3372,8 @@ font-family: Montserrat;
 
   .homepage-title-container h1 {
     width: 90%;
-    font-size: 55px!important;
+    /* font-size: 55px!important; */
+    font-size: 10vw!important;
 
   }
 
@@ -3375,7 +3387,7 @@ font-family: Montserrat;
   }
 
   .header-overlay-title-container h1 {
-    font-size: 60px;
+    font-size: 10vw!important;
   }
 
   .header-search-overlay-search-container  {
@@ -3384,6 +3396,26 @@ font-family: Montserrat;
 
   .header-search-overlay-search-container input  {
     font-size: 20px!important;
+  }
+
+  .widepostlayout-title-container h1 {
+    font-size: 10vw!important;
+  }
+
+  .gridpostlayout-title-container h1 {
+    font-size: 10vw!important;
+  }
+
+  .singlepost1-title-container h1 {
+    font-size: 10vw!important;
+  }
+
+  .singlepost2-title-container h1 {
+    font-size: 10vw!important;
+  }
+
+  .page-split-title-container h1 {
+    font-size: 10vw!important;
   }
 
   .widepostlayout-content-container {
