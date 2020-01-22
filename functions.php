@@ -37,6 +37,12 @@ require get_template_directory() . '/inc/requiredplugins/required-plugins.php';
 require get_template_directory() . '/inc/requiredplugins/demo-import.php';
 
 
+/*  mobile detect   */
+
+require get_template_directory() . '/inc/mobile-detect/mobile_detect.php';
+
+
+
 /* theme update checker */
 
 require 'theme_update_check.php';
