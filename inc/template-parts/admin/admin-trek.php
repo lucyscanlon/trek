@@ -40,21 +40,7 @@
     </div></a>
 
   </div>
-  <div class="trek-box wordpresstips-whole-container">
-    <div class="installinstruct-title-container">
-      <h4><?php echo __('New To Wordpress?', 'trek') ?></h4>
-    </div>
-    <div class="trek-description-container">
-      <p>
-        <?php echo __('Need a helping hand? Click the button below to head over to my blog where I post free WordPress tips for beginners every week.', 'trek') ?>
-      </p>
-    </div>
-    <a href="http://www.lucyisobel.co.uk/blog/" target="blank"><div class="trekbutton-container">
-      <p>
-      <?php echo __('Go to blog', 'trek') ?>
-      </p>
-    </div></a>
-  </div>
+  
 </div>
 
 <div class="problem-whole-container">
