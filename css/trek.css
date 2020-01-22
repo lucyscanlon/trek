@@ -1797,6 +1797,7 @@ figcaption {
   font-size: 14px;
   margin-top: 20px;
   margin-bottom: 20px;
+  line-height: 1.5em;
 }
 
 .singlepost-content-container ol {
@@ -1804,6 +1805,7 @@ figcaption {
   font-size: 14px;
   margin-top: 10px;
   margin-bottom: 20px;
+  line-height: 1.5em;
 }
 
 .page h2 {
@@ -1829,6 +1831,7 @@ figcaption {
   margin-top: 20px;
   margin-bottom: 20px;
   letter-spacing: 1px;
+  line-height: 1.5em;
 
 }
 
@@ -1837,6 +1840,7 @@ figcaption {
   font-size: 13px;
   margin-top: 10px;
   margin-bottom: 20px;
+  line-height: 1.5em;
 }
 
 
@@ -3010,6 +3014,54 @@ font-family: Montserrat;
     display: none;
   }
 
+.homepage-title-container h1 {
+  font-size: 8vw!important;
+}
+
+.featuredpost-homepage-title-container h1 {
+  font-size: 8vw!important;
+}
+
+.widepostlayout-title-container h1 {
+  font-size: 6vw!important;
+}
+
+.gridpostlayout-title-container h1 {
+  font-size: 6vw!important;
+}
+
+.singlepost1-title-container h1 {
+  font-size: 6vw!important;
+}
+
+.singlepost2-title-container h1 {
+  font-size: 6vw!important;
+}
+
+.page-split-title-container h1 {
+  font-size: 6vw!important;
+}
+
+.header-overlay-title-container h1 {
+  font-size: 7vw!important;
+}
+
+.featuredpost-title-container h1  {
+  font-size: 6vw!important;
+}
+
+.featuredpost-homepage-title-container h1 {
+  /*font-size: 55px!important;*/
+  font-size: 8vw!important;
+}
+
+.imagepostlayout-title-container h1 {
+  font-size: 6vw!important;
+}
+
+.singlepost3-title-container h1 {
+ font-size: 6vw!important;
+}
 
 
   .menuleft-socialmedia-container {
