@@ -647,7 +647,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
       $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'homepage_background_image', array(
         'label' => __('Use Image as Background', 'trek'),
-        'description' => __("Choose an image to be the background of your homepage. It is highly recommended this image is of a high quality. Please note if the setting below 'Use Video as Background' is turned on, then this image won't be displayed. ", 'trek'),
+        'description' => __("Choose an image to be the background of your homepage. It is highly recommended this image is of a high quality. Please note that even if the setting below 'Use Video as Background' is turned on, you still need to upload a background image (this will be displayed on mobile devices) . ", 'trek'),
         'section' => 'homepage_section',
         'settings' => 'homepage_background_image',
 
@@ -666,7 +666,7 @@ function trek_lucyisobel_custom_settings($wp_customize){
 
       $wp_customize->add_control( new Skyrocket_Toggle_Switch_Custom_control( $wp_customize, 'homepage_video_toggle', array(
         'label' => __('Use Video as Background', 'trek'),
-        'description' => __("This will play a muted loop of a video of your choice. This setting uses a YouTube or Vimeo embed as your background, therefore your chosen video must be uploaded to either site first. Embedding the video from another site leaves more storage for your blog's content as well displays the video at the best quality possible!" , 'trek'),
+        'description' => __("Display a muted looped video as your homepage background when your website is viewed on larger devices e.g. desktop computers or laptops. (IMPORTANT: Your homepage image will still be displayed on mobile and tablet devices, you can upload this image in the setting above). This setting embeds a Youtube or Vimeo video as your background, saving storage on your blog and allowing it to be displayed at the best quality possible. First upload your chosen video to either site. " , 'trek'),
         'section' => 'homepage_section',
         'settings'=> 'homepage_video_toggle'
       )));
