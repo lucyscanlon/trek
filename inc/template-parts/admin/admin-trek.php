@@ -18,7 +18,7 @@
         <?php echo __('Please click the button below to find the Trek Set Up instructions. This will walk you through the whole theme set up step by step. These are in a written and video format!', 'trek') ?>
       </p>
     </div>
-    <a href="http://www.lucyisobel.co.uk/trek-install/" target="blank"><div class="trekbutton-container">
+    <a href="https://www.lucyisobelsetup.online/installinstructions/trek/" target="blank"><div class="trekbutton-container">
       <p>
         <?php echo __('Set Up Instructions', 'trek') ?>
       </p>
@@ -40,7 +40,7 @@
     </div></a>
 
   </div>
-  
+
 </div>
 
 <div class="problem-whole-container">
